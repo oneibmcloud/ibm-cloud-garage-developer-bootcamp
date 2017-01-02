@@ -1,2 +1,0 @@
-const categorize = () => {};
-export {categorize};
