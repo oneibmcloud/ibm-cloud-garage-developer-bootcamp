@@ -18,7 +18,7 @@ body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 38px;
   font-weight: normal;
-  color: #128bc1; }
+  color: #053e68; }
 
 ::selection {
   color: #fff;
@@ -40,7 +40,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #128bc1;
+  color: #053e68;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -285,7 +285,7 @@ text-align: left; }
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #2a76dd;
+  background: #053e68;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -298,7 +298,7 @@ html.image-opacity .slide-background {
 }
 
 .reveal div.header-left {
-  background-image: url("../resources/header.png");
+  background-image: url("../resources/header-2.png");
   background-color: #fff;
   background-size: 100%;
   background-position: center top;

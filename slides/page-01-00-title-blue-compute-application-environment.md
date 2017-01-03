@@ -1,8 +1,10 @@
-<!-- .slide: data-background="resources/footer.png" data-background-size="contain" data-background-position="bottom"  -->
+<!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-|<img class="plain" src="resources/circle.png" />|BlueCompute Application Environment|
-|-|-|
+##Bluemix Garage Method
 
+<img class="plain" src="resources/bluemix-method-graphic.png" />
+
+##Developer Bootcamp
 
 <aside class="notes">
   <p>
