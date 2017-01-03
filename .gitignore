@@ -1,6 +1,8 @@
 launchConfigurations/
 .DS_Store
 .idea
+bower_components/
+dist/
 
 # Logs
 logs
