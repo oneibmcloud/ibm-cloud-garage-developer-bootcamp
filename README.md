@@ -16,6 +16,8 @@ Facilities, logistics, prerequisites, learning outcomes, agenda, slides, and lab
 
 * [Labs](https://github.ibm.com/BlueMixGarageEnablement/bluemix-garage-developer-bootcamp/tree/integration)
 
+* [Recommendations for Aftercare](06-recommendations-for-aftercare.md)
+ 
 
 ## License
 
