@@ -70,17 +70,22 @@ module.exports = (grunt) ->
                 files: [{
                     expand: true
                     src: [
+                        'lib/**'
                         'slides/**'
                         'bower_components/**'
                         'js/**'
                         'css/**'
                         'resources/**'
-                        'favicon.ico'
                     ]
                     dest: 'dist/'
                 },{
                     expand: true
                     src: ['index.html']
+                    dest: 'dist/'
+                    filter: 'isFile'
+                },{
+                    expand: true
+                    src: ['favicon.ico']
                     dest: 'dist/'
                     filter: 'isFile'
                 }]
