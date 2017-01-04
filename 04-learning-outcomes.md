@@ -16,4 +16,4 @@
 
 * How to Manage Risk.
 
-* How to Answer the Question, "When will this be done?"
+* How to Answer the Question, "When will this be Done?"

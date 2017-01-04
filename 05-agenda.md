@@ -1,6 +1,7 @@
 # Agenda
 
 ####Day 1:  Design Thinking
+
 - - - -
 
 ####Day 2:  Lean Startup and Extreme Programming
@@ -23,6 +24,7 @@
   * **Spikes/Experiments**
   * **Evolutionary Design**
   * **The Flow of Value**
+  
 - - - -
 
 ####Day 3:  Inception Workshop
@@ -38,6 +40,7 @@
 * **Story Mapping:  Finding the Shape of the Product.**
 * **Release Planning.**
 * **Cadence.**
+
 - - - -
 
 ####Day 4:  Iteration 0
@@ -47,7 +50,8 @@
 
 **Lunch**
 
-* **Code Smells and Refactoring** 
+* **Code Smells and Refactoring**
+ 
 - - - -
 
 ####Day 5:  Iteration 0
@@ -57,12 +61,15 @@
 **Lunch**
 
 * **Test-Driven Development** 
+
 - - - -
 
 ####Day 6:  Iteration 1
 
 * **Iteration 1 Planning**
+
 - - - -
+
 * **Daily Goals** 
 * **Pair Programming**
 * **Goal Review** 
@@ -72,6 +79,7 @@
 * **Daily Goals** 
 * **Pair Programming**
 * **Goal Review** 
+
 - - - -
 
 ####Day 7:  Iteration 1
@@ -85,23 +93,29 @@
 * **Daily Goals** 
 * **Pair Programming**
 * **Goal Review** 
+
 - - - -
 
-####Day 8:  End of Iteration 1/Start of Iteration 2
+####Day 8:  End Iteration 1 / Start Iteration 2
 
 * **Daily Goals** 
 * **Pair Programming**
+
 - - - -
+
 * **Customer Demo** 
 * **Iteration Retrospective** 
 
 **Lunch**
 
 * **Iteration 2 Planning**
+
 - - - -
+
 * **Daily Goals** 
 * **Pair Programming**
 * **Goal Review** 
+
 - - - -
 
 ####Day 9:  Iteration 1
@@ -115,9 +129,10 @@
 * **Daily Goals** 
 * **Pair Programming**
 * **Goal Review** 
+
 - - - -
 
-####Day 10:  Iteration 1/Launch
+####Day 10:  Iteration 1 / Product Launch
 
 * **Daily Goals** 
 * **Pair Programming**
@@ -127,7 +142,10 @@
 
 * **Daily Goals** 
 * **Pair Programming**
+
 - - - -
+
 * **Customer Demo** 
 * **Project Retrospective** 
+
 - - - -
