@@ -1,5 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
+##IBM
 ##Bluemix Garage Method
 
 <img class="plain" src="resources/bluemix-method-graphic.png" />

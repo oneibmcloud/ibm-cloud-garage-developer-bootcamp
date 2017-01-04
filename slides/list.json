@@ -1,16 +1,5 @@
 [
   "index.md",
-  "page-01-00-title-blue-compute-application-environment.md",
-  "page-02-00-reference-architecture-hosted-in-public-github.md",
-  "page-03-00-bluecompute-structure-microservices.md",
-  "page-04-00-bluecompute-structure-data-services.md",
-  "page-05-00-bluecompute-structure-microservices-framework.md",
-  "page-06-00-bff.md",
-  "page-07-00-api-gateway.md",
-  "page-08-00-web-app.md",
-  "page-09-00-mobile-apps.md",
-  "page-10-00-devops.md",
-  "page-11-00-simplified-lab.md",
-  "page-12-00-simplified-lab-common-component.md",
+  "page-01-00-title.md",
   "closure.md"
 ]

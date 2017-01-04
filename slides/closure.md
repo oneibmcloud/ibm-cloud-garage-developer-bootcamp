@@ -1,4 +1,4 @@
-<!-- .slide: data-background="resources/footer.png" data-background-size="100%" data-background-position="bottom" data-background-color="#1d3648" -->
+<!-- .slide: data-background="resources/footer.png" data-background-size="100%" data-background-position="bottom" data-background-color="#053e68" -->
 
 #IBM Bluemix Garage
 
