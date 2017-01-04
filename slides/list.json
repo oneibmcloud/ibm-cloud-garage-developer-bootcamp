@@ -6,9 +6,14 @@
     "page-00-02-agenda.md"
   ],
   "page-01-01-day-01.md",
+  "page-02-01-day-02.md",
+  "page-02-02-day-02-agenda-am.md",
+  "page-02-02-day-02-agenda-pm.md",
+  "page-02-02-day-02-agenda-am.md",
   [
-    "page-02-01-day-02.md",
-    "page-02-02-day-02-agenda.md"
+    "page-02-02-day-02-agenda-am-01-culture.md"
+  ],
+  [
   ],
   "closure.md"
 ]

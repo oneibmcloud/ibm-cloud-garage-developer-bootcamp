@@ -1,13 +1,19 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##Lean Startup and XP
+##Day 02 (AM): Lean Startup and XP
+
 - - -
+
 * **The Culture of Agility**
 * **The Values of Agility** 
 * **The Product Community - Shared Responsibilities**
 * **Teaming and Re-Teaming**
 * **Lean Startup**
 * **Extreme Programming [XP]**
+
+- - -
+
+_**(lunch)**_
 
 <aside class="notes">
   <p>
