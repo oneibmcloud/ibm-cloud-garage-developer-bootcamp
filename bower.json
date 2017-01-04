@@ -1,8 +1,0 @@
-{
-  "name": "standing-on-the-shoulders-of-giants-leading-ibm-s-journey-to-agility",
-  "version": "0.0.0",
-  "dependencies": {
-    "reveal.js": "~3.2.0",
-    "highlightjs": "~9.0.0"
-  }
-}
