@@ -1,12 +1,20 @@
 # Bluemix Garage Method Developer Bootcamp 
 
-Assets, resources, labs, prerequisites, learning outcomes, and agenda.
+Facilities, logistics, prerequisites, learning outcomes, agenda, slides, and labs.
 
+* [Facilities](01-facilities.md)
+ 
+* [Logistics](02-logistics.md)
 
+* [Prerequisites](03-prerequisites.md)
+
+* [Learning Outcomes](04-learning-outcomes.md)
+ 
+* [Agenda](05-agenda.md)
+ 
 * [Slides](https://pages.github.ibm.com/BlueMixGarageEnablement/bluemix-garage-developer-bootcamp)
 
-
-* [Facilities](facilities.md) 
+* [Labs](https://github.ibm.com/BlueMixGarageEnablement/bluemix-garage-developer-bootcamp/tree/integration)
 
 
 ## License
