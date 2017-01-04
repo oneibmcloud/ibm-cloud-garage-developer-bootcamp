@@ -1,9 +1,14 @@
 [
   "index.md",
-  "page-01-00-title.md",
+  "page-00-00-title.md",
   [
-    "page-02-01-agenda.md",
-    "page-02-02-agenda.md"
+    "page-00-01-agenda.md",
+    "page-00-02-agenda.md"
+  ],
+  "page-01-01-day-01.md",
+  [
+    "page-02-01-day-02.md",
+    "page-02-02-day-02-agenda.md"
   ],
   "closure.md"
 ]
