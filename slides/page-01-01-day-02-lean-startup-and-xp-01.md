@@ -21,9 +21,12 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
+  In the morning, we'll look closely at culture and values, discuss organizational
+  learning and reteaming, then synthesize lean startup and XP as an adaptive
+  learning organization.
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+  In the afternoon, we'll pick apart the engineering practices and dive deep into 
+  the design of the delivery cycles to achieve continuous flow.
   </p>
 </aside>

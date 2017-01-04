@@ -14,10 +14,7 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  We'll do a product inception to plan development, and them build as much of 
+  that product as possible using TDD, merciless refactoring, evolutionary design
+  and continuous integration. How's that sound?
 </aside>

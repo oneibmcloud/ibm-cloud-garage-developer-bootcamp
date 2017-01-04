@@ -15,9 +15,6 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
+    We'll do some developer experience design around microservices APIs.
   </p>
 </aside>

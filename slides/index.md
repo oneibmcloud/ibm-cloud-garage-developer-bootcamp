@@ -6,7 +6,5 @@
 
 
 <aside class="notes">
-  <p>
-    Cover Page
-  </p>
+  Cover Page
 </aside>

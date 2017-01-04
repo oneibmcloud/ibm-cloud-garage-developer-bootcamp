@@ -12,9 +12,6 @@ _**(need to figure out what to do here)**_
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
+    Developer Experience Design concentrates on design of APIs from the dev perspective.
   </p>
 </aside>
