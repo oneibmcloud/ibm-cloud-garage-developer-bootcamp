@@ -14,10 +14,6 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  These katas were specifically chosen to get acquainted with core skills we
+  use on all product development efforts.
 </aside>

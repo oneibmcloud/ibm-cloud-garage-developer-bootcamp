@@ -14,10 +14,5 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  we're emulating the real world by executing 2 real delivery cycles
 </aside>

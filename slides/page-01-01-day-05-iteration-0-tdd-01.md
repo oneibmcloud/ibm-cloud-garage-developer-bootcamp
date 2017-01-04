@@ -10,9 +10,9 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
+    Fundamental katas.
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    Indispensable technique with test doubles.
   </p>
 </aside>

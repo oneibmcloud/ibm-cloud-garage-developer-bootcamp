@@ -15,9 +15,12 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
+    2 delivery cycles: 
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    1 in the morning, and
+  </p>
+  <p>
+    1 in the afternoon.
   </p>
 </aside>

@@ -14,10 +14,6 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  Each delivery cycle starts with a replenishing the queue of items to work on.
+  It is imperative that this is done in a JIT fashion.
 </aside>

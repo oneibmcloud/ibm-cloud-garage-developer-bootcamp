@@ -14,10 +14,12 @@
 * **Pair Programming**
 
 <aside class="notes">
+  the delivery cycles end with a ceremony to receive feedback from the 
+  project stakeholders
   <p>
-    Juxtapose an image with text centered to its right.
+    and a retrospective to ensure learning is fed back into the cycles
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    the next delivery cycle begins with replenishing the queue of work
   </p>
 </aside>

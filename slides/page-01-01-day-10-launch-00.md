@@ -14,10 +14,5 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  the end of the last cycle is when the product is launched
 </aside>

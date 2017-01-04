@@ -16,9 +16,12 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
+    We'll discuss the significance of iteration 0 and explain where most everyone 
+    else gets continuous integration wrong.  We'll then review advantages of 
+    pair programming, and techniques to pair well.
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    We'll then we'll warm up with exercises on refactorings that we will 
+    encounter during real-world product development.
   </p>
 </aside>

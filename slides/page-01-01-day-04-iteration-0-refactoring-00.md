@@ -15,9 +15,6 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
+    Arguably 2 of the most important of all the engineering practices.
   </p>
 </aside>

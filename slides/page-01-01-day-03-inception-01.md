@@ -13,10 +13,7 @@
 * **Cadence.**
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  We'll conduct a product inception to immerse ourselves in the practice and
+  emerge with a delivery schedule we'll use to build as much of the product 
+  during the workshop that we can.
 </aside>

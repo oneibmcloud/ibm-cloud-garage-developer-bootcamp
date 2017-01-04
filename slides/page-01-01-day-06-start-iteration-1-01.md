@@ -15,10 +15,5 @@
 * **Goal Review** 
 
 <aside class="notes">
-  <p>
-    Juxtapose an image with text centered to its right.
-  </p>
-  <p>
-    Can optionally add subtitle centered below image in left table cell.
-  </p>
+  The rhythm of the cycles looks just like that among experienced practioners. 
 </aside>

@@ -16,13 +16,16 @@
 
 * **Customer Demo**
 
-* **Project Retrospective**
+* **Product Retrospective**
 
 <aside class="notes">
+  the last cycle concludes with the final customer demo.
   <p>
-    Juxtapose an image with text centered to its right.
+    no problems are anticipated here because this is the point at which maximum 
+    learning has been reached
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    learnings from product retrospectives are fed back into the organization to 
+    make other product deliveries better
   </p>
 </aside>

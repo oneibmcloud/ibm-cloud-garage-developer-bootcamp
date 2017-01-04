@@ -15,9 +15,10 @@
 
 <aside class="notes">
   <p>
-    Juxtapose an image with text centered to its right.
+    Product inception is the start of the agile development cycles for which the 
+    initial planning to build the product takes place.
   </p>
   <p>
-    Can optionally add subtitle centered below image in left table cell.
+    We'll workshop each activity and prepare to build the product in the 2nd week.
   </p>
 </aside>
