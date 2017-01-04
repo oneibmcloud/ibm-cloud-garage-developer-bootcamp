@@ -1,4 +1,4 @@
-# Prerequisites
+# IBM Internal Prerequisites
 
 * Sign up for a trial account at [IBM Bluemix](https://console.ng.bluemix.net/registration/).
 
