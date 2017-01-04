@@ -2,7 +2,7 @@
 
 #Design Thinking
 
-##For APIs it would be nice to introduce
+##For APIs, it would be nice to introduce
 
 ###[Developer Experience Design](http://www.kennethlange.com/posts/4-Must-Read-Articles-on-Developer-Experience.html)
 
