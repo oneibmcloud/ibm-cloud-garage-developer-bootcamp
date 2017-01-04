@@ -2,6 +2,7 @@
 node_modules
 bower_components
 dist
+slides
 *.log
 .sass-cache
 /index.html
