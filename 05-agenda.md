@@ -70,9 +70,7 @@
 
 - - - -
 
-* **Daily Goals** 
 * **Pair Programming**
-* **Goal Review** 
 
 **Lunch**
 
@@ -112,9 +110,7 @@
 
 - - - -
 
-* **Daily Goals** 
 * **Pair Programming**
-* **Goal Review** 
 
 - - - -
 
