@@ -3,7 +3,7 @@
 ##IBM
 ##Bluemix Garage Method
 
-<img class="plain" src="resources/bluemix-method-graphic.png" />
+<img class="plain" src="resources/bluemix-garage-method.png" />
 
 ##Developer Bootcamp
 
