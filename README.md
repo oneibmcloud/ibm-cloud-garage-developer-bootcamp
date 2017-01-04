@@ -6,10 +6,10 @@ Assets, resources, labs, prerequisites, learning outcomes, and agenda.
 * [Slides](https://pages.github.ibm.com/BlueMixGarageEnablement/bluemix-garage-developer-bootcamp)
 
 
-* [Facilities](facilities.MD) 
+* [Facilities](facilities.md) 
 
 
 ## License
 
-Copyright © 2017 IBM Corproation (all rights reserved)
+Copyright © 2017 IBM Corporation (all rights reserved)
 
