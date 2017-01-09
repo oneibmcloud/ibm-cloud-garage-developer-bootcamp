@@ -10,7 +10,7 @@ const fetch = (userId) => {
 
   return Promise.all([fetchCurrentMonth, fetchPriorMonth]).then(payments => {
     return Promise.resolve({'current-month': payments[0], 'prior-month': payments[1]});
-  });                   w
+  });
 };
 
 export {fetch};
