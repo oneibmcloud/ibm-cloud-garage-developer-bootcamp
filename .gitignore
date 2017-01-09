@@ -3,7 +3,7 @@ launchConfigurations/
 .idea
 bower_components/
 dist/
-
+resources
 # Logs
 logs
 *.log
