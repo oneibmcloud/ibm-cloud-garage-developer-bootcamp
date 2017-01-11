@@ -30,6 +30,7 @@
   "dependencies": {
     "fs-promise": "1.0.0",
     "immutable": "3.8.1",
+    "moment": "2.17.1",
     "ramda": "0.22.1",
     "ramda-cli": "1.2.2"
   },
