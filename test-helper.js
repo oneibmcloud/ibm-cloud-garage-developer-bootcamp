@@ -9,11 +9,16 @@ import should from 'should';
 import R from 'ramda';
 import td from 'testdouble';
 
-global.context = describe;
+const replace = td.replace;
+const when = td.when;
+const verify = td.verify;
+
+
+global.context = mocha.describe;
 global.td = td;
 
 afterEach(() => {
   td.reset();
 });
 
-export {mocha, should, R, td};
+export {mocha, should, R, replace, when, verify};
