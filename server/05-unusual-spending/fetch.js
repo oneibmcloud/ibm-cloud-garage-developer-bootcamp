@@ -9,7 +9,7 @@ const fetch = (userId) => {
   const fetchPriorMonth = api(userId, priorMonth);
 
   return Promise.all([fetchCurrentMonth, fetchPriorMonth]).then(payments => {
-    return Promise.resolve({'current-month': payments[0], 'prior-month': payments[1]});
+    return {'current-month': payments[0], 'prior-month': payments[1]};
   });
 };
 
