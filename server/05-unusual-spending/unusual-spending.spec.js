@@ -1,24 +1,23 @@
-import td from 'testdouble';
+/*eslint dot-notation: "off"*/
+import {replace, when, verify} from '../../test-helper';
 
 describe('unusual spending should', () => {
   it('interact with fetch, high-spending and email', () => {
-    const fetch = td.replace('./fetch').fetch;
-    const categorize = td.replace('./categorize').categorize;
-    const email = td.replace('./email').email;
+    const fetch = replace('./fetch')['fetch'];
+    const categorize = replace('./categorize')['categorize'];
+    const email = replace('./email')['email'];
 
     let unusualSpending;
 
-    td.when(fetch('dummy-user-id')).thenResolve('dummy-payments-response');
-
-    td.when(categorize('dummy-payments-response')).thenReturn(
-        'dummy-categorized-payments');
+    when(fetch('user-id')).thenResolve('payments');
+    when(categorize('payments')).thenReturn('categorized-payments');
 
     unusualSpending = require('./unusual-spending').unusualSpending;
 
     const receiveCategorizedPayments = () => {
-      td.verify(email('dummy-user-id', 'dummy-categorized-payments'));
+      verify(email('user-id', 'categorized-payments'));
     };
 
-    return unusualSpending('dummy-user-id').then(receiveCategorizedPayments);
+    return unusualSpending('user-id').then(receiveCategorizedPayments);
   });
 });
