@@ -4,11 +4,11 @@
 
 - - -
 
-<img class="plain" src="resources/queue-01-dev-system.png" />
+<img class="plain" src="resources/card-wall.png" />
 
 
 <aside class="notes">
   <p>
-    we model our delivery cycles as in queing theory
+    notice the equivalence to our card walls
   </p>
 </aside>

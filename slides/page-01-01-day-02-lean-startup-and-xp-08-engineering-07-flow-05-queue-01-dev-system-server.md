@@ -9,7 +9,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    and a server to process the incoming work
   </p>
 </aside>

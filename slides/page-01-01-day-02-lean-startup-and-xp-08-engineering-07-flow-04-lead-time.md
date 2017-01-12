@@ -12,7 +12,12 @@
 
 <aside class="notes">
   <p>
+    the average time it takes for 1 work item to arrive and depart
   </p>
   <p>
+    key metric for budgeting and forecasting
+  </p>
+  <p>
+    derive a relationship between avg LT and the due date
   </p>
 </aside>

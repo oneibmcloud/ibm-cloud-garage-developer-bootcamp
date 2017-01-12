@@ -8,7 +8,9 @@
 
 <aside class="notes">
   <p>
+    analogous to our story map
   </p>
   <p>
+    card wall and backlog
   </p>
 </aside>

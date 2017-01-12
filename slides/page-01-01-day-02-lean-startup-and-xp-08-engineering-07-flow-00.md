@@ -18,4 +18,7 @@
   <p>
     easy to get started
   </p>
+  <p>
+    INTUITIVE - this is the easiest way to get started
+  </p>
 </aside>

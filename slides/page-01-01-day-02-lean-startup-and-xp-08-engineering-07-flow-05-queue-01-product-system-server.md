@@ -9,7 +9,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    there's the server
   </p>
 </aside>

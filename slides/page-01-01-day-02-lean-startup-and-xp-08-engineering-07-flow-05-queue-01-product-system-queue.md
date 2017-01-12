@@ -9,7 +9,12 @@
 
 <aside class="notes">
   <p>
+    there's the queue at witch new products arrive
   </p>
   <p>
+    products like gamestop, cemex, ford, mizuho -- aa.com coming up
+  </p>
+  <p>
+    your mileage may vary
   </p>
 </aside>

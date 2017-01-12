@@ -9,7 +9,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    a queing system has a queue at which new work arrives
   </p>
 </aside>

@@ -9,7 +9,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    we observe that we can model our product delivery also as in queing theory
   </p>
 </aside>

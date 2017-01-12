@@ -9,7 +9,12 @@
 
 <aside class="notes">
   <p>
+    the key observation is that the dev system is the constraint
   </p>
   <p>
+    as in Goldratt's Theory of Constraints
+  </p>
+  <p>
+    in layman's terms, the product system throughput is constrained by the dev queue
   </p>
 </aside>

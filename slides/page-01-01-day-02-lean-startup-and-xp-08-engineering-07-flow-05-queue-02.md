@@ -9,7 +9,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    we observe that XP is a subsystem of the whole product system
   </p>
 </aside>
