@@ -2,6 +2,10 @@
 import {replace, when, verify} from '../../test-helper';
 
 describe('unusual spending should', () => {
+  it('canary test shows the infrastructure works', () => {
+    true.should.equal(true);
+  });
+
   it('interact with fetch, high-spending and email', () => {
     const fetchDouble = replace('./fetch')['fetch'];
     const categorizeDouble = replace('./categorize')['categorize'];
