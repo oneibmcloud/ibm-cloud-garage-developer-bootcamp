@@ -5,9 +5,9 @@ const current = () => {
 
 const prior = () => {
   let buildLastMonthDateFrom = function (date) {
-    let monthDate = new Date(date);
-    monthDate.setMonth(monthDate.getMonth() - 1);
-    return monthDate;
+    let mutableMonthDate = new Date(date);
+    mutableMonthDate.setMonth(mutableMonthDate.getMonth() - 1);
+    return mutableMonthDate;
   };
 
   const lastMonthDate = buildLastMonthDateFrom(new Date());
