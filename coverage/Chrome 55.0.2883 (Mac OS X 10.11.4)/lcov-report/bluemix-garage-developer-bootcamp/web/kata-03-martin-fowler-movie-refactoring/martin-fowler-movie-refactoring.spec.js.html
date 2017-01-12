@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for bluemix-garage-developer-bootcamp/web/kata-03-martin-fowler-movie-refactoring/martin-fowler-movie-refactoring.spec.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">bluemix-garage-developer-bootcamp/web/kata-03-martin-fowler-movie-refactoring/</a> martin-fowler-movie-refactoring.spec.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>27/27</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>27/27</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {makeCustomerFrom} from './makeCustomerFrom';
+import {makeMovieFrom} from './makeMovieFrom';
+import {makeRentalFrom} from './makeRentalFrom';
+import {REGULAR, NEW_RELEASE, CHILDRENS} from './movie-codes';
+&nbsp;
+describe('martin fowler\'s movie refactoring example', () =&gt; {
+  const DAYS_RENTED_IS_1 = 1;
+  const DAYS_RENTED_IS_2 = 2;
+  const DAYS_RENTED_IS_3 = 3;
+&nbsp;
+  let customer;
+&nbsp;
+  let childrens1;
+  let childrens2;
+  let childrens3;
+&nbsp;
+  let newRelease1;
+  let newRelease2;
+  let newRelease3;
+&nbsp;
+  let regular1;
+  let regular2;
+  let regular3;
+&nbsp;
+  beforeEach( () =&gt; {
+    customer = makeCustomerFrom('Dummy Customer, Jr.');
+&nbsp;
+    childrens1 = makeMovieFrom('Childrens1', CHILDRENS);
+    childrens2 = makeMovieFrom('Childrens2', CHILDRENS);
+    childrens3 = makeMovieFrom('Childrens3', CHILDRENS);
+&nbsp;
+    newRelease1 = makeMovieFrom('New Release1', NEW_RELEASE);
+    newRelease2 = makeMovieFrom('New Release2', NEW_RELEASE);
+    newRelease3 = makeMovieFrom('New Release3', NEW_RELEASE);
+&nbsp;
+    regular1 = makeMovieFrom('Regular1', REGULAR);
+    regular2 = makeMovieFrom('Regular2', REGULAR);
+    regular3 = makeMovieFrom('Regular3', REGULAR);
+  });
+&nbsp;
+  it('is protected from regressions', () =&gt; {
+    let expected = 'Rental Record for Dummy Customer, Jr.\n' +
+        '\tChildrens1\t1.5\n' +
+        '\tChildrens2\t1.5\n' +
+        '\tChildrens3\t1.5\n' +
+        '\tRegular1\t2\n' +
+        '\tRegular2\t2\n' +
+        '\tRegular3\t3.5\n' +
+        '\tNew Release1\t3\n' +
+        '\tNew Release2\t6\n' +
+        '\tNew Release3\t9\n' +
+        'Amount owed is 30\n' +
+        'You earned 11 frequent renter points';
+&nbsp;
+    customer.addRental(makeRentalFrom(childrens1, DAYS_RENTED_IS_1));
+    customer.addRental(makeRentalFrom(childrens2, DAYS_RENTED_IS_2));
+    customer.addRental(makeRentalFrom(childrens3, DAYS_RENTED_IS_3));
+&nbsp;
+    customer.addRental(makeRentalFrom(regular1, DAYS_RENTED_IS_1));
+    customer.addRental(makeRentalFrom(regular2, DAYS_RENTED_IS_2));
+    customer.addRental(makeRentalFrom(regular3, DAYS_RENTED_IS_3));
+&nbsp;
+    customer.addRental(makeRentalFrom(newRelease1, DAYS_RENTED_IS_1));
+    customer.addRental(makeRentalFrom(newRelease2, DAYS_RENTED_IS_2));
+    customer.addRental(makeRentalFrom(newRelease3, DAYS_RENTED_IS_3));
+&nbsp;
+    (expected).should.equal(customer.statement());
+  });
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 09 2017 10:24:22 GMT-0800 (PST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -7,13 +7,80 @@
   "page-01-01-day-01-design-thinking-01.md"
   ],
   "page-01-01-day-02-lean-startup-and-xp-00.md",
-  [
     "page-01-01-day-02-lean-startup-and-xp-01.md",
-    "page-01-01-day-02-lean-startup-and-xp-02-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-03-what-is-organizational-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-04-culture-predicts-IT-performance.md",
-    "page-01-01-day-02-lean-startup-and-xp-05-what-is-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-06-what-is-culture.md"
+  [
+    "page-01-01-day-02-lean-startup-and-xp-01-culture.md",
+    "page-01-01-day-02-lean-startup-and-xp-01-culture-01-what-is-organizational-culture.md",
+    "page-01-01-day-02-lean-startup-and-xp-01-culture-02-culture-predicts-IT-performance.md",
+    "page-01-01-day-02-lean-startup-and-xp-01-culture-03-what-is-culture.md",
+    "page-01-01-day-02-lean-startup-and-xp-01-culture-04-what-is-culture.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-02-values.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-03-organizational-learning.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-04-teaming.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-05-product-community.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-06-lean-startup.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-07-xp.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-01-pairing.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-02-refactoring.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-03-tdd.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-04-ci.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-05-spikes.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-06-evolutionary-design.md"
+  ],
+  [
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-01-product-definition.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-02-product-delivery-planning.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-03-littles-law.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-04-lead-time.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-dev-system.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-dev-system-queue.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-dev-system-server.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-dev-system.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-product-system.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-product-system-queue.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-product-system-server.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-01-product-system.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-02.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-05-queue-03.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-01.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-02.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-03.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-04.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-05.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-06.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-07.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-08.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-09.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-10.md",
+    "page-01-01-day-02-lean-startup-and-xp-08-engineering-07-flow-06-forecast-11.md"
   ],
   "page-01-01-day-03-inception-00.md",
   [

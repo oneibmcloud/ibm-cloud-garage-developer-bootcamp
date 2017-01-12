@@ -1,0 +1,120 @@
+<svg width="1400" height="460" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="462" width="1402" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_17">
+   <ellipse ry="48" rx="50" id="svg_3" cy="273" cx="639" stroke-width="2" stroke="#007fff" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_4" y="279.338541" x="602.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">Feasible</text>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_13" y="304.338541" x="599.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">(enginnering)</text>
+  </g>
+  <g id="svg_18">
+   <ellipse ry="48" rx="50" id="svg_5" cy="217" cx="680" stroke-width="2" stroke="#ff7f00" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_6" y="219.166666" x="643" stroke-width="0" stroke="#007fff" fill="#ff7f00">Desirable</text>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_16" y="188.166666" x="656" stroke-width="0" stroke="#007fff" fill="#ff7f00">(design)</text>
+  </g>
+  <g id="svg_19">
+   <ellipse ry="48" rx="50" id="svg_1" cy="272" cx="719" stroke-width="1.5" stroke="#00bf00" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_2" y="279.338541" x="697.648438" stroke-width="0" stroke="#007fff" fill="#00bf00">Viable</text>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_15" y="305.338541" x="694.648438" stroke-width="0" stroke="#007fff" fill="#00bf00">(product)</text>
+  </g>
+  <g id="svg_32">
+   <ellipse stroke="#007fff" ry="27.999999" rx="45.000002" id="svg_29" cy="357.999999" cx="390.000002" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_30" y="363.338541" x="360.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">security</text>
+  </g>
+  <g id="svg_36">
+   <ellipse stroke="#007fff" ry="27.999999" rx="45.000002" id="svg_33" cy="219.999999" cx="395.000002" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_34" y="225.338541" x="365.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">support</text>
+  </g>
+  <g id="svg_40">
+   <ellipse stroke="#007fff" ry="27.999999" rx="31" id="svg_38" cy="396.999999" cx="507" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_39" y="402.338541" x="495.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">qa</text>
+  </g>
+  <g id="svg_41">
+   <ellipse stroke="#007fff" ry="27.999999" rx="31" id="svg_20" cy="208.999999" cx="499" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_21" y="214.338541" x="484.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">ops</text>
+  </g>
+  <g id="svg_45">
+   <ellipse stroke="#007fff" ry="27.999999" rx="60.5" id="svg_42" cy="285.999999" cx="340.5" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_43" y="291.338541" x="295.984375" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">architecture</text>
+  </g>
+  <line stroke="#007fff" fill="none" stroke-width="2" x1="601.000001" y1="314.000001" x2="532" y2="375.999999" id="svg_7" stroke-linejoin="null" stroke-linecap="null"/>
+  <line fill="none" stroke="#007fff" stroke-width="2" x1="592" y1="254" x2="530" y2="224" id="svg_8" stroke-linejoin="null" stroke-linecap="null"/>
+  <line fill="none" stroke="#007fff" stroke-width="2" x1="585" y1="284" x2="404" y2="286" id="svg_9" stroke-linejoin="null" stroke-linecap="null"/>
+  <line fill="none" stroke="#007fff" stroke-width="2" x1="586" y1="268" x2="428" y2="242" id="svg_10" stroke-linejoin="null" stroke-linecap="null"/>
+  <line stroke="#007fff" fill="none" stroke-width="2" x1="592" y1="298" x2="442.999996" y2="351" id="svg_11" stroke-linejoin="null" stroke-linecap="null"/>
+  <g id="svg_44">
+   <ellipse ry="27.999999" rx="34.500001" id="svg_35" cy="401.999999" cx="727.500001" stroke-width="2" fill="none" stroke="#5fbf00"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_37" y="407.338541" x="707.484375" stroke-width="0" stroke="#5fbf00" fill="#00bf00">sales</text>
+  </g>
+  <g id="svg_46">
+   <ellipse ry="27.999999" rx="46.500002" id="svg_25" cy="334.999999" cx="960.500002" stroke-width="2" fill="none" stroke="#5fbf00"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_26" y="340.338541" x="922.265625" stroke-width="0" stroke="#5fbf00" fill="#00bf00">marketing</text>
+  </g>
+  <g id="svg_47">
+   <ellipse ry="27.999999" rx="34.500001" id="svg_12" cy="203.999999" cx="865.500001" stroke-width="2" fill="none" stroke="#5fbf00"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_14" y="209.338541" x="847.273438" stroke-width="0" stroke="#5fbf00" fill="#00bf00">legal</text>
+  </g>
+  <g id="svg_48">
+   <ellipse stroke="#5fbf00" ry="27.999999" rx="30" id="svg_22" cy="393.999999" cx="847" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_23" y="399.338541" x="828.78125" stroke-width="0" stroke="#5fbf00" fill="#00bf00">PMO</text>
+  </g>
+  <g id="svg_63">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="31" id="svg_60" cy="42.999999" cx="679" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_61" y="48.338541" x="667.890625" stroke-width="0" stroke="#ff7f00" fill="#ff7f00">UX</text>
+  </g>
+  <g id="svg_67">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="31" id="svg_64" cy="47.999999" cx="922" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_65" y="53.338541" x="914.445313" stroke-width="0" stroke="#ff7f00" fill="#ff7f00">IX</text>
+  </g>
+  <g id="svg_71">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="31" id="svg_68" cy="55.999999" cx="426" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_69" y="61.338541" x="418.445313" stroke-width="0" stroke="#ff7f00" fill="#ff7f00">UI</text>
+  </g>
+  <g id="svg_73">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="60.5" id="svg_53" cy="132.499999" cx="930.5" stroke-width="2" fill="none"/>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_54" y="144.838541" x="884.703125" stroke-width="0" fill="#ff7f00">architecture</text>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_56" y="129.838541" x="886.507813" stroke-width="0" fill="#ff7f00">information</text>
+  </g>
+  <g id="svg_78">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="60.5" id="svg_74" cy="103.499999" cx="754.5" stroke-width="2" fill="none"/>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_75" y="115.838541" x="717.148438" stroke-width="0" fill="#ff7f00">discovery</text>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_76" y="100.838541" x="718.5" stroke-width="0" fill="#ff7f00">customer</text>
+  </g>
+  <g id="svg_83">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="60.5" id="svg_79" cy="103.499999" cx="597.5" stroke-width="2" fill="none"/>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_80" y="115.838541" x="566.40625" stroke-width="0" fill="#ff7f00">thinking</text>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_81" y="100.838541" x="571.71875" stroke-width="0" fill="#ff7f00">design</text>
+  </g>
+  <g id="svg_88">
+   <ellipse stroke="#ff7f00" ry="27.999999" rx="60.5" id="svg_84" cy="132.499999" cx="426.5" stroke-width="2" fill="none"/>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_85" y="144.838541" x="400.28125" stroke-width="0" fill="#ff7f00">testing</text>
+   <text stroke="#ff7f00" font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_86" y="129.838541" x="394.046875" stroke-width="0" fill="#ff7f00">usability</text>
+  </g>
+  <line fill="none" stroke-width="2" x1="632" y1="194.166665" x2="454.000007" y2="76.166665" id="svg_24" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#ff7f00"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="680" y1="164.166666" x2="679" y2="74.166666" id="svg_27" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="649" y1="174.166666" x2="620" y2="130.166666" id="svg_28" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="708" y1="174.166666" x2="727" y2="133.166666" id="svg_31" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="728" y1="191.166666" x2="896" y2="68.166666" id="svg_51" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="731" y1="204.166666" x2="869" y2="145.166666" id="svg_55" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <line fill="none" stroke="#ff7f00" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="626" y1="208.166666" x2="484" y2="144.166666" id="svg_57" stroke-linejoin="undefined" stroke-linecap="undefined"/>
+  <g id="svg_59">
+   <ellipse stroke="#5fbf00" ry="27.999999" rx="35.499998" id="svg_49" cy="231.999999" cx="963.499998" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_50" y="246.338541" x="936.843742" stroke-width="0" stroke="#5fbf00" fill="#00bf00">budget</text>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_58" y="227.338541" x="938.593742" stroke-width="0" stroke="#5fbf00" fill="#00bf00">c-level</text>
+  </g>
+  <line fill="none" stroke-width="2" x1="763" y1="243.166661" x2="829" y2="220.166661" id="svg_66" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#5fbf00"/>
+  <line fill="none" stroke-width="2" x1="774.999989" y1="271.166673" x2="922.999996" y2="243.166661" id="svg_70" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#5fbf00"/>
+  <line fill="none" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="769" y1="293.166703" x2="907" y2="328.1667" id="svg_72" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#5fbf00"/>
+  <line fill="none" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="756" y1="310.166667" x2="818.999998" y2="369.166669" id="svg_77" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#5fbf00"/>
+  <line fill="none" stroke-width="2" stroke-opacity="null" fill-opacity="null" x1="721" y1="325.166675" x2="725" y2="368.166678" id="svg_82" stroke-linejoin="undefined" stroke-linecap="undefined" stroke="#5fbf00"/>
+  <g id="svg_91">
+   <ellipse stroke="#007fff" ry="27.999999" rx="31" id="svg_87" cy="405.999999" cx="623" stroke-width="2" fill="none"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_89" y="411.338541" x="605.671875" fill-opacity="null" stroke-width="0" stroke="#007fff" fill="#007fff">R&amp;D</text>
+  </g>
+ </g>
+</svg>
