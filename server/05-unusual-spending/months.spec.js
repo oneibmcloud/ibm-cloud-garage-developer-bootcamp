@@ -2,22 +2,30 @@
 /*eslint no-native-reassign: "off"*/
 import {current, prior} from './months';
 
-describe('months should', () => {
-  let savedDate = Date;
+describe('months', () => {
+  const realDate = Date;
+
+  let fakeDate = function () {
+    return function () {return new realDate('01/11/2017');};
+  };
 
   beforeEach(() => {
-    Date = function() {return new savedDate('01/11/2017');};
+    Date = fakeDate();
   });
 
   afterEach(() => {
-    Date = savedDate;
+    Date = realDate;
   });
 
-  it('return the current year and month', () => {
+  it('canary test shows the infrastructure works', () => {
+    true.should.equal(true);
+  });
+
+  it('returns the current year and month', () => {
     current().should.deepEqual({year: 2017, month: 1});
   });
 
-  it('return the prior year and month', () => {
+  it('returns the prior year and month', () => {
     prior().should.deepEqual({year: 2016, month: 12});
   });
 });
