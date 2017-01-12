@@ -2,15 +2,19 @@
 
 #To Plan Product Delivery
 
-* **Provide an idea of when the product will be delivered.**
-
-* **Provide a quote of how much it will cost.**
+1. **Provide an idea of when the product will be delivered. _(forecast)_** <!-- .element: class="fragment" -->
+2. **Provide a quote of how much it will cost.  _(budget)_**              <!-- .element: class="fragment" -->
 
 
 
 <aside class="notes">
   <p>
+    we need to things 
   </p>
   <p>
+    we need to things 
+  </p>
+  <p>
+    we need to things 
   </p>
 </aside>
