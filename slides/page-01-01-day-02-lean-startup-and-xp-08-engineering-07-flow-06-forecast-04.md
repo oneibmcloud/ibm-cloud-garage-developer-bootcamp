@@ -10,7 +10,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    we substitute avg TH p for avg TH xp
   </p>
 </aside>

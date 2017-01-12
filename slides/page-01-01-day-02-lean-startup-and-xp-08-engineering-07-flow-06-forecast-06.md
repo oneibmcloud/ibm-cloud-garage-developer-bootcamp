@@ -10,7 +10,9 @@
 
 <aside class="notes">
   <p>
+    remember little's law?
   </p>
   <p>
+    av Throughput = av Work-in-Progress / av Lead Time
   </p>
 </aside>

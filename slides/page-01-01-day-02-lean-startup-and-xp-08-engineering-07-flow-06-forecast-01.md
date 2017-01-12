@@ -10,7 +10,9 @@
 
 <aside class="notes">
   <p>
+    again, the key observation is that the dev system is the constraint
   </p>
   <p>
+    this means that avg TH of product system == avg TH of xp 
   </p>
 </aside>

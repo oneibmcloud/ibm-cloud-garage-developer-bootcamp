@@ -10,7 +10,9 @@
 
 <aside class="notes">
   <p>
+    the rest is just elementary algebra 
   </p>
   <p>
+    we solve for T —— the time period (the delivery date, so-to-speak)
   </p>
 </aside>

@@ -10,7 +10,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    we apply little's law
   </p>
 </aside>

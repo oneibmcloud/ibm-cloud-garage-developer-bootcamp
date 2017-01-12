@@ -10,7 +10,6 @@
 
 <aside class="notes">
   <p>
-  </p>
-  <p>
+    finally, we invert and multiply
   </p>
 </aside>
