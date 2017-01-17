@@ -2,6 +2,10 @@
 node_modules
 
 dist
+server
+coverage
+.nyc_output
+test-helper-mongo.js
 *.log
 .sass-cache
 /index.html
