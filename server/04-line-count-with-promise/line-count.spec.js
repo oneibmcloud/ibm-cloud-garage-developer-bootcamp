@@ -2,7 +2,7 @@ import {lineCount} from './line-count';
 
 describe('the line-count-with-promise canary test', () => {
   it('shows the infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 
   describe('line count can be checked', () => {

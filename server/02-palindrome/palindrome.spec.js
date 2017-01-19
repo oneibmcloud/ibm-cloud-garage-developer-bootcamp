@@ -1,6 +1,6 @@
 describe('the palindrome canary test', () => {
   it('shows the infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 
   const isPalindrome = phrase => {
@@ -12,7 +12,7 @@ describe('the palindrome canary test', () => {
 
   describe('palindrome should be', () => {
     it('yes for mom', () => {
-      isPalindrome('mom').should.equal(true);
+      isPalindrome('mom').should.be.true();
     });
 
     it('no for dude', () => {
@@ -20,7 +20,7 @@ describe('the palindrome canary test', () => {
     });
 
     it('yes for mom mom', () => {
-      isPalindrome('mom mom').should.equal(true);
+      isPalindrome('mom mom').should.be.true();
     });
 
     it('no for mom dad', () => {

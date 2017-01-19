@@ -4,7 +4,7 @@ const {groupBy, keys} = R;
 
 describe('the leave-event-predicate canary test', () => {
   it('shows the test infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 });
 
@@ -18,7 +18,7 @@ function createLeaveEventPredicateFor(todaysDate) {
   };
 }
 
-describe('the three month view', () => {
+describe.only('the three month view', () => {
   describe('event predicate', () => {
     const september5thPredicate = createLeaveEventPredicateFor(new Date('2016-09-05'));
 
@@ -26,21 +26,21 @@ describe('the three month view', () => {
       september5thPredicate({
         startDate: '2016-08-29',
         endDate: '2016-09-04'
-      }).should.equal(false);
+      }).should.be.false();
     });
 
     it('includes events within 3 months range', () => {
       september5thPredicate({
         startDate: '2016-11-30',
         endDate: '4569-12-15'
-      }).should.equal(true);
+      }).should.be.true();
     });
 
     it('excludes events begun more than 3 months away', () => {
       september5thPredicate({
         startDate: '2016-12-02',
         endDate: '2016-12-05'
-      }).should.equal(false);
+      }).should.be.false()
     });
 
     it('excludes rejected events', () => {
@@ -48,7 +48,7 @@ describe('the three month view', () => {
         startDate: '2016-10-02',
         endDate: '2016-10-05',
         state: 'rejected'
-      }).should.equal(false);
+      }).should.be.false();
     });
   });
 });

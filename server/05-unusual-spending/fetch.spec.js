@@ -1,12 +1,12 @@
 /*eslint dot-notation: "off"*/
-import {replace, when} from '../../test-helper';
+import {replace, when, reset} from '../../test-helper';
 
 describe('fetch', () => {
   it('canary test shows the infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 
-   it('calls the API with current and prior months', () => {
+  it('calls the API with current and prior months', () => {
     const currentMonth = {year: 2016, month: 12};
     const priorMonth = {year: 2016, month: 11};
 
@@ -23,7 +23,6 @@ describe('fetch', () => {
     when(apiDouble('user-id', currentMonth)).thenResolve(currentMonthPayments);
     when(apiDouble('user-id', priorMonth)).thenResolve(priorMonthPayments);
 
-    return fetch('user-id').should.eventually.deepEqual(
-        [currentMonthPayments, priorMonthPayments]);
+    return fetch('user-id').should.eventually.deepEqual([currentMonthPayments, priorMonthPayments]);
   });
 });

@@ -18,7 +18,7 @@ describe('months', () => {
   });
 
   it('canary test shows the infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 
   it('returns the current year and month', () => {

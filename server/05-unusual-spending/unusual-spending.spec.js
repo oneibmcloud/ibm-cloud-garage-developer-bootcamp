@@ -1,9 +1,9 @@
 /*eslint dot-notation: "off"*/
-import {replace, when, verify} from '../../test-helper';
+import {replace, when, verify, reset} from '../../test-helper';
 
 describe('unusual spending should', () => {
   it('canary test shows the infrastructure works', () => {
-    true.should.equal(true);
+    true.should.be.true();
   });
 
   it('interact with fetch, high-spending and email', () => {

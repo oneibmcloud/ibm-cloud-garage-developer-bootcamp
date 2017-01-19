@@ -1,4 +1,4 @@
-import payments from './payments';
+import payments from './payments-fake-data';
 
 let count = 0;
 

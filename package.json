@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "esw -f simple-detail web server",
     "lint:watch": "npm run lint -- --watch",
-    "spec": "nyc --reporter=lcov --reporter=text mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
-    "spec:watch": "npm run spec -- --watch",
+    "spec": "nyc --reporter=lcov --reporter=text --require babel-core/register mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
+    "spec:watch": "nodemon --exec 'npm run spec'",
     "tdd": "npm run spec:watch",
     "test": "karma start karma.conf.js"
   },
@@ -32,10 +32,13 @@
     "fs-promise": "1.0.0",
     "immutable": "3.8.1",
     "moment": "2.17.1",
+    "mongodb": "https://registry.npmjs.org/mongodb/-/mongodb-2.2.16.tgz",
+    "mongoose": "4.7.6",
     "ramda": "0.22.1",
     "ramda-cli": "1.2.2"
   },
   "devDependencies": {
+    "babel-cli": "6.18.0",
     "babel-eslint": "7.1.1",
     "babel-istanbul": "0.11.0",
     "babel-loader": "6.2.8",
@@ -66,6 +69,7 @@
     "karma-webpack": "1.8.0",
     "mocha": "3.2.0",
     "node-libs-browser": "2.0.0",
+    "nodemon": "1.11.0",
     "nyc": "10.0.0",
     "raw-loader": "0.5.1",
     "script-loader": "0.7.0",
