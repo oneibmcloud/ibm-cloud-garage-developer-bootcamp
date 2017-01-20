@@ -18,7 +18,7 @@ function createLeaveEventPredicateFor(todaysDate) {
   };
 }
 
-describe.only('the three month view', () => {
+describe('the three month view', () => {
   describe('event predicate', () => {
     const september5thPredicate = createLeaveEventPredicateFor(new Date('2016-09-05'));
 
