@@ -35,7 +35,8 @@
     "mongodb": "https://registry.npmjs.org/mongodb/-/mongodb-2.2.16.tgz",
     "mongoose": "4.7.6",
     "ramda": "0.22.1",
-    "ramda-cli": "1.2.2"
+    "ramda-cli": "1.2.2",
+    "rxjs": "5.0.3"
   },
   "devDependencies": {
     "babel-cli": "6.18.0",
