@@ -20,17 +20,23 @@ const Left = x =>
 const fromNullable = x =>
     x != null ? Right(x) : Left(null);
 
-const getPort = () =>{
+const tryCatch = f => {
   try {
-    const s = fs.readFileSync('server/08-functional/config.json');
-    const config = JSON.parse(s);
-    return config.port;
+    return Right( f() );
   } catch (e) {
-    return 3000;
+    return Left(e);
   }
 };
 
-describe('', () => {
+const getPort = () =>
+  tryCatch(() => fs.readFileSync('server/08-functional/config.json'))
+  .map(c => JSON.parse(c))
+  .fold(
+    e => 3000,
+    c => c.port
+  );
+
+describe('composable error handling', () => {
   it('getPort', () => {
     getPort().should.equal(8888);
   });
