@@ -6,7 +6,7 @@ root = true
 # all files
 [*]
 charset = utf-8
-continuation_indent_size = 4
+continuation_indent_size =0
 end_of_line = lf
 insert_final_newline = true
 indent_style = space
