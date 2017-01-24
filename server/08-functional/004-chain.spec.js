@@ -1,34 +1,8 @@
 /*eslint no-shadow: "off"*/
 /*eslint no-unused-vars: "off"*/
-/*eslint eqeqeq: "off"*/
+
+import {Right, Left, tryCatch} from './functional-types';
 import fs from 'fs';
-
-const Right = x =>
-({
-  chain: f => f(x),
-  map: f => Right(f(x)),
-  fold: (l, r) => r(x),
-  inspect: () => `Right(${x})`
-});
-
-const Left = x =>
-({
-  chain: f => Left(x),
-  map: f => Left(x),
-  fold: (l, r) => l(x),
-  inspect: () => `Left(${x})`
-});
-
-const fromNullable = x =>
-    x != null ? Right(x) : Left(null);
-
-const tryCatch = f => {
-  try {
-    return Right( f() );
-  } catch (e) {
-    return Left(e);
-  }
-};
 
 describe('composable error handling', () => {
   it('getPort', () => {

@@ -1,20 +1,8 @@
 /*eslint no-shadow: "off"*/
 /*eslint no-unused-vars: "off"*/
-/*eslint eqeqeq: "off"*/
 
-const Right = x =>
-({
-  map: f => Right(f(x)),
-  fold: (l, r) => r(x),
-  inspect: () => `Right(${x})`
-});
+import {Right, Left, fromNullable} from './functional-types';
 
-const Left = x =>
-({
-  map: f => Left(x),
-  fold: (l, r) => l(x),
-  inspect: () => `Left(${x})`
-});
 
 const findColor = name =>
     ({red: '#ff4444', blue: '#3b5998', yellow: '#fff68f'}[name]);
@@ -24,13 +12,24 @@ const findEitherColor = name => {
   return found ? Right(found) : Left(null);
 };
 
-const fromNullable = x =>
-    x != null ? Right(x) : Left(null);
-
 const findNullableColor = name =>
     fromNullable({red: '#ff4444', blue: '#3b5998', yellow: '#fff68f'}[name]);
 
 describe('either', () => {
+  it('right runs the mapped function and puts result back in the box', () => {
+    Right(2)
+        .map(x => x + 1)
+        .map(x => x / 2)
+        .inspect().should.equal('Right(1.5)');
+  });
+
+  it('left does not run the mapped function and just puts x back in the box', () => {
+    Left(2)
+        .map(x => x + 1)
+        .map(x => x / 2)
+        .inspect().should.equal('Left(2)');
+  });
+
   it('right', () => {
     Right(2)
         .map(x => x + 1)

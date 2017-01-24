@@ -1,11 +1,6 @@
 /*eslint no-shadow: "off"*/
 
-const Box = x =>
-({
-  map: f => Box(f(x)),
-  fold: f => f(x),
-  inspect: () => `Box(${x})`
-});
+import {Box} from './functional-types';
 
 const moneyToFloat = s =>
  Box(s.replace(/\$/g, ''))
