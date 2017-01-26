@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "esw -f simple-detail web server",
     "lint:watch": "npm run lint -- --watch",
-    "spec": "nyc --reporter=lcov --reporter=text --require babel-core/register mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
+    "spec": "nyc --reporter=lcov --reporter=text --require babel-register mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
     "spec:watch": "nodemon --exec 'npm run spec'",
     "tdd": "npm run spec:watch",
     "test": "karma start karma.conf.js"
