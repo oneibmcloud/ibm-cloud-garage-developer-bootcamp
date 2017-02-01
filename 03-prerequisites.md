@@ -4,7 +4,7 @@
 
 * Sign up for a trial account at [Sauce Labs](https://saucelabs.com/signup/trial/).
 
-* Register for Agile eLearning at [Industrial Logic](https://elearning.industriallogic.com/gh/submit?Action=FillRegistrationAction).
+* Register for Agile eLearning at [Industrial Logic](http://industriallogic.com/customshop/cbf44511d041dc6d1dd73cc0c033122c).
 
 * Study all 6 units of the Industrial Logic eCurriculum [Testing and Refactoring Box Set](https://elearning.industriallogic.com/gh/submit?Action=AlbumContentsAction&album=trw&devLanguage=Java) (for Java).
 
