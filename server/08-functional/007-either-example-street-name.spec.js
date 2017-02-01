@@ -1,4 +1,3 @@
-import {Right, Left} from './functional-types';
 /*eslint no-shadow: "off"*/
 
 describe('either example collection', () => {

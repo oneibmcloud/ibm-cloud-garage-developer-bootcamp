@@ -1,5 +1,5 @@
 /*eslint dot-notation: "off"*/
-import {replace, when, verify, reset} from '../../test-helper';
+import {replace, when, verify} from '../../test-helper';
 
 describe('unusual spending should', () => {
   it('canary test shows the infrastructure works', () => {

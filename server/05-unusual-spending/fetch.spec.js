@@ -1,5 +1,5 @@
 /*eslint dot-notation: "off"*/
-import {replace, when, reset} from '../../test-helper';
+import {replace, when} from '../../test-helper';
 
 describe('fetch', () => {
   it('canary test shows the infrastructure works', () => {

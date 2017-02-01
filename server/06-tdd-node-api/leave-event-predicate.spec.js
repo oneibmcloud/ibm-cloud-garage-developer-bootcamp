@@ -40,7 +40,7 @@ describe('the three month view', () => {
       september5thPredicate({
         startDate: '2016-12-02',
         endDate: '2016-12-05'
-      }).should.be.false()
+      }).should.be.false();
     });
 
     it('excludes rejected events', () => {
