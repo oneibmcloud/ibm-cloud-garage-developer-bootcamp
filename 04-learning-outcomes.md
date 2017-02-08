@@ -1,5 +1,7 @@
 # Learning Outcomes
 
+* The Significance of Empathy for the User in Development
+
 * The Meaning of Being Agile.
 
 * How Agility Works.
