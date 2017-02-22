@@ -1,6 +1,6 @@
 # Facilities
 
-#####We require the following facilities to ensure a successful workshop experience (see figure 1):
+#####We require the following facilities to ensure a successful bootcamp experience (see figure 1):
 
 * [Large Format Display](https://www.cdw.com/shop/search/hubs/Monitors-Projectors/Large-Format-Displays/d8.aspx)
 * Instructor’s Podium
@@ -27,4 +27,4 @@
 
 <br>
 
-__*We will work with you to ensure that the facilities and logistics are configured properly for a successful workshop.*__
+__*We will work with you to ensure that the facilities and logistics are configured properly for a successful bootcamp.*__

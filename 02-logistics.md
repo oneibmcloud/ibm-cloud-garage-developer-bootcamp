@@ -19,5 +19,5 @@
 
 <br>
 
-__*We will work with you to ensure that the facilities and logistics are configured properly for a successful workshop.*__
+__*We will work with you to ensure that the facilities and logistics are configured properly for a successful bootcamp.*__
 
