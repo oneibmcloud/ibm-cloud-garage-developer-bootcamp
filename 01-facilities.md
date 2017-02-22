@@ -23,3 +23,8 @@
 <p align="center">
   <b>figure 1</b>
 </p>
+
+
+<br>
+
+__*We will work with you to ensure that the facilities and logistics are configured properly for a successful workshop.*__
