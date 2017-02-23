@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##what values are agile? 
+##what are the values of agility? 
 
 <br>
 _**[(refer to the westrum typology)](#/westrum-typology)**_
