@@ -1,8 +1,7 @@
-<!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="top"  -->
+<!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
 ##the responsibilities of product
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/502ILHjX9EE" frameborder="0" allowfullscreen></iframe>
+<video width="560" height="315" data-autoplay src="resources/agile-product-ownership-in-a-nutshell.mp4"></video>
 
 <aside class="notes">
   ask how
