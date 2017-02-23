@@ -3,11 +3,9 @@
 ##what values are agile? 
 
 <br>
-_**[(refer to the westrum typology)](https://pages.github.ibm.com/bluemix-enablement/bluemix-garage-developer-bootcamp/#/westrum-typology)**_
+_**[(refer to the westrum typology)](#/westrum-typology)**_
 
 
 <aside class="notes">
-  discuss the results of the survey
-
-_**[(refer to the westrum typology)](https://goo.gl/forms/duaclFVGL08D8RKc2)**_
+  ask for agile values
 s</aside>
