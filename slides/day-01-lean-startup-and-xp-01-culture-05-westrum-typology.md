@@ -1,4 +1,4 @@
-<!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
+<!-- .slide: id="westrum-typology" data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
 ##the westrum typology
 

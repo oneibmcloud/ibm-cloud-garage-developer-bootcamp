@@ -2,8 +2,8 @@
 
 ##Lean Startup and XP
 - - -
-* **The Culture of Agility.**
-* **The Values of Agility.**  <!-- .element: style="color:#e0dfe4" -->
+* **The Culture of Agility.** <!-- .element: style="color:#e0dfe4" -->
+* **The Values of Agility.**  
 * **The Product Community:  Shared Responsibilities.**  <!-- .element: style="color:#e0dfe4" -->
 * **Lean Startup.**  <!-- .element: style="color:#e0dfe4" -->
 * **Extreme Programming [XP].**  <!-- .element: style="color:#e0dfe4" -->

@@ -4,11 +4,10 @@
 - - -
 * **The Culture of Agility.**
 * **The Values of Agility.**
-* **Organizational Learning.**
-* **Teaming and Re-Teaming.**
 * **The Product Community:  Shared Responsibilities.**
 * **Lean Startup.**
 * **Extreme Programming [XP].**
+* **Simulation - Teaming.**
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
 * **The Engineering Practices.**
   * **Pair Programming.**
