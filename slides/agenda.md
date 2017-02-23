@@ -1,9 +1,9 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##agenda
+##Agenda
 - - -
-* **Day 01:&nbsp;&nbsp;&nbsp;Design Thinking** 
-* **Day 02:&nbsp;&nbsp;&nbsp;Lean Startup and Extreme Programming**
+* **Day 01:&nbsp;&nbsp;&nbsp;Lean Startup and Extreme Programming**
+* **Day 02:&nbsp;&nbsp;&nbsp;Design Thinking** 
 * **Day 03:&nbsp;&nbsp;&nbsp;Inception Workshop**
 * **Day 04:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to Refactoring**
 * **Day 05:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to TDD**

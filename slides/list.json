@@ -1,19 +1,26 @@
 [
   "index.md",
-  "page-00-00-title.md",
-  "page-00-01-agenda.md",
+  "cover.md",
+  "agenda.md",
+  [
+    "day-01-lean-startup-and-xp.md",
+    "day-01-lean-startup-and-xp-00-agenda.md",
+    "day-01-lean-startup-and-xp-01-culture.md",
+    "day-01-lean-startup-and-xp-01-culture-01-what-is-organizational-culture.md",
+    "day-01-lean-startup-and-xp-01-culture-02-definition.md",
+    "day-01-lean-startup-and-xp-01-culture-03-culture-predicts-IT-performance.md",
+    "day-01-lean-startup-and-xp-01-culture-04-survey.md",
+    "day-01-lean-startup-and-xp-01-culture-05-westrum-typology.md",
+    "day-01-lean-startup-and-xp-01-culture-06-can-change-culture.md",
+    "day-01-lean-startup-and-xp-01-culture-07-how-do-we-change-culture.md",
+    "day-01-lean-startup-and-xp-01-culture-08-IT-performance-predicts-culture.md",
+    "day-01-lean-startup-and-xp-01-culture-09-how-to-measure-it-performance.md",
+    "day-01-lean-startup-and-xp-01-culture-10-a-virtuous-cycle.md",
+    "day-01-lean-startup-and-xp-01-culture-11-how-do-we-improve-IT-performance.md"
+  ],
   [
   "page-01-01-day-01-design-thinking-00.md",
   "page-01-01-day-01-design-thinking-01.md"
-  ],
-  "page-01-01-day-02-lean-startup-and-xp-00.md",
-    "page-01-01-day-02-lean-startup-and-xp-01.md",
-  [
-    "page-01-01-day-02-lean-startup-and-xp-01-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-01-culture-01-what-is-organizational-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-01-culture-02-culture-predicts-IT-performance.md",
-    "page-01-01-day-02-lean-startup-and-xp-01-culture-03-what-is-culture.md",
-    "page-01-01-day-02-lean-startup-and-xp-01-culture-04-what-is-culture.md"
   ],
   [
     "page-01-01-day-02-lean-startup-and-xp-02-values.md"
