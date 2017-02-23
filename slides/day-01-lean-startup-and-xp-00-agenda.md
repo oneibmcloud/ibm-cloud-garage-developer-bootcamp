@@ -13,9 +13,9 @@
   * **Pair Programming.**
   * **Refactoring.**
   * **Test-Driven Development [TDD].**
+  * **Evolutionary Design.**
   * **Continuous Integration/Continuous Delivery.**
   * **Spikes/Experiments.**
-  * **Evolutionary Design.**
   * **The Flow of Value.**
 
 <aside class="notes">

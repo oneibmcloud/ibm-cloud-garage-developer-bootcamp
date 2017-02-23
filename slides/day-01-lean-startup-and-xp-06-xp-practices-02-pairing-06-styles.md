@@ -1,6 +1,11 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
 ##pairing styles
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 |||
 |-|-|

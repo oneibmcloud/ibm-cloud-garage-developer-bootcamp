@@ -11,9 +11,9 @@
   * **Pair Programming.**  <!-- .element: style="color:#e0dfe4" -->
   * **Refactoring.**  <!-- .element: style="color:#e0dfe4" -->
   * **Test-Driven Development [TDD].**  <!-- .element: style="color:#e0dfe4" -->
+  * **Evolutionary Design.**  <!-- .element: style="color:#e0dfe4" -->
   * **Continuous Integration/Continuous Delivery.**  <!-- .element: style="color:#e0dfe4" -->
   * **Spikes/Experiments.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Evolutionary Design.**  <!-- .element: style="color:#e0dfe4" -->
   * **The Flow of Value.**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
