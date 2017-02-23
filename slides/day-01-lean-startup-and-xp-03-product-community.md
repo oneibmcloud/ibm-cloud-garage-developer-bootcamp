@@ -5,7 +5,7 @@
 * **The Culture of Agility.** <!-- .element: style="color:#e0dfe4" -->
 * **The Values of Agility.**  <!-- .element: style="color:#e0dfe4" -->  
 * **The Product Community:  Shared Ownership.**
-* **Simulation - Teaming.**  <!-- .element: style="color:#e0dfe4" -->
+* **The Product Development Team.**  <!-- .element: style="color:#e0dfe4" -->
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
 * **The XP Practices.**  <!-- .element: style="color:#e0dfe4" -->
   * **Pair Programming.**  <!-- .element: style="color:#e0dfe4" -->
