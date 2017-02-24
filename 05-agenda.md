@@ -1,18 +1,13 @@
 # Agenda
 
-####Day 1:  Design Thinking
-
-- - - -
-
-####Day 2:  Lean Startup and Extreme Programming
+####Day 1:  Lean Startup and Extreme Programming
 
 * **The Culture of Agility.**
 * **The Values of Agility.**
-* **Organizational Learning.**
-* **Teaming and Re-Teaming.**
-* **The Product Community:  Shared Roles, Responsibilities and Risks.**
+* **The Product Community: Shared Responsibilities.**
 * **Lean Startup.**
 * **Extreme Programming [XP].**
+* **Simulation — Teaming.**
 
 **Lunch**
 
@@ -20,11 +15,15 @@
   * **Pair Programming**
   * **Refactoring**
   * **Test-Driven Development [TDD]**
+  * **Evolutionary Design**
   * **Continuous Integration/Continuous Delivery**
   * **Spikes/Experiments**
-  * **Evolutionary Design**
   * **The Flow of Value**
   
+- - - -
+
+####Day 2:  Design Thinking
+
 - - - -
 
 ####Day 3:  Inception Workshop
