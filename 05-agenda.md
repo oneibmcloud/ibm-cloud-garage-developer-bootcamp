@@ -17,7 +17,7 @@
   * **Test-Driven Development [TDD]**
   * **Evolutionary Design**
   * **Continuous Integration/Continuous Delivery**
-  * **Spikes/Experiments**
+  * **Spikes-are-Experiments**
   * **The Flow of Value**
   
 - - - -
