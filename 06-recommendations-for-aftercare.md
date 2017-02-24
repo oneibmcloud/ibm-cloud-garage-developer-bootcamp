@@ -15,4 +15,5 @@ toward the practices and their ability as a quick study.**_
 * _**New garage hires will be interned by their new teams.**_
 
 * _**In lieu of an internship, it is our strong recommendation that client 
-engagements be coached by an experienced garager.**_
+engagements on which new bootcamp graduates participate be coached by an 
+experienced garager.**_
