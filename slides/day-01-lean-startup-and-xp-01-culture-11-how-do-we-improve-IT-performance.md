@@ -3,8 +3,9 @@
 ##how do we improve IT performance?
   
 ###_Lean Startup_ <!-- .element: class="fragment"; style="color:maroon" -->
-###_and_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_Extreme Programming_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_and_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_DevOps_ <!-- .element: class="fragment"; style="color:maroon" -->
 
 <aside class="notes">
   <p>

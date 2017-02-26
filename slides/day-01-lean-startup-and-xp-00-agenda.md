@@ -4,18 +4,16 @@
 - - -
 * **The Culture of Agility.**
 * **The Values of Agility.**
-* **The Product Community:  Shared Responsibilities.**
-* **Lean Startup.**
-* **Extreme Programming [XP].**
-* **Simulation - Teaming.**
+* **The Product Community:  Shared Ownership.**
+* **The Product Development Team.**
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **The Engineering Practices.**
+* **The XP Practices.**
   * **Pair Programming.**
   * **Refactoring.**
   * **Test-Driven Development [TDD].**
   * **Evolutionary Design.**
   * **Continuous Integration/Continuous Delivery.**
-  * **Spikes/Experiments.**
+  * **Spikes-are-Experiments.**
   * **The Flow of Value.**
 
 <aside class="notes">
