@@ -1,0 +1,37 @@
+Person = makoto | (event participant) | | 370,100
+Person = saburoh | (event host) | | 1520,115
+Person = keisuke | (event organizer) | | 2585,115
+
+SoftwareSystem = Tokyo Blockchain Garage Event Planner | Facilitates Event Planning via Transactions Denominated in Mizuho Money [M-Money] | |
+SoftwareSystem = Bluemix Hyper Ledger | Logs Financial Transactions in the Blockchain | External | 2495,1990
+SoftwareSystem = Messaging | Sends Messages | External | 285,1990
+
+Container = Tokyo Blockchain Garage Event Planner | Web Application | authenticate- orchestrate event planning and payment | angularJS v1.5.x | angular |
+Container = Tokyo Blockchain Garage Event Planner | Service Broker | transacts payments- sends confirmations- stores event data | node.js v6.3.0 | node | 1380,1990
+
+Component = Web Application | api | dispatch service calls | json/https | | 1380,1440
+Component = Web Application | event planner | orchestrate event plan | json | | 1385,725
+Component = Web Application | billing | create invoices and payment distributions | json | | 2500,725
+Component = Web Application | payment | sends messages | json/https | | 290,725
+
+Relationship = makoto | receives/pays invoice | https | payment | |
+Relationship = saburoh | sends invoice- sends loyalty points | https | payment | |
+Relationship = keisuke | pays invoice- receives loyalty points | https | payment | |
+Relationship = keisuke | plans event | https | event planner | |
+Relationship = keisuke | allocates payment | https | billing | |
+
+Relationship = api | delegates to | https | Service Broker | |
+Relationship = event planner | delegates to | json | api | |
+Relationship = payment | delegates to | json | api | |
+Relationship = billing | delegates to | json | api | |
+
+Relationship = Service Broker | sends notifications | smtp | Messaging | |
+Relationship = Service Broker | logs financial transactions to ledger | gRPC | Bluemix Hyper Ledger | |
+
+Diagram = Component | Web Application | authenticate- orchestrate event planning and payment | Letter_Landscape
+
+ElementStyle = Person    |  300 |  200 | #5995d7 | #ffffff |  30 | Person
+ElementStyle = Component |      |      | #5995d7 | #ffffff |     | Ellipse
+ElementStyle = Container |      |      | #d85771 |         |     |
+
+RelationshipStyle = Relationship |  5 |         |       |            |  36 |  300 |  40

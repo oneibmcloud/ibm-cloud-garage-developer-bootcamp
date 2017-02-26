@@ -1,0 +1,29 @@
+SoftwareSystem = Tokyo Blockchain Garage Event Planner | Facilitates Event Planning via Transactions Denominated in Mizuho Money [M-Money] | |
+SoftwareSystem = Bluemix Hyper Ledger | Logs Financial Transactions in the Blockchain | External | 2500,1990
+SoftwareSystem = Messaging | Sends Messages | External | 285,1990
+
+Container = Tokyo Blockchain Garage Event Planner | Web Application | authenticate- orchestrate event planning and payment | angularJS v1.5.x | angular | 2455,95
+Container = Tokyo Blockchain Garage Event Planner | Service Broker | transacts payments- sends confirmations- stores event data | node.js v6.3.0 | node |
+
+Component = Service Broker | api | dispatch service calls | json/https | | 2455,600
+Component = Service Broker | event planner | orchestrate event plan | json | | 285,600
+Component = Service Broker | bank | transact payment- send confirmation | json | | 1330,1445
+Component = Service Broker | hyperledger connector | dispatches create, debit, credit account | json | | 2455,1445
+Component = Service Broker | messaging connector | sends messages | json/https | | 285,1445
+
+Relationship = Web Application | delegates to | https | api | |
+Relationship = api | delegates to | json | bank | |
+Relationship = api | delegates to | json | event planner | |
+Relationship = event planner | delegates to | json | messaging connector | |
+Relationship = bank | delegates to | json | event planner | |
+Relationship = bank | delegates to | json | hyperledger connector | |
+Relationship = bank | delegates to | json | messaging connector | |
+Relationship = messaging connector | sends notifications | smtp | Messaging | |
+Relationship = hyperledger connector | logs financial transactions to ledger | gRPC | Bluemix Hyper Ledger | |
+
+Diagram = Component | Service Broker | transacts payments- sends confirmations- stores event data | Letter_Landscape
+
+ElementStyle = Component |      |      | #5995d7 | #ffffff |     | Ellipse
+ElementStyle = Container |      |      | #d85771 |         |     |
+
+RelationshipStyle = Relationship |  5 |      |      |      |  36 |  300 |  40
