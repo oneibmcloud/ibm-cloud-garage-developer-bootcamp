@@ -4,11 +4,24 @@
 - - -
 * **testers (QA)**
   * **have intial 3 test cases (in yellow)**  <!-- .element: style="color:maroon" -->
-  * **have copy of release 0 requirements (in green)**  <!-- .element: style="color:maroon" -->
-  * **submit input on computer input tray (in white)**  <!-- .element: style="color:maroon" -->
-  * **receive output from computer output tray (in white)**  <!-- .element: style="color:maroon" -->
+  * **have copy of release 0 requirements (in blue)**  <!-- .element: style="color:maroon" -->
+  * **submit input (in white) on computer input tray**  <!-- .element: style="color:maroon" -->
+  * **receive output (in white) from computer output tray**  <!-- .element: style="color:maroon" -->
   * **compare expected (in yellow) to actual (in white)**  <!-- .element: style="color:maroon" -->
   * **capture bugs (in red)**  <!-- .element: style="color:maroon" -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <aside class="notes">
   <p>

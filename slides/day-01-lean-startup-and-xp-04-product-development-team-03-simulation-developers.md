@@ -3,10 +3,29 @@
 ##WordCount, Inc.
 - - -
 * **developers**
-  * **turn requirements into code (in green)**  <!-- .element: style="color:maroon" -->
+  * **turn requirements (in blue) into code (in green)**  <!-- .element: style="color:maroon" -->
   * **install code on computer (in code installation tray)**  <!-- .element: style="color:maroon" -->
   * **have code pre-installed on computer (8 cards)**  <!-- .element: style="color:maroon" -->
   * **have copy of release 0 requirements (in green)**  <!-- .element: style="color:maroon" -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <aside class="notes">
   <p>
