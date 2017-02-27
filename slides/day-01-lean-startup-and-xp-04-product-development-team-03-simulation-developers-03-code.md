@@ -2,10 +2,11 @@
 
 ##WordCount, Inc.
 - - -
-* **makes software that counts words**
+* **code**
 
-<br/>
-<br/>
+<img class="plain" width="70%" height="70%" src="resources/teaming-simulation/code-03.png" />
+  
+
 <br/>
 <br/>
 <br/>

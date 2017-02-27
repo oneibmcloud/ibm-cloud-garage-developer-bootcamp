@@ -2,10 +2,10 @@
 
 ##WordCount, Inc.
 - - -
-* **makes software that counts words**
+* **requirements**
 
-<br/>
-<br/>
+<img class="plain" width="70%" height="70%" src="resources/teaming-simulation/req-04.png" />
+  
 <br/>
 <br/>
 <br/>

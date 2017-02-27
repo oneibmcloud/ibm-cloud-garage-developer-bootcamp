@@ -2,16 +2,11 @@
 
 ##WordCount, Inc.
 - - -
-* **makes software that counts words**
+* **test cases**
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<img class="plain" width="70%" height="70%" src="resources/teaming-simulation/test-01.png" />
+
+
 <br/>
 <br/>
 <br/>
