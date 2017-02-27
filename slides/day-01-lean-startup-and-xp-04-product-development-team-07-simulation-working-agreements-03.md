@@ -4,6 +4,7 @@
 - - -
 * **working agreements**
 
+
 <img class="plain" src="resources/teaming-simulation/working-agreements-03.png" />
 
 <br/>

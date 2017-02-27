@@ -2,9 +2,10 @@
 
 ##WordCount, Inc.
 - - -
-* **roadmap**
+* **working agreements**
 
-<img class="plain" src="resources/teaming-simulation/working-agreements-01.png" />
+
+<img class="plain" height="40%" width="40%" src="resources/teaming-simulation/dev-status-report.png" />
 
 <br/>
 <br/>
@@ -23,4 +24,3 @@
   <p>
   </p>
 </aside>
-
