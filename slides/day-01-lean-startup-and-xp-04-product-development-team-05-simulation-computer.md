@@ -4,6 +4,7 @@
 - - -
 * **computer**
   * **executes code (in green)**  <!-- .element: style="color:maroon" -->
+  * **throws a catastrophic error when it can't read a word (in purple)**  <!-- .element: style="color:maroon" -->
 <br/>
 <br/>
 <br/>
