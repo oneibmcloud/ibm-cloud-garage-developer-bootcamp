@@ -2,8 +2,8 @@
 
 ##agenda
 - - -
-* **Day 01:&nbsp;&nbsp;&nbsp;Design Thinking**  <!-- .element: style="color:#e0dfe4" --> 
-* **Day 02:&nbsp;&nbsp;&nbsp;Lean Startup and Extreme Programming**  <!-- .element: style="color:#e0dfe4" --> 
+* **Day 01:&nbsp;&nbsp;&nbsp;Lean Startup and Extreme Programming**  <!-- .element: style="color:#e0dfe4" --> 
+* **Day 02:&nbsp;&nbsp;&nbsp;Design Thinking**  <!-- .element: style="color:#e0dfe4" --> 
 * **Day 03:&nbsp;&nbsp;&nbsp;Inception Workshop**
 * **Day 04:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to Refactoring**  <!-- .element: style="color:#e0dfe4" -->
 * **Day 05:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to TDD**   <!-- .element: style="color:#e0dfe4" -->
