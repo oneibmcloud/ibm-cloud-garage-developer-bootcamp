@@ -5,7 +5,7 @@
 * **Purpose.**    <!-- .element: style="color:#e0dfe4" -->
 * **Discovering Customer Value.** <!-- .element: style="color:#e0dfe4" -->
 * **Story Mapping:  Finding the Shape of the Product.** <!-- .element: style="color:#e0dfe4" -->  
-* _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
+* _**Lunch**_   <!-- .element: style="color:#e0dfe4" -->
 * **Story Mapping (cont'd).**  <!-- .element: style="color:#e0dfe4" -->
 * **Agile Architecture.** <!-- .element: style="color:#e0dfe4" -->  
 * **Assumption Mapping to Assess Risk.** <!-- .element: style="color:#e0dfe4" -->  
