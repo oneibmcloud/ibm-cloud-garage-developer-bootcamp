@@ -16,6 +16,10 @@ _**customer invests**_  <!-- .element: class="fragment"; style="color:maroon" --
 
 _**(in options)**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
+_**stories are**_  <!-- .element: class="fragment"; style="color:maroon" -->
+
+_**(options for customer to invest)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+
 
 <br/>
 <br/>

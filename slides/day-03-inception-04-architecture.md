@@ -10,6 +10,7 @@
 * **Agile Architecture.**  
 * **Assumption Mapping to Assess Risk.**  <!-- .element: style="color:#e0dfe4" -->
 * **Release Planning.**  <!-- .element: style="color:#e0dfe4" -->
+* **Alignment.**    <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
   We'll conduct a product inception to immerse ourselves in the practice and

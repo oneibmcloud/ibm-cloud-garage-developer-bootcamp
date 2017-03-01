@@ -10,6 +10,7 @@
 * **Agile Architecture.**
 * **Assumption Mapping to Assess Risk.**
 * **Release Planning.**
+* **Alignment.**
 
 <aside class="notes">
   We'll conduct a product inception to immerse ourselves in the practice and
