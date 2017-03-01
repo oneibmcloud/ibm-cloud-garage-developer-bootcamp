@@ -9,7 +9,6 @@
 * **Story Mapping (cont'd).**
 * **Agile Architecture.**
 * **Assumption Mapping to Assess Risk.**
-* **Budgeting and Forecasting.**
 * **Release Planning.**
 
 <aside class="notes">
