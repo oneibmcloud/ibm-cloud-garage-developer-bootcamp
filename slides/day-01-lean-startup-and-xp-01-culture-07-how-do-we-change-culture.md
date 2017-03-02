@@ -2,7 +2,7 @@
 
 ##how do **_we_** change culture?
 
-###_Improve IT Performance_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_Improve IT Performance_ 
 
 
 <aside class="notes">

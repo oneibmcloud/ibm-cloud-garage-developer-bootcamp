@@ -162,33 +162,32 @@ body {
   word-wrap: normal; }
 
 .reveal table {
+  margin: auto;
   border-collapse: collapse;
+  border-bottom: 1px solid;
   border-spacing: 0; }
 
 .reveal table th {
   font-weight: bold; }
 
 .reveal table th,
-.reveal table th {
-  text-align: left;
-  vertical-align: middle;
-  border-bottom: none; }
-
 .reveal table td {
   text-align: left;
-  vertical-align: top;
+  font-size: 0.7em;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border: 1px solid; }
+
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center; }
+
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right; }
+
+.reveal table tr:last-child td {
   border-bottom: none; }
 
-.align-left {
-  text-align: left;
-
-}
-
-.reveal table th[align="left"],
-.reveal table th[vertical-align="middle"],
-.reveal table td[align="left"] {
-.reveal table td[vertical-align="middle"],
-text-align: left; }
 
 
 .reveal sup {
