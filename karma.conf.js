@@ -1,4 +1,6 @@
-var webpack = require('webpack');
+/*eslint no-unused-vars: "off"*/
+const webpack = require('webpack');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
   config.set({
@@ -8,21 +10,38 @@ module.exports = function(config) {
       module: {
         loaders: [
           {test: /\.html$/, loader: 'raw'},
+          {test: /\.styl$/, loader: 'style!css!stylus'},
+          {test: /\.css/, loader: 'style!css'},
+          { test: /\.json$/, loader: 'json-loader' },
           {
             test: /\.js$/,
             loader: 'babel',
-            exclude: [/node_modules/, /server/],
+            exclude: [/web\/lib/, /node_modules/, /server/],
             query: {
               plugins: ['istanbul']
             }
           },
         ]
       },
+      stylus: {
+        use: [require('jeet')(), require('rupture')()]
+      },
+
+      plugins: [
+        new CopyWebpackPlugin([
+          { from: './web/data/products.json' }
+        ])
+      ]
     },
 
     files: [
-      {pattern: 'spec.bundle.js', watched: false}
+      {pattern: 'spec.bundle.js', watched: false},
+      {pattern: 'web/data/*.json', watched: false, included: false, served: true, nocache: false}
     ],
+
+    proxies: {
+      '/': '/base/web/data/'
+    },
 
     coverageReporter: {
       dir: 'coverage/',
