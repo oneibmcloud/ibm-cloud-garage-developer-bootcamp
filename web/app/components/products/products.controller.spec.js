@@ -1,6 +1,6 @@
 import {ProductsController} from './products.controller';
 
-describe('Products Controller Testing', () => {
+describe('the products controller', () => {
 
   let productController, productsService;
   beforeEach(() => {
@@ -8,17 +8,16 @@ describe('Products Controller Testing', () => {
     productController = new ProductsController(productsService);
   });
 
-  describe('Products Controller Behavior', () => {
-
-    it('It should be empty after initialization', () => {
+  describe('interacts with the UI and product service, and', () => {
+    it('has no products', () => {
       productController.products.should.be.empty();
     });
 
-    it('the error message should be empty', () => {
+    it('has no error message', () => {
       productController.message.should.be.empty();
     });
 
-    it('should register success and error handlers', (done) => {
+    it('registers success and error handlers', (done) => {
       productController.handleSuccess = () => {};
       productController.handleError = () => {};
       productsService.getProducts = (success, error) => {
@@ -29,7 +28,7 @@ describe('Products Controller Testing', () => {
       productController.getProducts();
     });
 
-    it('should update products', () => {
+    it('installs its products', () => {
       const products = [
         {
           title: 'RF-97 Autograph',
@@ -41,13 +40,13 @@ describe('Products Controller Testing', () => {
       (productController.products).should.deepEqual(products);
     });
 
-    it('should update message', () => {
+    it('updates its error message', () => {
       const message = 'error';
       productController.updateMessage(message);
       (productController.message).should.deepEqual(message);
     });
 
-    it('success handler should update products', () => {
+    it('delegates product updates to success handler', () => {
       const products = [
         {
           title: 'RF-97 Autograph',
@@ -59,7 +58,7 @@ describe('Products Controller Testing', () => {
       (productController.products).should.deepEqual(products);
     });
 
-    it('error handler should update message', () => {
+    it('delegates error message updates to error handler', () => {
       const error = 'Not Found';
       const status = 402;
       let message = error + '(status=' + status + ')';
