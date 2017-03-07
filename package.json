@@ -4,7 +4,10 @@
   "description": "scaffold, docs, slides and resources for the Bluemix Garage Developer Bootcamp",
   "main": "index.js",
   "scripts": {
+    "start": "node server/server",
     "clear": "node ./clear.js",
+    "dev": "gulp",
+    "dist": "gulp dist",
     "lint": "esw -f simple-detail web server",
     "lint:watch": "nodemon 2>/dev/null  --exec 'npm run lint'",
     "coverage": "nyc --reporter=lcov --reporter=text --require babel-register npm run spec",
