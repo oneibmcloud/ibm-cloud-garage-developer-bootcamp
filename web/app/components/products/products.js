@@ -1,9 +1,9 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {tile} from '../tile/tile';
+import {tile} from './tile/tile';
 import {productsDirective} from './products.directive.js';
-import {productsServiceModule} from './products-service/products-service-module';
+import {productsServiceModule} from './service/products-service-module';
 
 
 import ngAnimate from 'angular-animate';
