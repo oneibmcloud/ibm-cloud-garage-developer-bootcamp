@@ -3,7 +3,7 @@ import angular from 'angular';
 
 import {products} from './products';
 
-describe('Products page', () => {
+describe('the products page', () => {
   let $scope;
   let $location;
   let $state;
@@ -34,7 +34,7 @@ describe('Products page', () => {
     $scope.$digest();
   }));
 
-  describe('should show', () => {
+  describe('shows', () => {
     it('products', (done) => {
       $timeout(function() {
         ($(element).find('span[rel=product-title]').length).should.equal(27);
@@ -42,11 +42,11 @@ describe('Products page', () => {
       }, 1000);
     });
 
-    it('Title for products', () => {
+    it('a title', () => {
       ($(element).find('.products-title').text()).should.equal('Products');
     });
 
-    it('on the product page', () => {
+    it('/#products in the url', () => {
       $location.path('/products');
       $scope.$apply();
 
