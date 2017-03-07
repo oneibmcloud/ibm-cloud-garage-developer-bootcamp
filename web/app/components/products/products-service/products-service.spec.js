@@ -1,7 +1,6 @@
 import {productsService} from './products-service';
 
-describe('Products Service Testing', () => {
-
+describe('the product service', () => {
   let $httpBackend;
   let $http;
 
@@ -10,16 +9,16 @@ describe('Products Service Testing', () => {
     $http = _$http_;
   }));
 
-  describe('Products Service Behavior', () => {
-    it('should get the product list', (done) => {
+  describe('calls out over http and', () => {
+    it('gets the product list', done => {
       $httpBackend.whenGET('/products.json')
           .respond(200, '{"products": []}');
 
-      let success = function (products) {
+      let success = products => {
         (products).should.be.empty();
         done();
       };
-      let failure = function () {
+      let failure = () => {
         throw new Error('should not be called');
       };
 
@@ -28,13 +27,15 @@ describe('Products Service Testing', () => {
 
       $httpBackend.flush();
     });
-    it('should handle http error', (done) => {
+
+    it('handles http errors', (done) => {
       $httpBackend.whenGET('/products.json')
           .respond(404, 'Page Not Found.');
 
-      let success = function () {
+      let success = () => {
         throw new Error('should not be called');
       };
+
       let failure = function (error, status) {
         (status).should.equal(404);
         (error).should.equal('Page Not Found.');
