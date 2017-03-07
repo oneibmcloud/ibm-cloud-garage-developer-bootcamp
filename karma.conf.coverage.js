@@ -16,7 +16,10 @@ module.exports = function(config) {
           {
             test: /\.js$/,
             loader: 'babel',
-            exclude: [/web\/lib/, /node_modules/, /server/]
+            exclude: [/web\/lib/, /node_modules/, /server/],
+            query: {
+              plugins: ['istanbul']
+            }
           },
         ]
       },
@@ -39,6 +42,14 @@ module.exports = function(config) {
 
     proxies: {
       '/': '/base/web/data/'
+    },
+
+    coverageReporter: {
+      dir: 'coverage/',
+      reporters: [
+          {type: 'lcov'},
+          {type: 'text'}
+      ]
     },
 
     preprocessors: {

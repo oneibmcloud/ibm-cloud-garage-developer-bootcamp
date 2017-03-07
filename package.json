@@ -10,11 +10,13 @@
     "dist": "gulp dist",
     "lint": "esw -f simple-detail web server",
     "lint:watch": "nodemon 2>/dev/null  --exec 'npm run lint'",
-    "coverage": "nyc --reporter=lcov --reporter=text --require babel-register npm run spec",
+    "server:coverage": "nyc --reporter=lcov --reporter=text --require babel-register npm run spec",
     "spec": "clear && mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec || true'",
     "tdd": "npm-run-all --parallel *:watch",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "test:coverage": "karma start karma.conf.coverage.js",
+    "test:remote": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
   },
   "repository": {
     "type": "git",
