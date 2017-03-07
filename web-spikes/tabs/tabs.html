@@ -1,0 +1,39 @@
+<md-content class = "tabs">
+  <md-tabs md-dynamic-height md-border-bottom md-selected = "selectedTab">
+    <md-tab>
+      <md-tab-label>
+        <span ui-sref = "main.home">Home</span>
+      </md-tab-label>
+    </md-tab>
+
+    <md-tab>
+      <md-tab-label>
+        <span ui-sref = "main.approach">Approach</span>
+      </md-tab-label>
+    </md-tab>
+
+    <md-tab>
+      <md-tab-label>
+        <span ui-sref = "main.details">Details</span>
+      </md-tab-label>
+    </md-tab>
+
+    <md-tab>
+      <md-tab-label>
+        <span ui-sref = "main.contacts">Contacts</span>
+      </md-tab-label>
+    </md-tab>
+
+    <md-tab>
+      <md-tab-label>
+        <span ui-sref = "main.drilldown">Drill Down</span>
+      </md-tab-label>
+    </md-tab>
+  </md-tabs>
+
+  <md-tab-body>
+    <div class="swap">
+      <div ui-view></div>
+    </div>
+  </md-tab-body>
+</md-content>

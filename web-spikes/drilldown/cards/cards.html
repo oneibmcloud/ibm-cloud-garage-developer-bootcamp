@@ -1,0 +1,105 @@
+<md-content ng-cloak
+    class = "cards md-padding"
+    layout = "row"
+    layout-wrap = ""
+    layout-align = "center start"
+    layout-xs = "column">
+  <div flex = "50" flex-xs = "100" layout = "column">
+    <md-card>
+      <md-card-title>
+        <md-card-title-text>
+          <span class = "md-headline">Card with image</span>
+          <span class = "md-subhead">{{status}}</span>
+        </md-card-title-text>
+        <md-card-title-media>
+          <div class = "md-media-sm card-media"></div>
+        </md-card-title-media>
+      </md-card-title>
+      <md-card-content flex layout-padding>
+        <md-content>
+          <md-tabs md-dynamic-height
+              md-border-bottom
+              md-selected = "selectedTab">
+            <md-tab label = "Tab One">
+              <md-content class = "md-padding">
+                <h1 class = "md-display-2">Tab One</h1>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nulla venenatis ante augue. Phasellus volutpat neque ac dui
+                  mattis vulputate. Etiam consequat aliquam cursus. In sodales
+                  pretium ultrices. Maecenas lectus est, sollicitudin
+                  consectetur felis nec, feugiat ultricies mi.</p>
+              </md-content>
+            </md-tab>
+            <md-tab label = "Tab Two">
+              <md-content class = "md-padding">
+                <h1 class = "md-display-2">Tab Two</h1>
+
+                <p>Proin egestas duis platea? Purus elit rhoncus mauris
+                  tincidunt, mattis, lundium vel! Sociis et? Tristique nascetur,
+                  phasellus nisi penatibus ridiculus facilisis habitasse auctor
+                  dictumst integer lorem a, mus, sit turpis montes auctor vut
+                  aliquam mauris et, ac risus a rhoncus.</p>
+              </md-content>
+            </md-tab>
+            <md-tab label = "Tab Three">
+              <md-content class = "md-padding">
+                <h1 class = "md-display-2">Tab Three</h1>
+
+                <p>Lundium pulvinar sed elementum! Tortor rhoncus penatibus
+                  turpis elit! Ut rhoncus mus a phasellus et, enim dolor! In
+                  elit. Risus quis nisi etiam amet mid aliquam habitasse
+                  porttitor arcu? Ultricies lundium amet, eros ac velit
+                  tincidunt sed elementum a ac scelerisque?</p>
+              </md-content>
+            </md-tab>
+            <md-tab label = "Tab Four">
+              <md-content class = "md-padding">
+                <h1 class = "md-display-2">Tab Four</h1>
+
+                <p>Pellentesque cras quis nascetur vut ultricies parturient
+                  augue nunc, cursus ac amet, vel est scelerisque turpis mattis
+                  ut, phasellus! Pid, rhoncus augue augue facilisis enim magnis
+                  auctor quis, etiam pulvinar, pid mus risus? Sit? Sit proin
+                  enim est sagittis lectus integer enim odio montes tortor.
+                  Pellentesque parturient? Porta, proin, tincidunt et tempor,
+                  augue aliquet, tristique.</p>
+              </md-content>
+            </md-tab>
+            <md-tab label = "Tab Five">
+              <md-content class = "md-padding">
+                <h1 class = "md-display-2">Five</h1>
+                <div layout = "row" layout-align = "center">
+                  <gauge boundingbox="bounds" x="cx" y="cy" r="radius" percent="completed"></gauge>
+                </div>
+              </md-content>
+            </md-tab>
+          </md-tabs>
+        </md-content>
+      </md-card-content>
+      <md-card-footer>
+        <md-card-actions layout = "row" layout-align = "start center">
+          <md-card-icon-actions>
+            <md-button class = "md-fab md-primary"
+                aria-label = "Use Android"
+                ng-click = "showPopup($event)">
+              <md-icon class = "material-icons">eject</md-icon>
+            </md-button>
+          </md-card-icon-actions>
+          <md-button class = "md-icon-button"
+              aria-label = "Favorite"
+              ng-click = "onPrevious()"
+              ng-disabled = "isPreviousDisabled">
+            <md-icon class = "material-icons">fast_rewind</md-icon>
+          </md-button>
+          <md-button class = "md-icon-button"
+              aria-label = "Favorite"
+              ng-click = "onNext()"
+              ng-disabled = "isNextDisabled">
+            <md-icon class = "material-icons">fast_forward</md-icon>
+          </md-button>
+        </md-card-actions>
+      </md-card-footer>
+    </md-card>
+  </div>
+</md-content>
