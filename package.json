@@ -1,7 +1,7 @@
 {
-  "name": "javascript-topic-trials",
+  "name": "ibm-singapore-garage-dev-bootcamp",
   "version": "1.0.0",
-  "description": "scaffold, docs, slides and resources for the Bluemix Garage Developer Bootcamp",
+  "description": "scaffold for the Bluemix Garage Developer Bootcamp",
   "main": "index.js",
   "scripts": {
     "start": "node server/server",
@@ -20,19 +20,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wpannell/javascript-topic-trials.git"
+    "url": "git+https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git"
   },
   "keywords": [
     "node"
   ],
-  "author": "Wil Pannell",
-  "license": "MIT",
+  "author": "IBM",
+  "license": "IBM",
   "bugs": {
-    "url": "https://github.com/wpannell/javascript-topic-trials/issues"
+    "url": "https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp/issues"
   },
-  "homepage": "https://github.com/wpannell/javascript-topic-trials#readme",
+  "homepage": "https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp#readme",
   "engines": {
-    "node": "7.2.0"
+    "node": "4.2.2"
   },
   "dependencies": {
     "angular": "1.5.0",

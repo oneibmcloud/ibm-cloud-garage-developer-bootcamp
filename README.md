@@ -1,13 +1,12 @@
-# IBM Bluemix Garage Method Bootcamp
+# IBM Singapore Bluemix Garage Method Developer Bootcamp
 
-# javascript topic trials
-
-## trials and tribulations of TDD and Merciless Refactoring
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git)
+## Getting Started
 
 ####Change your node version, clone the repo, install and run the tests:
 
 ````
-nvm use v7.5.0
+nvm use v4.2.2
 git clone git@github.com:wpannell/javascript-topic-trials.git app
 cd app
 npm install
