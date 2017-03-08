@@ -82,7 +82,7 @@ module.exports = function(config) {
     autoWatch: false,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['PhantomJS', 'PhantomJS_custom'],
+    browsers: ['PhantomJS'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should'],
