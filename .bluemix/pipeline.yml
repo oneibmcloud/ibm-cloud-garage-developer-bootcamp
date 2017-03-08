@@ -28,7 +28,7 @@ stages:
           git merge integration --ff-only
 
           export PATH=/opt/IBM/node-v4.2/bin:./node_modules/.bin:$PATH
-          npm i
+          npm install
 
           npm run lint
           npm run server:coverage
@@ -103,7 +103,7 @@ stages:
           git merge integration --ff-only
 
           export PATH=/opt/IBM/node-v4.2/bin:./node_modules/.bin:$PATH
-          npm i
+          npm install
 
           npm run lint
           npm run server:coverage
@@ -178,7 +178,7 @@ stages:
           git merge integration --ff-only
 
           export PATH=/opt/IBM/node-v4.2/bin:./node_modules/.bin:$PATH
-          npm i
+          npm install
 
           npm run lint
           npm run server:coverage
@@ -253,7 +253,7 @@ stages:
           git merge integration --ff-only
 
           export PATH=/opt/IBM/node-v4.2/bin:./node_modules/.bin:$PATH
-          npm i
+          npm install
 
           npm run lint
           npm run server:coverage
