@@ -15,7 +15,7 @@
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec || true'",
     "tdd": "npm-run-all --parallel *:watch",
     "test": "karma start karma.conf.js",
-    "test:coverage": "karma start karma.conf.coverage.js",
+    "web:coverage": "karma start karma.conf.coverage.js",
     "test:remote": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
   },
   "repository": {
