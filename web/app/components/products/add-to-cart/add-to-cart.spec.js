@@ -4,7 +4,7 @@ import angular from 'angular';
 import {addToCart} from './add-to-cart';
 
 
-describe.only('the add to cart button', () => {
+describe('the add to cart button', () => {
   let $scope;
 
   let element;
