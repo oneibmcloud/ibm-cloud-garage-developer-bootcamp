@@ -31,7 +31,6 @@ describe('the product details page', () => {
     $location = _$location_;
 
     element = $compile(buildTemplate())($scope);
-    console.log(element);
     $scope.$digest();
   }));
 
@@ -41,6 +40,21 @@ describe('the product details page', () => {
 
   it('a title', () => {
     ($(element).find('h1').text()).should.equal('Product Details');
+  });
+
+  it('an thumbnail image', (done) => {
+    $timeout(function() {
+      ($(element).find('img[rel=thumbnail]').length).should.equal(1);
+      done();
+    }, 1000);
+  });
+
+  it('/#product in the url', () => {
+    $location.path('/product/');
+    $scope.$apply();
+
+    ($state.current.url).should.equal('/product/');
+    ($state.current.name).should.equal('details');
   });
 
 });
