@@ -12,7 +12,7 @@ describe('the product service', () => {
   describe('calls out over http and', () => {
     it('gets the product list', done => {
       $httpBackend.whenGET('/products.json')
-          .respond(200, '{"products": []}');
+      .respond(200, '{"products": []}');
 
       let success = products => {
         (products).should.be.empty();
@@ -24,6 +24,25 @@ describe('the product service', () => {
 
       let service = productsService($http);
       service.getProducts(success, failure);
+
+      $httpBackend.flush();
+    });
+
+    it('gets a single product', done => {
+      $httpBackend.whenGET('/products.json')
+      .respond(200, '{"products": [{"id": 5427691329}]}');
+
+      let success = products => {
+        console.log(products);
+        (products).should.not.be.empty();
+        done();
+      };
+      let failure = () => {
+        throw new Error('should not be called');
+      };
+
+      let service = productsService($http);
+      service.getProduct(5427691329, success, failure);
 
       $httpBackend.flush();
     });

@@ -21,7 +21,7 @@ export const details = angular.module('details', [
 .config( ($stateProvider) => {
   $stateProvider.
   state('details', {
-    url: '/product/',
+    url: '/product/{productId}',
     template: '<details></details>'
   });
 })

@@ -7,8 +7,24 @@ export const productsService = ($http) => {
         .error(failure);
   };
 
+  const getProduct = (productId, success, failure) => {
+    $http.get('/products.json')
+    .success(response => {
+      for (let product of response.products) {
+        if (product.id == productId) {
+          console.log(product);
+          success(product);
+        }
+      }
+
+      success({});
+    })
+    .error(failure);
+  };
+
   return {
-    getProducts
+    getProducts,
+    getProduct
   };
 };
 

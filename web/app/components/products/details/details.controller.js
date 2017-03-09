@@ -1,4 +1,4 @@
-function DetailsController(productsService) {
+function DetailsController(productsService, $stateParams) {
   let vm = this;
   vm.title = 'Products';
   vm.products = [];
@@ -8,8 +8,15 @@ function DetailsController(productsService) {
     productsService.getProducts(vm.handleSuccess, vm.handleError);
   };
 
+  vm.getProduct = function (productId) {
+    productsService.getProduct(productId, vm.handleSingleSuccess, vm.handleError);
+  };
+
   vm.updateProducts = (products) => {
-    vm.products = products;
+    if (products[0].id)
+      vm.products = products;
+
+    console.log(products);
   };
 
   vm.updateMessage = (message) => {
@@ -25,9 +32,15 @@ function DetailsController(productsService) {
     vm.updateMessage(errMessage);
   };
 
-  vm.getProducts();
+  vm.handleSingleSuccess = function(product) {
+    vm.updateProducts([product]);
+  };
+
+  if ($stateParams.productId) {
+    vm.getProduct($stateParams.productId);
+  }
 }
 
-DetailsController.$inject = ['productsService'];
+DetailsController.$inject = ['productsService', '$stateParams'];
 
 export {DetailsController};
