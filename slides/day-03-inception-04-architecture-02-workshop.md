@@ -2,6 +2,10 @@
 
 ##agile architecture workshop activity
 
+____
+ 
+### design a high-level lightweight architecture for the product concept <!-- .element: style="color:maroon" -->
+
 <br/>
 <br/>
 <br/>

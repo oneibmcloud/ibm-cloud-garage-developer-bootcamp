@@ -2,9 +2,10 @@
 
 ##pairing workshop activities
 
-###pair draw
+###pair poetry
 
-<img class="plain" src="resources/pair-draw.png" />
+
+<img class="plain" src="resources/pair-poetry.png" />
 
 <aside class="notes">
   <p>

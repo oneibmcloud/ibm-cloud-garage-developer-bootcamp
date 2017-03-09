@@ -1,13 +1,13 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##assumption mapping 
-### cynefin
+##assumptions are risky
+### assess assumption risk using cynefin <!-- .element: class="fragment"; -->
 
-1. everyone's done it before
-2. many have done it before, including a teammate
-3. someone in our company has done it before
-4. someone in the world has done it before, but not in out organization
-5. nobody has done it before
+1. everyone's done it before <!-- .element: class="fragment"; style="color:maroon" -->
+2. many have done it before, including a teammate <!-- .element: class="fragment"; style="color:maroon" -->
+3. someone in our company has done it before <!-- .element: class="fragment"; style="color:maroon" -->
+4. someone in the world has done it before, but not in our organization <!-- .element: class="fragment"; style="color:maroon" -->
+5. nobody has done it before <!-- .element: class="fragment"; style="color:maroon" -->
 
 <br/>
 <br/>
