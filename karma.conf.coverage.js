@@ -1,6 +1,6 @@
 /*eslint no-unused-vars: "off"*/
 const webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
   config.set({
