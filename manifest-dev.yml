@@ -1,6 +1,7 @@
 applications:
 - path: .
-  memory: 1024M
+  buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  memory: 256M
   instances: 1
   domain: mybluemix.net
   name: ibm-singapore-garage-dev-bootcamp-dev
