@@ -60,16 +60,16 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    autoWatch: true,
+    autoWatch: false,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should'],
     logLevel: config.LOG_INFO,
     port: 9876,
     reporters: ['mocha', 'growl', 'coverage'],
-    singleRun: false
+    singleRun: true
   });
 };
