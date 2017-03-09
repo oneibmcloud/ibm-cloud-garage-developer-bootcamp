@@ -1,3 +1,33 @@
 <div>
   <h1>Product Details</h1>
+  <md-content class="md-padding" layout-xs="column" layout="row">
+    <md-card>
+      <img rel="thumbnail" ng-src="{{vm.products[0].image.src}}" class="md-card-image" alt="Washed Out">
+      <md-card-title>
+        <md-card-title-text>
+          <span class="md-headline">{{vm.products[0].title}}</span>
+          <br>
+          {{vm.products[0].variants[0]['price']}} / {{vm.products[0].variants[0]['price'] * 0.8}}
+          <br>
+          {{vm.products[0].variants[0]['inventory_quantity']}} Available
+        </md-card-title-text>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="start center">
+        <md-card-icon-actions>
+          <md-button class="md-icon-button" aria-label="Favorite">
+            <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
+          </md-button>
+          <md-button class="md-icon-button" aria-label="Share">
+            <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
+          </md-button>
+        </md-card-icon-actions>
+        <md-button>Add to Cart</md-button>
+      </md-card-actions>
+      <md-card-content>
+        <p>
+          {{vm.products[0]['body_html']}}
+        </p>
+      </md-card-content>
+    </md-card>
+  </md-content>
 </div>
