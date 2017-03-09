@@ -9,11 +9,15 @@ import ngAnimate from 'angular-animate';
 import ngAria from 'angular-aria';
 import ngMaterial from 'angular-material';
 
+import {components} from './components/components';
+
 angular.module('app', [
   uiRouter,
   ngAnimate,
   ngAria,
-  ngMaterial
+  ngMaterial,
+
+  components.name
 ])
 
 .config(function($mdThemingProvider) {
