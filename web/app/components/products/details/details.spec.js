@@ -53,7 +53,7 @@ describe('the product details page', () => {
     $location.path('/product/');
     $scope.$apply();
 
-    ($state.current.url).should.equal('/product/{id}');
+    ($state.current.url).should.equal('/product/{productId}');
     ($state.current.name).should.equal('details');
   });
 

@@ -12,7 +12,6 @@ export const productsService = ($http) => {
     .success(response => {
       for (let product of response.products) {
         if (product.id == productId) {
-          console.log(product);
           success(product);
         }
       }

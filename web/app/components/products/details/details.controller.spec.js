@@ -31,6 +31,7 @@ describe('the details controller', () => {
     it('installs its products', () => {
       const products = [
         {
+          id: 123,
           title: 'RF-97 Autograph',
           variants: [{ price: 250 }],
           image: { src: 'http://www.ibm.com/image01' }
@@ -49,6 +50,7 @@ describe('the details controller', () => {
     it('delegates product updates to success handler', () => {
       const products = [
         {
+          id: 123,
           title: 'RF-97 Autograph',
           variants: [{ price: 250 }],
           image: { src: 'http://www.ibm.com/image01' }

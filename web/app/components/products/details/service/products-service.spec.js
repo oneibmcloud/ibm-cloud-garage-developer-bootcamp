@@ -33,7 +33,6 @@ describe('the product service', () => {
       .respond(200, '{"products": [{"id": 5427691329}]}');
 
       let success = products => {
-        console.log(products);
         (products).should.not.be.empty();
         done();
       };
