@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp#readme",
   "engines": {
-    "node": "4.2.2"
+    "node": "7.6.0"
   },
   "dependencies": {
     "angular": "1.5.0",
