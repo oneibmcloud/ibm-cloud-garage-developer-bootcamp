@@ -40,10 +40,6 @@ module.exports = function(config) {
       {pattern: 'web/data/*.json', watched: false, included: false, served: true, nocache: false}
     ],
 
-    proxies: {
-      '/': '/base/web/data/'
-    },
-
     coverageReporter: {
       dir: 'coverage/',
       reporters: [
