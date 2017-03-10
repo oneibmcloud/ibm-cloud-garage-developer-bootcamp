@@ -85,6 +85,9 @@ describe('the cart page', () => {
   let element;
   let $ = window.$;
 
+  beforeEach(angular.mock.http.init);
+  afterEach(angular.mock.http.reset);
+
   let buildTemplate = () => {
     return angular.element('<cart></cart>');
   };
@@ -97,9 +100,9 @@ describe('the cart page', () => {
     $scope = $rootScope.$new();
     $state = _$state_;
     $location = _$location_;
-
-    $scope.product = testProduct;
     element = $compile(buildTemplate())($scope);
+
+    $scope.$emit('ProductAddedToCartEvent', testProduct);
     $scope.$digest();
   }));
 
@@ -126,7 +129,6 @@ describe('the cart page', () => {
   it('a saving', () => {
     ($(element).find('span[rel=saving]').length).should.equal(1);
   });
-
 
   it('shows "cart empty" message when cart is empty', () => {
     window.inject((
