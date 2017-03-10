@@ -1,14 +1,11 @@
-function addToCartController($scope) {
+function addToCartController(sendEventService, $scope) {
   let ct = this;
 
-  ct.message = ''; // initial error message
-
-  ct.addItem = function (){
-    $scope.$emit('aCustomEvent', 'some random string');
+   ct.onClick = function (){
+     sendEventService.sendProduct($scope.product);
   };
-
 }
 
-addToCartController.$inject = ['$scope'];
+addToCartController.$inject = ['sendEventService', '$scope'];
 
 export {addToCartController};
