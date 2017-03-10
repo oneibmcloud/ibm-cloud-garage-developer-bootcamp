@@ -7,6 +7,7 @@ describe('the cart page', () => {
   let $state;
 
   beforeEach(window.module('ui.router'));
+  beforeEach(window.module(cart.name));
 
   beforeEach(window.inject(($rootScope, _$state_, _$location_) => {
     $scope = $rootScope.$new();
