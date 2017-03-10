@@ -9,7 +9,7 @@ function CartController($scope) {
   };
 
   vm.getPrice = function(product) {
-    return product.variants[0].price;
+    return parseFloat(product.variants[0].price);
   };
 
   vm.getDiscountedPrice = function(product) {

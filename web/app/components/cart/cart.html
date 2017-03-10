@@ -4,7 +4,7 @@
     <p><span rel="cart-empty-message">Your shopping cart is empty.</span>
   </div>
   <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch=""
-           ng-if="vm.products.length > 0" ng-repeat="product in vm.products">
+           ng-if="vm.products.length > 0" ng-repeat="product in vm.products track by $index">
     <md-card-title>
       <md-card-title-media>
         <img rel="thumbnail" ng-src="{{product.image.src}}" class="md-card-image" alt="Washed Out">
