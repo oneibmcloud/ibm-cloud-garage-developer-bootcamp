@@ -13,10 +13,12 @@
         <br>
         Your Price: <span class="discounted-price" rel="discounted-price">{{vm.products[0].variants[0]['price'] * 0.8}}</span>
         <br>
-        <span rel="available-quantity">{{vm.products[0].variants[0]['inventory_quantity']}}</span> Available
+        You Save: <span class="saving" rel="saving">{{vm.products[0].variants[0]['price'] * 0.2}}</span>
+        <br><br>
+        <span rel="available-quantity">{{vm.products[0].variants[0]['inventory_quantity']}}</span> units available
       </md-card-content>
       <md-card-actions layout="row" layout-align="end center">
-        <md-button>Add to Cart</md-button>
+        <add-to-cart product="vm.products[0]"></add-to-cart>
       </md-card-actions>
       <md-card-content>
         <p>

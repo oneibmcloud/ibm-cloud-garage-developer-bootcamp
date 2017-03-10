@@ -13,8 +13,9 @@ function DetailsController(productsService, $stateParams) {
   };
 
   vm.updateProducts = (products) => {
-    if (products[0].id)
+    if (products[0].id) {
       vm.products = products;
+    }
   };
 
   vm.updateMessage = (message) => {
@@ -35,7 +36,7 @@ function DetailsController(productsService, $stateParams) {
   };
 
   if ($stateParams && $stateParams.productId) {
-    vm.getProduct($stateParams.productId);
+    vm.getProduct(parseInt($stateParams.productId));
   } else {
     vm.getProducts();
   }

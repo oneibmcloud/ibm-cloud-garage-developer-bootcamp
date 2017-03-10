@@ -7,6 +7,6 @@ export const addToCartDirective = ()=> {
     restrict: 'E',
     replace: true,
     scope: {
-    },
+    }
   };
 };
