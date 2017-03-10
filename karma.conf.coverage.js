@@ -1,6 +1,6 @@
 /*eslint no-unused-vars: "off"*/
 const webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
   config.set({
@@ -40,10 +40,6 @@ module.exports = function(config) {
       {pattern: 'web/data/*.json', watched: false, included: false, served: true, nocache: false}
     ],
 
-    proxies: {
-      '/': '/base/web/data/'
-    },
-
     coverageReporter: {
       dir: 'coverage/',
       reporters: [
@@ -60,16 +56,16 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    autoWatch: true,
+    autoWatch: false,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should'],
     logLevel: config.LOG_INFO,
     port: 9876,
     reporters: ['mocha', 'growl', 'coverage'],
-    singleRun: false
+    singleRun: true
   });
 };
