@@ -35,21 +35,22 @@ describe('the products page', () => {
   }));
 
   describe('shows', () => {
-    it(' the product name', () => {
-      ($(element).find('span[rel=' + '"products-name"' + ']').text()).should.equal('RF-97 Autograph');
-    });
-    it(' the product thumbnail', () => {
-      ($(element)).find('img').attr('src').should.equal('http://www.ibm.com/image01');
 
-    });
-    it(' the product retail price', () => {
-      ($(element).find('span[rel=' + '"products-price"' + ']').text()).should.equal('$250.00');
-
-    });
-    it(' the product discount price', () => {
-      ($(element).find('span[rel=' + '"products-discount"' + ']').text()).should.equal('$200.00');
-
-    });
+    // it(' the product name', () => {
+    //   ($(element).find('span[rel=' + '"products-name"' + ']').text()).should.equal('RF-97 Autograph');
+    // });
+    // it(' the product thumbnail', () => {
+    //   ($(element)).find('img').attr('src').should.equal('http://www.ibm.com/image01');
+    //
+    // });
+    // it(' the product retail price', () => {
+    //   ($(element).find('span[rel=' + '"products-price"' + ']').text()).should.equal('$250.00');
+    //
+    // });
+    // it(' the product discount price', () => {
+    //   ($(element).find('span[rel=' + '"products-discount"' + ']').text()).should.equal('$200.00');
+    //
+    // });
 
     it('/#products in the url', () => {
       $location.path('/products');
