@@ -7,7 +7,6 @@ describe('the product details page', () => {
   let $scope;
   let $location;
   let $state;
-  let $timeout;
 
   let element;
   let $ = window.$;
@@ -23,8 +22,7 @@ describe('the product details page', () => {
   beforeEach(window.module(details.name));
 
   beforeEach(window.inject((
-  $rootScope, $compile, $httpBackend, _$state_, _$location_, _$timeout_) => {
-    $timeout = _$timeout_;
+  $rootScope, $compile, $httpBackend, _$state_, _$location_) => {
     $httpBackend.whenGET(/.*/).passThrough();
     $scope = $rootScope.$new();
     $state = _$state_;
@@ -42,11 +40,8 @@ describe('the product details page', () => {
     ($(element).find('h1').text()).should.equal('Product Details');
   });
 
-  it('an thumbnail image', (done) => {
-    $timeout(function() {
-      ($(element).find('img[rel=thumbnail]').length).should.equal(1);
-      done();
-    }, 1000);
+  it('an thumbnail image', () => {
+    ($(element).find('img[rel=thumbnail]').length).should.equal(1);
   });
 
   it('a product name', () => {
