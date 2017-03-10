@@ -13,7 +13,7 @@ describe('the product details page', () => {
   let $ = window.$;
 
   let buildTemplate = () => {
-    return angular.element('<details product="product"></details>');
+    return angular.element('<details></details>');
   };
 
   beforeEach(angular.mock.http.init);
@@ -49,8 +49,28 @@ describe('the product details page', () => {
     }, 1000);
   });
 
-  it('/#product in the url', () => {
-    $location.path('/product/');
+  it('a retail price', () => {
+    ($(element).find('span[rel=retail-price]').length).should.equal(1);
+  });
+
+  it('a discount price', () => {
+    ($(element).find('span[rel=discounted-price]').length).should.equal(1);
+  });
+
+  it('a saving', () => {
+    ($(element).find('span[rel=saving]').length).should.equal(1);
+  });
+
+  it('an available quantity', () => {
+    ($(element).find('span[rel=available-quantity]').length).should.equal(1);
+  });
+
+  it('a product details', () => {
+    ($(element).find('p[rel=product-details]').length).should.equal(1);
+  });
+
+  it('/#product/{productId} in the url', () => {
+    $location.path('/product/5427694785');
     $scope.$apply();
 
     ($state.current.url).should.equal('/product/{productId}');
