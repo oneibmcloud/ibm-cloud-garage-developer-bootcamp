@@ -1,6 +1,9 @@
 <div>
   <h1>Cart Details</h1>
-  <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch="">
+  <div ng-if="!product" style="margin-left: 20px;">
+    <p><span rel="cart-empty-message">Your shopping cart is empty.</span>
+  </div>
+  <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch=""  ng-if="product">
     <md-card-title>
       <md-card-title-media>
         <img rel="thumbnail" ng-src="{{product.image.src}}" class="md-card-image" alt="Washed Out">
