@@ -39,7 +39,7 @@ describe('the products controller', () => {
       productController.updateProducts(products);
       (productController.products).should.deepEqual(products);
     });
-
+termin
     it('updates its error message', () => {
       const message = 'error';
       productController.updateMessage(message);

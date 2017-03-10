@@ -9,11 +9,11 @@ export const sendEventService = ($rootScope) => {
 
   const getProduct = () => {
     return selectedProduct;
-  }
+  };
 
   const clearProduct = () => {
      selectedProduct = {};
-  }
+  };
 
   return {
     sendProduct,
