@@ -1,7 +1,7 @@
 /* eslint no-unused-vars: 'off' */
 import {CartController} from './cart.controller';
 
-describe('the cart controller', () => {
+describe.skip('the cart controller', () => {
 
   let $scope;
   let cartController;

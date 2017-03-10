@@ -1,26 +1,26 @@
-function CartController($scope) {
+function CartController($scope, sendEventService) {
   let vm = this;
   vm.title = 'Cart';
   vm.products = [];
   vm.discount = 0.2;
 
-  vm.handleProductAddedToCartEvent = function(event, args) {
+  vm.handleProductAddedToCartEvent = function (event, args) {
     vm.products.push(args);
   };
 
-  vm.getPrice = function(product) {
+  vm.getPrice = function (product) {
     return parseFloat(product.variants[0].price);
   };
 
-  vm.getDiscountedPrice = function(product) {
+  vm.getDiscountedPrice = function (product) {
     return vm.getPrice(product) * (1 - vm.discount);
   };
 
-  vm.getSaving = function(product) {
+  vm.getSaving = function (product) {
     return vm.getPrice(product) * vm.discount;
   };
 
-  vm.getRetailTotal = function() {
+  vm.getRetailTotal = function () {
     let total = 0;
     for (let product of vm.products) {
       total += vm.getPrice(product);
@@ -28,7 +28,7 @@ function CartController($scope) {
     return total;
   };
 
-  vm.getDiscountedTotal = function() {
+  vm.getDiscountedTotal = function () {
     let total = 0;
     for (let product of vm.products) {
       total += vm.getDiscountedPrice(product);
@@ -36,7 +36,7 @@ function CartController($scope) {
     return total;
   };
 
-  vm.getSavingTotal = function() {
+  vm.getSavingTotal = function () {
     let total = 0;
     for (let product of vm.products) {
       total += vm.getSaving(product);
@@ -45,8 +45,13 @@ function CartController($scope) {
   };
 
   $scope.$on('ProductAddedToCartEvent', vm.handleProductAddedToCartEvent);
+
+  if (sendEventService.getProduct() !== {}) {
+    vm.products.push(sendEventService.getProduct());
+    sendEventService.clearProduct();
+  }
 }
 
-CartController.$inject = ['$scope'];
+CartController.$inject = ['$scope', 'sendEventService'];
 
 export {CartController};

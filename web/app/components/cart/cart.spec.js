@@ -3,7 +3,7 @@ import angular from 'angular';
 
 import {cart} from './cart.js';
 
-describe('the cart page', () => {
+describe.skip('the cart page', () => {
   const testProduct = {
     'id': 5427691329,
     'title': 'ms Head Graphene XT Instinct MP',
