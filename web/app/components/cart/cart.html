@@ -2,17 +2,20 @@
   <h1>Cart Details</h1>
   <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch="">
     <md-card-title>
-      <md-card-title-text>
-        <span class="md-headline">Card with image</span>
-        <span class="md-subhead">Medium</span>
-      </md-card-title-text>
       <md-card-title-media>
-        <div class="md-media-md card-media"></div>
+        <img rel="thumbnail" ng-src="{{product.image.src}}" class="md-card-image" alt="Washed Out">
       </md-card-title-media>
+      <md-card-title-text>
+        <span class="md-headline" rel="product-name">{{product.title}}</span>
+      </md-card-title-text>
+      <md-card-content>
+        Regular Price: <span class="retail-price" rel="retail-price">{{product.variants[0]['price'] | currency}}</span>
+        <br>
+        Your Price: <span class="discounted-price" rel="discounted-price">{{product.variants[0]['price'] * 0.8 | currency}}</span>
+        <br>
+        You Save: <span class="saving" rel="saving">{{product.variants[0]['price'] * 0.2 | currency}}</span>
+      </md-card-content>
     </md-card-title>
-    <md-card-actions layout="row" layout-align="end center">
-      <md-button>Add</md-button>
-    </md-card-actions>
   </md-card>
 </div>
 
