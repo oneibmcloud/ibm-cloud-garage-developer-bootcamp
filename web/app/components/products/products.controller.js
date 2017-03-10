@@ -27,7 +27,7 @@ function ProductsController(productsService) {
   };
 
   vm.getProducts();
-};
+}
 
 ProductsController.$inject = ['productsService'];
 
