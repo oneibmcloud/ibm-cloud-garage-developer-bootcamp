@@ -1,4 +1,4 @@
-function ProductsController() {
+function ProductsController(productsService) {
   let vm = this;
   vm.title = 'Products';
   vm.products = [
