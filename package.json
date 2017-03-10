@@ -18,10 +18,9 @@
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec:clear || true'",
     "tdd": "npm-run-all --parallel *:watch",
     "test": "karma start karma.conf.js",
-    "web:ci": "npm run test:coverage",
-    "ci": "npm-run-all --parallel *:ci",
     "test:coverage": "karma start karma.conf.coverage.js",
-    "test:remote": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
+    "ci": "npm-run-all --parallel *:ci",
+    "test:ci": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
   },
   "repository": {
     "type": "git",
@@ -97,7 +96,7 @@
     "karma-mocha-reporter": "2.2.1",
     "karma-phantomjs-launcher": "1.0.2",
     "karma-safari-launcher": "1.0.0",
-    "karma-sauce-launcher": "1.1.0",
+    "karma-sauce-launcher": "^1.1.0",
     "karma-should": "1.0.0",
     "karma-sourcemap-loader": "0.3.7",
     "karma-webpack": "1.8.0",
