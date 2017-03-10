@@ -49,6 +49,10 @@ describe('the product details page', () => {
     }, 1000);
   });
 
+  it('a product name', () => {
+    ($(element).find('span[rel=product-name]').length).should.equal(1);
+  });
+
   it('a retail price', () => {
     ($(element).find('span[rel=retail-price]').length).should.equal(1);
   });
@@ -65,7 +69,7 @@ describe('the product details page', () => {
     ($(element).find('span[rel=available-quantity]').length).should.equal(1);
   });
 
-  it('a product details', () => {
+  it('a product description', () => {
     ($(element).find('p[rel=product-details]').length).should.equal(1);
   });
 
