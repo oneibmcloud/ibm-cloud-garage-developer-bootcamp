@@ -3,7 +3,7 @@
       <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch="">
         <md-card-title>
           <md-card-title-text>
-            <span class="md-headline" rel="products-name">{{vm.products[0].title}}</span>
+            <span class="md-headline" rel="products-name"><a ng-href="#/product/{{vm.products[0].id}}">{{vm.products[0].title}}</a></span>
             <span class="md-subhead" rel="products-price">{{vm.products[0].variants[0].price | currency}}</span>
             <span class="md-subhead" rel="products-discount">{{vm.products[0].variants[0].discount | currency}}</span>
           </md-card-title-text>
@@ -12,7 +12,6 @@
           </md-card-title-media>
         </md-card-title>
         <md-card-actions layout="row" layout-align="end center">
-          <md-button>Add</md-button>
         </md-card-actions>
       </md-card>
 </div>
