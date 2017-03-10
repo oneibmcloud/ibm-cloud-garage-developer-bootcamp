@@ -1,18 +1,32 @@
 function ProductsController(productsService) {
   let vm = this;
   vm.title = 'Products';
-  vm.products = [
-    {
-      title: 'RF-97 Autograph',
-      variants: [{ price: 250, discount: 200 }],
-      image: { src: 'http://www.ibm.com/image01' }
-    }
-  ];
-  vm.message = '';
+  vm.products = [];
+  vm.message = ''; // initial error message
 
   vm.getProducts = function () {
-    return vm.products;
+    productsService.getProducts(vm.handleSuccess, vm.handleError);
   };
+
+  vm.updateProducts = (products) => {
+    vm.products = products;
+  };
+
+  vm.updateMessage = (message) => {
+    vm.message = message;
+  };
+
+
+  vm.handleSuccess = function(products) {
+    vm.updateProducts(products);
+  };
+
+  vm.handleError = function (error, status) {
+    let errMessage = error + '(status=' + status + ')';
+    vm.updateMessage(errMessage);
+  };
+
+  vm.getProducts();
 };
 
 ProductsController.$inject = ['productsService'];
