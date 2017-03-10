@@ -9,11 +9,11 @@
         </md-card-title-text>
       </md-card-title>
       <md-card-content>
-        Regular Price: <span class="retail-price" rel="retail-price">{{vm.products[0].variants[0]['price']}}</span>
+        Regular Price: <span class="retail-price" rel="retail-price">{{vm.products[0].variants[0]['price'] | currency}}</span>
         <br>
-        Your Price: <span class="discounted-price" rel="discounted-price">{{vm.products[0].variants[0]['price'] * 0.8}}</span>
+        Your Price: <span class="discounted-price" rel="discounted-price">{{vm.products[0].variants[0]['price'] * 0.8 | currency}}</span>
         <br>
-        You Save: <span class="saving" rel="saving">{{vm.products[0].variants[0]['price'] * 0.2}}</span>
+        You Save: <span class="saving" rel="saving">{{vm.products[0].variants[0]['price'] * 0.2 | currency}}</span>
         <br><br>
         <span rel="available-quantity">{{vm.products[0].variants[0]['inventory_quantity']}}</span> units available
       </md-card-content>
