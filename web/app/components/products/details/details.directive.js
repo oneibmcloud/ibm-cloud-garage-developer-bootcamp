@@ -7,9 +7,6 @@ export const detailsDirective = ()=> {
     template,
     restrict: 'E',
     replace: true,
-    scope: {
-      product: '='
-    },
     controller,
     controllerAs: 'vm'
   };
