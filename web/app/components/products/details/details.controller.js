@@ -2,7 +2,21 @@ function DetailsController(productsService, $stateParams) {
   let vm = this;
   vm.title = 'Products';
   vm.products = [];
+  vm.discount = 0.2;
   vm.message = ''; // initial error message
+
+  vm.getPrice = function() {
+    if (vm.products.length === 0) return 0;
+    return vm.products[0].variants[0].price;
+  };
+
+  vm.getDiscountedPrice = function() {
+    return vm.getPrice() * (1 - vm.discount);
+  };
+
+  vm.getSaving = function() {
+    return vm.getPrice() * vm.discount;
+  };
 
   vm.getProducts = function () {
     productsService.getProducts(vm.handleSuccess, vm.handleError);
