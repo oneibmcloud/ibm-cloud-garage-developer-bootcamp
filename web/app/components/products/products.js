@@ -11,7 +11,8 @@ export const products = angular.module('products', [
   uiRouter,
   ngAnimate,
   ngAria,
-  ngMaterial
+  ngMaterial,
+
 ])
 
 .config( ($stateProvider) => {
