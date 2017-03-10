@@ -28,9 +28,21 @@ describe('the details controller', () => {
       detailsController.getProducts();
     });
 
+    it('registers success and error handlers for single product', (done) => {
+      detailsController.handleSingleSuccess = () => {};
+      detailsController.handleError = () => {};
+      productsService.getProduct = (productId, success, error) => {
+        (success).should.equal(detailsController.handleSingleSuccess);
+        (error).should.equal(detailsController.handleError);
+        done();
+      };
+      detailsController.getProduct();
+    });
+
     it('installs its products', () => {
       const products = [
         {
+          id: 123,
           title: 'RF-97 Autograph',
           variants: [{ price: 250 }],
           image: { src: 'http://www.ibm.com/image01' }
@@ -49,6 +61,7 @@ describe('the details controller', () => {
     it('delegates product updates to success handler', () => {
       const products = [
         {
+          id: 123,
           title: 'RF-97 Autograph',
           variants: [{ price: 250 }],
           image: { src: 'http://www.ibm.com/image01' }

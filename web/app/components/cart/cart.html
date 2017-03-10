@@ -1,0 +1,31 @@
+<div>
+  <h1>Cart Details</h1>
+  <div ng-if="!product" style="margin-left: 20px;">
+    <p><span rel="cart-empty-message">Your shopping cart is empty.</span>
+  </div>
+  <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch="" ng-if="product">
+    <md-card-title>
+      <md-card-title-media>
+        <img rel="thumbnail" ng-src="{{product.image.src}}" class="md-card-image" alt="Washed Out">
+      </md-card-title-media>
+      <md-card-title-text>
+        <span class="md-headline" rel="product-name">{{product.title}}</span>
+      </md-card-title-text>
+      <md-card-content>
+        Regular Price: <span class="retail-price" rel="retail-price">{{product.variants[0]['price'] | currency}}</span>
+        <br>
+        Your Price: <span class="discounted-price" rel="discounted-price">{{product.variants[0]['price'] * 0.8 | currency}}</span>
+        <br>
+        You Save: <span class="saving" rel="saving">{{product.variants[0]['price'] * 0.2 | currency}}</span>
+      </md-card-content>
+    </md-card-title>
+  </md-card>
+
+  <div class="totals-container" ng-if="product">
+    <p>Total Retail Price: <span class="retail-price" rel="total-retail-price">{{product.variants[0]['price'] | currency}}</p>
+    <p>Total Discounted Price: <span class="discounted-price" rel="total-discounted-price">{{product.variants[0]['price'] * 0.8 | currency}}</p>
+    <p>Total Savings: <span class="saving" rel="total-saving">{{product.variants[0]['price'] * 0.2 | currency}}</p>
+  </div>
+
+</div>
+

@@ -5,26 +5,23 @@
       <img rel="thumbnail" ng-src="{{vm.products[0].image.src}}" class="md-card-image" alt="Washed Out">
       <md-card-title>
         <md-card-title-text>
-          <span class="md-headline">{{vm.products[0].title}}</span>
-          <br>
-          {{vm.products[0].variants[0]['price']}} / {{vm.products[0].variants[0]['price'] * 0.8}}
-          <br>
-          {{vm.products[0].variants[0]['inventory_quantity']}} Available
+          <span class="md-headline" rel="product-name">{{vm.products[0].title}}</span>
         </md-card-title-text>
       </md-card-title>
-      <md-card-actions layout="row" layout-align="start center">
-        <md-card-icon-actions>
-          <md-button class="md-icon-button" aria-label="Favorite">
-            <md-icon md-svg-icon="img/icons/favorite.svg"></md-icon>
-          </md-button>
-          <md-button class="md-icon-button" aria-label="Share">
-            <md-icon md-svg-icon="img/icons/share-arrow.svg"></md-icon>
-          </md-button>
-        </md-card-icon-actions>
+      <md-card-content>
+        Regular Price: <span class="retail-price" rel="retail-price">{{vm.products[0].variants[0]['price'] | currency}}</span>
+        <br>
+        Your Price: <span class="discounted-price" rel="discounted-price">{{vm.products[0].variants[0]['price'] * 0.8 | currency}}</span>
+        <br>
+        You Save: <span class="saving" rel="saving">{{vm.products[0].variants[0]['price'] * 0.2 | currency}}</span>
+        <br><br>
+        <span rel="available-quantity">{{vm.products[0].variants[0]['inventory_quantity']}}</span> units available
+      </md-card-content>
+      <md-card-actions layout="row" layout-align="end center">
         <add-to-cart product="vm.products[0]"></add-to-cart>
       </md-card-actions>
       <md-card-content>
-        <p>
+        <p rel="product-details">
           {{vm.products[0]['body_html']}}
         </p>
       </md-card-content>

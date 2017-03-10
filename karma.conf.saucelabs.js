@@ -1,9 +1,31 @@
 /*eslint no-unused-vars: "off"*/
 const webpack = require('webpack');
-var CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
+  const customLaunchers = {
+    sl_chrome: {  // jshint ignore:line
+      base: 'SauceLabs',
+      browserName: 'chrome'
+    }
+  };
+
+  process.env.SAUCE_USERNAME = 'wilpannell';
+  process.env.SAUCE_ACCESS_KEY = '19730ccc-97be-4d9f-88f8-1754e4425a6f';
+
+  console.log(process.env.SAUCE_USERNAME);
+  console.log(process.env.SAUCE_ACCESS_KEY);
+
   config.set({
+    junitReporter: {
+      outputDir: 'generated'
+    },
+
+    sauceLabs: {
+      recordScreenshots: false,
+      testName: 'singapore bootcamp web specs'
+    },
+
     webpack: {
       devtool: 'inline-source-map',
 
@@ -17,9 +39,6 @@ module.exports = function(config) {
             test: /\.js$/,
             loader: 'babel',
             exclude: [/web\/lib/, /node_modules/, /server/],
-            query: {
-              plugins: ['istanbul']
-            }
           },
         ]
       },
@@ -44,14 +63,6 @@ module.exports = function(config) {
       '/': '/base/web/data/'
     },
 
-    coverageReporter: {
-      dir: 'coverage/',
-      reporters: [
-        {type: 'lcov'},
-        {type: 'text'}
-      ]
-    },
-
     preprocessors: {
       'spec.bundle.js': ['webpack', 'sourcemap']
     },
@@ -60,35 +71,18 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    customLaunchers: {
-      'PhantomJS_custom': {
-        base: 'PhantomJS',
-        options: {
-          windowName: 'my-window',
-          settings: {
-            webSecurityEnabled: false
-          },
-        },
-        flags: ['--load-images=true'],
-        debug: true
-      }
-    },
-
-    phantomjsLauncher: {
-      // Have phantomjs exit if a ResourceError is encountered (useful if karma exits without killing phantom)
-      exitOnResourceError: true
-    },
-
     autoWatch: false,
-    autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['PhantomJS'],
+    browsers: Object.keys(customLaunchers),
+    captureTimeout: 2400000,
+    browserNoActivityTimeout: 2400000,
     colors: true,
+    customLaunchers: customLaunchers,
     exclude: [],
     frameworks: ['mocha', 'should'],
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
     port: 9876,
-    reporters: ['mocha', 'growl', 'coverage'],
+    reporters: ['mocha', 'junit', 'saucelabs'],
     singleRun: true
   });
 };
