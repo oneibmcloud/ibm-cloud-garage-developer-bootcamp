@@ -11,7 +11,6 @@ export const addToCart = angular.module('addToCart', [
   uiRouter,
   ngAnimate,
   ngAria,
-
   ngMaterial
 ])
 
