@@ -14,7 +14,7 @@ describe('the products controller ', () => {
       const products = [
         {
           title: 'RF-97 Autograph',
-          variants: [{ price: 250 }],
+          variants: [{ price: 250, discount: 200 }],
           image: { src: 'http://www.ibm.com/image01' }
         }
       ];
