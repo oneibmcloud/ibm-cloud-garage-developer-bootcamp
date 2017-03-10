@@ -145,7 +145,7 @@ describe('the cart page', () => {
 
   it('does not show "cart empty" message when cart has something', () => {
     ($(element).find('span[rel=cart-empty-message]').length).should.equal(0);
-  }
+  });
 
   it('/#cart in the url', () => {
     $location.path('/cart');
