@@ -4,6 +4,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
   config.set({
+    junitReporter: {
+      outputDir: 'generated'
+    },
+
     webpack: {
       devtool: 'inline-source-map',
 
@@ -58,7 +62,7 @@ module.exports = function(config) {
     frameworks: ['mocha', 'should'],
     logLevel: config.LOG_INFO,
     port: 9876,
-    reporters: ['mocha', 'growl', 'coverage'],
+    reporters: ['mocha', 'growl', 'coverage', 'junit'],
     singleRun: false
   });
 };
