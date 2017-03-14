@@ -38,7 +38,7 @@ describe('the products page', () => {
     });
 
     it('a title', () => {
-      ($(element).find('.products-title').text()).should.equal('Products');
+      ($(element).find('h1[rel=' + '"products-title"' + ']').text()).should.equal('Products');
     });
   });
 });
