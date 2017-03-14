@@ -13,7 +13,6 @@ export const products = angular.module('products', [
   ngAria,
   ngMaterial
 ])
-
 .config( ($stateProvider) => {
   $stateProvider.
   state('products', {
