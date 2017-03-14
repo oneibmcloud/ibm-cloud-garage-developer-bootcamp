@@ -13,4 +13,12 @@ export const products = angular.module('products', [
   ngAria,
   ngMaterial
 ])
+
+.config( ($stateProvider) => {
+  $stateProvider.
+  state('products', {
+    url: '/products',
+    template: '<products></products>'
+  });
+})
 .directive('products', productsDirective);
