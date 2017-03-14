@@ -1,3 +1,4 @@
+import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
 import {products} from './products';
@@ -6,6 +7,9 @@ describe('the products page', () => {
   let $scope;
   let $location;
   let $state;
+
+  let element;
+  let $ = window.$;
 
   let buildTemplate = () => {
     return angular.element('<products products="products"></products>');
@@ -20,7 +24,7 @@ describe('the products page', () => {
     $state = _$state_;
     $location = _$location_;
 
-    $compile(buildTemplate())($scope);
+    element = $compile(buildTemplate())($scope);
     $scope.$digest();
   }));
 
@@ -31,6 +35,10 @@ describe('the products page', () => {
 
       ($state.current.url).should.equal('/products');
       ($state.current.name).should.equal('products');
+    });
+
+    it('a title', () => {
+      ($(element).find('.products-title').text()).should.equal('Products');
     });
   });
 });

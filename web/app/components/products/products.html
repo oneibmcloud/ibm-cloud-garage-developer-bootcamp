@@ -1,18 +1,3 @@
-<div>
-      <h1>Product Summary</h1>
-      <md-card md-theme="{{ showDarkTheme ? 'dark-blue' : 'default' }}" md-theme-watch="">
-        <md-card-title>
-          <md-card-title-text>
-            <span class="md-headline" rel="products-name"><a ng-href="#/product/{{vm.products[0].id}}">{{vm.products[0].title}}</a></span>
-            <span class="md-subhead" rel="products-price">{{vm.products[0].variants[0].price | currency}}</span>
-            <span class="md-subhead" rel="products-discount">{{vm.products[0].variants[0].discount | currency}}</span>
-          </md-card-title-text>
-          <md-card-title-media>
-            <div class="md-media-lg card-media" rel="products-image"><img ng-src="{{vm.products[0].image.src}}"></div>
-          </md-card-title-media>
-        </md-card-title>
-        <md-card-actions layout="row" layout-align="end center">
-        </md-card-actions>
-      </md-card>
-</div>
-
+<md-content class="products md-padding">
+  <h1 class="md-display-2" rel="products-title">Products</h1>
+</md-content>
