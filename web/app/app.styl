@@ -1,9 +1,21 @@
-@import url('http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.container
+  border-radius: 4px
+  margin-bottom: 16px
+  -webkit-transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1)
+  transition: 0.02s padding cubic-bezier(0.35, 0, 0.25, 1)
+  position: relative
+  padding-bottom: 0
+
+.layout-content
+  max-width: 960px
+  margin: 16px
+  box-sizing: border-box
 
 div.app
   min-width:300px;
-  width: 100vw;
+  width: vw;
   height: 100vh;
   min-height: 100%;
   margin: 0;
@@ -13,3 +25,31 @@ div.view-port
   overflow: auto;
   height: 100vh;
 
+md-toolbar h3
+  margin: auto
+  font-weight: 500
+
+
+md-list-item > button
+  width:100%
+  text-align:left !important
+
+.content
+  padding-left: 40px
+  padding-right: 40px
+  padding-top: 5px
+
+.avatar
+  position: relative
+  width: 128px
+  height: 128px
+  border: 1px solid #ddd
+  border-radius: 50%
+  display: inline-block
+  overflow: hidden
+  margin: 0px
+  vertical-align: middle
+  zoom:0.70
+  transform: translateZ(0)
+  -webkit-transform: scale(0.70)
+  -moz-transform:scale(0.70)
