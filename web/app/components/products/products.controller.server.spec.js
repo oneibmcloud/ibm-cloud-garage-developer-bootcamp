@@ -15,6 +15,14 @@ describe.only('the products controller', () => {
     return new ProductsController(productsService);
   };
 
+  let makeProductsControllerRejectWith = (productsService, popupService) => {
+    when(productsService.fetch('/products.json')).thenReject(
+    new Error('server error'));
+
+    ProductsController = require('./products.controller')['ProductsController'];
+    return new ProductsController(productsService, popupService);
+  };
+
   beforeEach(() => {
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
@@ -37,11 +45,8 @@ describe.only('the products controller', () => {
   });
 
   it('displays a popup on error', () => {
-    when(productsService.fetch('/products.json')).thenReject(
-        new Error('server error'));
-
-    ProductsController = require('./products.controller')['ProductsController'];
-    productsController = new ProductsController(productsService, popupService);
+    productsController =
+        makeProductsControllerRejectWith(productsService, popupService);
 
     return productsController.fetch('/products.json').then().catch(() => {
       verify(popupService.show('error requesting products: server error'));
