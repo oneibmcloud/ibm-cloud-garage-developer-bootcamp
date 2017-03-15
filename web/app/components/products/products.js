@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {productsComponent} from './products.component.js';
+import {productsComponent} from './products-component.js';
 import {productsServiceModule} from './service/products-service-module';
 
 import ngAnimate from 'angular-animate';

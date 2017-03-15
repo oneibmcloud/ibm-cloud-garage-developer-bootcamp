@@ -11,7 +11,7 @@ describe.only('the products controller', () => {
 
   let makeProductsControllerResolveWith = (productsService) => {
     when(productsService.fetch('/products.json')).thenResolve(['products']);
-    ProductsController = require('./products.controller')['ProductsController'];
+    ProductsController = require('./products-controller.js')['ProductsController'];
     return new ProductsController(productsService);
   };
 
@@ -19,7 +19,7 @@ describe.only('the products controller', () => {
     when(productsService.fetch('/products.json')).thenReject(
     new Error('server error'));
 
-    ProductsController = require('./products.controller')['ProductsController'];
+    ProductsController = require('./products-controller.js')['ProductsController'];
     return new ProductsController(productsService, popupService);
   };
 
