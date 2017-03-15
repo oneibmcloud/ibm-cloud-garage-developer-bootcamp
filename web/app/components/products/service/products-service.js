@@ -1,9 +1,5 @@
-const productsService = () => {
-  return {fetch: () => {}};
-};
+import angular from 'angular';
+import {productsService} from './products/products';
 
-//noinspection JSValidateTypes
-productsService.$inject = [];
-
-export {productsService};
-
+export const productsServiceModule = angular.module('productsServiceModule', [
+]).factory('productsService', productsService);

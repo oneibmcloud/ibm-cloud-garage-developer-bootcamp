@@ -2,7 +2,7 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
 import {productsComponent} from './products-component.js';
-import {productsServiceModule} from './service/products-service-module';
+import {productsServiceModule} from './service/products-service';
 
 import ngAnimate from 'angular-animate';
 import ngAria from 'angular-aria';

@@ -1,6 +1,6 @@
 import './products.styl';
 import template from './products.html';
-import {ProductsController as controller} from './products.controller';
+import {ProductsController as controller} from './products-controller';
 
 export const productsComponent = ()=> {
   return {

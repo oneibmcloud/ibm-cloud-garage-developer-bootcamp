@@ -24,10 +24,10 @@ describe.only('the products controller', () => {
   };
 
   beforeEach(() => {
-    productsService = require('./service/products-service').productsService();
+    productsService = require('./service/products/products').productsService();
     replace(productsService, 'fetch');
 
-    popupService = require('./service/popup-service').popupService();
+    popupService = require('./service/popup/popup').popupService();
     replace(popupService, 'show');
   });
 

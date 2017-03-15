@@ -1,8 +1,5 @@
-const popupService = () => {
-  return {show: () => {}};
-};
+import angular from 'angular';
+import {popupService} from './popup/popup';
 
-//noinspection JSValidateTypes
-popupService.$inject = [];
-
-export {popupService};
+export const popupServiceModule = angular.module('popupServiceModule', [
+]).factory('popupService', popupService);
