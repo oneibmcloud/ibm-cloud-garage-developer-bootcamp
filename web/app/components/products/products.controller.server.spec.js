@@ -3,8 +3,13 @@ import {replace, when} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
   it('has no products', () => {
+    let productsService;
+    productsService = require('./service/products-service').productsService();
+    replace(productsService, 'fetch');
+    when(productsService.fetch()).thenResolve(['products']);
+
     let ProductsController = require('./products.controller')['ProductsController'];
-    let productsController = new ProductsController();
+    let productsController = new ProductsController(productsService);
     productsController.products.should.deepEqual([]);
   });
 
