@@ -9,7 +9,8 @@ describe.only('the products controller', () => {
   let ProductsController;
   let productsController;
 
-  let makeProductsControllerWith = (productsService) => {
+  let makeProductsControllerResolveWith = (productsService) => {
+    when(productsService.fetch('/products.json')).thenResolve(['products']);
     ProductsController = require('./products.controller')['ProductsController'];
     return new ProductsController(productsService);
   };
@@ -23,13 +24,12 @@ describe.only('the products controller', () => {
   });
 
   it('has no products', () => {
-    productsController = makeProductsControllerWith(productsService);
+    productsController = makeProductsControllerResolveWith(productsService);
     productsController.products.should.deepEqual([]);
   });
 
   it('fetches products from the server', () => {
-    when(productsService.fetch('/products.json')).thenResolve(['products']);
-    productsController = makeProductsControllerWith(productsService);
+    productsController = makeProductsControllerResolveWith(productsService);
 
     return productsController.fetch('/products.json').then(() => {
       productsController.products.should.deepEqual(['products']);
