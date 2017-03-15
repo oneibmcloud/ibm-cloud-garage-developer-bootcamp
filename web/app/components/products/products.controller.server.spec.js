@@ -1,7 +1,7 @@
 /*eslint dot-notation: "off"*/
 /*eslint no-shadow: "off"*/
 
-import {replace, when} from '../../../../test-helper';
+import {replace, when, reset} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
   let productsService;
@@ -31,6 +31,8 @@ describe.only('the products controller', () => {
       productsController.products.should.deepEqual(['products']);
     });
   });
+
+  afterEach(() => reset());
 });
 
 
