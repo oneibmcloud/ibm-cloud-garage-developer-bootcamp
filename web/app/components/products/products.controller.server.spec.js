@@ -16,7 +16,7 @@ describe.only('the products controller', () => {
   beforeEach(() => {
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
-    when(productsService.fetch()).thenResolve(['products']);
+    when(productsService.fetch('/products.json')).thenResolve(['products']);
   });
 
   it('has no products', () => {
