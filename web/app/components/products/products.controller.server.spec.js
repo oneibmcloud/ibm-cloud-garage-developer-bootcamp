@@ -27,7 +27,7 @@ describe.only('the products controller', () => {
   it('fetches products from the server', () => {
     productsController = makeProductsControllerWith(productsService);
 
-    return productsController.fetch().then(() => {
+    return productsController.fetch('/products.json').then(() => {
       productsController.products.should.deepEqual(['products']);
     });
   });

@@ -1,11 +1,11 @@
 function ProductsController(productsService) {
   const vm = this;
   vm.products = [];
-  vm.fetch = productsService.fetch;
-
-  vm.fetch().then((products) => {
-    vm.products = products;
-  });
+  vm.fetch = url => {
+    return productsService.fetch(url).then((products) => {
+      vm.products = products;
+    });
+  };
 }
 
 ProductsController.$inject = ['productsService'];
