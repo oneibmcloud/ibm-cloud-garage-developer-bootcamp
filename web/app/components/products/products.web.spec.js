@@ -43,7 +43,7 @@ describe('the products page', () => {
       $(element).find('h1[rel=' + '"products-title"' + ']').text().should.equal('Products');
     });
 
-    it('products', (done) => {
+    it.skip('products', (done) => {
       $timeout(function() {
 
         $(element).find('span[rel=product-title]').length.should.equal(27);
