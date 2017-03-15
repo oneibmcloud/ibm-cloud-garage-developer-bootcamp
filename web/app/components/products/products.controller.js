@@ -1,9 +1,9 @@
-function ProductsController() {
+function ProductsController(productService) {
   const vm = this;
   vm.products = [];
-  vm.fetch = () => {};
+  vm.fetch = productService.fetch;
 }
 
-ProductsController.$inject = [];
+ProductsController.$inject = ['productService'];
 
 export {ProductsController};
