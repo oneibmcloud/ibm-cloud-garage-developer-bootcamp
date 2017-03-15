@@ -1,9 +1,10 @@
 /*eslint dot-notation: "off"*/
 /*eslint no-shadow: "off"*/
 
-import {replace, when, reset} from '../../../../test-helper';
+import {replace, when, reset, verify} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
+  let popupService;
   let productsService;
   let ProductsController;
   let productsController;
@@ -16,6 +17,9 @@ describe.only('the products controller', () => {
   beforeEach(() => {
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
+
+    popupService = require('./service/popup-service').popupService();
+    replace(popupService, 'show');
   });
 
   it('has no products', () => {
@@ -29,6 +33,18 @@ describe.only('the products controller', () => {
 
     return productsController.fetch('/products.json').then(() => {
       productsController.products.should.deepEqual(['products']);
+    });
+  });
+
+  it('displays a popup on error', () => {
+    when(productsService.fetch('/products.json')).thenReject(
+        new Error('server error'));
+
+    ProductsController = require('./products.controller')['ProductsController'];
+    productsController = ProductsController(productsService, popupService);
+
+    return productsController.fetch('/products.json').then().catch(() => {
+      verify(popupService.show('error requesting products: server error'));
     });
   });
 
