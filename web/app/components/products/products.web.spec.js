@@ -30,7 +30,7 @@ describe('the products page', () => {
     $scope.$digest();
   }));
 
-  describe('shows', () => {
+  describe.skip('shows', () => {
     it('/#products in the url', () => {
       $location.path('/products');
       $scope.$apply();
@@ -43,7 +43,7 @@ describe('the products page', () => {
       $(element).find('h1[rel=' + '"products-title"' + ']').text().should.equal('Products');
     });
 
-    it.skip('products', (done) => {
+    it('products', (done) => {
       $timeout(function() {
 
         $(element).find('span[rel=product-title]').length.should.equal(27);
