@@ -41,7 +41,7 @@ describe.only('the products controller', () => {
         new Error('server error'));
 
     ProductsController = require('./products.controller')['ProductsController'];
-    productsController = ProductsController(productsService, popupService);
+    productsController = new ProductsController(productsService, popupService);
 
     return productsController.fetch('/products.json').then().catch(() => {
       verify(popupService.show('error requesting products: server error'));
