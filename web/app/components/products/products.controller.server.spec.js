@@ -1,4 +1,6 @@
 /*eslint dot-notation: "off"*/
+/*eslint no-shadow: "off"*/
+
 import {replace, when} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
@@ -6,7 +8,7 @@ describe.only('the products controller', () => {
   let ProductsController;
   let productsController;
 
-  let makeProductsController = () => {
+  let makeProductsControllerWith = (productsService) => {
     ProductsController = require('./products.controller')['ProductsController'];
     productsController = new ProductsController(productsService);
   };
@@ -18,7 +20,7 @@ describe.only('the products controller', () => {
   });
 
   it('has no products', () => {
-    makeProductsController();
+    makeProductsControllerWith(productsService);
     productsController.products.should.deepEqual([]);
   });
 
