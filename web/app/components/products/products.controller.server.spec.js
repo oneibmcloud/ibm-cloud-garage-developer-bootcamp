@@ -1,5 +1,5 @@
 /*eslint dot-notation: "off"*/
-import {replace, when} from '../../../../test-helper'
+import {replace, when} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
   it('has no products', () => {
