@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {productsDirective} from './products.directive.js';
+import {productsComponent} from './products.component.js';
 
 import ngAnimate from 'angular-animate';
 import ngAria from 'angular-aria';
@@ -20,4 +20,4 @@ export const products = angular.module('products', [
     template: '<products></products>'
   });
 })
-.directive('products', productsDirective);
+.directive('products', productsComponent);

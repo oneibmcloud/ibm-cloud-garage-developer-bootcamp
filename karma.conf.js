@@ -13,6 +13,7 @@ module.exports = function(config) {
 
       module: {
         loaders: [
+          {test: /\.svg$/, loader: 'raw'},
           {test: /\.html$/, loader: 'raw'},
           {test: /\.styl$/, loader: 'style!css!stylus'},
           {test: /\.css/, loader: 'style!css'},
@@ -56,7 +57,7 @@ module.exports = function(config) {
     autoWatch: true,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should'],

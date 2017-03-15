@@ -1,7 +1,7 @@
 import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
-import {entryPoint} from './app';
+import {entryPoint} from './entry-point';
 
 describe('the app\'s entry point', () => {
   let $scope;
@@ -9,7 +9,7 @@ describe('the app\'s entry point', () => {
   let $ = window.$;
 
   let buildTemplate = () => {
-    return angular.element('<app></app>');
+    return angular.element('<entry-point></entry-point>');
   };
 
   beforeEach(window.module(entryPoint.name));

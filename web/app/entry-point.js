@@ -3,7 +3,7 @@ import '../styles/style.css';
 
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import {appDirective} from './app.directive';
+import {entryPointContainer} from './entry-point-container';
 
 import ngAnimate from 'angular-animate';
 import ngAria from 'angular-aria';
@@ -25,4 +25,4 @@ export const entryPoint = angular.module('app', [
   $mdThemingProvider.theme('default');
 })
 
-.directive('app', appDirective);
+.directive('entryPoint', entryPointContainer);

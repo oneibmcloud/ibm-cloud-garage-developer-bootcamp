@@ -10,7 +10,7 @@ const webpack = require('webpack-stream');
 const paths = {
   app: ['web/app/**/*.{js,styl,html,json}', 'web/styles/**/*.styl'],
   dest: 'dist',
-  entry: 'web/app/app.js',
+  entry: 'web/app/entry-point.js',
   html: ['web/index.html', 'web/app/**/*.html'],
   js: 'web/app/**/*!(.spec.js).js',
   styl: ['web/app/**/*.styl', 'web/style/**/*.styl'],

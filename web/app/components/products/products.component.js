@@ -2,7 +2,7 @@ import './products.styl';
 import template from './products.html';
 import {ProductsController as controller} from './products.controller';
 
-export const productsDirective = ()=> {
+export const productsComponent = ()=> {
   return {
     template,
     restrict: 'E',
