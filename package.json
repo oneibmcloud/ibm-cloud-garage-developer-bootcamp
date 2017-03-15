@@ -17,8 +17,8 @@
     "spec:clear": "clear && npm run spec",
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec:clear || true'",
     "tdd": "npm-run-all --parallel *:watch",
-    "test": "karma start karma.conf.js",
-    "test:coverage": "karma start karma.conf.coverage.js",
+    "test:watch": "karma start karma.conf.js",
+    "test": "karma start karma.conf.coverage.js",
     "ci": "npm-run-all --parallel *:ci",
     "test:ci": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
   },
