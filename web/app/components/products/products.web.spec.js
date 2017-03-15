@@ -42,5 +42,14 @@ describe('the products page', () => {
     it('a title', () => {
       $(element).find('h1[rel=' + '"products-title"' + ']').text().should.equal('Products');
     });
+
+    it('products', (done) => {
+      $timeout(function() {
+
+        $(element).find('span[rel=product-title]').length.should.equal(27);
+        done();
+
+      }, 1000);
+    });
   });
 });
