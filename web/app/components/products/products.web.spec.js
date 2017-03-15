@@ -1,15 +1,12 @@
+/*eslint no-undef: "off"*/
+
 import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
 import {products} from './products';
 
 describe('the products page', () => {
-  let $scope;
-  let $location;
-  let $state;
-
-  let element;
-  let $ = window.$;
+  let $scope, $location, $state, element, $timeout;
 
   let buildTemplate = () => {
     return angular.element('<products products="products"></products>');
@@ -17,12 +14,17 @@ describe('the products page', () => {
 
   beforeEach(window.module('ui.router'));
   beforeEach(window.module(products.name));
+  beforeEach(angular.mock.http.init);
+  afterEach(angular.mock.http.reset);
 
-  beforeEach(window.inject((
-      $rootScope, $compile, _$state_, _$location_) => {
+  beforeEach(window.inject(($rootScope, $compile, _$state_, _$location_,
+  _$timeout_, $httpBackend) => {
+
     $scope = $rootScope.$new();
     $state = _$state_;
     $location = _$location_;
+    $timeout = _$timeout_;
+    $httpBackend.whenGET(/.*/).passThrough();
 
     element = $compile(buildTemplate())($scope);
     $scope.$digest();
@@ -38,7 +40,7 @@ describe('the products page', () => {
     });
 
     it('a title', () => {
-      ($(element).find('h1[rel=' + '"products-title"' + ']').text()).should.equal('Products');
+      $(element).find('h1[rel=' + '"products-title"' + ']').text().should.equal('Products');
     });
   });
 });
