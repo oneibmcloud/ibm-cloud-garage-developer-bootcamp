@@ -2,22 +2,22 @@
 import {replace, when} from '../../../../test-helper';
 
 describe.only('the products controller', () => {
+  let productsService;
+  let ProductsController;
+  let productsController;
+
   it('has no products', () => {
-    let productsService;
+
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
     when(productsService.fetch()).thenResolve(['products']);
 
-    let ProductsController = require('./products.controller')['ProductsController'];
-    let productsController = new ProductsController(productsService);
+    ProductsController = require('./products.controller')['ProductsController'];
+    productsController = new ProductsController(productsService);
     productsController.products.should.deepEqual([]);
   });
 
   it('fetches products from the server', () => {
-    let productsService;
-    let ProductsController;
-    let productsController;
-
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
     when(productsService.fetch()).thenResolve(['products']);
