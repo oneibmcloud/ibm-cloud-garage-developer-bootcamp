@@ -1,8 +1,8 @@
-const popupService = () => {
+const popup = () => {
   return {show: () => {}};
 };
 
 //noinspection JSValidateTypes
-popupService.$inject = [];
+popup.$inject = [];
 
-export {popupService};
+export {popup};

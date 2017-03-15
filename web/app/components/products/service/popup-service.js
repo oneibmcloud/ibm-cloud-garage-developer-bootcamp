@@ -1,5 +1,5 @@
 import angular from 'angular';
-import {popupService} from './popup/popup';
+import {popup} from './popup/popup';
 
-export const popupServiceModule = angular.module('popupServiceModule', [
-]).factory('popupService', popupService);
+export const popupService = angular.module('popupService', [
+]).factory('popup', popup);

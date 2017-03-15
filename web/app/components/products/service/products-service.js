@@ -1,5 +1,5 @@
 import angular from 'angular';
-import {productsService} from './products/products';
+import {products} from './products/products';
 
-export const productsServiceModule = angular.module('productsServiceModule', [
-]).factory('productsService', productsService);
+export const productsService = angular.module('productsService', [
+]).factory('products', products);

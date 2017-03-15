@@ -1,19 +1,21 @@
-function ProductsController(productsService, popupService) {
+/*eslint no-shadow: "off"*/
+
+function ProductsController(products, popup) {
   const vm = this;
   vm.products = [];
 
   vm.fetch = url => {
-    return productsService.fetch(url)
+    return products.fetch(url)
     .then((products) => {
       vm.products = products;
     })
     .catch((error) => {
-      popupService.show('error requesting products: ' + error.message);
+      popup.show('error requesting products: ' + error.message);
     });
   };
 }
 
 //noinspection JSValidateTypes
-ProductsController.$inject = ['productsService'];
+ProductsController.$inject = ['products'];
 
 export {ProductsController};

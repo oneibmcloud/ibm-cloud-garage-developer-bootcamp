@@ -1,9 +1,9 @@
-const productsService = () => {
+const products = () => {
   return {fetch: () => {}};
 };
 
 //noinspection JSValidateTypes
-productsService.$inject = [];
+products.$inject = [];
 
-export {productsService};
+export {products};
 

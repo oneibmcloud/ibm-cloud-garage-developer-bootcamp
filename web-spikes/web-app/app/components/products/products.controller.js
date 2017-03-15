@@ -28,6 +28,6 @@ function ProductsController(productsService) {
   vm.getProducts();
 }
 
-ProductsController.$inject = ['productsService'];
+ProductsController.$inject = ['products'];
 
 export {ProductsController};
