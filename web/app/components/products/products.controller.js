@@ -1,4 +1,5 @@
-function ProductsController() {}
+function ProductsController() {
+}
 
 ProductsController.$inject = [];
 
