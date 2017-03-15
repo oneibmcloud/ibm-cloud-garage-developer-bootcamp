@@ -6,6 +6,11 @@ describe.only('the products controller', () => {
   let ProductsController;
   let productsController;
 
+  let makeProductsController = function() {
+    ProductsController = require('./products.controller')['ProductsController'];
+    productsController = new ProductsController(productsService);
+  };
+
   beforeEach(() => {
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
@@ -13,8 +18,7 @@ describe.only('the products controller', () => {
   });
 
   it('has no products', () => {
-    ProductsController = require('./products.controller')['ProductsController'];
-    productsController = new ProductsController(productsService);
+    makeProductsController();
     productsController.products.should.deepEqual([]);
   });
 
