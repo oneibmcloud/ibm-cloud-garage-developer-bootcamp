@@ -6,22 +6,19 @@ describe.only('the products controller', () => {
   let ProductsController;
   let productsController;
 
-  it('has no products', () => {
-
+  beforeEach(() => {
     productsService = require('./service/products-service').productsService();
     replace(productsService, 'fetch');
     when(productsService.fetch()).thenResolve(['products']);
+  });
 
+  it('has no products', () => {
     ProductsController = require('./products.controller')['ProductsController'];
     productsController = new ProductsController(productsService);
     productsController.products.should.deepEqual([]);
   });
 
   it('fetches products from the server', () => {
-    productsService = require('./service/products-service').productsService();
-    replace(productsService, 'fetch');
-    when(productsService.fetch()).thenResolve(['products']);
-
     ProductsController = require('./products.controller')['ProductsController'];
     productsController = new ProductsController(productsService);
 
