@@ -6,7 +6,7 @@ describe.only('the products controller', () => {
   let ProductsController;
   let productsController;
 
-  let makeProductsController = function() {
+  let makeProductsController = () => {
     ProductsController = require('./products.controller')['ProductsController'];
     productsController = new ProductsController(productsService);
   };
