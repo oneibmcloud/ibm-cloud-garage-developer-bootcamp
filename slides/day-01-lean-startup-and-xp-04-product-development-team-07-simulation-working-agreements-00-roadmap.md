@@ -2,7 +2,7 @@
 
 ##WordCount, Inc.
 - - -
-* **working agreements**
+* **road map**
 
 <img class="plain" height="80%" width="80%" src="resources/teaming-simulation/roadmap.png" />
 
