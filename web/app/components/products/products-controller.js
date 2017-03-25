@@ -5,17 +5,23 @@ function ProductsController(products, popup) {
   vm.products = [];
 
   vm.fetch = url => {
-    return products.fetch(url)
-    .then((products) => {
+    const futureProducts = products.fetch(url);
+
+    futureProducts.then((products) => {
       vm.products = products;
-    })
-    .catch((error) => {
-      popup.show('error requesting products: ' + error.message);
+      return products;
     });
+
+    futureProducts.catch((error) => {
+      popup.show('error: ' + error.status + ' requesting products: ' + error.statusMessage);
+      return error;
+    });
+
+    return futureProducts;
   };
 }
 
 //noinspection JSValidateTypes
-ProductsController.$inject = ['products'];
+ProductsController.$inject = ['products', 'popup'];
 
 export {ProductsController};

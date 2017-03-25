@@ -3,7 +3,7 @@
 
 import {replace, when, reset, verify} from '../../../../test-helper';
 
-describe.only('the products controller', () => {
+describe('the products controller', () => {
   let popupService;
   let productsService;
   let ProductsController;
@@ -16,8 +16,9 @@ describe.only('the products controller', () => {
   };
 
   let makeProductsControllerRejectWith = (productsService, popupService) => {
-    when(productsService.fetch('/products.json')).thenReject(
-    new Error('server error'));
+    when(productsService.fetch('/products.json')).thenReject({
+      status: 99999999,
+      statusMessage: 'we fucked up'});
 
     ProductsController = require('./products-controller.js')['ProductsController'];
     return new ProductsController(productsService, popupService);
@@ -48,8 +49,8 @@ describe.only('the products controller', () => {
     productsController =
         makeProductsControllerRejectWith(productsService, popupService);
 
-    return productsController.fetch('/products.json').then().catch(() => {
-      verify(popupService.show('error requesting products: server error'));
+    return productsController.fetch('/products.json').catch(() => {
+      verify(popupService.show('error: 99999999 requesting products: we fucked up'));
     });
   });
 
