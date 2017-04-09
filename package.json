@@ -4,11 +4,13 @@
   "description": "scaffold, docs, slides and resources for the Bluemix Garage Developer Bootcamp",
   "main": "index.js",
   "scripts": {
-    "lint": "esw -f simple-detail web server",
-    "lint:watch": "npm run lint -- --watch",
-    "spec": "nyc --reporter=lcov --reporter=text --require babel-register mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
-    "spec:watch": "nodemon --exec 'npm run spec'",
-    "tdd": "npm run spec:watch",
+    "clear": "node ./clear.js",
+    "lint": "npm run clear && esw -f simple-detail web server ",
+    "lint:watch": "nodemon 2>/dev/null  --exec 'npm run lint'",
+    "cov": "nyc --reporter=lcov --reporter=text --require babel-register mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
+    "spec": "mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
+    "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec || true'",
+    "tdd": "npm-run-all --parallel *:watch",
     "test": "karma start karma.conf.js"
   },
   "repository": {
