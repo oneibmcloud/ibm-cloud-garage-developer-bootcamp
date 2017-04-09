@@ -1,4 +1,5 @@
 import Rx from 'rxjs/Rx';
+import console from 'better-console';
 
 let separate = function() {
   console.log('');
@@ -27,7 +28,7 @@ describe.only('rxjs', () => {
     });
   });
 
-  it('observers are lazy and execute only if necessary', (done) => {
+  it('observers are lazy: execute only if necessary', (done) => {
     separate();
 
     const publisher = Rx.Observable.create(observer => {
@@ -64,4 +65,18 @@ describe.only('rxjs', () => {
       subscriber.unsubscribe();
     }, 500);
   });
+
+  it('acts like asynchronous arrays', (done) => {
+    separate();
+
+    const source = Rx.Observable.interval(300).take(6);
+
+    source.filter(x => x % 2 === 1)
+    .map(x => x + '!')
+    .forEach(x => {
+      console.info(x);
+      if (x === '5!') done();
+    });
+  });
+
 });
