@@ -26,4 +26,42 @@ describe.only('rxjs', () => {
       done();
     });
   });
+
+  it('observers are lazy and execute only if necessary', (done) => {
+    separate();
+
+    const publisher = Rx.Observable.create(observer => {
+      const id = setTimeout(() => {
+        console.log('    timeout hit');
+        observer.error(new Error('my bad'));
+        observer.next(42);
+        observer.complete();
+        done();
+      }, 1000);
+
+      console.log('    timeout started');
+
+      return () => {
+        console.log('    disposal called');
+        clearTimeout(id);
+        done();
+      };
+    });
+
+    const subscriber = publisher.subscribe(x => {
+      console.log('    success handler called: ' + x);
+    },
+    (error) => {
+      console.error(error);
+    },
+    () => {
+      console.info('    complete handler called');
+    });
+
+
+    setTimeout(() => {
+      console.info('    un-subscribe');
+      subscriber.unsubscribe();
+    }, 500);
+  });
 });
