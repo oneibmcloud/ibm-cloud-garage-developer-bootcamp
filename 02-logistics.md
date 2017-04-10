@@ -1,8 +1,8 @@
 # Logistics
 
-#####Pairing Stations:
+##### Pairing Stations:
 
-* Mac Desktop and Peripheral 27” Display, or
+* Mac Desktop and 27” Peripheral Display, or
 * MacBook Pro Laptop and 2 27” Peripheral Displays.
 * 2 Keyboards.
 * 2 Mice.
@@ -10,12 +10,12 @@
 
 <br>
 
-#####Workgroup Configuration Preferences:
+##### Workgroup Configuration Preferences:
 
-* Several tables with room for one pairing station.
+* Several tables, each one of which has room for one pairing station.
 * Easily reconfigurable tables on wheels for self-organizing group work.
-* U-shaped or cabaret-style audience configuration for presentations.
-* Macs are preferred over Windows or Linux.
+* Conference room-style, U-shaped or cabaret-style audience configuration for presentations.
+* Macs are preferred over Linux over Windows.
 
 <br>
 

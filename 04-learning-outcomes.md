@@ -1,6 +1,6 @@
 # Learning Outcomes
 
-* The Significance of Empathy for the User in Development
+* The Significance of Empathy for the Customer in Development.
 
 * The Meaning of Being Agile.
 
@@ -12,7 +12,7 @@
 
 * What is Product Value.
 
-* How to Design and Plan the Development Cycles.
+* How to Design, Plan and Roadmap the Development Cycles.
 
 * How to Deliver Early and Often.
 

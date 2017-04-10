@@ -1,6 +1,6 @@
 # Facilities
 
-#####We require the following facilities to ensure a successful bootcamp experience (see figure 1):
+##### We require the following facilities to ensure a successful bootcamp experience (see figure 1):
 
 * [Large Format Display](https://www.cdw.com/shop/search/hubs/Monitors-Projectors/Large-Format-Displays/d8.aspx)
 * Instructor’s Podium
