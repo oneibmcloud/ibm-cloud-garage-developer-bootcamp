@@ -1,0 +1,32 @@
+sudo: false
+language: node_js
+cache:
+  yarn: true
+  directories:
+    - node_modules
+node_js: 7
+branches:
+  only:
+    - dev1
+    - dev2
+    - dev3
+    - dev4
+    - dev5
+    - dev6
+notifications:
+  email: true
+before_script
+  CURRENT_BRANCH="git symbolic-ref --short HEAD"
+  git branch integration
+  git fetch origin integration
+  git merge integration --ff-only
+script:
+  - npm run ci
+after_success
+  CURRENT_BRANCH="git symbolic-ref --short HEAD"
+  git checkout integration
+  git pull origin integration
+  git merge $CURRENT_BRANCH --no-ff --log
+  git push origin integration
+before_deploy
+  npm pack

@@ -25,9 +25,13 @@
     "test:coverage": "karma start karma.conf.coverage.js",
     "test:watch": "karma start karma.conf.js"
   },
+  "homepage": "https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp/issues"
   },
   "keywords": [
     "node"
@@ -35,13 +39,15 @@
   "author": "IBM",
   "license": "UNLICENSED",
   "private": true,
-  "bugs": {
-    "url": "https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp/issues"
-  },
-  "homepage": "https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp#readme",
   "engines": {
     "node": "7.8.0"
   },
+  "files": [
+    "dist",
+    "server",
+    ".cfignore",
+    ".manifest-dev.yml"
+  ],
   "dependencies": {
     "angular": "1.5.9",
     "angular-animate": "1.5.9",
