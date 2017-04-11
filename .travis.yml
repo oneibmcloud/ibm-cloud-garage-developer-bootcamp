@@ -16,16 +16,10 @@ branches:
 notifications:
   email: true
 before_script:
-  CURRENT_BRANCH="git symbolic-ref --short HEAD" &&
-  git branch integration &&
-  git fetch origin integration &&
-  git merge integration --ff-only
+  ./scripts/merge-from-known-good.sh
 script:
   npm run ci
 after_success:
-  git checkout integration &&
-  git pull origin integration &&
-  git merge $CURRENT_BRANCH --no-ff --log &&
-  git push origin integration --no-verif
+  ./scripts/merge-to-known-good.sh
 before_deploy:
   npm pack
