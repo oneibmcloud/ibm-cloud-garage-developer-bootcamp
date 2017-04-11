@@ -2,7 +2,7 @@
 
 * Sign up for a trial account at [IBM Bluemix](https://console.ng.bluemix.net/registration/).
 
-* Sign up for a trial account at [Sauce Labs](https://saucelabs.com/signup/trial/).
+* Sign up for a trial account at [Sauce Labs](https://saucelabs.com/signup/trial/) (please wait until right before the bootcamp to sign-up for this free 14-day trial).
 
 * Sign up for a trial account at [Safari Books Online](https://www.safaribooksonline.com/register/).
 
