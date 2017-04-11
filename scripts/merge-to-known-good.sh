@@ -7,6 +7,6 @@ echo "$CURRENT_BRANCH"
 git checkout integration
 git pull origin integration
 git merge "$CURRENT_BRANCH" --no-ff --log
-git push origin integration --no-verif
+git push https://$USERNAME:$PASSWORD@github.com/wpannell/capstone-project.git integration --no-verif
 
 
