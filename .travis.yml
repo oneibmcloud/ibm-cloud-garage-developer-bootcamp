@@ -16,17 +16,17 @@ branches:
 notifications:
   email: true
 before_script:
-  CURRENT_BRANCH="git symbolic-ref --short HEAD"
-  git branch integration
-  git fetch origin integration
+  CURRENT_BRANCH="git symbolic-ref --short HEAD" &&
+  git branch integration &&
+  git fetch origin integration &&
   git merge integration --ff-only
 script:
   npm run ci
 after_success:
-  CURRENT_BRANCH="git symbolic-ref --short HEAD"
-  git checkout integration
-  git pull origin integration
-  git merge $CURRENT_BRANCH --no-ff --log
+  CURRENT_BRANCH="git symbolic-ref --short HEAD" &&
+  git checkout integration &&
+  git pull origin integration &&
+  git merge $CURRENT_BRANCH --no-ff --log &&
   git push origin integration --no-verif
 before_deploy:
   npm pack
