@@ -1,13 +1,13 @@
-# IBM Singapore Bluemix Garage Method Developer Bootcamp
+# IBM Cloud Garage Method Developer Bootcamp
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git)
 ## Getting Started
 
-####Change your node version, clone the repo, install and run the tests:
+#### Change your node version, clone the repo, install and run the tests:
 
 ````
-nvm use v4.2.2
-git clone git@github.com:wpannell/javascript-topic-trials.git app
+nvm use v7.8.0
+git clone git@github.com:wpannell/ibm-cloud-garage-method-developer-bootcamp.git app
 cd app
 npm install
 npm run lint
@@ -16,7 +16,7 @@ npm run spec
 
 ___
 
-###[The Four Rules of Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html):
+### [The Four Rules of Simple Design](https://martinfowler.com/bliki/BeckDesignRules.html):
 
 * **_Passes the tests_**
 * **_Reveals intention_**
@@ -25,7 +25,7 @@ ___
 
 ___
 
-###[The Transformation Priority Premise](https://8thlight.com/blog/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html):
+### [The Transformation Priority Premise](https://8thlight.com/blog/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html):
 
 ````
 ({}–>nil) no code at all->code that employs nil
