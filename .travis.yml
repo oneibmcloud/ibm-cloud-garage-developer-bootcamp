@@ -15,6 +15,7 @@ branches:
     - dev6
 notifications:
   email: true
+  slack: bluemix-garage-skills:TbJLoFILC1nL93wJlP2F9YMb
 before_script:
   ./scripts/merge-from-known-good.sh
 script:
