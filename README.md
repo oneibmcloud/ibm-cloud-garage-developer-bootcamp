@@ -1,6 +1,8 @@
 # IBM Cloud Garage Method Developer Bootcamp
+[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git)
+
 ## Getting Started
 
 #### Change your node version, clone the repo, install and run the tests:
