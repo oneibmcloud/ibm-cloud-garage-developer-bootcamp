@@ -1,10 +1,12 @@
 #!/bin/bash
 
-CURRENT_BRANCH="git symbolic-ref --short HEAD"
+
+CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+echo "$CURRENT_BRANCH"
 
 git checkout integration
 git pull origin integration
-git merge $CURRENT_BRANCH --no-ff --log
+git merge "$CURRENT_BRANCH" --no-ff --log
 git push origin integration --no-verif
 
 
