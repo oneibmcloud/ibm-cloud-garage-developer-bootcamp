@@ -5,22 +5,25 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server",
+    "ci": "npm-run-all --parallel *:ci",
     "clear": "node ./clear.js",
     "dev": "gulp",
     "dist": "gulp dist",
     "lint": "esw -f simple-detail web server",
-    "lint:ci": "npm run lint",
+    "lint:ci": "npm-run-all clear lint spec ",
     "lint:watch": "nodemon 2>/dev/null  --exec 'npm run lint'",
+    "precommit": "npm-run-all clear lint spec test",
+    "prepush": "npm run ci",
     "server:coverage": "nyc --reporter=lcov --reporter=text --require babel-register npm run spec",
     "spec": "mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  **/*server.spec.js",
     "spec:ci": "npm run server:coverage",
     "spec:clear": "clear && npm run spec",
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec:clear || true'",
     "tdd": "npm-run-all --parallel *:watch",
-    "test:watch": "karma start karma.conf.js",
-    "test": "karma start karma.conf.coverage.js",
-    "ci": "npm-run-all --parallel *:ci",
-    "test:ci": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js"
+    "test": "karma start karma.conf.js --single-run --no-auto-watch",
+    "test:ci": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.saucelabs.js",
+    "test:coverage": "karma start karma.conf.coverage.js",
+    "test:watch": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -30,7 +33,8 @@
     "node"
   ],
   "author": "IBM",
-  "license": "IBM",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp/issues"
   },
@@ -47,6 +51,7 @@
     "basic-auth": "1.0.3",
     "body-parser": "^1.15.2",
     "cfenv": "1.0.x",
+    "diff-so-fancy": "^0.11.4",
     "express": "4.14.0",
     "fs-promise": "1.0.0",
     "immutable": "3.8.1",
@@ -58,6 +63,7 @@
     "normalize.css": "3.0.3",
     "ramda": "0.22.1",
     "ramda-cli": "1.2.2",
+    "rimraf": "^2.6.1",
     "rxjs": "5.0.3"
   },
   "devDependencies": {
@@ -84,6 +90,7 @@
     "gulp-eslint": "1.1.1",
     "gulp-task-listing": "1.0.1",
     "gulp-todoist": "0.0.2",
+    "husky": "0.13.3",
     "jeet": "6.1.2",
     "json-loader": "^0.5.4",
     "karma": "1.3.0",

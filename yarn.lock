@@ -1806,6 +1806,10 @@ di@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/di/-/di-0.0.1.tgz#806649326ceaa7caa3306d75d985ea2748ba913c"
 
+diff-so-fancy@^0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/diff-so-fancy/-/diff-so-fancy-0.11.4.tgz#85a91c13969e7217231374cfe8b50ac1583ab72f"
+
 diff@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-1.4.0.tgz#7f28d2eb9ee7b15a97efd89ce63dcfdaa3ccbabf"
