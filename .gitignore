@@ -4,6 +4,7 @@ launchConfigurations/
 bower_components/
 dist/
 resources
+index.html
 # Logs
 logs
 *.log
