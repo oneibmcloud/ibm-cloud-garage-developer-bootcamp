@@ -1,4 +1,6 @@
 sudo: false
+addons:
+  firefox: "latest"
 language: node_js
 cache:
   yarn: true
