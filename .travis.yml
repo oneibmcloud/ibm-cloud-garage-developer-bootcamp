@@ -41,10 +41,5 @@ deploy:
   region: ng
   api: https://api.ng.bluemix.net
   on:
-    branch: dev6
-    branch: dev5
-    branch: dev4
-    branch: dev3
-    branch: dev2
-    branch: dev1
+    branch: **
 
