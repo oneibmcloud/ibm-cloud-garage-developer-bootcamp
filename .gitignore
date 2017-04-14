@@ -1,6 +1,8 @@
 launchConfigurations/
 .DS_Store
 .idea
+capstone-project.iml
+
 bower_components/
 dist/
 resources
