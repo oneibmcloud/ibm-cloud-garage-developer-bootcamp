@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -ev
 
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 echo "$CURRENT_BRANCH"
