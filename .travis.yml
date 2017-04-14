@@ -31,12 +31,16 @@ after_success:
 before_deploy:
   npm pack
 deploy:
-   edge: true
-   provider: bluemixcloudfoundry
-   username: wgpannel@us.ibm.com
-   password: (1ny@3cCLNYABC
-   organization: BMXEDU
-   space: garage-bootcamp-dev
-   manifest: manifest-dev.yml
-   region: ng
-   api: https://api.ng.bluemix.net
+  edge: true
+  provider: bluemixcloudfoundry
+  username: wgpannel@us.ibm.com
+  password: (1ny@3cCLNYABC
+  organization: BMXEDU
+  space: garage-bootcamp-dev
+  manifest: manifest-dev.yml
+  region: ng
+  api: https://api.ng.bluemix.net
+  on:
+    branch:
+      all_branches: true
+
