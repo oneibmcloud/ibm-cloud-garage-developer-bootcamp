@@ -1,7 +1,16 @@
 sudo: false
 addons:
   firefox: "latest"
+env:
+  global:
+  - CF_APP=[app name]
+  - CF_API=[API endpoint]
+  - CF_USERNAME=[user]
+  - CF_ORGANIZATION=[organization]
+  - CF_SPACE=[space]
+
 before_install:
+  - sudo apt-get install cf-cli
   # Start a display server where all graphical operations happens in memory
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
@@ -33,13 +42,12 @@ before_deploy:
 deploy:
   edge: true
   provider: bluemixcloudfoundry
+  manifest: manifest-dev.yml
   username: wgpannel@us.ibm.com
   password: (1ny@3cCLNYABC
   organization: BMXEDU
   space: garage-bootcamp-dev
-  manifest: manifest-dev.yml
   region: ng
-  api: https://api.ng.bluemix.net
   on:
     all_branches: true
 
