@@ -22,7 +22,7 @@
     "spec:watch": "nodemon 2>/dev/null  --exec 'npm run spec:clear || true'",
     "tdd": "npm-run-all --parallel *:watch",
     "test": "karma start karma.conf.js --single-run --no-auto-watch",
-    "test:ci": "mkdir -p generated && node_modules/karma/bin/karma start karma.conf.ci.js",
+    "test:ci": "node_modules/karma/bin/karma start karma.conf.ci.js",
     "test:coverage": "mkdir -p generated && karma start karma.conf.coverage.js",
     "test:watch": "mkdir -p generated && karma start karma.conf.js"
   },
