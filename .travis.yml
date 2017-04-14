@@ -41,7 +41,7 @@ deploy:
   provider: bluemixcloudfoundry
   manifest: manifest-dev.yml
   username: wgpannel@us.ibm.com
-  password: (1ny@3cCLNYABC
+  password: \(1ny\@3cCLNYABC
   organization: BMXEDU
   space: garage-bootcamp-dev
   on:
