@@ -30,3 +30,13 @@ after_success:
   ./scripts/merge-to-known-good.sh
 before_deploy:
   npm pack
+deploy:
+   edge: true
+   provider: bluemixcloudfoundry
+   username: wgpannel@us.ibm.com
+   password: (1ny@3cCLNYABC
+   organization: BMXEDU
+   space: garage-bootcamp-dev
+   manifest: manifest-dev.yml
+   region: ng
+   api: https://api.ng.bluemix.net
