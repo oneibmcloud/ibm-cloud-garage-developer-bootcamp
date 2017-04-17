@@ -5,16 +5,46 @@
 
 ## Getting Started
 
+#### On Windows install [yarn](https://chocolatey.org/install)
+
+
 #### Change your node version, clone the repo, install and run the tests:
 
 ````
-nvm use v7.8.0
+nvm use v7.9.0
 git clone git@github.com:wpannell/ibm-cloud-garage-method-developer-bootcamp.git app
 cd app
-npm install
-npm run lint
-npm run spec
+yarn install
+yarn run lint
+yarn run spec
 ````
+
+___
+
+#### Linux/Mac workflow:
+
+````
+yarn run tdd
+````
+
+
+___
+#### Windows workflow:
+
+In three separate Bash shells:
+
+````
+yarn run test:watch
+````
+
+````
+yarn run lint:watch
+````
+
+````
+yarn run spec:watch
+````
+
 
 ___
 
