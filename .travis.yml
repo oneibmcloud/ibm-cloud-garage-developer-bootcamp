@@ -36,7 +36,16 @@ script:
 after_success:
   ./scripts/merge-to-known-good.sh
 before_deploy:
-  ./scripts/before-deploy.sh
+  - yarn run dist
+  - yarn install --production --ignore-scripts --prefer-offline --force
+  - yarn global add shx --exact
+  - shx mv server dist
+  - shx mv node_modules dist
+  - shx mv package.json dist
+  - shx mv .cfignore dist
+  - shx mv manifest-dev.yml dist
+  - shx mv README.md dist
+  - shx mv LICENSE dist
 deploy:
   provider: bluemixcloudfoundry
   manifest: manifest-dev.yml
