@@ -24,7 +24,7 @@
     "spec:mac": "nodemon 2>/dev/null  --exec 'npm run spec || true'",
     "tdd": "npm-run-all --parallel *:mac",
     "test": "karma start karma.conf.js --single-run --no-auto-watch",
-    "test:ci": "node_modules/karma/bin/karma start karma.conf.ci.js",
+    "test:ci": "karma start karma.conf.ci.js",
     "test:coverage": "karma start karma.conf.coverage.js",
     "test:watch": "karma start karma.conf.js",
     "test:mac": "npm run test:watch"
