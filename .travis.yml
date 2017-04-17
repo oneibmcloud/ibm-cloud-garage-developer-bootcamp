@@ -36,9 +36,7 @@ script:
 after_success:
   ./scripts/merge-to-known-good.sh
 before_deploy:
-  - npm run dist
-  - npm pack
-  - tar -xzvf ibm-cloud-garage-method-developer-bootcamp-1.0.0.tgz
+  ./scripts/before-deploy.sh
 deploy:
   provider: bluemixcloudfoundry
   manifest: manifest-dev.yml

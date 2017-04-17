@@ -24,7 +24,7 @@ gulp.task('build', ['todo'], function() {
 });
 
 gulp.task('clean', function() {
-  return del(['dist/**/*.*', 'dist/img', '*.tgz', 'package']);
+  return del(['dist/']);
 });
 
 gulp.task('copy', function() {
