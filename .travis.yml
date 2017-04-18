@@ -40,6 +40,7 @@ before_deploy:
   - npm prune --production
   - npm pack
   - tar -xzvf ibm-cloud-garage-method-developer-bootcamp-1.0.0.tgz
+  - mv node_modules package
 deploy:
   provider: bluemixcloudfoundry
   manifest: manifest-dev.yml
