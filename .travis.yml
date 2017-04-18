@@ -4,6 +4,8 @@ addons:
   artifacts:
     debug: true
     s3_region: "us-west-1"
+    working_dir: WORKING_DIR
+    target_paths: $TRAVIS_BUILD_NUMBER
     paths:
       - dist
       - coverage
