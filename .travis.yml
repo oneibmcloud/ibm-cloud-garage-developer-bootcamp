@@ -1,7 +1,7 @@
 sudo: false
 addons:
   firefox: "latest"
-  artifacts: true
+  artifacts:
     debug: true
     s3_region: "us-west-1"
     paths:
