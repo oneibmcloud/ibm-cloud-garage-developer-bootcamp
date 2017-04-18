@@ -1,15 +1,6 @@
 sudo: false
 addons:
   firefox: "latest"
-  artifacts:
-    debug: true
-    s3_region: "us-west-1"
-    working_dir: WORKING_DIR
-    target_paths: $TRAVIS_BUILD_NUMBER
-    paths:
-      - dist
-      - coverage
-      - generated
 env:
   global:
   - CF_APP=[app name]
@@ -45,16 +36,10 @@ script:
 after_success:
   ./scripts/merge-to-known-good.sh
 before_deploy:
-  - yarn run dist
-  - yarn install --production --ignore-scripts --prefer-offline --force
-  - yarn global add shx --exact
-  - shx mv server dist
-  - shx mv node_modules dist
-  - shx mv package.json dist
-  - shx mv .cfignore dist
-  - shx cp manifest-dev.yml dist
-  - shx mv README.md dist
-  - shx mv LICENSE dist
+  - npm run dist
+  - npm prune --production
+  - npm pack
+  - tar -xzvf ibm-cloud-garage-method-developer-bootcamp-1.0.0.tgz
 deploy:
   provider: bluemixcloudfoundry
   manifest: manifest-dev.yml
