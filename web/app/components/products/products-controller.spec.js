@@ -1,7 +1,7 @@
 /*eslint dot-notation: "off"*/
 /*eslint no-shadow: "off"*/
 
-import {replace, when, reset, verify} from '../../../../test-helper';
+import td from 'testdouble';
 
 describe('the products controller', () => {
   let popupService;
@@ -10,13 +10,13 @@ describe('the products controller', () => {
   let productsController;
 
   let makeProductsControllerResolveWith = (productsService) => {
-    when(productsService.fetch('/products.json')).thenResolve(['products']);
+    td.when(productsService.fetch('/products.json')).thenResolve(['products']);
     ProductsController = require('./products-controller.js')['ProductsController'];
     return new ProductsController(productsService);
   };
 
   let makeProductsControllerRejectWith = (productsService, popupService) => {
-    when(productsService.fetch('/products.json')).thenReject({
+    td.when(productsService.fetch('/products.json')).thenReject({
       status: 99999999,
       statusMessage: 'we fucked up'});
 
@@ -26,10 +26,10 @@ describe('the products controller', () => {
 
   beforeEach(() => {
     productsService = require('./service/products/products').products();
-    replace(productsService, 'fetch');
+    td.replace(productsService, 'fetch');
 
     popupService = require('./service/popup/popup').popup();
-    replace(popupService, 'show');
+    td.replace(popupService, 'show');
   });
 
   it('has no products', () => {
@@ -50,11 +50,11 @@ describe('the products controller', () => {
         makeProductsControllerRejectWith(productsService, popupService);
 
     return productsController.fetch('/products.json').catch(() => {
-      verify(popupService.show('error: 99999999 requesting products: we fucked up'));
+      td.verify(popupService.show('error: 99999999 requesting products: we fucked up'));
     });
   });
 
-  afterEach(() => reset());
+  afterEach(() => td.reset());
 });
 
 

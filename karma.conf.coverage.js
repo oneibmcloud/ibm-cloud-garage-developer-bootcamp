@@ -66,7 +66,7 @@ module.exports = function(config) {
     browsers: ['Chrome'],
     colors: true,
     exclude: [],
-    frameworks: ['mocha', 'should'],
+    frameworks: ['mocha', 'should', 'testdouble'],
     logLevel: config.LOG_INFO,
     port: 9876,
     reporters: ['mocha', 'growl', 'coverage', 'junit'],
