@@ -79,7 +79,7 @@ module.exports = function(config) {
     colors: true,
     customLaunchers: customLaunchers,
     exclude: [],
-    frameworks: ['mocha', 'should'],
+    frameworks: ['mocha', 'should', 'testdouble'],
     logLevel: config.LOG_DEBUG,
     port: 9876,
     reporters: ['mocha', 'junit', 'saucelabs'],
