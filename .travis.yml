@@ -1,6 +1,13 @@
 sudo: false
 addons:
   firefox: "latest"
+  artifacts: true
+    debug: true
+    s3_region: "us-west-1"
+    paths:
+      - dist
+      - coverage
+      - generated
 env:
   global:
   - CF_APP=[app name]
