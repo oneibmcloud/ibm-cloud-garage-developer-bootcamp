@@ -6,5 +6,5 @@ applications:
   name: ibm-cloud-garage-dev-upskill-group-dev
   host: ibm-cloud-garage-dev-upskill-group-dev
   disk_quota: 1024M
-  path: ./dist
+  path: ./package
   command: npm start
