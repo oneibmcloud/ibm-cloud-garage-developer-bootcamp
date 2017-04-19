@@ -28,6 +28,7 @@ const styl = folder + '/' + stylFileName;
 const controller = folder + '/' + controllerFileName;
 const component = folder + '/' + componentFileName;
 const angularModule = folder + '/' + moduleFileName;
+const spec = folder + '/' + filename + '.spec.js';
 
 const controllerName = filename.split('-').reduce((acc, segment) => {
   return acc + upperCase(segment);
@@ -90,12 +91,49 @@ export const ` + moduleName + ' = angular.angularModule(\'' + moduleName + `', [
 `
 );
 
+fs.writeFileSync(spec,
+`
+import 'script!jquery/dist/jquery';
+import angular from 'angular';
+
+import {` + componentName + '} from \'./' + componentFileName + `';
+
+describe('the ` + filename + `', () => {
+  let $scope;
+
+  let element;
+  let $ = window.$;
+
+  let buildTemplate = () => {
+    return angular.element('<` + filename + '></' + filename + `>');
+  };
+
+  beforeEach(window.module(` + componentName + `.name));
+
+  beforeEach(window.inject(($rootScope, $compile) => {
+    $scope = $rootScope.$new();
+    element = $compile(buildTemplate())($scope);
+    $scope.$digest();
+  }));
+
+  describe('shows the product', () => {
+    it.skip('name: RF-97 Autograph', () => {
+      $scope.product = {title: 'RF-97 Autograph'};
+      $scope.$digest();
+      ($(element).find('span[rel=' + '"product-title"' + ']').text())
+          .should.equal('RF-97 Autograph');
+    });
+  });
+});
+`);
+
 const componentBuilder = {
   html: html,
   styl: styl,
   controller: controller + '.js',
   component: component + '.js',
   module: angularModule + '.js',
+  spec: spec,
   folder: folder,
   filename: filename
 };
