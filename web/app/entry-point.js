@@ -11,7 +11,7 @@ import ngMaterial from 'angular-material';
 
 import {components} from './components/components';
 
-export const entryPoint = angular.module('app', [
+export const entryPoint = angular.module('entryPoint', [
   uiRouter,
   ngAnimate,
   ngAria,
