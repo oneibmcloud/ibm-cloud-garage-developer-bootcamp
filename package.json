@@ -21,7 +21,7 @@
     "spec:ci": "npm run server:coverage",
     "spec:clear": "clear && npm run spec",
     "spec:watch": "nodemon --exec npm run spec:clear || true",
-    "spec:mac": "nodemon 2>/dev/null  --exec 'npm run spec || true'",
+    "spec:mac": "nodemon 2>/dev/null  --exec 'npm run spec:clear || true'",
     "tdd": "npm-run-all --parallel *:mac",
     "test": "karma start karma.conf.js --single-run --no-auto-watch",
     "test:ci": "karma start karma.conf.ci.js",
