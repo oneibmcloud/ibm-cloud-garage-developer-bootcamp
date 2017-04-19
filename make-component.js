@@ -1,7 +1,6 @@
-#!/usr/bin/env node
+const fs = require('fs');
+const R = require('ramda');
 
-import fs from 'fs';
-import R from 'ramda';
 const {tail, head, toUpper, toLower, compose, juxt, join} = R;
 
 const upperCase = compose(
@@ -28,7 +27,7 @@ const html = folder + '/' + htmlFileName;
 const styl = folder + '/' + stylFileName;
 const controller = folder + '/' + controllerFileName;
 const component = folder + '/' + componentFileName;
-const module = folder + '/' + moduleFileName;
+const angularModule = folder + '/' + moduleFileName;
 
 const controllerName = filename.split('-').reduce((acc, segment) => {
   return acc + upperCase(segment);
@@ -72,7 +71,7 @@ fs.writeFileSync(component + '.js',
   '};\n'
 );
 
-fs.writeFileSync(module + '.js',
+fs.writeFileSync(angularModule + '.js',
 `import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngAnimate from 'angular-animate';
@@ -81,7 +80,7 @@ import ngMaterial from 'angular-material';
 
 import {` + componentName + '} from \'./' + componentFileName + `';
 
-export const ` + moduleName + ' = angular.module(\'' + moduleName + `', [
+export const ` + moduleName + ' = angular.angularModule(\'' + moduleName + `', [
   uiRouter,
   ngAnimate,
   ngAria,
@@ -91,12 +90,15 @@ export const ` + moduleName + ' = angular.module(\'' + moduleName + `', [
 `
 );
 
-export const componentBuilder = {
+const componentBuilder = {
   html: html,
   styl: styl,
   controller: controller + '.js',
   component: component + '.js',
-  module: module + '.js',
+  module: angularModule + '.js',
   folder: folder,
   filename: filename
 };
+
+module.exports = componentBuilder;
+
