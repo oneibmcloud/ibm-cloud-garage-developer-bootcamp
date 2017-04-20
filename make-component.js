@@ -14,7 +14,7 @@ const lowerCase = compose(
 );
 
 const folder = __dirname;
-const parent = __dirname.split('/');
+const parent = __dirname.split('\\');
 const filename = parent[parent.length - 1];
 
 const htmlFileName = filename + '.html';
