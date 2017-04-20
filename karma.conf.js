@@ -13,11 +13,10 @@ module.exports = function(config) {
 
       module: {
         loaders: [
-          {test: /\.svg$/, loader: 'raw'},
           {test: /\.html$/, loader: 'raw'},
           {test: /\.styl$/, loader: 'style!css!stylus'},
           {test: /\.css/, loader: 'style!css'},
-          { test: /\.json$/, loader: 'json-loader' },
+          {test: /\.json$/, loader: 'json-loader' },
           {
             test: /\.js$/,
             loader: 'babel',

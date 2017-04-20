@@ -16,7 +16,7 @@ module.exports = function(config) {
           {test: /\.html$/, loader: 'raw'},
           {test: /\.styl$/, loader: 'style!css!stylus'},
           {test: /\.css/, loader: 'style!css'},
-          { test: /\.json$/, loader: 'json-loader' },
+          {test: /\.json$/, loader: 'json-loader' },
           {
             test: /\.js$/,
             loader: 'babel',
@@ -44,12 +44,8 @@ module.exports = function(config) {
       {pattern: 'web/data/*.json', watched: false, included: false, served: true, nocache: false}
     ],
 
-    coverageReporter: {
-      dir: 'coverage/',
-      reporters: [
-          {type: 'lcov'},
-          {type: 'text'}
-      ]
+    proxies: {
+      '/': '/base/web/data/'
     },
 
     preprocessors: {
@@ -58,6 +54,14 @@ module.exports = function(config) {
 
     webpackServer: {
       noInfo: true
+    },
+
+    coverageReporter: {
+      dir: 'coverage/',
+      reporters: [
+          {type: 'lcov'},
+          {type: 'text'}
+      ]
     },
 
     autoWatch: false,
