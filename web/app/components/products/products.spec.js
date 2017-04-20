@@ -30,7 +30,7 @@ describe('the products page', () => {
     $scope.$digest();
   }));
 
-  describe.skip('shows', () => {
+  describe('shows', () => {
     it('/#products in the url', () => {
       $location.path('/products');
       $scope.$apply();
