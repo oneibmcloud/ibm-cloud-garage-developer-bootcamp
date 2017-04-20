@@ -1,9 +1,11 @@
-const products = () => {
-  return {fetch: () => {}};
+const products = ($http) => {
+  return {fetch: (url) => {
+    return $http.get(url);
+  }};
 };
 
 //noinspection JSValidateTypes
-products.$inject = [];
+products.$inject = ['$http'];
 
 export {products};
 
