@@ -1,8 +1,9 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 
-import {productsComponent} from './products-component.js';
-import {productsService} from './service/products-service';
+import {productsComponent} from './products-component';
+import {productsService} from './service/products';
+import {popupService} from './service/popup';
 
 import ngAnimate from 'angular-animate';
 import ngAria from 'angular-aria';
@@ -14,7 +15,8 @@ export const products = angular.module('products', [
   ngAria,
   ngMaterial,
 
-  productsService.name
+  productsService.name,
+  popupService.name
 ])
 .config( ($stateProvider) => {
   $stateProvider.
