@@ -1,8 +1,23 @@
 <div layout="column" layout-fill ng-cloak>
-  <header-ibm></header-ibm>
+  <header>
+    <md-toolbar md-scroll-shrink>
+      <div layout="row" layout-align="center center" flex>
+        HEADER
+      </div>
+    </md-toolbar>
+  </header>
 
   <main layout="row" layout-align="left" flex>
-    <side-nav></side-nav>
+    <md-sidenav class="md-whiteframe-3dp" md-is-locked-open="true">
+      <md-list>
+        <md-list-item>
+          <md-button>
+            <md-icon class="material-icons md-48">accessibility</md-icon>
+            Lawrence Ray
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
 
     <md-content ui-view="" class="content" flex>
       <section>
@@ -163,8 +178,23 @@
       </section>
     </md-content>
 
-    <side-nav></side-nav>
+    <md-sidenav class="md-whiteframe-3dp" md-is-locked-open="true">
+      <md-list>
+        <md-list-item>
+          <md-button>
+            <md-icon class="material-icons md-48">accessibility</md-icon>
+            Lawrence Ray
+          </md-button>
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
   </main>
 
-  <footer-ibm></footer-ibm>
+  <header>
+    <md-toolbar md-scroll-shrink>
+      <div layout="row" layout-align="center center" flex>
+        FOOTER
+      </div>
+    </md-toolbar>
+  </header>
 </div>
