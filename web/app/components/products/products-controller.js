@@ -7,9 +7,9 @@ function ProductsController(products, popup) {
   vm.fetch = url => {
     const futureProducts = products.fetch(url);
 
-    futureProducts.then((products) => {
-      vm.products = products;
-      return products;
+    futureProducts.then((response) => {
+      vm.products = response.data.products;
+      return response.data.products;
     });
 
     futureProducts.catch((error) => {
@@ -19,6 +19,8 @@ function ProductsController(products, popup) {
 
     return futureProducts;
   };
+
+  vm.fetch('/products.json');
 }
 
 //noinspection JSValidateTypes
