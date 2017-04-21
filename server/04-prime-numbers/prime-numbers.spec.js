@@ -4,7 +4,9 @@ describe('the prime numbers canary spec', () => {
   });
 
   describe('a prime numbers function should', () => {
-    it('return none for 1');
+    it('return none for 1', () => {
+      primeFactorsOf(1).should.deepEqual([]);
+    });
 
     it('return 2 for 2');
 
