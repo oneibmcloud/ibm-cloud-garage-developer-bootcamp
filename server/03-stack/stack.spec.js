@@ -3,6 +3,13 @@ describe('the stack spec', () => {
     true.should.be.true();
   });
 
+  const makeStack = () => {
+    return {
+      isEmpty: () => true,
+      size: () => 0
+    };
+  };
+
   const stack = {
     isEmpty: () => true,
     size: () => 0
@@ -35,4 +42,5 @@ describe('the stack spec', () => {
 
     it('accept only positive capacity');
   });
-});
+}
+);
