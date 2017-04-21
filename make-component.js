@@ -82,7 +82,7 @@ import ngMaterial from 'angular-material';
 
 import {` + componentName + '} from \'./' + componentFileName + `';
 
-export const ` + moduleName + ' = angular.angularModule(\'' + moduleName + `', [
+export const ` + moduleName + ' = angular.module(\'' + moduleName + `', [
   uiRouter,
   ngAnimate,
   ngAria,
