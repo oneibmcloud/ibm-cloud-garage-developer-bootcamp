@@ -17,10 +17,12 @@ describe('the stack spec', () => {
 
   describe('a stack should', () => {
     it('start empty', () => {
+      stack = makeStack();
       stack.isEmpty().should.be.true();
     });
 
     it('start with stack size 0', () => {
+      stack = makeStack();
       stack.size().should.equal(0);
     });
 
