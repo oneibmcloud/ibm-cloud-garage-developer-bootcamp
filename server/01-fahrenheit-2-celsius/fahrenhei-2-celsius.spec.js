@@ -1,5 +1,7 @@
-describe('the fahrenheit2celsius canary test', () => {
-  it('shows the infrastructure works');
+describe('the fahrenheit2celsius canary spec', () => {
+  it('shows the infrastructure works', () => {
+    true.should.be.true();
+  });
 
   describe('fahrenheit2celsius should', () => {
     it('give 0°C for 32°F');
