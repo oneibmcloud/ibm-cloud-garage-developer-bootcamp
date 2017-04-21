@@ -88,7 +88,15 @@ describe('the stack spec', () => {
       stack.pop().should.equal(element);
     });
 
-    it('pop the same two pushed');
+    it('pop the same two pushed', () => {
+      const element1 = {};
+      const element2 = {};
+      stack.push(element1);
+      stack.push(element2);
+
+      stack.pop().should.equal(element2);
+      stack.pop().should.equal(element1);
+    });
 
     it('accept only positive capacity');
   });
