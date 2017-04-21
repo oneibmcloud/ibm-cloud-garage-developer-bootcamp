@@ -35,11 +35,17 @@ describe('the prime numbers canary spec', () => {
       primeFactorsOf(4).should.deepEqual([2, 2]);
     });
 
-    it('return 5 for 5');
+    it('return 5 for 5', () => {
+      primeFactorsOf(5).should.deepEqual([5]);
+    });
 
-    it('return 2, 3 for 6');
+    it('return 2, 3 for 6', () => {
+      primeFactorsOf(6).should.deepEqual([2, 3]);
+    });
 
-    it('return 7 for 7');
+    it('return 7 for 7', () => {
+      primeFactorsOf(7).should.deepEqual([7]);
+    });
 
     it('return 2, 2, 2 for 8');
 
