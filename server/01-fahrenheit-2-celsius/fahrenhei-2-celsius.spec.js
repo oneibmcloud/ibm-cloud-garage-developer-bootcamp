@@ -4,7 +4,9 @@ describe('the fahrenheit2celsius canary spec', () => {
   });
 
   describe('fahrenheit2celsius should', () => {
-    it('give 0°C for 32°F');
+    it('give 0°C for 32°F', () => {
+      fahrenheit2celsiusOf(32).should.equal(0);
+    });
     it('give 10°C for 50°F');
   });
 });
