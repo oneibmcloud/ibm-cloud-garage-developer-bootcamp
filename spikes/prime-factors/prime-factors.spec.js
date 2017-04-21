@@ -1,2 +1,0 @@
-describe.skip('prime factors', () => {
-});
