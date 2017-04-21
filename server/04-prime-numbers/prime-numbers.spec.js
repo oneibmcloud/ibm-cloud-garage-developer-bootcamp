@@ -10,7 +10,7 @@ describe('the prime numbers canary spec', () => {
         factors.push(2);
         number /= 2;
       }
-      factors.push(number);
+      if (number > 1) factors.push(number);
     }
     return factors;
   };
