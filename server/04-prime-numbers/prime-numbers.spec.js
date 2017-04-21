@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 describe('the prime numbers canary spec', () => {
   it('shows the infrastructure works', () => {
     true.should.be.true();
