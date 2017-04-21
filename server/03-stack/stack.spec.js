@@ -4,7 +4,7 @@ describe('the stack spec', () => {
   });
 
   const stack = {
-    isEmpty: () => null
+    isEmpty: () => true
   };
 
   describe('a stack should', () => {
