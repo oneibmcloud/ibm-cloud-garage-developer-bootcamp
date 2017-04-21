@@ -14,8 +14,6 @@ describe('the prime numbers canary spec', () => {
       divisor++;
     }
 
-    if (number > 1) factors.push(number);
-
     return factors;
   };
 
