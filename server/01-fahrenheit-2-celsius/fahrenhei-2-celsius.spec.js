@@ -3,7 +3,7 @@ describe('the fahrenheit2celsius canary spec', () => {
     true.should.be.true();
   });
 
-  let fahrenheit2celsiusOf = () => 0;
+  let fahrenheit2celsiusOf = (number) => (number - 32) * 5 / 9;
 
   describe('fahrenheit2celsius should', () => {
     it('give 0°C for 32°F', () => {
