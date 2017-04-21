@@ -46,6 +46,8 @@ describe('the prime numbers canary spec', () => {
       primeFactorsOf(8).should.deepEqual([2, 2, 2]);
     });
 
-    it('return 3, 3 for 9');
+    it('return 3, 3 for 9', () => {
+      primeFactorsOf(9).should.deepEqual([3, 3]);
+    });
   });
 });
