@@ -98,7 +98,7 @@ describe('the stack spec', () => {
       stack.pop().should.equal(element1);
     });
 
-    it('accept only positive capacity');
+    it('negative capacity');
   });
 }
 );
