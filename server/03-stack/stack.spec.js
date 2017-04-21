@@ -9,7 +9,7 @@ describe('the stack spec', () => {
     return {
       push: () => size++,
       isEmpty: () => size === 0,
-      size: () => 0
+      size: () => size
     };
   };
 
