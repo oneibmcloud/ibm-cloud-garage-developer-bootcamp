@@ -36,6 +36,10 @@ describe('the palindrome canary spec', () => {
       }).should.throw('Error: please pass a non-empty string.');
     });
 
-    it('error for not a string');
+    it('error for not a string', () => {
+      (() => {
+        isPalindrome();
+      }).should.throw('Error: please pass a string.');
+    });
   });
 });
