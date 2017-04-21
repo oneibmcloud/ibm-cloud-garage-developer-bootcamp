@@ -4,19 +4,19 @@ describe('the stack spec', () => {
   });
 
   const makeStack = (capacity = 2) => {
-    let queue;
+    const queue = [];
     let size = 0;
 
     return {
       pop: () => {
         if (size === 0) throw new Error('Error: underflow.');
         size--;
-        return queue;
+        return queue.pop();
       },
 
       push: (element) => {
         if (size === capacity) throw new Error('Error: overflow.');
-        queue = element;
+        queue.push(element);
         size++;
       },
 
