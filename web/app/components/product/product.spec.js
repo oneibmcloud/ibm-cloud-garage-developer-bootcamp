@@ -24,7 +24,12 @@ describe('the product', () => {
   describe('shows the product', () => {
     it('title', () => {
       ($(element).find('h1').text())
-          .should.equal('Products');
+          .should.startWith('Products');
+    });
+
+    it('count', () => {
+      ($(element).find('h1').text())
+          .should.endWith('3');
     });
   });
 });
