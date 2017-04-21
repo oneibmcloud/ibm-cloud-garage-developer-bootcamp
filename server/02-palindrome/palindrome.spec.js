@@ -6,6 +6,7 @@ describe('the palindrome canary spec', () => {
   let isPalindrome = (phrase) => {
     if (typeof phrase !== 'string') throw new Error('Error: please pass a string.');
     if (phrase === '') throw new Error('Error: please pass a non-empty string.');
+
     return phrase === phrase.split('').reverse().join('');
   };
 
