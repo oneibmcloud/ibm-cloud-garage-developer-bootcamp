@@ -10,7 +10,10 @@ describe('the palindrome canary spec', () => {
       isPalindrome('mom').should.be.true();
     });
 
-    it('false for dude');
+    it('false for dude', () => {
+      isPalindrome('dude').should.be.false();
+    });
+
     it('true for mom mom');
     it('false for dad mom');
     it('true for whitespaces');
