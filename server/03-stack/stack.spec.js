@@ -4,7 +4,9 @@ describe('the stack spec', () => {
   });
 
   describe('a stack should', () => {
-    it('start empty');
+    it('start empty', () => {
+      stack.isEmpty().should.be.true();
+    });
 
     it('start with stack size 0');
 
