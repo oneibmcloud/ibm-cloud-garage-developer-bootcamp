@@ -9,9 +9,10 @@ describe('the prime numbers canary spec', () => {
     const factors = [];
     let divisor = 2;
 
-    for (number > 1; number % divisor === 0; number /= divisor) factors.push(divisor);
-    divisor++;
-    for (number > 1; number % divisor === 0; number /= divisor) factors.push(divisor);
+    while (number > 1) {
+      for (; number % divisor === 0; number /= divisor) factors.push(divisor);
+      divisor++;
+    }
 
     if (number > 1) factors.push(number);
 
