@@ -10,7 +10,7 @@ describe('the stack spec', () => {
       pop: () => size--,
 
       push: () => {
-        if (size === capacity) throw new Error('hello');
+        if (size === capacity) throw new Error('Error: overflow.');
         size++;
       },
 
