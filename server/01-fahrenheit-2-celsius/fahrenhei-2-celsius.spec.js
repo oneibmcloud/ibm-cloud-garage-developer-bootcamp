@@ -4,7 +4,7 @@ describe('the fahrenheit2celsius canary spec', () => {
   });
 
   let fahrenheit2celsiusOf = function(number) {
-    
+    return null;
   }
   describe('fahrenheit2celsius should', () => {
     it('give 0°C for 32°F', () => {
