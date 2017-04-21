@@ -3,9 +3,8 @@ describe('the fahrenheit2celsius canary spec', () => {
     true.should.be.true();
   });
 
-  let fahrenheit2celsiusOf = function(number) {
-    return 0;
-  }
+  let fahrenheit2celsiusOf = () => 0;
+
   describe('fahrenheit2celsius should', () => {
     it('give 0°C for 32°F', () => {
       fahrenheit2celsiusOf(32).should.equal(0);
