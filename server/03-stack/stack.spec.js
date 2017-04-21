@@ -45,7 +45,11 @@ describe('the stack spec', () => {
       stack.isEmpty().should.be.true();
     });
 
-    it('leave stack size 0 when pushed and popped');
+    it('leave stack size 0 when pushed and popped', () => {
+      stack.push();
+      stack.pop();
+      stack.size().should.equal(0);
+    });
 
     it('overflow');
 
