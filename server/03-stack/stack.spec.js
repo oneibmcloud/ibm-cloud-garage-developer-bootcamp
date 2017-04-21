@@ -65,6 +65,17 @@ describe('the stack spec', () => {
       }).should.throw('Error: overflow.');
     });
 
+    it('underflow', () => {
+      stack.push();
+      stack.push();
+      stack.pop();
+      stack.pop();
+
+      (() => {
+        stack.pop();
+      }).should.throw('Error: overflow.');
+    });
+
     it('underflow');
 
     it('pop the same one pushed');
