@@ -3,12 +3,17 @@ describe('the stack spec', () => {
     true.should.be.true();
   });
 
-  const makeStack = () => {
+  const makeStack = (capacity = 2) => {
     let size = 0;
 
     return {
       pop: () => size--,
-      push: () => size++,
+
+      push: () => {
+        if (size === capacity) throw new Error('hello');
+        size++;
+      },
+
       isEmpty: () => size === 0,
       size: () => size
     };
