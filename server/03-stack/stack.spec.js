@@ -12,7 +12,9 @@ describe('the stack spec', () => {
       stack.isEmpty().should.be.true();
     });
 
-    it('start with stack size 0');
+    it('start with stack size 0', () => {
+      stack.size().should.equal(0);
+    });
 
     it('not be empty when pushed');
 
