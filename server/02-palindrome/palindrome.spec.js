@@ -4,8 +4,8 @@ describe('the palindrome canary spec', () => {
   });
 
   let isPalindrome = function(s) {
-    
-  }
+    return null;
+  };
   describe('palindrome should be', () => {
     it('true for mom', () => {
       isPalindrome('mom').should.be.true();
