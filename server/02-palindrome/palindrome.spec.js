@@ -9,6 +9,7 @@ describe('the palindrome canary spec', () => {
     it('true for mom', () => {
       isPalindrome('mom').should.be.true();
     });
+
     it('false for dude');
     it('true for mom mom');
     it('false for dad mom');
