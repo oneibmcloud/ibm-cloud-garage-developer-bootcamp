@@ -5,6 +5,7 @@ describe('the stack spec', () => {
 
   const makeStack = () => {
     return {
+      push: () => {},
       isEmpty: () => true,
       size: () => 0
     };
