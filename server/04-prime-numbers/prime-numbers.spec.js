@@ -10,7 +10,9 @@ describe('the prime numbers canary spec', () => {
       primeFactorsOf(1).should.deepEqual([]);
     });
 
-    it('return 2 for 2');
+    it('return 2 for 2', () => {
+      primeFactorsOf(2).should.deepEqual([2]);
+    });
 
     it('return 3 for 3');
 
