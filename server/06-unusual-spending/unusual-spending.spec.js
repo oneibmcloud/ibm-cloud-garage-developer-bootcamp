@@ -12,7 +12,7 @@ describe('unusual spending', () => {
     const categorizedPayments = {dummy: 'categorized payments'};
 
     when(fetch(userId)).thenReturn(payments);
-    when(categorize('payments')).thenReturn(categorizedPayments);
+    when(categorize(payments)).thenReturn(categorizedPayments);
 
     let unusualSpending = require('./unusual-spending')['unusualSpending'];
     unusualSpending(userId);
