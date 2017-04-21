@@ -5,7 +5,13 @@ describe('the prime numbers canary spec', () => {
 
   const primeFactorsOf = (number) => {
     const factors = [];
-    if (number > 1) factors.push(number);
+    if (number > 1) {
+      if (number % 2 === 0) {
+        factors.push(2);
+        number /= 2;
+      }
+      factors.push(number);
+    }
     return factors;
   };
 
