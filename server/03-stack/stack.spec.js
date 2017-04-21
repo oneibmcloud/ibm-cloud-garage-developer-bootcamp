@@ -10,10 +10,7 @@ describe('the stack spec', () => {
     };
   };
 
-  let stack = {
-    isEmpty: () => true,
-    size: () => 0
-  };
+  let stack;
 
   describe('a stack should', () => {
     beforeEach(() => {
