@@ -10,7 +10,7 @@ describe('the stack spec', () => {
     };
   };
 
-  const stack = {
+  let stack = {
     isEmpty: () => true,
     size: () => 0
   };
