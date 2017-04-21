@@ -8,7 +8,7 @@ describe('the stack spec', () => {
 
     return {
       pop: () => {
-        if (size === 0) throw new Error('Error: overflow.');
+        if (size === 0) throw new Error('Error: underflow.');
         size--;
       },
 
