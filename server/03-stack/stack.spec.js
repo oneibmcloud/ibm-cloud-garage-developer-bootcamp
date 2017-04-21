@@ -4,6 +4,7 @@ describe('the stack spec', () => {
   });
 
   const makeStack = (capacity = 2) => {
+    if (capacity < 0) throw new Error('holla');
     const queue = [];
     let size = 0;
 
