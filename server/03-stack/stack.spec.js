@@ -79,7 +79,11 @@ describe('the stack spec', () => {
       }).should.throw('Error: underflow.');
     });
 
-    it('pop the same one pushed');
+    it('pop the same one pushed', () => {
+      const element = {};
+      stack.push(element);
+      stack.pop().should.equal(element);
+    });
 
     it('pop the same two pushed');
 
