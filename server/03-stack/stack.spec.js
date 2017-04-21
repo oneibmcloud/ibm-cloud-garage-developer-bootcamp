@@ -7,6 +7,7 @@ describe('the stack spec', () => {
     let size = 0;
 
     return {
+      pop: () => {},
       push: () => size++,
       isEmpty: () => size === 0,
       size: () => size
