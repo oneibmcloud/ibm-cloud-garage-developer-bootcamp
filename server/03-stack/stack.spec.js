@@ -7,7 +7,10 @@ describe('the stack spec', () => {
     let size = 0;
 
     return {
-      pop: () => size--,
+      pop: () => {
+        if (size === 0) throw new Error('Error: overflow.');
+        size--;
+      },
 
       push: () => {
         if (size === capacity) throw new Error('Error: overflow.');
@@ -73,7 +76,7 @@ describe('the stack spec', () => {
 
       (() => {
         stack.pop();
-      }).should.throw('Error: overflow.');
+      }).should.throw('Error: underflow.');
     });
 
     it('underflow');
