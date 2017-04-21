@@ -99,9 +99,8 @@ describe('the stack spec', () => {
     });
 
     it('negative capacity', () => {
-      stack = makeStack(-1);
       (() => {
-        stack.pop();
+        stack = makeStack(-1);
       }).should.throw('Error: negative capacity.');
     });
   });
