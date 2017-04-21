@@ -30,7 +30,12 @@ describe('the palindrome canary spec', () => {
       isPalindrome('     ').should.be.true();
     });
 
-    it('error for empty string');
+    it('error for empty string', () => {
+      (() => {
+        isPalindrome('');
+      }).should.equal('Error: please pass a non-empty string.')
+    });
+
     it('error for not a string');
   });
 });
