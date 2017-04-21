@@ -4,6 +4,7 @@ describe('the palindrome canary spec', () => {
   });
 
   let isPalindrome = (word) => {
+    if (word === '') throw new Error('Error: please pass a non-empty string.');
     return word === word.split('').reverse().join('');
   };
 
@@ -25,7 +26,6 @@ describe('the palindrome canary spec', () => {
     });
 
     it('true for whitespace', () => {
-      isPalindrome('').should.be.true();
       isPalindrome(' ').should.be.true();
       isPalindrome('     ').should.be.true();
     });
@@ -33,7 +33,7 @@ describe('the palindrome canary spec', () => {
     it('error for empty string', () => {
       (() => {
         isPalindrome('');
-      }).should.equal('Error: please pass a non-empty string.')
+      }).should.throw('Error: please pass a non-empty string.');
     });
 
     it('error for not a string');
