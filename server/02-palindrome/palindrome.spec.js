@@ -3,7 +3,9 @@ describe('the palindrome canary spec', () => {
     true.should.be.true();
   });
 
-  let isPalindrome = () => true;
+  let isPalindrome = (word) => {
+    return word === word.split('').reverse().join('');
+  };
 
   describe('palindrome should be', () => {
     it('true for mom', () => {
