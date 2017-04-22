@@ -7,25 +7,25 @@ describe('fetch', () => {
     const api = replace('./api-wrapper')['api'];
 
     const userId = {dummy: 'user id'};
-    const priorMonth = {dummy: 'prior month'};
-    const currentMonth = {dummy: 'current month'};
+    const prior = {dummy: 'prior month'};
+    const current = {dummy: 'current month'};
     const priorPayments = {dummy: 'prior month\'s payments'};
     const currentPayments = {dummy: 'current month\'s payments'};
 
-    when(months.prior()).thenReturn(priorMonth);
-    when(months.current()).thenReturn(currentMonth);
-    when(api(userId, priorMonth)).thenReturn(priorPayments);
-    when(api(userId, currentMonth)).thenReturn(currentPayments);
+    when(months.prior()).thenReturn(prior);
+    when(months.current()).thenReturn(current);
+    when(api(userId, prior)).thenReturn(priorPayments);
+    when(api(userId, current)).thenReturn(currentPayments);
 
     let fetch = require('./fetch')['fetch'];
 
     fetch(userId).should.deepEqual({
       current: {
-        month: currentMonth,
+        month: current,
         payments: currentPayments
       },
       prior: {
-        month: priorMonth,
+        month: prior,
         payments: priorPayments
       }
     });
