@@ -1,5 +1,5 @@
 /*eslint dot-notation: "off"*/
-import {replace, when, verify, reset} from '../../test-helper';
+import {replace, when, reset} from '../../test-helper';
 
 describe('fetch', () => {
   it('should call months twice and api twice', () => {
