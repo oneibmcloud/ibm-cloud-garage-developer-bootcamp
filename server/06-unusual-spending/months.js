@@ -1,0 +1,3 @@
+const prior = () => {};
+
+export {prior};
