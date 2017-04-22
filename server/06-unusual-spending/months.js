@@ -1,3 +1,4 @@
+const current = () => {};
 const prior = () => {};
 
-export {prior};
+export {current, prior};
