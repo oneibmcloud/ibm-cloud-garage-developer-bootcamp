@@ -4,7 +4,7 @@ import {replace, when, verify, reset} from '../../test-helper';
 describe('fetch', () => {
   it('should call months twice and api twice', () => {
     const months = replace('./months');
-    const api = replace('./apiWrapper')['api'];
+    const api = replace('./api-wrapper')['api'];
 
     const userId = {dummy: 'user id'};
     const priorMonth = {dummy: 'prior month'};
