@@ -12,19 +12,6 @@ describe('the tile', () => {
     return angular.element('<tile product="product"></tile>');
   };
 
-  const productDummy = {
-    title: 'vw Wilson Blade 104',
-    vendor: 'IBM MOCK STORE',
-    variants: [
-      {
-        price: '199.00'
-      }
-    ],
-    image: {
-      src: 'https://cdn.shopify.com/s/files/1/1208/4008/products/rs_4_da3694bf-f670-4c15-9561-9855c8ff0c0b.jpeg?v=1457955392'
-    }
-  };
-
   beforeEach(window.module(tile.name));
 
   beforeEach(window.inject(($rootScope, $compile) => {
@@ -41,7 +28,14 @@ describe('the tile', () => {
       ($(element).find('span[rel=' + '"product-title"' + ']').text())
           .should.equal('vw Wilson Blade 104');
     });
-    it('description');
+
+    it('description', () => {
+      $scope.product = {vendor: 'IBM MOCK STORE'};
+      $scope.$digest();
+      ($(element).find('span[rel=' + '"product-description"' + ']').text())
+          .should.equal('IBM MOCK STORE');
+    });
+
     it('image');
     it('retail price');
     it.skip('name: RF-97 Autograph', () => {
