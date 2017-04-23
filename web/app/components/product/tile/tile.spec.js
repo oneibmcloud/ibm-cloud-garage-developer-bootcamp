@@ -41,6 +41,11 @@ describe('the tile', () => {
       ($(element).find('img').attr('src')).should.equal('dummy-url');
     });
 
-    it('retail price');
+    it('retail price', () => {
+      $scope.product = {variants: [{price: '199.00'}]};
+      $scope.$digest();
+      ($(element).find('span[rel=' + '"product-price"' + ']').text())
+          .should.equal('199.00');
+    });
   });
 });
