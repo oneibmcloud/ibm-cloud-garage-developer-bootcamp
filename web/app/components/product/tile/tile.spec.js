@@ -20,7 +20,6 @@ describe('the tile', () => {
     $scope.$digest();
   }));
 
-
   describe('shows the product', () => {
     it('title', () => {
       $scope.product = {title: 'vw Wilson Blade 104'};
@@ -36,13 +35,12 @@ describe('the tile', () => {
           .should.equal('IBM MOCK STORE');
     });
 
-    it('image');
-    it('retail price');
-    it.skip('name: RF-97 Autograph', () => {
-      $scope.product = {title: 'RF-97 Autograph'};
+    it('image', () => {
+      $scope.product = {image: {src: 'dummy-url'} };
       $scope.$digest();
-      ($(element).find('span[rel=' + '"product-title"' + ']').text())
-          .should.equal('RF-97 Autograph');
+      ($(element).find('img').attr('src')).should.equal('dummy-url');
     });
+
+    it('retail price');
   });
 });
