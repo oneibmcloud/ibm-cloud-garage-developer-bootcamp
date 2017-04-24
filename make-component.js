@@ -82,7 +82,7 @@ import ngMaterial from 'angular-material';
 
 import {` + componentName + '} from \'./' + componentFileName + `';
 
-export const ` + moduleName + ' = angular.angularModule(\'' + moduleName + `', [
+export const ` + moduleName + ' = angular.module(\'' + moduleName + `', [
   uiRouter,
   ngAnimate,
   ngAria,
@@ -97,7 +97,7 @@ fs.writeFileSync(spec,
 import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
-import {` + componentName + '} from \'./' + componentFileName + `';
+import {` + moduleName + '} from \'./' + moduleFileName + `';
 
 describe('the ` + filename + `', () => {
   const $ = window.$;
@@ -108,7 +108,7 @@ describe('the ` + filename + `', () => {
   };
 
   beforeEach(window.module('ui.router'));
-  beforeEach(window.module(` + componentName + `.name));
+  beforeEach(window.module(` + moduleName + `.name));
 
   beforeEach(window.inject(($rootScope, $compile) => {
     $scope = $rootScope.$new();
@@ -134,7 +134,7 @@ fs.writeFileSync(integration,
 import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
-import {` + componentName + '} from \'./' + componentFileName + `';
+import {` + moduleName + '} from \'./' + moduleFileName + `';
 
 describe('the ` + filename + `', () => {
   const $ = window.$;
@@ -145,7 +145,7 @@ describe('the ` + filename + `', () => {
   };
 
   beforeEach(window.module('ui.router'));
-  beforeEach(window.module(` + componentName + `.name));
+  beforeEach(window.module(` + moduleName + `.name));
   beforeEach(angular.mock.http.init);
   afterEach(angular.mock.http.reset);
 
