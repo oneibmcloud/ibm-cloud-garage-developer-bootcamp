@@ -1,6 +1,6 @@
 import {productsService} from './products-service';
 
-describe('the product service', () => {
+describe('the products service', () => {
   let $httpBackend;
   let $http;
 
@@ -10,7 +10,7 @@ describe('the product service', () => {
   }));
 
   describe('calls out over http and', () => {
-    it('gets the product list', done => {
+    it('gets the products list', done => {
       $httpBackend.whenGET('/products.json')
           .respond(200, '{"products": []}');
 

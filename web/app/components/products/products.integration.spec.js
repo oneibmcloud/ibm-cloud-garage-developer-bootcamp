@@ -4,18 +4,18 @@
  import 'script!jquery/dist/jquery';
  import angular from 'angular';
 
- import {product} from './product';
+ import {products} from './products';
 
- describe('the product', () => {
+ describe('the products', () => {
    const $ = window.$;
    let element, $scope, $location, $state, $timeout;
 
    let buildTemplate = () => {
-     return angular.element('<product products="products"></product>');
+     return angular.element('<products products="products"></products>');
    };
 
    beforeEach(window.module('ui.router'));
-   beforeEach(window.module(product.name));
+   beforeEach(window.module(products.name));
    beforeEach(angular.mock.http.init);
    afterEach(angular.mock.http.reset);
 
@@ -48,7 +48,7 @@
      it.skip('products', (done) => {
        $timeout(function() {
 
-         $(element).find('span[rel=product-title]').length.should.equal(27);
+         $(element).find('span[rel=products-title]').length.should.equal(27);
          done();
 
        }, 1000);

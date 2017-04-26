@@ -1,9 +1,9 @@
 import {replace, when} from '../../../../test-helper';
 
-describe('product controller', () => {
+describe('products controller', () => {
   it('starts with no products', () => {
-    const ProductController = require('./product-controller').ProductController;
-    const productsController = new ProductController();
+    const ProductsController = require('./products-controller').ProductsController;
+    const productsController = new ProductsController();
     productsController.products.should.deepEqual([]);
   });
   it('fetches the products', () => {
@@ -12,14 +12,14 @@ describe('product controller', () => {
     replace(productsService, 'fetch');
 
 
-    let stubbedValues = {data: {products: ['dummy product']}};
+    let stubbedValues = {data: {products: ['dummy products']}};
     when(productsService.fetch('/products.json')).thenResolve(stubbedValues);
 
-    const ProductController = require('./product-controller').ProductController;
-    const productsController = new ProductController(productsService);
+    const ProductsController = require('./products-controller').ProductsController;
+    const productsController = new ProductsController(productsService);
 
     return productsController.fetch('/products.json').then(() => {
-      productsController.products.should.deepEqual(['dummy product']);
+      productsController.products.should.deepEqual(['dummy products']);
     });
   });
 });

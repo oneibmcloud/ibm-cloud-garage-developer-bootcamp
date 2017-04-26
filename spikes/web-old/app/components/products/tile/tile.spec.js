@@ -3,14 +3,14 @@ import angular from 'angular';
 
 import {tile} from './tile';
 
-describe('the product tile', () => {
+describe('the products tile', () => {
   let $scope;
 
   let element;
   let $ = window.$;
 
   let buildTemplate = () => {
-    return angular.element('<tile product="product"></tile>');
+    return angular.element('<tile products="products"></tile>');
   };
 
   beforeEach(window.module(tile.name));
@@ -21,17 +21,17 @@ describe('the product tile', () => {
     $scope.$digest();
   }));
 
-  describe('shows the product', () => {
+  describe('shows the products', () => {
     it('name: RF-97 Autograph', () => {
       $scope.product = {title: 'RF-97 Autograph'};
       $scope.$digest();
-      ($(element).find('span[rel=' + '"product-title"' + ']').text())
+      ($(element).find('span[rel=' + '"products-title"' + ']').text())
           .should.equal('RF-97 Autograph');
     });
     it('price: 250', () => {
       $scope.product = {variants: [{price: 250.00}]};
       $scope.$digest();
-      ($(element).find('span[rel=' + '"product-price"' + ']').text())
+      ($(element).find('span[rel=' + '"products-price"' + ']').text())
           .should.equal('$250.00');
     });
     it('thumbnail image', () => {

@@ -20,7 +20,7 @@ describe('the tile', () => {
     $scope.$digest();
   }));
 
-  describe('shows the product', () => {
+  describe('shows the products', () => {
     it('title', () => {
       $scope.product = {title: 'vw Wilson Blade 104'};
       $scope.$digest();

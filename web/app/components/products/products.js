@@ -5,13 +5,13 @@ import ngAria from 'angular-aria';
 import ngMaterial from 'angular-material';
 
 import {tile} from './tile/tile';
-import {productComponent} from './product-component';
+import {productsComponent} from './products-component';
 
-export const product = angular.module('product', [
+export const products = angular.module('products', [
   uiRouter,
   ngAnimate,
   ngAria,
   ngMaterial,
   tile.name
 ])
-.directive('product', productComponent);
+.directive('products', productsComponent);
