@@ -8,7 +8,7 @@ describe('the products controller', () => {
     productController = new ProductsController(productsService);
   });
 
-  describe('interacts with the UI and product service, and', () => {
+  describe('interacts with the UI and products service, and', () => {
     it('has no products', () => {
       productController.products.should.be.empty();
     });
@@ -46,7 +46,7 @@ termin
       (productController.message).should.deepEqual(message);
     });
 
-    it('delegates product updates to success handler', () => {
+    it('delegates products updates to success handler', () => {
       const products = [
         {
           title: 'RF-97 Autograph',

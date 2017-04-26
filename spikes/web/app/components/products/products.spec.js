@@ -46,7 +46,7 @@ describe('the products page', () => {
     it('products', (done) => {
       $timeout(function() {
 
-        $(element).find('span[rel=product-title]').length.should.equal(27);
+        $(element).find('span[rel=products-title]').length.should.equal(27);
         done();
 
       }, 1000);

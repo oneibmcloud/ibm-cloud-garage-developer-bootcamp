@@ -1,4 +1,4 @@
-function ProductController(service) {
+function ProductsController(service) {
   const vm = this;
   vm.fetch = (url) => {
     return service.fetch(url).then((response) => {
@@ -9,6 +9,6 @@ function ProductController(service) {
 }
 
 //noinspection JSValidateTypes
-ProductController.$inject = [];
+ProductsController.$inject = [];
 
-export {ProductController};
+export {ProductsController};
