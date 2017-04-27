@@ -7,6 +7,7 @@ import ngMaterial from 'angular-material';
 import {tile} from './tile/tile';
 import {productsService} from './service/products-service-module';
 import {productsComponent} from './products-component';
+import {popupService} from './service/popup-service-module';
 
 export const products = angular.module('products', [
   uiRouter,
@@ -14,7 +15,8 @@ export const products = angular.module('products', [
   ngAria,
   ngMaterial,
   tile.name,
-  productsService.name
+  productsService.name,
+  popupService.name
 ])
 .config(($stateProvider) => {
   $stateProvider.state('products', {
