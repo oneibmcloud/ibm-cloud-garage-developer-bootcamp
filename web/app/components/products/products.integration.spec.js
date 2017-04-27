@@ -6,7 +6,7 @@
 
  import {products} from './products';
 
- describe('the products', () => {
+ describe('the products page', () => {
    const $ = window.$;
    let element, $scope, $location, $state, $timeout;
 
@@ -41,10 +41,12 @@
        ($state.current.name).should.equal('products');
      });
 
-     it('products', (done) => {
+     it('title, numbers and list of products', (done) => {
        $timeout(function() {
-         ($(element).find('h1').text()).should.endWith('27');
-         // $(element).find('span[rel=product-title]').length.should.equal(27);
+         const h1 = $(element).find('h1').text();
+         h1.should.endWith('27');
+         h1.should.startWith('Products');
+         $(element).find('span[rel=product-title]').length.should.equal(27);
          done();
 
        }, 1000);
