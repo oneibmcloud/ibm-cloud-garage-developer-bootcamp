@@ -5,6 +5,7 @@ import ngAria from 'angular-aria';
 import ngMaterial from 'angular-material';
 
 import {tile} from './tile/tile';
+import {productsService} from './service/products-service-module';
 import {productsComponent} from './products-component';
 
 export const products = angular.module('products', [
@@ -12,6 +13,13 @@ export const products = angular.module('products', [
   ngAnimate,
   ngAria,
   ngMaterial,
-  tile.name
+  tile.name,
+  productsService.name
 ])
+.config(($stateProvider) => {
+  $stateProvider.state('products', {
+    url: '/products',
+    template: '<products></products>'
+  });
+})
 .directive('products', productsComponent);
