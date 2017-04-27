@@ -33,7 +33,7 @@
    }));
 
    describe('shows', () => {
-     it.skip('/#products in the url', () => {
+     it('/#products in the url', () => {
        $location.path('/products');
        $scope.$apply();
 
@@ -41,14 +41,10 @@
        ($state.current.name).should.equal('products');
      });
 
-     it.skip('a title', () => {
-       $(element).find('h1[rel=' + '"products-title"' + ']').text().should.equal('Products');
-     });
-
-     it.skip('products', (done) => {
+     it('products', (done) => {
        $timeout(function() {
-
-         $(element).find('span[rel=products-title]').length.should.equal(27);
+         ($(element).find('h1').text()).should.endWith('27');
+         // $(element).find('span[rel=product-title]').length.should.equal(27);
          done();
 
        }, 1000);
