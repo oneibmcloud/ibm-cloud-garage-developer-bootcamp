@@ -56,7 +56,7 @@ module.exports = function(config) {
     autoWatch: true,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['Chrome'],
+    browsers: ['jsdom'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should', 'testdouble'],

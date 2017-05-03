@@ -15,10 +15,6 @@ const config = td.config;
 global.context = describe;
 global.td = td;
 
-config({
-  promiseConstructor: require('bluebird')
-});
-
 afterEach(() => {
   reset();
 });
