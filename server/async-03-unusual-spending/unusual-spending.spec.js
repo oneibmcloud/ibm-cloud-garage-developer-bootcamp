@@ -30,9 +30,7 @@ describe('unusual spending should', () => {
 
   it('fail', () => {
     const dummyError = new Error('network error');
-
     when(fetch(userId)).thenReject(dummyError);
-
     let unusualSpending = require('./unusual-spending')['unusualSpending'];
 
     return unusualSpending(userId).catch((error) => {
