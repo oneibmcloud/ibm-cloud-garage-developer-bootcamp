@@ -48,8 +48,8 @@ describe('products controller', () => {
     const ProductsController = require('./products-controller').ProductsController;
     const productsController = new ProductsController(productsService, popupService);
 
-    return productsController.fetch('/products.json').catch(() => {
+    return productsController.fetch('/products.json', (() => {
       verify(popupService.show('Error', 'dummy error message: 404', 'Close'));
-    });
+    }));
   });
 });
