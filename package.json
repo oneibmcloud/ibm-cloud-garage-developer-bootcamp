@@ -44,7 +44,7 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "7.8.0"
+    "node": "7.9.0"
   },
   "files": [
     "dist",

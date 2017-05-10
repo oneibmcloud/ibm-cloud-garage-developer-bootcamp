@@ -44,8 +44,8 @@
      it('title, numbers and list of products', (done) => {
        $timeout(function() {
          const h1 = $(element).find('h1').text();
-         h1.should.endWith('27');
          h1.should.startWith('Products');
+         h1.should.endWith('27');
          $(element).find('span[rel=product-title]').length.should.equal(27);
          done();
 
