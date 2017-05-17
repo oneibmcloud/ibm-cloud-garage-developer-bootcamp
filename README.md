@@ -16,7 +16,9 @@ Facilities, logistics, prerequisites, learning outcomes, agenda, slides, and lab
 
 * [Labs](https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp/tree/integration)
 
-* [Recommendations for Aftercare](06-recommendations-for-aftercare.md)
+* [Aftercare Recommendations](06-recommendations-for-aftercare.md)
+
+* [Code of Conduct](07-code-of-conduct.md)
 
 
 ## License
