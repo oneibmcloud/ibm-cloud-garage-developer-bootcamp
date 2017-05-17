@@ -1,6 +1,6 @@
 # Agenda
 
-####Day 1:  Lean Startup and Extreme Programming
+#### Day 1:  Lean Startup and Extreme Programming
 
 * **The Culture of Agility.**
 * **The Values of Agility.**
@@ -19,14 +19,14 @@
   * **Continuous Integration/Continuous Delivery**
   * **Spikes-are-Experiments**
   * **The Flow of Value**
-  
-- - - -
-
-####Day 2:  Design Thinking
 
 - - - -
 
-####Day 3:  Inception Workshop
+#### Day 2:  Design Thinking
+
+- - - -
+
+#### Day 3:  Inception Workshop
 
 * **Chartering:  Alignment Amongst the Product Community around Purpose, Vision and Context.**
 * **Discovering Customer Value.**
@@ -42,7 +42,7 @@
 
 - - - -
 
-####Day 4:  Iteration 0
+#### Day 4:  Iteration 0
 
 * **Building and Deconstructing the Continuous Delivery Pipeline**
 * **Pair Programming**
@@ -50,20 +50,20 @@
 **Lunch**
 
 * **Code Smells and Refactoring**
- 
+
 - - - -
 
-####Day 5:  Iteration 0
+#### Day 5:  Iteration 0
 
 * **Test-Driven Development**
 
 **Lunch**
 
-* **Test-Driven Development** 
+* **Test-Driven Development**
 
 - - - -
 
-####Day 6:  Iteration 1
+#### Day 6:  Iteration 1
 
 * **Iteration 1 Planning**
 
@@ -73,35 +73,35 @@
 
 **Lunch**
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 - - - -
 
-####Day 7:  Iteration 1
+#### Day 7:  Iteration 1
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 **Lunch**
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 - - - -
 
-####Day 8:  End Iteration 1 / Start Iteration 2
+#### Day 8:  End Iteration 1 / Start Iteration 2
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
 
 - - - -
 
-* **Customer Demo** 
-* **Iteration Retrospective** 
+* **Customer Demo**
+* **Iteration Retrospective**
 
 **Lunch**
 
@@ -113,34 +113,34 @@
 
 - - - -
 
-####Day 9:  Iteration 1
+#### Day 9:  Iteration 1
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 **Lunch**
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 - - - -
 
-####Day 10:  Iteration 1 / Product Launch
+#### Day 10:  Iteration 1 / Product Launch
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
-* **Goal Review** 
+* **Goal Review**
 
 **Lunch**
 
-* **Daily Goals** 
+* **Daily Goals**
 * **Pair Programming**
 
 - - - -
 
-* **Customer Demo** 
-* **Project Retrospective** 
+* **Customer Demo**
+* **Project Retrospective**
 
 - - - -
