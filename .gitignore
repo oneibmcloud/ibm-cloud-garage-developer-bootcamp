@@ -5,7 +5,7 @@ capstone-project.iml
 
 bower_components/
 dist/
-resources
+resources/
 /index.html
 # Logs
 logs
