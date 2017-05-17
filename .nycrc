@@ -1,5 +1,0 @@
-{
-  "nyc": {
-    "exclude": ["server/**/*spec.js"]
-  }
-}
