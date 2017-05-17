@@ -1,0 +1,4 @@
+<md-content flex layout-padding ng-init="vm.fetch('/products.json')">
+  <h1>Products: {{vm.products.length}}</h1>
+  <tile product = 'product' ng-repeat = 'product in vm.products'></tile>
+</md-content>
