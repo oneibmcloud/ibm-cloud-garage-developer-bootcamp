@@ -14,9 +14,9 @@ const percentToFloat = s =>
 const applyDiscount = (price, discount) =>
   moneyToFloat(price)
   .fold(cost =>
-    percentToFloat(discount)
-    .fold(savings =>
-      cost - cost * savings));
+  percentToFloat(discount)
+  .fold(savings =>
+  cost - cost * savings));
 
 describe('nested composition with box', () => {
   it('apply discount', () => {

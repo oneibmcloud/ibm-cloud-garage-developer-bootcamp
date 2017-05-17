@@ -1,42 +1,47 @@
-describe('the palindrome canary test', () => {
+describe('the palindrome canary spec', () => {
   it('shows the infrastructure works', () => {
     true.should.be.true();
   });
 
-  const isPalindrome = phrase => {
-    if (typeof phrase === 'undefined') throw new Error('no argument exception');
+  let isPalindrome = (phrase) => {
+    if (typeof phrase !== 'string') throw new Error('Error: please pass a string.');
+    if (phrase === '') throw new Error('Error: please pass a non-empty string.');
 
-    return phrase.trim().length > 0 &&
-        phrase.split('').reverse().join('') === phrase;
+    return phrase === phrase.split('').reverse().join('');
   };
 
   describe('palindrome should be', () => {
-    it('yes for mom', () => {
+    it('true for mom', () => {
       isPalindrome('mom').should.be.true();
     });
 
-    it('no for dude', () => {
-      isPalindrome('dude').should.equal(false);
+    it('false for dude', () => {
+      isPalindrome('dude').should.be.false();
     });
 
-    it('yes for mom mom', () => {
+    it('true for mom mom', () => {
       isPalindrome('mom mom').should.be.true();
     });
 
-    it('no for mom dad', () => {
-      isPalindrome('mom dad').should.equal(false);
+    it('false for dad mom', () => {
+      isPalindrome('dad mom').should.be.false();
     });
 
-    it('no for empty phrase', () => {
-      isPalindrome('').should.equal(false);
+    it('true for whitespace', () => {
+      isPalindrome(' ').should.be.true();
+      isPalindrome('     ').should.be.true();
     });
 
-    it('no for whitespace only phrase', () => {
-      isPalindrome('   ').should.equal(false);
+    it('error for empty string', () => {
+      (() => {
+        isPalindrome('');
+      }).should.throw('Error: please pass a non-empty string.');
     });
 
-    it('no argument exception', () => {
-      (() => { isPalindrome(); }).should.throw('no argument exception');
+    it('error for not a string', () => {
+      (() => {
+        isPalindrome();
+      }).should.throw('Error: please pass a string.');
     });
   });
 });

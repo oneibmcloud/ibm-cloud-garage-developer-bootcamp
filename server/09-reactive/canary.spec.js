@@ -7,7 +7,7 @@ let separate = function() {
   console.log('');
 };
 
-describe.only('rxjs', () => {
+describe('rxjs', () => {
   it('happy path: observer.next(42)', (done) => {
     separate();
     let publisher = Rx.Observable.create(observer => {

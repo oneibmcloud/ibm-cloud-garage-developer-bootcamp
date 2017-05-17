@@ -10,7 +10,7 @@ const replace = td.replace;
 const when = td.when;
 const verify = td.verify;
 const reset = td.reset;
-
+const config = td.config;
 
 global.context = describe;
 global.td = td;

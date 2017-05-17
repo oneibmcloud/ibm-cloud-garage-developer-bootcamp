@@ -1,5 +1,5 @@
-import {fromNullable} from './functional-types';
 /*eslint no-shadow: "off"*/
+import {fromNullable} from './functional-types';
 
 describe('either example collection', () => {
   describe('open site', () => {
