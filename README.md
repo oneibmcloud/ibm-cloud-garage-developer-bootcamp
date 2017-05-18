@@ -1,22 +1,23 @@
-# IBM Cloud Garage Method Developer Bootcamp
-[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+# IBM Cloud Garage Method Bootcamp
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git)
+# javascript test-driven-development [TDD] trials
+
+## fundamentals of TDD in javascript
 
 ## Getting Started
 
 #### On Windows install [yarn](https://chocolatey.org/install)
 
-
 #### Change your node version, clone the repo, install and run the tests:
 
 ````
-nvm use v7.9.0
-git clone git@github.com:wpannell/ibm-cloud-garage-method-developer-bootcamp.git app
+nvm use v7.10.0
+git clone git@github.com:wpannell/javascript-topic-trials.git app
 cd app
+git fetch --all
+git checkout javascript-refactoring
 yarn install
-yarn run lint
-yarn run spec
+yarn test
 ````
 
 ___
@@ -24,27 +25,15 @@ ___
 #### Linux/Mac workflow:
 
 ````
-yarn run tdd
+yarn tdd:mac
 ````
-
 
 ___
 #### Windows workflow:
 
-In three separate Bash shells:
-
 ````
-yarn run test:watch
+yarn tdd
 ````
-
-````
-yarn run lint:watch
-````
-
-````
-yarn run spec:watch
-````
-
 
 ___
 
@@ -60,29 +49,47 @@ ___
 ### [The Transformation Priority Premise](https://8thlight.com/blog/uncle-bob/2013/05/27/TheTransformationPriorityPremise.html):
 
 ````
-({}–>nil) no code at all->code that employs nil
+(01) [{} –> nil] no code => return nil
 
-(nil->constant)
+(02) [nil->constant] nil => simple constant
 
-(constant->constant+) a simple constant to a more complex constant
+(03) [constant->constant+] simple constant => complex constant
 
-(constant->scalar) replacing a constant with a variable or an argument
+(04) [constant->scalar] complex constant => variable or an argument
 
-(statement->statements) adding more unconditional statements.
+(05) [statement->statements] adding more unconditional statements.
 
-(unconditional->if) splitting the execution path
+(06) [unconditional->if] splitting the execution path
 
-(scalar->array)
+(07) [scalar->array]
 
-(array->container)
+(08) [array->container]
 
-(statement->recursion)
+(09) [statement->recursion]
 
-(if->while)
+(10) [if->while]
 
-(expression->function) replacing an expression with a function or algorithm
+(11) [expression->function] replacing an expression with a function or algorithm
 
-(variable->assignment) replacing the value of a variable.
+(12) [variable->assignment] replacing the value of a variable.
+````
+
+___
+
+### [Simplified Transformation Priority Premise](https://8thlight.com/blog/micah-martin/2012/11/17/transformation-priority-premise-applied.html):
+
+````
+(01) constant => a value
+
+(02) scalar => a local binding, or variable
+
+(03) invocation => calling a function/method
+
+(04) conditional => if/switch/case/cond
+
+(05) while loop => applies to for loops as well
+
+(06) assignment => replacing the value of a variable
 ````
 
 ___
