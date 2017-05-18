@@ -3,6 +3,10 @@ launchConfigurations/
 .idea
 capstone-project.iml
 
+game-of-life/
+unusual-spending/
+unusual-spending-vendor/
+
 bower_components/
 dist/
 resources/
