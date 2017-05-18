@@ -1,28 +1,21 @@
-# Dependencies
+# IBM Cloud Garage Method Bootcamp
 
-* Apache Maven 3.3.9
-* Oracle JDK 1.8.0
+# java refactoring trials
 
-# Build Instructions
+## simple exercises in java refactoring
 
-## Compile
+## Getting Started
 
-`mvn compile`
+```
+java -version
+# 1.8
 
-## Test
+mvn -version
+#3.3.9
 
-`mvn test`
-
-## Generate Javadocs
-
-`mvn javadoc:javadoc`
-
-## Run
-
-From the application folder, run:
-
-  `java -cp ./target/classes com.ibm.cloud.JavaRefactoringTrial`
-
-or
-
-  `mvn compile exec:java -Dexec.mainClass="com.ibm.bluemix.JavaRefactoringTrial"`
+git clone git@github.ibm.com:bluemix-enablement/bluemix-garage-developer-bootcamp.git app
+cd app
+git fetch --all
+git checkout java-refactoring-trials
+mvn install
+```
