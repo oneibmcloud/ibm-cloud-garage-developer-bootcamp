@@ -1,11 +1,15 @@
-.idea
-node_modules
+.idea/
+node_modules/
 
-dist
-server
-coverage
-.nyc_output
-test-helper-mongo.js
+dist/
+server/
+coverage/
+.nyc_output/
+/test-helper-mongo.js
+/game-of-life
+/unusual-spending
+/unusual-spending-vendor
+
 *.log
 .sass-cache
 /index.html
