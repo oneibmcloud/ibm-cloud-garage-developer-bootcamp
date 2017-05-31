@@ -21,7 +21,7 @@
     "spec:ci": "yarn server:coverage",
     "spec:clear": "clear && yarn spec",
     "spec:watch": "nodemon --exec yarn spec:clear || true",
-    "spec:mac": "nodemon 2>/dev/null  --exec 'yarn lint && yarn spec:clear || true'",
+    "spec:mac": "nodemon 2>/dev/null  --exec 'yarn spec:clear || true'",
     "tdd": "npm-run-all --parallel *:mac",
     "tdd:mac": "yarn spec:mac",
     "test": "karma start karma.conf.js --single-run --no-auto-watch",

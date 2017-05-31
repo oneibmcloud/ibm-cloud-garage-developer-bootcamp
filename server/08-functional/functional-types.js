@@ -24,8 +24,7 @@ const Left = x =>
   inspect: () => `Left(${x})`
 });
 
-const fromNullable = x =>
-x != null ? Right(x) : Left(null);
+const fromNullable = x => x != null ? Right(x) : Left(null);
 
 const tryCatch = f => {
   try {
