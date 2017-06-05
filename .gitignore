@@ -4,6 +4,7 @@ node_modules/
 dist/
 server/
 coverage/
+generated/
 .nyc_output/
 /test-helper-mongo.js
 /game-of-life
