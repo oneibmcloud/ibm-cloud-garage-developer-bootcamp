@@ -34,4 +34,27 @@ const tryCatch = f => {
   }
 };
 
-export {Box, Right, Left, fromNullable, tryCatch};
+const Sum = x => ({
+  x,
+  concat: ({x: y}) => Sum(x + y),
+  empty: () => Sum(0),
+  inspect: () => `Sum(${x})`,
+  toString: () => `Sum(${x})`
+});
+
+const All = x => ({
+  x,
+  concat: ({x: y}) => All(x && y),
+  empty: () => All(true),
+  inspect: () => `All(${x})`,
+  toString: () => `All(${x})`
+});
+
+const First = x => ({
+  x,
+  concat: _ => First(x),
+  inspect: () => `First(${x})`,
+  toString: () => `First(${x})`
+});
+
+export {Box, Right, Left, fromNullable, tryCatch, Sum, All, First};
