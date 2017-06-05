@@ -14,7 +14,6 @@ ___
 
 ## Prerequisites of Study
 
-####
 
 |Location|Title|Duration|
 |--------|-----|--------|
@@ -26,6 +25,9 @@ ___
 |Pluralsight|[TDD as a Design Tool](https://app.pluralsight.com/library/courses/tdd-as-design-tool)|2:00 hours|
 |web|[Continuous Integration on a Dollar a Day](http://www.jamesshore.com/Blog/Continuous-Integration-on-a-Dollar-a-Day.html)|0:30 hours|
 |&nbsp;|**_Total:_**|**_15:00 hours_**|
+
+(Prerequisites are designed to improve the experience of participants.  The more that's completed, the more that will be learned.)
+
 
 
 
