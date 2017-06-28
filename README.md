@@ -1,7 +1,7 @@
 # IBM Cloud Garage Method Developer Bootcamp
 [![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
+[![Deploy To Bluemix](https://console.ng.bluemix.net/devops/graphics/create_toolchain_button.png)](https://console.ng.bluemix.net/devops/setup/deploy/?repository=https%3A//github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
 
 ## Getting Started
 
