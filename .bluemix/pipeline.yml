@@ -32,15 +32,12 @@ stages:
           git merge integration --ff-only
 
           export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
-
-          npm install -g yarn
-
-          yarn install
+          npm install
 
           mkdir -p generated
 
-          yarn ci
-          yarn dist
+          npm run ci
+          npm run dist
 
           mkdir -p build
 
