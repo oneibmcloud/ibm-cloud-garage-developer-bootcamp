@@ -1,4 +1,5 @@
 /*eslint no-shadow: "off"*/
+/*eslint no-unused-vars: "off"*/
 
 import {fromNullable} from './functional-types';
 

@@ -1,5 +1,6 @@
 /* eslint-disable no-empty */
 /*eslint no-shadow: "off"*/
+/*eslint no-unused-vars: "off"*/
 
 import fs from 'fs';
 import {List, Map} from 'immutable-ext';
