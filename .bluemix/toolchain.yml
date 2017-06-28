@@ -23,7 +23,7 @@ template:
     git url: >-
       [https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
     git branch: >-
-      [integration](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp/tree/integration)
+      [integration](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
 toolchain:
   name: 'ibm-cloud-garage-dev-bootcamp-{{timestamp}}'
   template:
