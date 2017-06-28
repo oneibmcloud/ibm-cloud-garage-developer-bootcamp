@@ -1,0 +1,81 @@
+---
+stages:
+  - name: dev1-package-and-test
+    inputs:
+      - type: git
+        branch: dev1
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    properties:
+      - name: SAUCE_USERNAME
+        value: wilpannell
+        type: text
+      - name: SAUCE_ACCESS_KEY
+        value: 19730ccc-97be-4d9f-88f8-1754e4425a6f
+        type: text
+    jobs:
+      - name: distribution
+        type: builder
+        artifact_dir: build
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
+
+          export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
+          npm install
+
+          mkdir -p generated
+
+          npm run ci
+          npm run dist
+
+          mkdir -p build
+
+          cp package.json build
+          cp .cfignore build
+          cp manifest-dev.yml build
+
+          cp -rf dist build
+          cp -rf server build
+
+          git checkout integration
+          git pull origin integration
+          git merge dev1 --no-ff --log
+          git push origin integration
+  - name: dev1-deploy
+    inputs:
+      - type: job
+        stage: dev1-package-and-test
+        job: distribution
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${SPACE}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-dev -f ./manifest-dev.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
+          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev

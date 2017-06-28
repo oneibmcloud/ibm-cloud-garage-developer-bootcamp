@@ -1,0 +1,63 @@
+version: '2'
+template:
+  name: "IBM Cloud Garage Developer Bootcamp Devops Toolchain (v2)"
+  description: "This toolchain is designed to illustrate the core practice of continuous integration:\n\n
+
+                • each developer unit (individual, pair or mob) updates the trunk revision multiple times-per-day; and\n\n
+
+                • the trunk revision is always in a **“Known Good State.”**\n\n
+
+                The toolchain clones this repository into an IBM hosted Git repository, which you can then inspect.\n\n
+
+                This toolchain is preconfigured for automated unit and integration testing, remote browser testing on SauceLabs, continuous delivery, build notifications on Slack, downtime notifications via pager duty, and runtime usage analytics via Google Analytics, source control and issue tracking.\n\n
+
+                The toolchain uses tools that are part of the Continuous Delivery service.  For more information and terms, see the [Bluemix catalog](https://console.ng.bluemix.net/catalog/services/continuous-delivery/).\n\n
+
+                To get started, click **Create**."
+  header: '![](toolchain.svg)'
+  icon: icon.svg
+  required:
+    - ci
+    - source-control
+  info:
+    git url: >-
+      [https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
+    git branch: >-
+      [master](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp/tree/master)
+toolchain:
+  name: 'ibm-cloud-garage-method-dev-bootcamp-{{timestamp}}'
+  template:
+    getting_started: "**The toolchain is ready!**"
+services:
+  source-control:
+    service_id: hostedgit
+    parameters:
+      repo_name: '{{toolchain.name}}'
+      repo_url: 'https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp'
+      type: clone
+      has_issues: true
+      enable_traceability: true
+  ci:
+    service_id: pipeline
+    parameters:
+      services:
+        - source-control
+      name: '{{services.source-control.parameters.repo_name}}'
+      ui-pipeline: true
+      configuration:
+        content:
+          $ref: pipeline.yml
+          $refType: text
+        env:
+          SOURCE_CONTROL_SERVICE: source-control
+          APPLICATION: '{{form.pipeline.parameters.application}}'
+          SPACE: '{{form.pipeline.parameters.prod-space}}'
+          ORGANIZATION: '{{form.pipeline.parameters.prod-organization}}'
+          REGION: '{{form.pipeline.parameters.prod-region}}'
+        execute: true
+form:
+  pipeline:
+    parameters:
+      application: '{{services.source-control.parameters.repo_name}}'
+    schema:
+      $ref: deploy.json
