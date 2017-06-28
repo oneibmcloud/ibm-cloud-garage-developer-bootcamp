@@ -29,6 +29,9 @@ toolchain:
   template:
     getting_started: "**The toolchain is ready!**"
 services:
+  messaging:
+    service_id: slack
+    $ref: slack.yml
   source-control:
     service_id: hostedgit
     parameters:
