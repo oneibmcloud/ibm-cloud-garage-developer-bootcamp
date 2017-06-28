@@ -1,7 +1,7 @@
 # IBM Cloud Garage Method Developer Bootcamp
 [![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/wpannell/ibm-singapore-garage-dev-bootcamp.git)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp.git)
 
 ## Getting Started
 
@@ -11,7 +11,7 @@
 #### Change your node version, clone the repo, install and run the tests:
 
 ````
-nvm use v7.9.0
+nvm use v7.6.0
 git clone git@github.com:wpannell/ibm-cloud-garage-method-developer-bootcamp.git app
 cd app
 yarn install

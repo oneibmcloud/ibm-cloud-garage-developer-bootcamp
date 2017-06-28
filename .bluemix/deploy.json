@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Create Toolchain Button",
+    "description": "ibm cloud garage method developer bootcamp toolchain",
+    "longDescription": "continuous integration/delivery",
+    "type": "object",
+    "properties": {
+        "prod-region": {
+            "description": "region",
+            "type": "string"
+        },
+        "prod-organization": {
+            "description": "organization",
+            "type": "string"
+        },
+        "prod-space": {
+            "description": "space",
+            "type": "string"
+        },
+        "application": {
+            "description": "unique name of the cloud foundry application",
+            "type": "string",
+            "pattern": "\\S"
+        }
+    },
+    "required": [
+        "region",
+        "organization",
+        "space",
+        "application"
+    ],
+    "form": [
+        {
+            "type": "validator",
+            "url": "/devops/setup/bm-helper/helper.html"
+        },
+        {
+            "type": "text",
+            "readonly": false,
+            "title": "Cloud Foundry Application Name",
+            "key": "application"
+        },
+        {
+            "type": "table",
+            "columnCount": 4,
+            "widths": [
+                "15%",
+                "28%",
+                "28%",
+                "28%"
+            ],
+            "items": [
+                {
+                    "type": "label",
+                    "title": ""
+                },
+                {
+                    "type": "label",
+                    "title": "Region"
+                },
+                {
+                    "type": "label",
+                    "title": "Organization"
+                },
+                {
+                    "type": "label",
+                    "title": "Space"
+                },
+                {
+                    "type": "label",
+                    "title": "Targeted Deployment"
+                },
+                {
+                    "type": "select",
+                    "key": "prod-region"
+                },
+                {
+                    "type": "select",
+                    "key": "prod-organization"
+                },
+                {
+                    "type": "select",
+                    "key": "prod-space",
+                    "readonly": false
+                }
+            ]
+        }
+    ]
+}

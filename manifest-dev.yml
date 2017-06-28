@@ -3,8 +3,7 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: ibm-cloud-garage-dev-upskill-group-dev
-  host: ibm-cloud-garage-dev-upskill-group-dev
+  name: ibm-cloud-garage-dev-bootcamp
+  host: ibm-cloud-garage-dev-bootcamp
   disk_quota: 1024M
-  path: ./package
   command: npm start

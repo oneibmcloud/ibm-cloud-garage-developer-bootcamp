@@ -14,7 +14,7 @@
     "lint:ci": "yarn lint",
     "lint:watch": "nodemon  --exec yarn lint",
     "lint:mac": "nodemon 2>/dev/null  --exec 'yarn lint'",
-    "precommit": "npm-run-all clear lint spec test",
+    "precommit": "npm-run-all clear lint spec test:ci",
     "prepush": "yarn ci",
     "server:coverage": "nyc --reporter=lcov --reporter=text --require babel-register yarn run spec",
     "spec": "mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
@@ -45,7 +45,8 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "7.9.0"
+    "node": "7.6.0",
+    "npm": "4.1.2"
   },
   "files": [
     "dist",
