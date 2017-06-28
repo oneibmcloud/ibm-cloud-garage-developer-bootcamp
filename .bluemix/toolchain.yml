@@ -25,7 +25,7 @@ template:
     git branch: >-
       [master](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp/tree/master)
 toolchain:
-  name: 'ibm-cloud-garage-method-dev-bootcamp-{{timestamp}}'
+  name: 'ibm-cloud-garage-developer-bootcamp-{{timestamp}}'
   template:
     getting_started: "**The toolchain is ready!**"
 services:
