@@ -9,7 +9,6 @@ unusual-spending-vendor/
 
 bower_components/
 build/
-dist/
 resources/
 /index.html
 # Logs
