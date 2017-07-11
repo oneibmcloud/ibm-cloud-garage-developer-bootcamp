@@ -17,6 +17,7 @@ stages:
         script: |-
           #!/bin/bash
 
+          printenv
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
