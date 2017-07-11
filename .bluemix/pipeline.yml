@@ -10,6 +10,9 @@ stages:
     jobs:
       - name: distribution
         type: builder
+        extension_id: ibm.devops.services.pipeline.saucelabs
+        services:
+          - ${SAUCE_LABS}
         artifact_dir: build
         enable_tests: true
         test_file_pattern: '*.xml, generated/*.xml'
@@ -56,11 +59,6 @@ stages:
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
           - ${SAUCE_LABS}
-        target:
-          region_id: ${REGION}
-          organization: ${ORGANIZATION}
-          space: ${SPACE}
-        DL_ASSETS: 'false'
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
