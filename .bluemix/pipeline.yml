@@ -1,6 +1,6 @@
 ---
 stages:
-  - name: dev1-test
+  - name: dev1
     inputs:
       - type: git
         branch: dev1
@@ -79,7 +79,7 @@ stages:
       - name: package
         type: builder
         build_type: simple
-  - name: deploy-dev
+  - name: blue-green
     inputs:
       - type: job
         stage: package
