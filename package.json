@@ -45,8 +45,8 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "6.10.2",
-    "npm": "3.10.10"
+    "node": "8.1.2",
+    "npm": "5.0.3"
   },
   "files": [
     "dist",
