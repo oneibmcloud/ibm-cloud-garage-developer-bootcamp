@@ -3,7 +3,6 @@
 mkdir -p build
 
 cp .cfignore build
-cp changelog.txt build
 cp manifest.yml build
 cp package.json build
 
