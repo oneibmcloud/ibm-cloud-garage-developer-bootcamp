@@ -1,0 +1,9 @@
+applications:
+- buildpack: https://github.com/cloudfoundry/nodejs-buildpack
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: ibm-cloud-garage-dev-bootcamp
+  host: ibm-cloud-garage-dev-bootcamp
+  disk_quota: 1024M
+  command: npm start
