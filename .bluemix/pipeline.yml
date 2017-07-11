@@ -7,13 +7,6 @@ stages:
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
       - type: commit
-    properties:
-      - name: SAUCE_USERNAME
-        value: wilpannell
-        type: text
-      - name: SAUCE_ACCESS_KEY
-        value: 19730ccc-97be-4d9f-88f8-1754e4425a6f
-        type: text
     jobs:
       - name: distribution
         type: builder
@@ -62,6 +55,11 @@ stages:
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
           - ${SAUCE_LABS}
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${SPACE}
+        DL_ASSETS: 'false'
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
