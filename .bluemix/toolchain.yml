@@ -29,6 +29,9 @@ toolchain:
   template:
     getting_started: "**The toolchain is ready!**"
 services:
+  saucelabs:
+    service_id: saucelabs
+    $ref: saucelabs.yml
   messaging:
     service_id: slack
     $ref: slack.yml
@@ -52,6 +55,7 @@ services:
           $ref: pipeline.yml
           $refType: text
         env:
+          SAUCE_LABS: saucelabs
           SOURCE_CONTROL_SERVICE: source-control
           APPLICATION: '{{form.pipeline.parameters.application}}'
           SPACE: '{{form.pipeline.parameters.prod-space}}'
