@@ -1,4 +1,7 @@
 .DS_Store
+/index.html
+/changelog.txt
+
 .idea/
 .nyc_output/
 bower_components/
@@ -18,4 +21,3 @@ web/
 
 *.log
 .sass-cache
-/index.html
