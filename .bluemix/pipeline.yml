@@ -27,6 +27,8 @@ stages:
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
+          git log ${GIT_COMMIT}..HEAD --graph --oneline > changelog.txt
+
           git branch integration
           git fetch origin integration
           git merge integration --ff-only
@@ -50,6 +52,9 @@ stages:
           git pull origin distribution
 
           cp -rf build/* .
+
+          git add .
+          git commit -m "$(cat ./changelog.txt)"
 
           git push origin distribution
   - name: package
