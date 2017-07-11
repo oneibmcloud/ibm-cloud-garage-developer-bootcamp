@@ -10,9 +10,6 @@ stages:
     jobs:
       - name: distribution
         type: builder
-        extension_id: ibm.devops.services.pipeline.saucelabs
-        services:
-          - ${SAUCE_LABS}
         artifact_dir: build
         enable_tests: true
         test_file_pattern: '*.xml, generated/*.xml'
@@ -54,6 +51,25 @@ stages:
           git commit -m "$(cat ./changelog.txt)"
 
           git push origin distribution
+
+          git checkout dev1
+          tar -czf node_modules.tar.gz node_modules
+          rm -rf node_modules
+
+          rm -rf build
+          mkdir -p build
+          mv . build
+      - name: sauce labs
+        type: tester
+        extension_id: ibm.devops.services.pipeline.saucelabs
+        services:
+          - ${SAUCE_LABS}
+        SELECT_CMD: custom
+        COMMAND: |-
+          #!/bin/bash
+          export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
+          tar -xzf node_modules.tar.gz
+          npm run test:sauce
   - name: package
     inputs:
       - type: git
