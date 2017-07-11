@@ -1,6 +1,6 @@
 ---
 stages:
-  - name: dev1-package-and-test
+  - name: dev1-test
     inputs:
       - type: git
         branch: dev1
@@ -52,11 +52,27 @@ stages:
           git pull origin integration
           git merge dev1 --no-ff --log
           git push origin integration
-  - name: dev1-deploy
+
+          git checkout distribution
+          git pull origin distribution
+          mv -rf build .
+          git push origin distribution
+  - name: package
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: package
+        type: builder
+        build_type: simple
+  - name: deploy-dev
     inputs:
       - type: job
-        stage: dev1-package-and-test
-        job: distribution
+        stage: package
+        job: package
     triggers:
       - type: stage
     properties:
