@@ -42,8 +42,9 @@ stages:
 
           scripts/package.sh
 
-          git log ${GIT_COMMIT}..HEAD --graph --oneline > changelog.txt
+          git log -1 --pretty > changelog.txt
           cat changelog.txt
+          echo "$(cat ./changelog.txt)"
 
           ls -al
 
@@ -53,12 +54,14 @@ stages:
           git push origin integration
 
           cat changelog.txt
+          echo "$(cat ./changelog.txt)"
 
           git checkout distribution
           git pull origin distribution
 
           cp -rf build/* .
 
+          cat changelog.txt
           echo "$(cat ./changelog.txt)"
 
           git add .
