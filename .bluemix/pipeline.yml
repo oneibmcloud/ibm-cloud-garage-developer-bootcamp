@@ -39,14 +39,7 @@ stages:
           npm run ci
           npm run dist
 
-          mkdir -p build
-
-          cp package.json build
-          cp .cfignore build
-          cp manifest-dev.yml build
-
-          cp -rf dist build
-          cp -rf server build
+          scripts/package.sh
 
           git checkout integration
           git pull origin integration
@@ -55,7 +48,10 @@ stages:
 
           git checkout distribution
           git pull origin distribution
-          mv -rf build .
+
+          cp -rf build/* .
+          rm -rf build
+
           git push origin distribution
   - name: package
     inputs:
