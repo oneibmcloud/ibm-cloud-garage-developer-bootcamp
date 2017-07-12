@@ -55,10 +55,6 @@ stages:
           git checkout dev1
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
-
-          rm -rf build
-          mkdir -p build
-          mv . build
       - name: sauce labs
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
