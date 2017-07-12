@@ -46,7 +46,7 @@ stages:
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
-      - name: Sauce Labs Tests
+      - name: Sauce Labs Integration Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
