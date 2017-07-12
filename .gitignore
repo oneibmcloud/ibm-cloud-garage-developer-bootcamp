@@ -19,6 +19,7 @@ unusual-spending-vendor/
 /capstone-project.iml
 /changelog.txt
 /index.html
+/*.sh
 
 # Logs
 logs
