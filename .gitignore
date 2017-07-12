@@ -2,6 +2,7 @@
 /capstone-project.iml
 /changelog.txt
 /index.html
+/*.sh
 
 .idea/
 .nyc_output/
