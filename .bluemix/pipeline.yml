@@ -1,6 +1,6 @@
 ---
 stages:
-  - name: dev1
+  - name: test
     inputs:
       - type: git
         branch: dev1
@@ -46,7 +46,17 @@ stages:
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
-      - name: Sauce Labs Integration Tests
+
+          git checkout dev1
+          tar -czf node_modules.tar.gz node_modules
+          rm -rf node_modules
+          mkdir -p build
+          cp node_modules.tar.gz build
+          cp *.* build
+          cp -r web build
+          cp -r server build
+          pwd && ls -al && pwd build && ls -al build
+      - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
