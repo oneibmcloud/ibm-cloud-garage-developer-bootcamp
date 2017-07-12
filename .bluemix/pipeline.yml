@@ -46,16 +46,6 @@ stages:
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
-
-          git checkout dev1
-          tar -czf node_modules.tar.gz node_modules
-          rm -rf node_modules
-          mkdir -p build
-          cp node_modules.tar.gz build
-          cp *.* build
-          cp -r web build
-          cp -r server build
-          pwd && ls -al && ls -al build
       - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
@@ -70,6 +60,13 @@ stages:
         COMMAND: |-
           #!/bin/bash
           ls -al
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
+          npm install
+          mkdir -p generated
+          npm run test:sauce
   - name: package
     inputs:
       - type: git
