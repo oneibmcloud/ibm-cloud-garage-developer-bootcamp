@@ -1,6 +1,7 @@
 .DS_Store
 /index.html
 /changelog.txt
+/*.sh
 
 .idea/
 .nyc_output/
