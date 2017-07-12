@@ -16,7 +16,7 @@ stages:
         build_type: npm
         script: |-
           #!/bin/bash
-          pwd && ls -al && ls -al build
+          pwd && ls -al
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
