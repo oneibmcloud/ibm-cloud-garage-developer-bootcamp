@@ -67,9 +67,10 @@ stages:
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
-          export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
-          tar -xzf node_modules.tar.gz
-          npm run test:sauce
+          ls -al
+          #export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
+          #tar -xzf node_modules.tar.gz
+          #npm run test:sauce
   - name: package
     inputs:
       - type: git
