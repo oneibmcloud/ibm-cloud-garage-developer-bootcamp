@@ -51,22 +51,20 @@ stages:
           git commit -m "$(cat ./changelog.txt)"
 
           git push origin distribution
-
-          git checkout dev1
-          tar -czf node_modules.tar.gz node_modules
-          rm -rf node_modules
-      - name: sauce labs
+      - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
           - ${SAUCE_LABS}
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${SPACE}
+        DL_ASSETS: 'false'
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
-          ls -al
-          #export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
-          #tar -xzf node_modules.tar.gz
-          #npm run test:sauce
+          printenv
   - name: package
     inputs:
       - type: git
