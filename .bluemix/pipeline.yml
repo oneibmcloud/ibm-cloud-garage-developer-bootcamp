@@ -56,6 +56,9 @@ stages:
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
           mv node_modules.tar.gz build
+          cp *.* build
+          cp web build
+          copy server build
           pwd && ls -al && ls -al build
       - name: Sauce Labs Tests
         type: tester
