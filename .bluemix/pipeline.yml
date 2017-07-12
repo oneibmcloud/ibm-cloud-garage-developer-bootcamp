@@ -51,7 +51,7 @@ stages:
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
           mkdir -p build
-          mv node_modules.tar.gz build
+          cp node_modules.tar.gz build
           cp *.* build
           cp -r web build
           cp -r server build
