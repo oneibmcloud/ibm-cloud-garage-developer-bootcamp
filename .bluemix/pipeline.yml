@@ -16,10 +16,7 @@ stages:
         build_type: npm
         script: |-
           #!/bin/bash
-          pwd
-          ls -al
-          ls -al build
-
+          pwd && ls -al && ls -al build
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
@@ -36,33 +33,21 @@ stages:
           scripts/package.sh
           git log -1 --pretty > changelog.txt
 
-          pwd
-          ls -al
-          ls -al build
-
+          pwd && ls -al && ls -al build
           git checkout integration
           git pull origin integration
           git merge dev1 --no-ff --log
           git push origin integration
 
-          pwd
-          ls -al
-          ls -al build
-
+          pwd && ls -al && ls -al build
           git checkout distribution
           git pull origin distribution
 
-          pwd
-          ls -al
-          ls -al build
-
+          pwd && ls -al && ls -al build
           cp -rf build/* .
           rm -rf build
 
-          pwd
-          ls -al
-          ls -al build
-
+          pwd && ls -al && ls -al build
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
@@ -71,10 +56,7 @@ stages:
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
           mv node_modules.tar.gz build
-
-          pwd
-          ls -al
-          ls -al build
+          pwd && ls -al && ls -al build
       - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
