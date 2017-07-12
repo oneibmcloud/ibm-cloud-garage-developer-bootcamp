@@ -47,7 +47,7 @@ stages:
           cp -rf build/* .
           rm -rf build
 
-          pwd && ls -al && ls -al build
+          pwd && ls -al
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
