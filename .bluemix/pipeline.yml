@@ -52,7 +52,7 @@ stages:
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
 
-          git checkout dev1 build
+          git checkout dev1
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
           mv node_modules.tar.gz build
