@@ -46,9 +46,10 @@ stages:
           git add .
           git commit -m "$(cat ./changelog.txt)"
           git push origin distribution
-          git checkout dev1
+          git checkout dev1 build
           tar -czf node_modules.tar.gz node_modules
           rm -rf node_modules
+          mv node_modules.tar.gz build
       - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
