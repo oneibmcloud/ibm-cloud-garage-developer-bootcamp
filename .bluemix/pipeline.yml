@@ -1,6 +1,6 @@
 ---
 stages:
-  - name: test
+  - name: dev
     inputs:
       - type: git
         branch: dev1
