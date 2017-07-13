@@ -20,6 +20,7 @@ unusual-spending-vendor/
 /changelog.txt
 /index.html
 /*.sh
+/node_modules.tar.gz
 
 # Logs
 logs
