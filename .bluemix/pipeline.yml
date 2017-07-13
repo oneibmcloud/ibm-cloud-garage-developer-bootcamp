@@ -36,7 +36,7 @@ stages:
           npm run dist
 
           scripts/package.sh
-          git log -1 --pretty > changelog.txt
+          git log -1 --pretty > build/changelog.txt
 
           git checkout integration
           git pull origin integration
@@ -44,13 +44,11 @@ stages:
           git push origin integration
 
           git checkout distribution
-          git pull origin distribution
 
           cp -rf build/* .
-          rm -rf build
 
           git add .
-          git commit -m "$(cat ./changelog.txt)"
+          git commit -m "$(cat build/changelog.txt)"
           git push origin distribution
 
           git checkout dev1

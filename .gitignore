@@ -6,6 +6,7 @@
 .idea/
 .nyc_output/
 bower_components/
+build/
 coverage/
 dist/
 game-of-life/
