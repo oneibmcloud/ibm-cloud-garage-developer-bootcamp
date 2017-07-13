@@ -21,7 +21,6 @@ stages:
 
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
-          git fetch --all
 
           git branch integration
           git fetch origin integration
@@ -46,6 +45,7 @@ stages:
           git push origin integration
 
           echo 'tag distribution'
+          git branch distribution
           git fetch origin distribution
           git checkout distribution
 
@@ -57,6 +57,7 @@ stages:
           git push origin distribution
 
           echo 'tag archive'
+          git branch archive
           git fetch origin archive
           git checkout archive
 
