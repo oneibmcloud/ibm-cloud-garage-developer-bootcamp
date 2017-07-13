@@ -47,8 +47,8 @@ stages:
           echo 'tag distribution'
           git branch distribution
           git fetch origin distribution
-          git pull origin distribution
           git checkout distribution
+          git pull origin distribution
 
           cp archive/dist.tar.gz .
           cp archive/changelog.txt .
@@ -60,8 +60,8 @@ stages:
           echo 'tag archive'
           git branch archive
           git fetch origin archive
-          git pull origin archive
           git checkout archive
+          git pull origin archive
 
           cp archive/archive.tar.gz .
           cp archive/changelog.txt .
