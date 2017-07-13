@@ -16,34 +16,51 @@ stages:
         build_type: npm
         script: |-
           #!/bin/bash
+          echo '-----------------------------'
           echo 'printenv'
           printenv
 
           echo 'ls -al'
           ls -al
+          echo '-----------------------------'
 
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
+          echo '-----------------------------'
+          echo 'merge integration branch'
+          echo '-----------------------------'
           git branch integration
           git fetch origin integration
           git merge integration --ff-only
 
+          echo '-----------------------------'
+          echo 'build distribution'
+          echo '-----------------------------'
           export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
           npm install
           npm run ci
           npm run dist
 
+          echo '-----------------------------'
+          echo 'build archive'
+          echo '-----------------------------'
           mkdir -p archive
           mkdir -p generated
           scripts/archive.sh
           git log -1 --pretty > archive/changelog.txt
 
+          echo '-----------------------------'
+          echo 'merge to known good branch'
+          echo '-----------------------------'
           git checkout integration
           git pull origin integration
           git merge dev1 --no-ff --log
           git push origin integration
 
+          echo '-----------------------------'
+          echo 'tag distribution'
+          echo '-----------------------------'
           git checkout distribution
 
           cp archive/dist.tar.gz .
@@ -53,6 +70,9 @@ stages:
           git commit -m "$(cat archive/changelog.txt)"
           git push origin distribution
 
+          echo '-----------------------------'
+          echo 'tag archive'
+          echo '-----------------------------'
           git checkout archive
 
           cp archive/archive.tar.gz .
