@@ -31,12 +31,13 @@ stages:
 
           export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
           npm install
-          mkdir -p generated
           npm run ci
           npm run dist
 
-          scripts/package.sh
-          git log -1 --pretty > build/changelog.txt
+          mkdir -p archive
+          mkdir -p generated
+          scripts/archive.sh
+          git log -1 --pretty > archive/changelog.txt
 
           git checkout integration
           git pull origin integration
@@ -45,21 +46,21 @@ stages:
 
           git checkout distribution
 
-          cp -rf build/* .
+          cp archive/dist.tar.gz .
+          cp archive/changelog.txt .
 
           git add .
-          git commit -m "$(cat build/changelog.txt)"
+          git commit -m "$(cat archive/changelog.txt)"
           git push origin distribution
 
-          git checkout dev1
-          tar -czf node_modules.tar.gz node_modules
-          rm -rf node_modules
-          mkdir -p build
-          cp node_modules.tar.gz build
-          cp *.* build
-          cp -r web build
-          cp -r server build
-          pwd && ls -al && pwd build && ls -al build
+          git checkout archive
+
+          cp archive/archive.tar.gz .
+          cp archive/changelog.txt .
+
+          git add .
+          git commit -m "$(cat archive/changelog.txt)"
+          git push origin archive
       - name: Sauce Labs Tests
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
@@ -96,7 +97,7 @@ stages:
     jobs:
       - name: package
         type: builder
-        build_type: simple
+        build_type: npm
   - name: blue-green
     inputs:
       - type: job
@@ -120,6 +121,12 @@ stages:
           #!/bin/bash
           echo 'printenv'
           printenv
+
+          echo 'ls -al'
+          ls -al
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
 
           echo 'ls -al'
           ls -al
