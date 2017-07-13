@@ -9,7 +9,7 @@
 .nyc_output/
 
 bower_components/
-build/
+archive/
 coverage/
 dist/
 game-of-life/
