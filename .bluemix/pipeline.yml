@@ -46,6 +46,7 @@ stages:
           git push origin integration
 
           echo 'tag distribution'
+          git fetch origin distribution
           git checkout distribution
 
           cp archive/dist.tar.gz .
@@ -56,6 +57,7 @@ stages:
           git push origin distribution
 
           echo 'tag archive'
+          git fetch origin archive
           git checkout archive
 
           cp archive/archive.tar.gz .
