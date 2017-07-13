@@ -3,6 +3,7 @@
 /changelog.txt
 /index.html
 /*.sh
+/node_modules.tar.gz
 
 .idea/
 .nyc_output/
