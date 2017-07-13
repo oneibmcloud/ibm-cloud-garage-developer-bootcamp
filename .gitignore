@@ -3,9 +3,10 @@
 .idea/
 .nyc_output/
 
-bower_components/
 archive/
+bower_components/
 coverage/
+dist/
 game-of-life/
 generated/
 jspm_packages/
@@ -13,13 +14,17 @@ launchConfigurations/
 lib-cov/
 node_modules/
 resources/
+scripts/
+server/
 unusual-spending/
 unusual-spending-vendor/
 
+/*.sh
 /capstone-project.iml
 /changelog.txt
 /index.html
-/*.sh
+/manifest.yml
+/package.json
 
 # Logs
 logs
