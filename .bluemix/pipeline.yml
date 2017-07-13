@@ -21,6 +21,7 @@ stages:
 
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
+          git fetch --all
 
           git branch integration
           git fetch origin integration
