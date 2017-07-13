@@ -16,9 +16,6 @@ stages:
         build_type: npm
         script: |-
           #!/bin/bash
-          printenv
-          ls -al
-
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
@@ -26,25 +23,21 @@ stages:
           git fetch origin integration
           git merge integration --ff-only
 
-          echo 'build distribution'
           export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
           npm install
           npm run ci
           npm run dist
 
-          echo 'build archive'
           mkdir -p archive
           mkdir -p generated
           scripts/archive.sh
           git log -1 --pretty > archive/changelog.txt
 
-          echo 'merge to known good branch'
           git checkout integration
           git pull origin integration
           git merge dev1 --no-ff --log
           git push origin integration
 
-          echo 'tag distribution'
           git checkout -b distribution origin/distribution
 
           cp archive/dist.tar.gz .
@@ -54,7 +47,6 @@ stages:
           git commit -m "$(cat archive/changelog.txt)"
           git push origin distribution
 
-          echo 'tag archive'
           git checkout -b archive origin/archive
 
           cp archive/archive.tar.gz .
@@ -77,14 +69,11 @@ stages:
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
-          echo 'printenv'
-          printenv
-
-          echo 'ls -al'
-          ls -al
-
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
+
+          printenv
+          ls -al
 
           export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
           npm install
@@ -100,7 +89,7 @@ stages:
     jobs:
       - name: package
         type: builder
-        build_type: npm
+        build_type: simple
   - name: blue-green
     inputs:
       - type: job
@@ -122,16 +111,12 @@ stages:
           application: ${APPLICATION}
         script: |-
           #!/bin/bash
-          echo 'printenv'
-          printenv
-
-          echo 'ls -al'
           ls -al
+          printenv
 
           tar -zxvf dist.tar.gz
           rm dist.tar.gz
 
-          echo 'ls -al'
           ls -al
 
           cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
