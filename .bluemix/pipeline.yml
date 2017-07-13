@@ -16,6 +16,12 @@ stages:
         build_type: npm
         script: |-
           #!/bin/bash
+          echo 'printenv'
+          printenv
+
+          echo 'ls -al'
+          ls -al
+
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
@@ -69,7 +75,12 @@ stages:
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
+          echo 'printenv'
+          printenv
+
+          echo 'ls -al'
           ls -al
+
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
@@ -109,6 +120,12 @@ stages:
           application: ${APPLICATION}
         script: |-
           #!/bin/bash
+          echo 'printenv'
+          printenv
+
+          echo 'ls -al'
+          ls -al
+
           cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
           cf install-plugin blue-green-deploy -r CF-Community <<< y
           cf bgd "${CF_APP}"-dev -f ./manifest.yml
