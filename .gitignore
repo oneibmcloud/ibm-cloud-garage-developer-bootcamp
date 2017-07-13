@@ -20,6 +20,7 @@ unusual-spending/
 unusual-spending-vendor/
 
 /*.sh
+/archive.tar.gz
 /capstone-project.iml
 /index.html
 /manifest.yml
