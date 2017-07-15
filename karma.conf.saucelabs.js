@@ -90,7 +90,7 @@ module.exports = function(config) {
     customLaunchers: customLaunchers,
     exclude: [],
     frameworks: ['mocha', 'should'],
-    logLevel: config.LOG_DEBUG,
+    logLevel: config.LOG_ERROR,
     port: 9876,
     reporters: ['mocha', 'saucelabs'],
     singleRun: true
