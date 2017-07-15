@@ -1,6 +1,6 @@
 ---
 stages:
-  - name: dev
+  - name: dev1
     inputs:
       - type: git
         branch: dev1
@@ -80,6 +80,51 @@ stages:
           mkdir -p generated
           npm run test:sauce
           npm run test:ie:sauce
+  - name: archive
+    inputs:
+      - type: git
+        branch: archive
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: archive
+        type: builder
+        build_type: simple
+  - name: integration
+    inputs:
+      - type: job
+        stage: archive
+        job: NPM
+    triggers:
+      - type: stage
+    jobs:
+      - name: saucelabs integration tests
+        type: tester
+        extension_id: ibm.devops.services.pipeline.saucelabs
+        services:
+          - ${SAUCE_LABS}
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${SPACE}
+          application: ${APPLICATION}
+        DL_ASSETS: 'false'
+        SELECT_CMD: custom
+        COMMAND: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf archive.tar.gz
+          rm archive.tar.gz
+
+          ls -al
+
+          npm run test:sauce
+          npm run test:ie:sauce
+        enable_tests: true
+        test_file_pattern: '*.xml'
   - name: package
     inputs:
       - type: git
@@ -91,6 +136,41 @@ stages:
       - name: package
         type: builder
         build_type: simple
+  - name: blue-green
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${SPACE}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-dev -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
+          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
   - name: blue-green
     inputs:
       - type: job
