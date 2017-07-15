@@ -33,7 +33,8 @@ stages:
             && nvm alias default $NODE_VERSION \
             && nvm use default \
             && node -v \
-            && npm -v
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/v${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
           npm install
           npm run ci
@@ -96,7 +97,8 @@ stages:
             && nvm alias default $NODE_VERSION \
             && nvm use default \
             && node -v \
-            && npm -v
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/v${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
           npm install
           mkdir -p generated
@@ -150,7 +152,8 @@ stages:
             && nvm alias default $NODE_VERSION \
             && nvm use default \
             && node -v \
-            && npm -v
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/v${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
           tar -zxvf archive.tar.gz
           rm archive.tar.gz
