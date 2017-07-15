@@ -4,20 +4,29 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
   const customLaunchers = {
-    sl_chrome: {
+    'SL_Chrome': {
       base: 'SauceLabs',
       browserName: 'chrome',
-      version: '51'
+      version: '59'
     },
-    sl_firefox: {
+    'SL_Firefox': {
       base: 'SauceLabs',
       browserName: 'firefox',
-      version: '47'
+      version: '52'
+    },
+    'SL_Safari_9': {
+      base: 'SauceLabs',
+      browserName: 'safari',
+      platform: 'OS X 10.11',
+      version: '9'
+    },
+    'SL_iOS': {
+      base: 'SauceLabs',
+      browserName: 'iphone',
+      platform: 'OS X 10.10',
+      version: '8.1'
     }
   };
-
-  console.log(process.env.SAUCE_USERNAME);
-  console.log(process.env.SAUCE_ACCESS_KEY);
 
   config.set({
     sauceLabs: {
@@ -77,6 +86,7 @@ module.exports = function(config) {
     captureTimeout: 2400000,
     browserNoActivityTimeout: 2400000,
     colors: true,
+    concurrency: 2,
     customLaunchers: customLaunchers,
     exclude: [],
     frameworks: ['mocha', 'should'],
