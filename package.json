@@ -46,7 +46,7 @@
   "license": "UNLICENSED",
   "private": true,
   "engines": {
-    "node": "7.10.0",
+    "node": "7.10.1",
     "npm": "4.2.0"
   },
   "files": [
