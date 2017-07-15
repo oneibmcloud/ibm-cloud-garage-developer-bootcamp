@@ -79,6 +79,7 @@ stages:
           npm install
           mkdir -p generated
           npm run test:sauce
+          npm run test:ie:sauce
   - name: package
     inputs:
       - type: git
