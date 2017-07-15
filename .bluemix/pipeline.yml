@@ -95,11 +95,11 @@ stages:
     inputs:
       - type: job
         stage: archive
-        job: NPM
+        job: archive
     triggers:
       - type: stage
     jobs:
-      - name: saucelabs integration tests
+      - name: 'saucelabs integration tests'
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
@@ -108,19 +108,24 @@ stages:
           region_id: ${REGION}
           organization: ${ORGANIZATION}
           space: ${SPACE}
-          application: ${APPLICATION}
         DL_ASSETS: 'false'
         SELECT_CMD: custom
         COMMAND: |-
           #!/bin/bash
-          ls -al
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
           printenv
+          ls -al
+
+          export PATH=/opt/IBM/node-v6.7.0/bin:./node_modules/.bin:$PATH
 
           tar -zxvf archive.tar.gz
           rm archive.tar.gz
 
           ls -al
 
+          mkdir -p generated
           npm run test:sauce
           npm run test:ie:sauce
         enable_tests: true
