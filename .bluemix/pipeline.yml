@@ -104,8 +104,8 @@ stages:
 
           npm install
           mkdir -p generated
-          npm run test:sauce
-          npm run test:ie:sauce
+          node ./node_modules/.bin/karma start ./karma.conf.saucelabs.js --single-run --no-auto-watch
+          node ./node_modules/.bin/karma start ./karma.conf.saucelabs-ie.js --single-run --no-auto-watch
   - name: archive
     inputs:
       - type: git
@@ -165,8 +165,8 @@ stages:
 
           npm install
           mkdir -p generated
-          npm run test:sauce
-          npm run test:ie:sauce
+          node ./node_modules/.bin/karma start ./karma.conf.saucelabs.js --single-run --no-auto-watch
+          node ./node_modules/.bin/karma start ./karma.conf.saucelabs-ie.js --single-run --no-auto-watch
         enable_tests: true
         test_file_pattern: '*.xml'
   - name: package
