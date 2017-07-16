@@ -86,19 +86,19 @@ stages:
         job: archive
     triggers:
       - type: stage
+    properties:
+    - name: SAUCE_USERNAME
+      value: {{services.test.parameters.username}}
+      type: text
+    - name: SAUCE_ACCESS_KEY
+      value: {{services.test.parameters.key}}
     jobs:
       - name: 'saucelabs integration tests'
-        type: tester
-        extension_id: ibm.devops.services.pipeline.saucelabs
-        services:
-          - ${SAUCE_LABS}
-        target:
-          region_id: ${REGION}
-          organization: ${ORGANIZATION}
-          space: ${SPACE}
-        DL_ASSETS: 'false'
-        SELECT_CMD: custom
-        COMMAND: |-
+        type: builder
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
           #!/bin/bash
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
@@ -116,18 +116,15 @@ stages:
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
-          tar -zxvf archive.tar.gz
-          rm archive.tar.gz
-          rm -rf node_modules
-
           ls -al
           printenv
+
+          tar -zxvf archive.tar.gz
+          rm archive.tar.gz
 
           npm install
           mkdir -p generated
           npm run test:sauce
-        enable_tests: true
-        test_file_pattern: '*.xml'
   - name: package
     inputs:
       - type: git
