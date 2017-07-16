@@ -28,7 +28,7 @@
     "test": "karma start karma.conf.ci.js",
     "test:coverage": "karma start karma.conf.coverage.js",
     "test:sauce": "karma start karma.conf.saucelabs.js --single-run --no-auto-watch",
-    "test:ie:sauce": "karma start karma.conf.saucelabs.js --single-run --no-auto-watch",
+    "test:ie:sauce": "karma start karma.conf.saucelabs-ie.js --single-run --no-auto-watch",
     "test:watch": "karma start karma.conf.js",
     "test:mac": "npm run test:watch"
   },
