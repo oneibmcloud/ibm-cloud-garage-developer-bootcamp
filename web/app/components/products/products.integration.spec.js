@@ -49,7 +49,7 @@
          $(element).find('span[rel=product-title]').length.should.equal(27);
          done();
 
-       }, 1000);
+       }, 1500);
      });
    });
  });

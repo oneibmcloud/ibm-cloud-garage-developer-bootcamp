@@ -10,7 +10,10 @@ const replace = td.replace;
 const when = td.when;
 const verify = td.verify;
 const reset = td.reset;
-const config = td.config;
+
+td.config({
+  promiseConstructor: require('bluebird')
+});
 
 global.context = describe;
 global.td = td;
