@@ -27,7 +27,7 @@ stages:
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
           npm config delete prefix \
-            && sudo curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
             && . $NVM_DIR/nvm.sh \
             && nvm install $NODE_VERSION \
             && nvm alias default $NODE_VERSION \
@@ -35,6 +35,7 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+          printenv
 
           npm install
           npm run ci
@@ -91,7 +92,7 @@ stages:
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
           npm config delete prefix \
-            && sudo curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
             && . $NVM_DIR/nvm.sh \
             && nvm install $NODE_VERSION \
             && nvm alias default $NODE_VERSION \
@@ -99,6 +100,7 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+          printenv
 
           npm install
           mkdir -p generated
@@ -146,7 +148,7 @@ stages:
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
           npm config delete prefix \
-            && sudo curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
             && . $NVM_DIR/nvm.sh \
             && nvm install $NODE_VERSION \
             && nvm alias default $NODE_VERSION \
@@ -154,6 +156,7 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+          printenv
 
           tar -zxvf archive.tar.gz
           rm archive.tar.gz
