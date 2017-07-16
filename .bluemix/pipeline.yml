@@ -39,6 +39,7 @@ stages:
           npm install
           npm run ci
           npm run dist
+          npm prune
 
           mkdir -p archive
           mkdir -p generated
@@ -52,6 +53,9 @@ stages:
 
           git checkout -b archive origin/archive
           git merge dev1 --no-ff --log
+          cp archive/*.*
+          git add .
+          git commit -m "$(cat archive/changelog.txt)"
           git push origin archive
 
           git checkout -b distribution origin/distribution
