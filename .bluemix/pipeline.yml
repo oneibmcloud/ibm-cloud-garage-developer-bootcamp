@@ -118,6 +118,7 @@ stages:
 
           tar -zxvf archive.tar.gz
           rm archive.tar.gz
+          rm -rf node_moduels
 
           ls -al
           printenv
