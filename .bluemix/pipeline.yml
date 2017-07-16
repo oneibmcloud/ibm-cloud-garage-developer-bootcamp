@@ -18,6 +18,7 @@ stages:
           #!/bin/bash
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
+          printenv
 
           export NVM_DIR=/home/pipeline/nvm
           export NODE_VERSION=v7.10.1
@@ -53,16 +54,13 @@ stages:
 
           git checkout -b archive origin/archive
           git merge dev1 --no-ff --log
-          cp archive/*.*
+          cp archive/changelog.txt .
           git add .
           git commit -m "$(cat archive/changelog.txt)"
           git push origin archive
 
           git checkout -b distribution origin/distribution
-
-          cp archive/dist.tar.gz .
-          cp archive/changelog.txt .
-
+          cp archive/*.*
           git add .
           git commit -m "$(cat archive/changelog.txt)"
           git push origin distribution
