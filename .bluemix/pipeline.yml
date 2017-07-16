@@ -19,10 +19,6 @@ stages:
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
-          git branch integration
-          git fetch origin integration
-          git merge integration --ff-only
-
           export NVM_DIR=/home/pipeline/nvm
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
@@ -35,7 +31,10 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
-          printenv
+
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
 
           npm install
           npm run ci
@@ -85,9 +84,6 @@ stages:
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
-          printenv
-          ls -al
-
           export NVM_DIR=/home/pipeline/nvm
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
@@ -100,12 +96,10 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
-          printenv
 
           npm install
           mkdir -p generated
-          node ./node_modules/.bin/karma start ./karma.conf.saucelabs.js --single-run --no-auto-watch
-          node ./node_modules/.bin/karma start ./karma.conf.saucelabs-ie.js --single-run --no-auto-watch
+          npm run test:sauce
   - name: archive
     inputs:
       - type: git
@@ -141,9 +135,6 @@ stages:
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
 
-          printenv
-          ls -al
-
           export NVM_DIR=/home/pipeline/nvm
           export NODE_VERSION=v7.10.1
           export NVM_VERSION=v0.33.2
@@ -156,17 +147,16 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
-          printenv
 
           tar -zxvf archive.tar.gz
           rm archive.tar.gz
 
           ls -al
+          printenv
 
           npm install
           mkdir -p generated
-          node ./node_modules/.bin/karma start ./karma.conf.saucelabs.js --single-run --no-auto-watch
-          node ./node_modules/.bin/karma start ./karma.conf.saucelabs-ie.js --single-run --no-auto-watch
+          npm run test:sauce
         enable_tests: true
         test_file_pattern: '*.xml'
   - name: package
