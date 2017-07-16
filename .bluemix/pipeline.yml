@@ -68,7 +68,26 @@ stages:
           git commit -m "$(cat archive/changelog.txt)"
           git push origin archive
           ls -al
-      - name: Sauce Labs Tests
+  - name: archive
+    inputs:
+      - type: git
+        branch: archive
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: archive
+        type: builder
+        build_type: simple
+  - name: integration
+    inputs:
+      - type: job
+        stage: archive
+        job: archive
+    triggers:
+      - type: stage
+    jobs:
+      - name: 'saucelabs integration tests'
         type: tester
         extension_id: ibm.devops.services.pipeline.saucelabs
         services:
@@ -97,20 +116,17 @@ stages:
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
+          tar -zxvf archive.tar.gz
+          rm archive.tar.gz
+
+          ls -al
+          printenv
+
           npm install
           mkdir -p generated
           npm run test:sauce
-  - name: archive
-    inputs:
-      - type: git
-        branch: archive
-        service: ${SOURCE_CONTROL_SERVICE}
-    triggers:
-      - type: commit
-    jobs:
-      - name: archive
-        type: builder
-        build_type: simple
+        enable_tests: true
+        test_file_pattern: '*.xml'
   - name: package
     inputs:
       - type: git
