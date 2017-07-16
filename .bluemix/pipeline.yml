@@ -54,7 +54,9 @@ stages:
 
           git checkout -b archive origin/archive
           git merge dev1 --no-ff --log
+          ls -al
           cp archive/changelog.txt .
+          ls -al
           git add .
           git commit -m "$(cat archive/changelog.txt)"
           git push origin archive
