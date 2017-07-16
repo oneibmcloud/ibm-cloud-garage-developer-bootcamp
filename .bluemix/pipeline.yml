@@ -50,6 +50,10 @@ stages:
           git merge dev1 --no-ff --log
           git push origin integration
 
+          git checkout -b archive origin/archive
+          git merge dev1 --no-ff --log
+          git push origin archive
+
           git checkout -b distribution origin/distribution
 
           cp archive/dist.tar.gz .
@@ -59,33 +63,14 @@ stages:
           git commit -m "$(cat archive/changelog.txt)"
           git push origin distribution
 
-          git checkout -b archive origin/archive
-
-          cp archive/archive.tar.gz .
-          cp archive/changelog.txt .
-
-          git add .
-          git commit -m "$(cat archive/changelog.txt)"
-          git push origin archive
           ls -al
-  - name: archive
+  - name: integration
     inputs:
       - type: git
         branch: archive
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
       - type: commit
-    jobs:
-      - name: archive
-        type: builder
-        build_type: simple
-  - name: integration
-    inputs:
-      - type: job
-        stage: archive
-        job: archive
-    triggers:
-      - type: stage
     properties:
     - name: SAUCE_USERNAME
       value: {{services.test.parameters.username}}
@@ -93,7 +78,7 @@ stages:
     - name: SAUCE_ACCESS_KEY
       value: {{services.test.parameters.key}}
     jobs:
-      - name: 'saucelabs integration tests'
+      - name: 'saucelabs'
         type: builder
         enable_tests: true
         test_file_pattern: '*.xml, generated/*.xml'
@@ -115,12 +100,6 @@ stages:
             && node -v \
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
-
-          ls -al
-          printenv
-
-          tar -zxvf archive.tar.gz
-          rm archive.tar.gz
 
           npm install
           mkdir -p generated
