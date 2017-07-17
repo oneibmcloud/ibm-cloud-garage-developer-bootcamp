@@ -13,8 +13,28 @@
             "description": "organization",
             "type": "string"
         },
+        "dev-space": {
+            "description": "development instance",
+            "type": "string"
+        },
+        "e2e-space": {
+            "description": "functional testing instance",
+            "type": "string"
+        },
+        "load-space": {
+            "description": "load testing instance",
+            "type": "string"
+        },
+        "qa-space": {
+            "description": "QA instance",
+            "type": "string"
+        },
+        "stage-space": {
+            "description": "staging instance",
+            "type": "string"
+        },
         "prod-space": {
-            "description": "space",
+            "description": "production instance",
             "type": "string"
         },
         "application": {
@@ -26,7 +46,12 @@
     "required": [
         "region",
         "organization",
-        "space",
+        "development instance",
+        "functional testing instance",
+        "load testing instance",
+        "QA instance",
+        "staging instance",
+        "production instance",
         "application"
     ],
     "form": [
