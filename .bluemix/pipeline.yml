@@ -57,6 +57,7 @@ stages:
 
           git checkout --track origin/archive
           git merge dev1 --no-ff --log
+          rm changelog.txt
           ls -al
           cp archive/changelog.txt .
           echo "${BUILD_NUMBER}" >> changelog.txt
@@ -112,29 +113,21 @@ stages:
           npm install
           mkdir -p generated
           npm run test:sauce
-  - name: package
+  - name: development
     inputs:
       - type: git
         branch: distribution
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
       - type: commit
-    jobs:
-      - name: package
-        type: builder
-        build_type: simple
-  - name: development
-    inputs:
-      - type: job
-        stage: package
-        job: package
-    triggers:
-      - type: stage
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
@@ -158,24 +151,27 @@ stages:
 
           cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
           cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
-  - name: functional test
+  - name: e2e
     inputs:
-      - type: job
-        stage: package
-        job: package
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: stage
+      - type: commit
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
           region_id: ${REGION}
           organization: ${ORGANIZATION}
-          space: ${FUNCTIONAL}
+          space: ${E2E}
           application: ${APPLICATION}
         script: |-
           #!/bin/bash
@@ -193,18 +189,21 @@ stages:
 
           cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-e2e
           cf map-route "${CF_APP}"-e2e mybluemix.net -n "${CF_APP}"-e2e
-  - name: load test
+  - name: load
     inputs:
-      - type: job
-        stage: package
-        job: package
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: stage
+      - type: commit
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
@@ -230,16 +229,19 @@ stages:
           cf map-route "${CF_APP}"-load mybluemix.net -n "${CF_APP}"-load
   - name: qa
     inputs:
-      - type: job
-        stage: package
-        job: package
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: stage
+      - type: commit
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
@@ -263,24 +265,27 @@ stages:
 
           cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-qa
           cf map-route "${CF_APP}"-qa mybluemix.net -n "${CF_APP}"-qa
-  - name: staging
+  - name: stage
     inputs:
-      - type: job
-        stage: package
-        job: package
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: stage
+      - type: commit
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
           region_id: ${REGION}
           organization: ${ORGANIZATION}
-          space: ${STAGING}
+          space: ${STAGE}
           application: ${APPLICATION}
         script: |-
           #!/bin/bash
@@ -300,16 +305,19 @@ stages:
           cf map-route "${CF_APP}"-stage mybluemix.net -n "${CF_APP}"-stage
   - name: production
     inputs:
-      - type: job
-        stage: package
-        job: package
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: stage
+      - type: commit
     properties:
       - name: APP_NAME
         value: '${CF_APP}'
         type: text
     jobs:
+      - name: package
+        type: builder
+        build_type: simple
       - name: 'blue-green'
         type: deployer
         target:
