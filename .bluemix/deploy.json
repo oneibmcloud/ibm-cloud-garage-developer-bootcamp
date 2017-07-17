@@ -142,7 +142,7 @@
                 },
                 {
                     "type": "label",
-                    "title": "Targeted Deployments"
+                    "title": ""
                 },
                 {
                   "type": "select",
