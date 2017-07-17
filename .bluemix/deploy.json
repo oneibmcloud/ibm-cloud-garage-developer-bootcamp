@@ -44,14 +44,14 @@
         }
     },
     "required": [
-        "region",
-        "organization",
-        "development instance",
-        "functional testing instance",
-        "load testing instance",
-        "QA instance",
-        "staging instance",
-        "production instance",
+        "prod-region",
+        "prod-organization",
+        "dev-space",
+        "e2e-space",
+        "load-space",
+        "qa-space",
+        "stage-space",
+        "prod-space",
         "application"
     ],
     "form": [
