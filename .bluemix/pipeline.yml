@@ -42,7 +42,9 @@ stages:
           npm run dist
           npm prune
 
+          ls -al
           mkdir -p archive
+          ls -al
           mkdir -p generated
           scripts/archive.sh
           git log -1 --pretty > archive/changelog.txt
@@ -56,6 +58,7 @@ stages:
           git merge dev1 --no-ff --log
           ls -al
           cp archive/changelog.txt .
+          echo "${BUILD_NUMBER}" >> changelog.txt
           ls -al
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
