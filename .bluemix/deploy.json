@@ -132,12 +132,12 @@
                 },
                 {
                   "type": "select",
-                  "key": "prod-space",
+                  "key": "stage-space",
                   "readonly": false
                 },
                 {
                     "type": "select",
-                    "key": "prod-space",
+                    "key": "qa-space",
                     "readonly": false
                 },
                 {
@@ -162,17 +162,17 @@
                 },
                 {
                   "type": "select",
-                  "key": "prod-space",
+                  "key": "load-space",
                   "readonly": false
                 },
                 {
                   "type": "select",
-                  "key": "prod-space",
+                  "key": "e2e-space",
                   "readonly": false
                 },
                 {
                     "type": "select",
-                    "key": "prod-space",
+                    "key": "dev-space",
                     "readonly": false
                 }
             ]
