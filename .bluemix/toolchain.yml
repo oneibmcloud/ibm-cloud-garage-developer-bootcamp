@@ -59,7 +59,7 @@ services:
           SAUCE_LABS: test
           SOURCE_CONTROL_SERVICE: source-control
           APPLICATION: '{{form.pipeline.parameters.application}}'
-          SPACE: '{{form.pipeline.parameters.prod-space}}'
+          PRODUCTION: '{{form.pipeline.parameters.prod-space}}'
           ORGANIZATION: '{{form.pipeline.parameters.prod-organization}}'
           REGION: '{{form.pipeline.parameters.prod-region}}'
         execute: true

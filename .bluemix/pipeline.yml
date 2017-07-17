@@ -123,7 +123,7 @@ stages:
       - name: package
         type: builder
         build_type: simple
-  - name: blue-green
+  - name: production
     inputs:
       - type: job
         stage: package
@@ -140,7 +140,7 @@ stages:
         target:
           region_id: ${REGION}
           organization: ${ORGANIZATION}
-          space: ${SPACE}
+          space: ${PRODUCTION}
           application: ${APPLICATION}
         script: |-
           #!/bin/bash
