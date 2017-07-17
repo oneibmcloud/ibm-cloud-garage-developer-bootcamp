@@ -54,7 +54,6 @@ stages:
 
           git checkout --track origin/archive
           git merge dev1 --no-ff --log
-          git commit -m "merge with dev1" --no-verify
           ls -al
           cp archive/changelog.txt .
           ls -al
