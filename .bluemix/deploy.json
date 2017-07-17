@@ -9,7 +9,7 @@
             "description": "region",
             "type": "string"
         },
-        "organization": {
+        "prod-organization": {
             "description": "organization",
             "type": "string"
         },
@@ -76,7 +76,7 @@
                 },
                 {
                     "type": "select",
-                    "key": "organization"
+                    "key": "prod-organization"
                 },
                 {
                     "type": "select",
