@@ -18,7 +18,6 @@ stages:
           #!/bin/bash
           git config --global user.email "wgpannel@us.ibm.com"
           git config --global user.name "wil.pannell"
-          printenv
 
           export NVM_DIR=/home/pipeline/nvm
           export NODE_VERSION=v7.10.1
@@ -33,6 +32,7 @@ stages:
             && npm -v \
             && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
 
+          git branch -a
           git branch integration
           git fetch origin integration
           git merge integration --ff-only
@@ -50,22 +50,23 @@ stages:
           git checkout integration
           git pull origin integration
           git merge dev1 --no-ff --log
-          git push origin integration
+          git push origin integration --no-verify
 
-          git checkout -b archive origin/archive
+          git checkout --track origin/archive
           git merge dev1 --no-ff --log
+          git commit -m "merge with dev1" --no-verify
           ls -al
           cp archive/changelog.txt .
           ls -al
           git add .
-          git commit -m "$(cat archive/changelog.txt)"
-          git push origin archive
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin archive --no-verify
 
-          git checkout -b distribution origin/distribution
-          cp archive/*.*
+          git checkout --track origin/distribution
+          cp archive/* .
           git add .
-          git commit -m "$(cat archive/changelog.txt)"
-          git push origin distribution
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin distribution --no-verify
 
           ls -al
   - name: integration
