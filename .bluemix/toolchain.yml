@@ -59,6 +59,11 @@ services:
           SAUCE_LABS: test
           SOURCE_CONTROL_SERVICE: source-control
           APPLICATION: '{{form.pipeline.parameters.application}}'
+          DEVELOPMENT: '{{form.pipeline.parameters.dev-space}}'
+          FUNCTIONAL: '{{form.pipeline.parameters.e2e-space}}'
+          LOAD: '{{form.pipeline.parameters.load-space}}'
+          QA: '{{form.pipeline.parameters.qa-space}}'
+          STAGING: '{{form.pipeline.parameters.stage-space}}'
           PRODUCTION: '{{form.pipeline.parameters.prod-space}}'
           ORGANIZATION: '{{form.pipeline.parameters.prod-organization}}'
           REGION: '{{form.pipeline.parameters.prod-region}}'

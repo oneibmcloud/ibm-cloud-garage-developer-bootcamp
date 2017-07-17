@@ -123,6 +123,181 @@ stages:
       - name: package
         type: builder
         build_type: simple
+  - name: development
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${DEVELOPMENT}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-dev -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
+          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
+  - name: functional test
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${FUNCTIONAL}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-e2e -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-e2e
+          cf map-route "${CF_APP}"-e2e mybluemix.net -n "${CF_APP}"-e2e
+  - name: load test
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${LOAD}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-load -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-load
+          cf map-route "${CF_APP}"-load mybluemix.net -n "${CF_APP}"-load
+  - name: qa
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${QA}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-qa -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-qa
+          cf map-route "${CF_APP}"-qa mybluemix.net -n "${CF_APP}"-qa
+  - name: staging
+    inputs:
+      - type: job
+        stage: package
+        job: package
+    triggers:
+      - type: stage
+    properties:
+      - name: APP_NAME
+        value: '${CF_APP}'
+        type: text
+    jobs:
+      - name: 'blue-green'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${STAGING}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          ls -al
+          printenv
+
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-stage -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-stage
+          cf map-route "${CF_APP}"-stage mybluemix.net -n "${CF_APP}"-stage
   - name: production
     inputs:
       - type: job
@@ -154,7 +329,7 @@ stages:
 
           cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
           cf install-plugin blue-green-deploy -r CF-Community <<< y
-          cf bgd "${CF_APP}"-dev -f ./manifest.yml
+          cf bgd "${CF_APP}" -f ./manifest.yml
 
-          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
-          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"
+          cf map-route "${CF_APP}" mybluemix.net -n "${CF_APP}"
