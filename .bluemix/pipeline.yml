@@ -47,7 +47,8 @@ stages:
           ls -al
           mkdir -p generated
           scripts/archive.sh
-          git log -1 --pretty > archive/changelog.txt
+          git whatchanged --pretty=format:'%s %cn %h %cd' -1.
+           > archive/changelog.txt
 
           git checkout integration
           git pull origin integration
