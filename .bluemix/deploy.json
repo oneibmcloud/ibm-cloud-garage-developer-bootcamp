@@ -111,15 +111,15 @@
                 },
                 {
                     "type": "label",
-                    "title": "Production"
+                    "title": "Production Instance"
                 },
                 {
                     "type": "label",
-                    "title": "Staging"
+                    "title": "Staging Instance"
                 },
                 {
                     "type": "label",
-                    "title": "QA"
+                    "title": "QA Instance"
                 },
                 {
                     "type": "label",
@@ -139,6 +139,22 @@
                     "type": "select",
                     "key": "prod-space",
                     "readonly": false
+                },
+                {
+                  "type": "label",
+                  "title": ""
+                },
+                {
+                  "type": "label",
+                  "title": "Load Test Instance"
+                },
+                {
+                  "type": "label",
+                  "title": "E2E Test Instance"
+                },
+                {
+                  "type": "label",
+                  "title": "Development Instance"
                 },
                 {
                     "type": "label",
