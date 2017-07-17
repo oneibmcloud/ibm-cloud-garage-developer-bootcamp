@@ -60,12 +60,6 @@
             "url": "/devops/setup/bm-helper/helper.html"
         },
         {
-            "type": "text",
-            "readonly": false,
-            "title": "Cloud Foundry Application Name",
-            "key": "application"
-        },
-        {
             "type": "table",
             "columnCount": 3,
             "widths": [
@@ -76,15 +70,15 @@
             "items": [
                 {
                     "type": "label",
-                    "title": "Cloud Foundry Application Name"
+                    "title": "Cloud Foundry Application Name:"
                 },
                 {
                     "type": "label",
-                    "title": "Region"
+                    "title": "Region:"
                 },
                 {
                     "type": "label",
-                    "title": "Organization"
+                    "title": "Organization:"
                 },
                 {
                     "type": "text",
@@ -117,27 +111,29 @@
                 },
                 {
                     "type": "label",
-                    "title": "Region"
+                    "title": "Production"
                 },
                 {
                     "type": "label",
-                    "title": "Organization"
+                    "title": "Staging"
                 },
                 {
                     "type": "label",
-                    "title": "Space"
+                    "title": "QA"
                 },
                 {
                     "type": "label",
                     "title": "Targeted Deployment"
                 },
                 {
-                    "type": "select",
-                    "key": "prod-region"
+                  "type": "select",
+                  "key": "prod-space",
+                  "readonly": false
                 },
                 {
-                    "type": "select",
-                    "key": "prod-organization"
+                  "type": "select",
+                  "key": "prod-space",
+                  "readonly": false
                 },
                 {
                     "type": "select",
