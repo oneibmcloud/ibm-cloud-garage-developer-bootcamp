@@ -123,7 +123,26 @@
                 },
                 {
                     "type": "label",
-                    "title": "Targeted Deployment"
+                    "title": "Targeted Deployments"
+                },
+                {
+                  "type": "select",
+                  "key": "prod-space",
+                  "readonly": false
+                },
+                {
+                  "type": "select",
+                  "key": "prod-space",
+                  "readonly": false
+                },
+                {
+                    "type": "select",
+                    "key": "prod-space",
+                    "readonly": false
+                },
+                {
+                    "type": "label",
+                    "title": "Targeted Deployments"
                 },
                 {
                   "type": "select",
