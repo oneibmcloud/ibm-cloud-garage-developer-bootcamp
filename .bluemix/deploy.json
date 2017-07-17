@@ -67,6 +67,42 @@
         },
         {
             "type": "table",
+            "columnCount": 3,
+            "widths": [
+                "33%",
+                "33%",
+                "33%"
+            ],
+            "items": [
+                {
+                    "type": "label",
+                    "title": "Cloud Foundry Application Name"
+                },
+                {
+                    "type": "label",
+                    "title": "Region"
+                },
+                {
+                    "type": "label",
+                    "title": "Organization"
+                },
+                {
+                    "type": "text",
+                    "readonly": false,
+                    "key": "application"
+                },
+                {
+                    "type": "select",
+                    "key": "prod-region"
+                },
+                {
+                    "type": "select",
+                    "key": "prod-organization"
+                }
+            ]
+        },
+        {
+            "type": "table",
             "columnCount": 4,
             "widths": [
                 "15%",
