@@ -60,7 +60,7 @@ services:
           SOURCE_CONTROL_SERVICE: source-control
           APPLICATION: '{{form.pipeline.parameters.application}}'
           SPACE: '{{form.pipeline.parameters.prod-space}}'
-          ORGANIZATION: '{{form.pipeline.parameters.prod-organization}}'
+          ORGANIZATION: '{{form.pipeline.parameters.organization}}'
           REGION: '{{form.pipeline.parameters.prod-region}}'
         execute: true
   alerting:

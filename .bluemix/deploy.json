@@ -9,7 +9,7 @@
             "description": "region",
             "type": "string"
         },
-        "prod-organization": {
+        "organization": {
             "description": "organization",
             "type": "string"
         },
@@ -76,53 +76,7 @@
                 },
                 {
                     "type": "select",
-                    "key": "prod-organization"
-                },
-                {
-                    "type": "select",
-                    "key": "prod-space",
-                    "readonly": false
-                }
-            ]
-        }
-,
-        {
-            "type": "table",
-            "columnCount": 4,
-            "widths": [
-                "15%",
-                "28%",
-                "28%",
-                "28%"
-            ],
-            "items": [
-                {
-                    "type": "label",
-                    "title": ""
-                },
-                {
-                    "type": "label",
-                    "title": "Region"
-                },
-                {
-                    "type": "label",
-                    "title": "Organization"
-                },
-                {
-                    "type": "label",
-                    "title": "Space"
-                },
-                {
-                    "type": "label",
-                    "title": "Targeted Deployment"
-                },
-                {
-                    "type": "select",
-                    "key": "prod-region"
-                },
-                {
-                    "type": "select",
-                    "key": "prod-organization"
+                    "key": "organization"
                 },
                 {
                     "type": "select",
