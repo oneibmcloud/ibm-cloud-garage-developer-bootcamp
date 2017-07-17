@@ -14,23 +14,55 @@
             "type": "string"
         },
         "dev-space": {
-            "description": "development instance",
+            "description": "dev space",
+            "type": "string"
+        },
+        "e2e-region": {
+            "description": "e2e region",
+            "type": "string"
+        },
+        "e2e-organization": {
+            "description": "e2e organization",
             "type": "string"
         },
         "e2e-space": {
-            "description": "functional testing instance",
+            "description": "e2e space",
+            "type": "string"
+        },
+        "load-region": {
+            "description": "load region",
+            "type": "string"
+        },
+        "load-organization": {
+            "description": "load organization",
             "type": "string"
         },
         "load-space": {
-            "description": "load testing instance",
+            "description": "load space",
+            "type": "string"
+        },
+        "qa-region": {
+            "description": "qa region",
+            "type": "string"
+        },
+        "qa-organization": {
+            "description": "qa organization",
             "type": "string"
         },
         "qa-space": {
-            "description": "QA instance",
+            "description": "qa space",
+            "type": "string"
+        },
+        "stage-region": {
+            "description": "stage region",
+            "type": "string"
+        },
+        "stage-organization": {
+            "description": "stage organization",
             "type": "string"
         },
         "stage-space": {
-            "description": "staging instance",
+            "description": "stage space",
             "type": "string"
         },
         "prod-region": {
