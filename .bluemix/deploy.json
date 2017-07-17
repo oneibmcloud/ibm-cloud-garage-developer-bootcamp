@@ -5,12 +5,12 @@
     "longDescription": "continuous integration/delivery",
     "type": "object",
     "properties": {
-        "prod-region": {
-            "description": "region",
+        "dev-region": {
+            "description": "dev region",
             "type": "string"
         },
-        "prod-organization": {
-            "description": "organization",
+        "dev-organization": {
+            "description": "dev organization",
             "type": "string"
         },
         "dev-space": {
@@ -31,6 +31,14 @@
         },
         "stage-space": {
             "description": "staging instance",
+            "type": "string"
+        },
+        "prod-region": {
+            "description": "region",
+            "type": "string"
+        },
+        "prod-organization": {
+            "description": "organization",
             "type": "string"
         },
         "prod-space": {
