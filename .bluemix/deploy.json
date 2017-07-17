@@ -14,7 +14,7 @@
             "type": "string"
         },
         "dev-space": {
-            "description": "dev space",
+            "description": "development instance",
             "type": "string"
         },
         "e2e-region": {
@@ -26,7 +26,7 @@
             "type": "string"
         },
         "e2e-space": {
-            "description": "e2e space",
+            "description": "e2e test instance",
             "type": "string"
         },
         "load-region": {
@@ -38,7 +38,7 @@
             "type": "string"
         },
         "load-space": {
-            "description": "load space",
+            "description": "load test instance",
             "type": "string"
         },
         "qa-region": {
@@ -50,7 +50,7 @@
             "type": "string"
         },
         "qa-space": {
-            "description": "qa space",
+            "description": "qa instance",
             "type": "string"
         },
         "stage-region": {
@@ -62,7 +62,7 @@
             "type": "string"
         },
         "stage-space": {
-            "description": "stage space",
+            "description": "staging instance",
             "type": "string"
         },
         "prod-region": {
@@ -151,15 +151,15 @@
                 },
                 {
                     "type": "label",
-                    "title": "Production Instance"
+                    "title": "Production"
                 },
                 {
                     "type": "label",
-                    "title": "Staging Instance"
+                    "title": "Staging"
                 },
                 {
                     "type": "label",
-                    "title": "QA Instance"
+                    "title": "QA"
                 },
                 {
                     "type": "label",
@@ -186,15 +186,15 @@
                 },
                 {
                   "type": "label",
-                  "title": "Load Test Instance"
+                  "title": "Load Test"
                 },
                 {
                   "type": "label",
-                  "title": "E2E Test Instance"
+                  "title": "E2E Test"
                 },
                 {
                   "type": "label",
-                  "title": "Development Instance"
+                  "title": "Development"
                 },
                 {
                     "type": "label",
