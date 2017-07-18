@@ -71,6 +71,14 @@ services:
   alerting:
     service_id: pagerduty
     $ref: pagerduty.yml
+  analytics:
+    service_id: customtool
+    parameters:
+      name: Analytics
+      description: Usage Details
+      type: Google Analytics
+      lifecyclePhase: LEARN
+      dashboard_url: 'https://analytics.google.com/'
   ccm:
     service_id: customtool
     parameters:
