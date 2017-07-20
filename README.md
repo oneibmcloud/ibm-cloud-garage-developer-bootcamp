@@ -1,1 +1,0 @@
-# ibm-cloud-garage-developer-bootcamp
