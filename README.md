@@ -26,4 +26,3 @@ Facilities, logistics, prerequisites, learning outcomes, agendwa, slides, and la
 ## License
 
 Copyright © 2017 IBM Corporation (all rights reserved)
-
