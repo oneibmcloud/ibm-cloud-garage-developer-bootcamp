@@ -1,0 +1,25 @@
+Person = keisuke | (event organizer) | | 2650,135
+Person = makoto | (event participant) | | 285,140
+Person = saburoh | (event host) | | 1445,135
+
+SoftwareSystem = Tokyo Blockchain Garage Event Planner | Facilitates Event Planning via Transactions Denominated in Mizuho Money [M-Money] | Internal |
+SoftwareSystem = Bluemix Hyper Ledger | Logs Financial Transactions in the Blockchain | External | 2500,1990
+SoftwareSystem = Messaging | Sends Messages | External | 285,1990
+
+Container = Tokyo Blockchain Garage Event Planner | Web Application | authenticate- orchestrate event planning and payment | angularJS v1.5.x | angular | 1350,1010
+Container = Tokyo Blockchain Garage Event Planner | Service Broker | transacts payments- sends confirmations- stores event data | node.js v6.3.0 | node | 1350,1990
+
+Relationship = keisuke | plans event- pays invoice- receives loyalty points- allocates payment | https | Web Application | |
+Relationship = makoto | receives/pays invoice | https | Web Application | |
+Relationship = saburoh | sends invoice- sends loyalty points | https | Web Application | |
+
+Relationship = Web Application | delegates to | https | Service Broker | |
+Relationship = Service Broker | logs financial transactions to ledger | gRPC | Bluemix Hyper Ledger | |
+Relationship = Service Broker | sends notifications | smtp | Messaging | |
+
+Diagram = Container | Tokyo Blockchain Garage Event Planner | Denominates Transactions in Mizuho Money | Letter_Landscape
+
+ElementStyle = Person    |  300 |  200 | #5995d7 | #ffffff |  30 | Person
+ElementStyle = Container |      |      | #d85771 |         |     |
+
+RelationshipStyle = Relationship |  5 |         |       |            |  36 |  300 |  40

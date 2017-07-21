@@ -1,0 +1,26 @@
+<svg width="800" height="460" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="802" height="462" id="canvas_background" fill="#fff"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_17">
+   <ellipse fill="none" stroke="#007fff" stroke-width="2" cx="364" cy="273" id="svg_3" rx="50" ry="48"/>
+   <text fill="#007fff" stroke="#007fff" stroke-width="0" fill-opacity="null" x="327.984375" y="279.338541" id="svg_4" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">Feasible</text>
+   <text fill="#007fff" stroke="#007fff" stroke-width="0" fill-opacity="null" x="324.984375" y="304.338541" id="svg_13" font-size="12" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">(enginnering)</text>
+  </g>
+  <g id="svg_18">
+   <ellipse fill="none" stroke="#ff7f00" stroke-width="2" cx="405" cy="217" id="svg_5" rx="50" ry="48"/>
+   <text fill="#ff7f00" stroke="#007fff" stroke-width="0" x="368" y="219.166666" id="svg_6" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">Desirable</text>
+   <text fill="#ff7f00" stroke="#007fff" stroke-width="0" x="381" y="188.166666" id="svg_16" font-size="12" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">(design)</text>
+  </g>
+  <g id="svg_19">
+   <ellipse fill="none" stroke="#00bf00" stroke-width="1.5" cx="444" cy="272" id="svg_1" rx="50" ry="48"/>
+   <text fill="#00bf00" stroke="#007fff" stroke-width="0" x="422.648438" y="279.338541" id="svg_2" font-size="16" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">Viable</text>
+   <text fill="#00bf00" stroke="#007fff" stroke-width="0" x="419.648438" y="305.338541" id="svg_15" font-size="12" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">(product)</text>
+  </g>
+ </g>
+</svg>
