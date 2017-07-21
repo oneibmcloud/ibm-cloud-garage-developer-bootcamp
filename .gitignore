@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 
+archive/
 dist/
 server/
 coverage/
