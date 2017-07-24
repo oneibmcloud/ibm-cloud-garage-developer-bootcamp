@@ -2,11 +2,13 @@
 
 ##Lean Startup and XP
 - - -
-* **The Culture of Agility.** <!-- .element: style="color:#e0dfe4" -->
-* **The Values of Agility.**  <!-- .element: style="color:#e0dfe4" -->  
-* **The Product Community:  Shared Ownership.**  <!-- .element: style="color:#e0dfe4" -->
-* **The Product Development Team.** 
+* **Introductions**  <!-- .element: style="color:#e0dfe4" -->
+* **Housekeeping**  <!-- .element: style="color:#e0dfe4" -->
+* **The IBM Cloud Garage Method by Chris Lazzaro**  <!-- .element: style="color:#e0dfe4" -->
+* **The Product Development Team.**
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
+* **The Values of Agility.**  <!-- .element: style="color:#e0dfe4" -->
+* **The Product Community:  Shared Ownership.**  <!-- .element: style="color:#e0dfe4" -->
 * **The XP Practices.**  <!-- .element: style="color:#e0dfe4" -->
   * **Pair Programming.**  <!-- .element: style="color:#e0dfe4" -->
   * **Refactoring.**  <!-- .element: style="color:#e0dfe4" -->
@@ -18,7 +20,12 @@
 
 <aside class="notes">
   <p>
+  In the morning, we'll look closely at culture and values, discuss organizational
+  learning and reteaming, then synthesize lean startup and XP as an adaptive
+  learning organization.
   </p>
   <p>
+  In the afternoon, we'll pick apart the engineering practices and dive deep into
+  the design of the delivery cycles to achieve continuous flow.
   </p>
 </aside>

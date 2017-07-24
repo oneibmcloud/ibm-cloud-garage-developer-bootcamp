@@ -1,19 +1,31 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##Agenda
+##Lean Startup and XP
 - - -
-* **Day 01:&nbsp;&nbsp;&nbsp;Lean Startup and Extreme Programming**
-* **Day 02:&nbsp;&nbsp;&nbsp;Design Thinking**  <!-- .element: style="color:#e0dfe4" --> 
-* **Day 03:&nbsp;&nbsp;&nbsp;Inception Workshop**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 04:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to Refactoring**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 05:&nbsp;&nbsp;&nbsp;Iteration 0 - Intro to TDD**   <!-- .element: style="color:#e0dfe4" -->
-* **Day 06:&nbsp;&nbsp;&nbsp;Start Iteration 1**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 07:&nbsp;&nbsp;&nbsp;Iteration 1**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 08:&nbsp;&nbsp;&nbsp;End Iteration 1 / Start Iteration 2**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 09:&nbsp;&nbsp;&nbsp;Iteration 2**  <!-- .element: style="color:#e0dfe4" -->
-* **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**  <!-- .element: style="color:#e0dfe4" -->
+* **Introductions**
+* **Housekeeping**
+* **The IBM Cloud Garage Method by Chris Lazzaro**
+* **The Product Development Team.** <!-- .element: style="color:#e0dfe4" -->
+* _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
+* **The Values of Agility.** <!-- .element: style="color:#e0dfe4" -->
+* **The Product Community:  Shared Ownership.** <!-- .element: style="color:#e0dfe4" -->
+* **The XP Practices.** <!-- .element: style="color:#e0dfe4" -->
+  * **Pair Programming.** <!-- .element: style="color:#e0dfe4" -->
+  * **Refactoring.** <!-- .element: style="color:#e0dfe4" -->
+  * **Test-Driven Development [TDD].** <!-- .element: style="color:#e0dfe4" -->
+  * **Evolutionary Design.** <!-- .element: style="color:#e0dfe4" -->
+  * **Continuous Integration/Continuous Delivery.** <!-- .element: style="color:#e0dfe4" -->
+  * **Spikes-are-Experiments.** <!-- .element: style="color:#e0dfe4" -->
+  * **The Flow of Value.** <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  We'll discuss the relationship between lean startup and XP on Day 2, 
-  and dive deep into what makes them work and how.
+  <p>
+  In the morning, we'll look closely at culture and values, discuss organizational
+  learning and reteaming, then synthesize lean startup and XP as an adaptive
+  learning organization.
+  </p>
+  <p>
+  In the afternoon, we'll pick apart the engineering practices and dive deep into
+  the design of the delivery cycles to achieve continuous flow.
+  </p>
 </aside>

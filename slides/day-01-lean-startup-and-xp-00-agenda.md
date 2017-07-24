@@ -2,19 +2,21 @@
 
 ##Lean Startup and XP
 - - -
-* **The Culture of Agility.**
-* **The Values of Agility.**
-* **The Product Community:  Shared Ownership.**
-* **The Product Development Team.**
+* **Introductions**
+* **Housekeeping**
+* **The IBM Cloud Garage Method by Chris Lazzaro**
+* **The Product Development Team.** <!-- .element: style="color:#e0dfe4" -->
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **The XP Practices.**
-  * **Pair Programming.**
-  * **Refactoring.**
-  * **Test-Driven Development [TDD].**
-  * **Evolutionary Design.**
-  * **Continuous Integration/Continuous Delivery.**
-  * **Spikes-are-Experiments.**
-  * **The Flow of Value.**
+* **The Values of Agility.** <!-- .element: style="color:#e0dfe4" -->
+* **The Product Community:  Shared Ownership.** <!-- .element: style="color:#e0dfe4" -->
+* **The XP Practices.** <!-- .element: style="color:#e0dfe4" -->
+  * **Pair Programming.** <!-- .element: style="color:#e0dfe4" -->
+  * **Refactoring.** <!-- .element: style="color:#e0dfe4" -->
+  * **Test-Driven Development [TDD].** <!-- .element: style="color:#e0dfe4" -->
+  * **Evolutionary Design.** <!-- .element: style="color:#e0dfe4" -->
+  * **Continuous Integration/Continuous Delivery.** <!-- .element: style="color:#e0dfe4" -->
+  * **Spikes-are-Experiments.** <!-- .element: style="color:#e0dfe4" -->
+  * **The Flow of Value.** <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
   <p>
@@ -23,7 +25,7 @@
   learning organization.
   </p>
   <p>
-  In the afternoon, we'll pick apart the engineering practices and dive deep into 
+  In the afternoon, we'll pick apart the engineering practices and dive deep into
   the design of the delivery cycles to achieve continuous flow.
   </p>
 </aside>
