@@ -2,18 +2,15 @@
 
 ##Inception Workshop
 - - -
-* **Purpose.**
-* **Discovering Customer Value.**
-* **Story Mapping:  Finding the Shape of the Product.**
-* _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **Story Mapping (cont'd).**
-* **Agile Architecture.**
-* **Assumption Mapping to Assess Risk.**
-* **Release Planning.**
-* **Alignment.**
+* **Value**
+* **Vision**  <!-- .element: class="fragment"; -->
+* **Purpose**  <!-- .element: class="fragment"; -->
+* **Context**  <!-- .element: class="fragment"; -->
+* _**Lunch**_ <!-- .element: class="fragment"; style="color:#5cab3d" -->
+* **Technology Landscape**  <!-- .element: class="fragment"; -->
+* **Risks/Constraints**  <!-- .element: class="fragment"; -->
+* **Roadmap**  <!-- .element: class="fragment"; -->
+* **Release Planning**  <!-- .element: class="fragment"; -->
 
 <aside class="notes">
-  We'll conduct a product inception to immerse ourselves in the practice and
-  emerge with a delivery schedule we'll use to build as much of the product 
-  during the workshop that we can.
 </aside>

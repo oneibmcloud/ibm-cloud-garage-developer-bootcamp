@@ -5,9 +5,10 @@
 
 ###purpose: to understand your customers definition of success
 
-* **in small groups brainstorm answers to the following question:**   <!-- .element: style="color:maroon" -->
-* **imagine the future: what did the product do to improve your life**   <!-- .element: style="color:maroon" -->
-* **converge on the title of a poster for the team room**   <!-- .element: style="color:maroon" -->
+* **(in small groups brainstorm answers to the following question)**   <!-- .element: class="fragment"; style="color:maroon" -->
+* **imagine you are the customer in the future:**   <!-- .element: class="fragment"; style="color:maroon" -->
+* **what did the product do to improve your life**   <!-- .element: class="fragment"; style="color:maroon" -->
+* **converge on the title of a poster for the team room**   <!-- .element: class="fragment"; style="color:maroon" -->
 
 
 
