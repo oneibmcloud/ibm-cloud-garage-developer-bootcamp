@@ -2,23 +2,24 @@
 
 ##Lean Startup and XP
 - - -
-* **The Culture of Agility.** <!-- .element: style="color:#e0dfe4" -->
-* **The Values of Agility.**  <!-- .element: style="color:#e0dfe4" -->  
-* **The Product Community:  Shared Ownership.**  <!-- .element: style="color:#e0dfe4" -->
-* **The Product Development Team.** <!-- .element: style="color:#e0dfe4" -->
+* **Introductions <!-- .element: style="color:#e0dfe4" -->**
+* **Housekeeping <!-- .element: style="color:#e0dfe4" -->**
+* **The IBM Cloud Garage Method by Chris Lazzaro**  <!-- .element: style="color:#e0dfe4" -->
+* **Product Development Simulation** <!-- .element: style="color:#e0dfe4" -->
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **The XP Practices.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Pair Programming.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Refactoring.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Test-Driven Development [TDD].**  <!-- .element: style="color:#e0dfe4" -->
-  * **Continuous Integration/Continuous Delivery.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Spikes/Experiments.**  <!-- .element: style="color:#e0dfe4" -->
-  * **Evolutionary Design.**  <!-- .element: style="color:#e0dfe4" -->
-  * **The Flow of Value.**  <!-- .element: style="color:#e0dfe4" -->
+* **Culture** <!-- .element: style="color:#e0dfe4" -->
+* **The Product Community:  Shared Ownership** <!-- .element: style="color:#e0dfe4" -->
+* **The XP Practices** <!-- .element: style="color:#e0dfe4" -->
+  * **Pair Programming** <!-- .element: style="color:#e0dfe4" -->
+  * **Refactoring** <!-- .element: style="color:#e0dfe4" -->
+  * **Test-Driven Development [TDD]** <!-- .element: style="color:#e0dfe4" -->
+  * **Evolutionary Design** <!-- .element: style="color:#e0dfe4" -->
+  * **Continuous Integration/Continuous Delivery** <!-- .element: style="color:#e0dfe4" -->
+  * **Spikes (Developer Experiments)** <!-- .element: style="color:#e0dfe4" -->
+  * **The Flow of Value** <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  <p>
-  </p>
-  <p>
-  </p>
+</aside>
+
+<aside class="notes">
 </aside>

@@ -1,7 +1,7 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
 ##how do we measure IT performance?
-  
+
 ###_lead time for changes_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_release frequency_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_time to restore service_ <!-- .element: class="fragment"; style="color:maroon" -->
@@ -12,3 +12,31 @@
     statistically valid way to measure IT performance
   </p>
 </aside>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
