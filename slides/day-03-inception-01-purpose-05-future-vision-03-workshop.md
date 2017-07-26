@@ -10,6 +10,7 @@
 * **what did the product do to improve your life**   <!-- .element: class="fragment"; style="color:maroon" -->
 * **converge on the title of a poster for the team room**   <!-- .element: class="fragment"; style="color:maroon" -->
 
+_**([The Cementz Story](resources/Cementz-Mexico-CEMEX-On-Line-Store-MVP.pdf))**_  <!-- .element: style="color:maroon; font-size: .5em" -->
 
 
 <br/>
