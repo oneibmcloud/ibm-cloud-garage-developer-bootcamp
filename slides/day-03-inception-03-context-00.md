@@ -6,8 +6,8 @@
 - - -
 * **The Meaning of Value** <!-- .element: style="color:#e0dfe4" -->
 * **A Vision for the Future** <!-- .element: style="color:#e0dfe4" -->
-* **Purpose for Which our Team Exists**
-* **The Context in Which we Pursue Our Vision**  <!-- .element: style="color:#e0dfe4" -->
+* **Purpose for Which our Team Exists**   <!-- .element: style="color:#e0dfe4" -->
+* **The Context in Which we Pursue Our Vision**
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
 * **The Technology Landscape**  <!-- .element: style="color:#e0dfe4" -->
 * **The Risks/Constraints that Bind Us**  <!-- .element: style="color:#e0dfe4" -->
