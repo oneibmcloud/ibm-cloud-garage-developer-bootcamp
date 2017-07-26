@@ -2,18 +2,15 @@
 
 ##Inception Workshop
 - - -
-* **Purpose.**
-* **Discovering Customer Value.**   <!-- .element: style="color:#e0dfe4" -->
-* **Story Mapping:  Finding the Shape of the Product.**  <!-- .element: style="color:#e0dfe4" -->
+* **Value**
+* **Vision**    <!-- .element: style="color:#e0dfe4" -->
+* **Purpose**    <!-- .element: style="color:#e0dfe4" -->
+* **Context**   <!-- .element: style="color:#e0dfe4" -->
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **Story Mapping (cont'd).**  <!-- .element: style="color:#e0dfe4" -->
-* **Agile Architecture.**  <!-- .element: style="color:#e0dfe4" -->
-* **Assumption Mapping to Assess Risk.**  <!-- .element: style="color:#e0dfe4" -->
-* **Release Planning.**  <!-- .element: style="color:#e0dfe4" -->
-* **Alignment.**    <!-- .element: style="color:#e0dfe4" -->
+* **Technology Landscape**  <!-- .element: style="color:#e0dfe4" -->
+* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4" -->
+* **Roadmap**  <!-- .element: style="color:#e0dfe4" -->
+* **Release Planning**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  We'll conduct a product inception to immerse ourselves in the practice and
-  emerge with a delivery schedule we'll use to build as much of the product 
-  during the workshop that we can.
 </aside>
