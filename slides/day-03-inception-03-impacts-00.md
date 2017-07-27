@@ -9,10 +9,10 @@
 * **Purpose** <!-- .element: style="color:#e0dfe4"; -->
 * **Context ** <!-- .element: style="color:#e0dfe4"; -->
 * _**Lunch**_ <!-- .element: style="color:#e0dfe4"; -->
-* **Impacts**  <!-- .element: style="color:#e0dfe4"; -->
-* **Roadmap** <!-- .element: style="color:#e0dfe4"; -->
-* **Risks/Constraints** <!-- .element: style="color:#e0dfe4"; -->
-* **Architecture**
+* **Impacts**
+* **Roadmap**  <!-- .element: style="color:#e0dfe4"; -->
+* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
+* **Architecture**  <!-- .element: style="color:#e0dfe4"; -->
 * **Release Plan**  <!-- .element: style="color:#e0dfe4"; -->
 
 <aside class="notes">

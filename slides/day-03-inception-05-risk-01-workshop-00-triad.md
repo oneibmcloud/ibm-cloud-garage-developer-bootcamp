@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##assumption mapping 
+## risks
 ### product ownership triad
 
 <a href="resources/product-leadership-triad.png" >

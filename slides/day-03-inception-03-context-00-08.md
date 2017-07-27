@@ -1,8 +1,11 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##risks
+##context workshop activity
 
-<video width="640" height="400" data-autoplay src="resources/assumption-mapping/how-to-get-started-with-assumptions-mapping.mp4"></video>
+<br/>
+<br/>
+<br/>
+### purpose: brainstorm around the context diagram and key resources map  <!-- .element: style="color:#128bc1" -->
 
 
 <br/>
