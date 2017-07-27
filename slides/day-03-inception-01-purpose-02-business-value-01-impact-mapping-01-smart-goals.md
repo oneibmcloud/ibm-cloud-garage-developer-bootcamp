@@ -5,11 +5,11 @@
 * **goals are _SMART_**
 <br/>
 
-  * **Specific**  <!-- .element: style="color:maroon" -->
-  * **Measurable**  <!-- .element: style="color:maroon" -->
-  * **Action-Oriented**  <!-- .element: style="color:maroon" -->
-  * **Realistic**  <!-- .element: style="color:maroon" -->
-  * **Timely**  <!-- .element: style="color:maroon" -->
+  * **Specific**  <!-- .element: class="fragment"; style="color:maroon" -->
+  * **Measurable**  <!-- .element: class="fragment"; style="color:maroon" -->
+  * **Action-Oriented**  <!-- .element: class="fragment"; style="color:maroon" -->
+  * **Realistic**  <!-- .element: class="fragment"; style="color:maroon" -->
+  * **Timely**  <!-- .element: class="fragment"; style="color:maroon" -->
 
 <br/>
 <br/>

@@ -1,9 +1,9 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##key resources map
+##context diagram
 
 <a href="resources/context-02.png" >
-  <img class="plain" height="70%" width="70%" src="resources/context-02.png" />
+  <img class="plain" height="70%" width="70%" src="resources/chartering/boundaries-and-interactions-03.png" />
 </a>
 
 <br/>

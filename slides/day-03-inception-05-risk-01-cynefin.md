@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##assumption mapping 
+## risks
 ### cynefin
 
 <a href="resources/assumption-mapping/cynefin.jpeg" >

@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##assumptions are risky
+## assumptions are risky
 ### assess assumption risk using cynefin <!-- .element: class="fragment"; -->
 
 1. everyone's done it before <!-- .element: class="fragment"; style="color:maroon" -->

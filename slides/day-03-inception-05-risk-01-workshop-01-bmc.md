@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##assumption mapping 
+## risks
 ### business model canvas
 
 <a href="resources/assumption-mapping/business-model-canvas.png" >
