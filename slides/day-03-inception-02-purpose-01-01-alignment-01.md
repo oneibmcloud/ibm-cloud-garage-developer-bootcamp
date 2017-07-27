@@ -2,9 +2,10 @@
 
 ##Alignment
 - - -
-## **is made up of:**
-## **team values**  <!-- .element: class="fragment" -->
-## **working agreements**  <!-- .element: class="fragment" -->
+### **is made up of:**
+### **shared responsibilities**  <!-- .element: class="fragment"; style="color:maroon" -->
+### **team values**  <!-- .element: class="fragment"; style="color:maroon" -->
+### **working agreements** <!-- .element: class="fragment"; style="color:maroon" -->
 
 <aside class="notes">
 </aside>

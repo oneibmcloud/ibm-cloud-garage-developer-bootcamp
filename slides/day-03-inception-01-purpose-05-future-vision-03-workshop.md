@@ -3,7 +3,7 @@
 ##future vision workshop activity
 (remembering the future)
 
-###purpose: to understand your customers definition of success
+###purpose: to understand your customers' definition of success  <!-- .element: class="fragment"; style="color:#128bc1" -->
 
 * **(in small groups brainstorm answers to the following question)**   <!-- .element: class="fragment"; style="color:maroon" -->
 * **imagine you are the customer in the future:**   <!-- .element: class="fragment"; style="color:maroon" -->

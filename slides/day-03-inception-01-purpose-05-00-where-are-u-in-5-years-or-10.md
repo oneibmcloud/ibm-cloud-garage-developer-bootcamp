@@ -2,9 +2,9 @@
 
 ##Vision
 - - -
-## **Where do you see yourself in 5 years?**
-## **What about 10?**  <!-- .element: class="fragment" -->
-## **15?**  <!-- .element: class="fragment" -->
+## **Where do you see yourself in 5 years?**  <!-- .element: style="color:maroon" -->
+## **What about 10?**   <!-- .element: class="fragment"; style="color:maroon" -->
+## **15?**   <!-- .element: class="fragment"; style="color:maroon" -->
 
 <aside class="notes">
 </aside>

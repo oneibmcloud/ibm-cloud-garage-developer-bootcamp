@@ -2,9 +2,10 @@
 
 ##Purpose
 - - -
-## **core team**
-## **what drives the core team together toward the vision?**  <!-- .element: class="fragment" -->
-## **alignment**  <!-- .element: class="fragment" -->
+### **core team**
+### **what drives the core team together toward the vision?**  <!-- .element: class="fragment"; style="color:maroon" -->
+### **alignment**  <!-- .element: class="fragment"; style="color:#128bc1" -->
+### **(teaming)**  <!-- .element: class="fragment"; style="color:#128bc1" -->
 
 <aside class="notes">
 </aside>
