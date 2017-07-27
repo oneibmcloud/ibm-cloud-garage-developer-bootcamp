@@ -2,6 +2,9 @@
 
 ##what do customers want?
 
+<br/>
+<br/>
+<br/>
 ###_customers don't know what they want_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_customers know what they don't want_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_(when they see it)_ <!-- .element: class="fragment"; style="color:maroon" -->

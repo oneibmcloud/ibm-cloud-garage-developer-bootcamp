@@ -2,9 +2,9 @@
 
 ##alignment workshop activity
 
-###purpose: to get to know your team and establish alignment around
+### purpose: to get to know your team and establish alignment around <!-- .element: style="color:#128bc1" -->
 
-* **indvidual team members**   <!-- .element: class="fragment"; style="color:maroon" -->
+* **shared responsibilities**   <!-- .element: class="fragment"; style="color:maroon" -->
 * **strengths and weaknesses**   <!-- .element: class="fragment"; style="color:maroon" -->
 * **team values**   <!-- .element: class="fragment"; style="color:maroon" -->
 * **working agreements**   <!-- .element: class="fragment"; style="color:maroon" -->

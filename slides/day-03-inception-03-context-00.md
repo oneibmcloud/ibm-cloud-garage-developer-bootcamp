@@ -4,16 +4,16 @@
 - - -
 ###Outcomes
 - - -
-* **The Meaning of Value** <!-- .element: style="color:#e0dfe4" -->
-* **A Vision for the Future** <!-- .element: style="color:#e0dfe4" -->
-* **Purpose for Which our Team Exists**   <!-- .element: style="color:#e0dfe4" -->
-* **The Context in Which we Pursue Our Vision**
-* _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
-* **The Technology Landscape**  <!-- .element: style="color:#e0dfe4" -->
-* **The Risks/Constraints that Bind Us**  <!-- .element: style="color:#e0dfe4" -->
-* **The Impacts that Move toward the Vision**  <!-- .element: style="color:#e0dfe4" -->
-* **Our Product Roadmap**  <!-- .element: style="color:#e0dfe4" -->
-* **Our Release Plan**  <!-- .element: style="color:#e0dfe4" -->
+* **The Equation of Value**  <!-- .element: style="color:#e0dfe4"; -->
+* **Vision** <!-- .element: style="color:#e0dfe4"; -->
+* **Purpose** <!-- .element: style="color:#e0dfe4"; -->
+* **Context **
+* _**Lunch**_ <!-- .element: style="color:#e0dfe4"; -->
+* **Impacts**  <!-- .element: style="color:#e0dfe4"; -->
+* **Roadmap**  <!-- .element: style="color:#e0dfe4"; -->
+* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
+* **Architecture**  <!-- .element: style="color:#e0dfe4"; -->
+* **Release Plan**  <!-- .element: style="color:#e0dfe4"; -->
 
 <aside class="notes">
 </aside>
