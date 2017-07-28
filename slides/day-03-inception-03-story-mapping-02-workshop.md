@@ -1,11 +1,19 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##road mapping
-
-<video width="640" height="400" data-autoplay src="resources/CardBoard-Tutorial.mp4"></video>
-
+##advanced road mapping
 
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<a href="https://www.safaribooksonline.com/library/view/oreilly-software-architecture/9781491976203/video302676.html?autoStart=True">Advanced Road Mapping</a>
+<br/>
+<br/>
+<br/>
+<br/>
+(right click the link and open in new tab)
 <br/>
 <br/>
 <br/>
