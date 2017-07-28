@@ -2,6 +2,9 @@
 
 ##story mapping workshop
 
+<video width="640" height="400" data-autoplay src="resources/CardBoard-Tutorial.mp4"></video>
+
+
 <br/>
 <br/>
 <br/>
