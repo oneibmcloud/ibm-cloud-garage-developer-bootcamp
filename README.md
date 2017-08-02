@@ -14,7 +14,7 @@ Facilities, logistics, prerequisites, learning outcomes, agendwa, slides, and la
 
 * [Agenda](05-agenda.md)
 
-* [Slides](https://wpannell.github.io/ibm-cloud-garage-method-developer-bootcamp/)
+* [Slides](https://oneibmcloud.github.io/ibm-cloud-garage-developer-bootcamp/)
 
 * [Labs](https://github.com/wpannell/ibm-cloud-garage-method-developer-bootcamp/tree/integration)
 
