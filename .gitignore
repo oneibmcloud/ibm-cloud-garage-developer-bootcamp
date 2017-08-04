@@ -1,17 +1,18 @@
 .idea/
 node_modules/
-
+target/
 archive/
 dist/
 server/
 coverage/
 generated/
 .nyc_output/
-/test-helper-mongo.js
-/game-of-life
-/unusual-spending
-/unusual-spending-vendor
+game-of-life/
+unusual-spending/
+unusual-spending-vendor/
 
 *.log
 .sass-cache
 /index.html
+/*.iml
+/test-helper-mongo.js
