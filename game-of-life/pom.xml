@@ -14,28 +14,41 @@
 	<name>game-of-life</name>
 	<url>https://github.ibm.com/bluemix-enablement/bluemix-garage-developer-bootcamp</url>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+  <properties>
+ 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+ 	</properties>
 
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>RELEASE</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>RELEASE</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest-all</artifactId>
-			<version>RELEASE</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-</project>
+ 	<build>
+ 		<plugins>
+ 			<plugin>
+ 				<groupId>org.apache.maven.plugins</groupId>
+ 				<artifactId>maven-compiler-plugin</artifactId>
+ 				<configuration>
+ 					<source>1.8</source>
+ 					<target>1.8</target>
+ 				</configuration>
+ 			</plugin>
+ 		</plugins>
+ 	</build>
+
+ 	<dependencies>
+ 		<dependency>
+ 			<groupId>junit</groupId>
+ 			<artifactId>junit</artifactId>
+ 			<version>RELEASE</version>
+ 			<scope>test</scope>
+ 		</dependency>
+ 		<dependency>
+ 			<groupId>org.mockito</groupId>
+ 			<artifactId>mockito-all</artifactId>
+ 			<version>RELEASE</version>
+ 			<scope>test</scope>
+ 		</dependency>
+ 		<dependency>
+ 			<groupId>org.hamcrest</groupId>
+ 			<artifactId>hamcrest-all</artifactId>
+ 			<version>RELEASE</version>
+ 			<scope>test</scope>
+ 		</dependency>
+ 	</dependencies>
+ </project>

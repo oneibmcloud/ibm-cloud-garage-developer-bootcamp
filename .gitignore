@@ -2,7 +2,7 @@ launchConfigurations/
 .DS_Store
 .idea/
 target/
-/java-refactoring-exercise.iml
+/*.iml
 /.project
 /.classpath
 
