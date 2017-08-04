@@ -6,9 +6,10 @@ target/
 /.project
 /.classpath
 
+archive/
 bower_components/
 dist/
-resources
+resources/
 /index.html
 # Logs
 logs
