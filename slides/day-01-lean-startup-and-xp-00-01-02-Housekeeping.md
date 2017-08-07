@@ -6,6 +6,9 @@
 * **Rest Rooms** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pantry** <!-- .element: class="fragment"; style="color:navy" -->
 * **Smoking** <!-- .element: class="fragment"; style="color:navy" -->
+* **Lunch Room** <!-- .element: class="fragment"; style="color:navy" -->
+* **Pairing Stations** <!-- .element: class="fragment"; style="color:navy" -->
+* **Methodology** <!-- .element: class="fragment"; style="color:navy" -->
 <br/>
 <br/>
 <br/>
