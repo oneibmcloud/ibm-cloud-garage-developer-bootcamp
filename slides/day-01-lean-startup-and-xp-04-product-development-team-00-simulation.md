@@ -5,6 +5,7 @@
 * **Introductions**  <!-- .element: style="color:#e0dfe4" -->
 * **Housekeeping**  <!-- .element: style="color:#e0dfe4" -->
 * **The IBM Cloud Garage Method by Chris Lazzaro**  <!-- .element: style="color:#e0dfe4" -->
+* **Retrieval Practice** <!-- .element: style="color:#e0dfe4" -->
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
 * **Product Development Simulation**
 * **Culture**  <!-- .element: style="color:#e0dfe4" -->

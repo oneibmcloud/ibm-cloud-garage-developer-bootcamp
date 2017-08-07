@@ -2,8 +2,10 @@
 
 ##how do we improve IT performance?
 
-<img class="plain" width="45%" height="45%" src="resources/the-packer-book.png" />
-
+###_Lean Startup_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_Extreme Programming_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_and_ <!-- .element: class="fragment"; style="color:maroon" -->
+###_DevOps_ <!-- .element: class="fragment"; style="color:maroon" -->
 
 <aside class="notes">
   <p>
@@ -11,12 +13,7 @@
   </p>
 </aside>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
 <br/>
 <br/>
 <br/>
