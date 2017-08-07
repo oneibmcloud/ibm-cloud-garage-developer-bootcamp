@@ -9,6 +9,7 @@
 * **Lunch Room** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pairing Stations** <!-- .element: class="fragment"; style="color:navy" -->
 * **Methodology** <!-- .element: class="fragment"; style="color:navy" -->
+* **http://ibm.biz/ibm-cloud-garage-developer-bootcamp** <!-- .element: class="fragment"; style="color:navy" -->
 <br/>
 <br/>
 <br/>
