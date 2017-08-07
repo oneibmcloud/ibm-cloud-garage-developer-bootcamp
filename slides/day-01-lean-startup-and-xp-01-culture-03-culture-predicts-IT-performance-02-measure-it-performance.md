@@ -1,6 +1,6 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##remember? we measure IT performance by
+##how do we measure IT performance?
 
 ### <hr/> <!-- .element: class="fragment"; style="color:maroon" -->
 ### _deployment frequency_ <!-- .element: class="fragment"; style="color:maroon" -->

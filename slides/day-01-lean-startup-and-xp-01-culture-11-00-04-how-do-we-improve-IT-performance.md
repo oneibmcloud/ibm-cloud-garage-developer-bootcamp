@@ -2,7 +2,7 @@
 
 ##how do we improve IT performance?
 
-<img class="plain" width="45%" height="45%" src="resources/the-packer-book.png" />
+<img class="plain" width="35%" height="35%" src="resources/art-of-monitoring.jpg" />
 
 
 <aside class="notes">

@@ -2,7 +2,7 @@
 
 ##how do we improve IT performance?
 
-<img class="plain" width="45%" height="45%" src="resources/the-packer-book.png" />
+<img class="plain" width="40%" height="40%" src="resources/the-practice-of-cloud-system-administration.jpg" />
 
 
 <aside class="notes">
