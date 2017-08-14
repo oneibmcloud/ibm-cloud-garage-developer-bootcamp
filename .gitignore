@@ -16,3 +16,4 @@ unusual-spending-vendor/
 /index.html
 /*.iml
 /test-helper-mongo.js
+/slides/list.json
