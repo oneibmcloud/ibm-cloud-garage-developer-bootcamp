@@ -1,3 +1,4 @@
 package com.testdouble;
 
-class World {}
+class World {
+}

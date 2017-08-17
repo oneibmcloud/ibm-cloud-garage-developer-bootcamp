@@ -1,19 +1,18 @@
 package com.testdouble;
 
 class ConwaySimulator {
-  private SeedWorld seedWorld;
-  private ReplaceWorld replaceWorld;
-  private DisplayWorld displayWorld;
+  private SeedWorldGenerator seedWorldGenerator;
+  private WorldOutputter worldOutputter;
+  private WorldReplacer worldReplacer;
 
-  void simulate(int numberOfGenerations) {
-    World seed = seedWorld.seed();
+  void simulate(int generation, int timeLimit) {
+    World world = seedWorldGenerator.generate();
 
-    for(int i = 0; i < numberOfGenerations; i++) {
-      displayWorld.display(seed);
-      seed = replaceWorld.replace(seed);
+    for(int i = 0; i < generation; i++) {
+      worldOutputter.output(world);
+      world = worldReplacer.replace(world, timeLimit);
     }
 
-    displayWorld.display(seed);
+    worldOutputter.output(world);
   }
 }
-

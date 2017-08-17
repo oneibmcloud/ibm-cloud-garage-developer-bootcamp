@@ -1,7 +1,7 @@
 package com.testdouble;
 
-class SeedWorld {
-  World seed() {
+class SeedWorldGenerator {
+  World generate() {
     return null;
   }
 }

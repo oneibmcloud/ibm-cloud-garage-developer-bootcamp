@@ -1,9 +1,20 @@
 package spending;
 
-public class UnusualSpending {
+class UnusualSpending {
 
-	public void sendEmail(long userId) {
-		// TODO: This is the entry point. Start with a test of this class
-	}
+  private
+  Fetcher fetcher;
+
+  private
+  Categorizer categorizer;
+
+  private
+  Emailer emailer;
+
+	void sendEmail(long userId) {
+    Payments payments = fetcher.fetch(userId);
+    Payments categorized = categorizer.categorize(payments);
+    emailer.email(userId, categorized);
+  }
 
 }
