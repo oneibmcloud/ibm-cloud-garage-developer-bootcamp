@@ -1,9 +1,9 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##xp product
+##xp planning feedback loops
 
-<a href="http://www.extremeprogramming.org/map/project.html" >
-  <img class="plain" height="90%" width="90%" src="resources/xp-01.png" />
+<a href="http://www.extremeprogramming.org/map/loops.html" >
+  <img class="plain" height="55%" width="55%" src="resources/xp-01-01.png" />
 </a>
 
 <aside class="notes">
