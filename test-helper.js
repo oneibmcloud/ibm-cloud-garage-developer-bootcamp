@@ -11,10 +11,6 @@ const when = td.when;
 const verify = td.verify;
 const reset = td.reset;
 
-td.config({
-  promiseConstructor: require('bluebird')
-});
-
 global.context = describe;
 global.td = td;
 
