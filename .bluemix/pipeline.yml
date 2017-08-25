@@ -72,3 +72,43 @@ stages:
           git push origin distribution --no-verify
 
           ls -al
+  - name: integration
+    inputs:
+      - type: git
+        branch: archive
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    properties:
+    - name: SAUCE_USERNAME
+      value: {{services.test.parameters.username}}
+      type: text
+    - name: SAUCE_ACCESS_KEY
+      value: {{services.test.parameters.key}}
+    jobs:
+      - name: 'saucelabs'
+        type: builder
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          npm install
+          mkdir -p generated
+          npm run test:sauce
