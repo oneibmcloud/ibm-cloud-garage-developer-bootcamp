@@ -1,47 +1,34 @@
-describe('the palindrome canary spec', () => {
-  it('shows the infrastructure works', () => {
+describe('a palindrome function', () => {
+  it('canary spec shows the infrastructure works', () => {
     true.should.be.true();
   });
 
-  let isPalindrome = (phrase) => {
-    if (typeof phrase !== 'string') throw new Error('Error: please pass a string.');
-    if (phrase === '') throw new Error('Error: please pass a non-empty string.');
-
+  let isPalindrome = (phrase) => {  // "mom mom"
+    if (phrase.trim().length === 0) return false;
     return phrase === phrase.split('').reverse().join('');
   };
 
-  describe('palindrome should be', () => {
-    it('true for mom', () => {
-      isPalindrome('mom').should.be.true();
-    });
+  it('is true for "mom"', () => {
+    isPalindrome('mom').should.be.true();
+  });
 
-    it('false for dude', () => {
-      isPalindrome('dude').should.be.false();
-    });
+  it('is false for "daddy"', () => {
+    isPalindrome('daddy').should.be.false();
+  });
 
-    it('true for mom mom', () => {
-      isPalindrome('mom mom').should.be.true();
-    });
+  it('is false for ""', () => {
+    isPalindrome('').should.be.false();
+  });
 
-    it('false for dad mom', () => {
-      isPalindrome('dad mom').should.be.false();
-    });
+  it('is false for "     "', () => {
+    isPalindrome('    ').should.be.false();
+  });
 
-    it('true for whitespace', () => {
-      isPalindrome(' ').should.be.true();
-      isPalindrome('     ').should.be.true();
-    });
+  it('is true for "mom mom"', () => {
+    isPalindrome('mom mom').should.be.true();
+  });
 
-    it('error for empty string', () => {
-      (() => {
-        isPalindrome('');
-      }).should.throw('Error: please pass a non-empty string.');
-    });
-
-    it('error for not a string', () => {
-      (() => {
-        isPalindrome();
-      }).should.throw('Error: please pass a string.');
-    });
+  it('is false for "mom dad"', () => {
+    isPalindrome('mom dad').should.be.false();
   });
 });

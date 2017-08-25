@@ -3,26 +3,28 @@ describe('the stack spec', () => {
     true.should.be.true();
   });
 
-  const makeStack = (capacity = 2) => {
-    if (capacity < 0) throw new Error('Error: negative capacity.');
-    const queue = [];
-    let size = 0;
+  let stackFactory = () => {
+    let length = 0;
+    const capacity = 2;
+
+    const isEmpty = () => length === 0;
+    const size = () => length;
+
+    const pop = () => {
+      if (isEmpty()) throw new Error('cannot pop an empty stack');
+      length--;
+    };
+
+    const push = () => {
+      if (length === capacity) throw new Error('exceeded capacity');
+      length++;
+    };
 
     return {
-      pop: () => {
-        if (size === 0) throw new Error('Error: underflow.');
-        size--;
-        return queue.pop();
-      },
-
-      push: (element) => {
-        if (size === capacity) throw new Error('Error: overflow.');
-        queue.push(element);
-        size++;
-      },
-
-      isEmpty: () => size === 0,
-      size: () => size
+      isEmpty,
+      pop,
+      push,
+      size
     };
   };
 
@@ -30,7 +32,38 @@ describe('the stack spec', () => {
 
   describe('a stack should', () => {
     beforeEach(() => {
-      stack = makeStack();
+      stack = stackFactory();
+    });
+
+    it('underflow', () => {
+      (() => {
+        stack.pop();
+      }).should.throw('cannot pop an empty stack');
+    });
+
+    it('overflow', () => {
+      stack.push();
+      stack.push();
+      (() => {
+        stack.push();
+      }).should.throw('exceeded capacity');
+    });
+
+    it('leave stack size 0 when pushed and popped', () => {
+      stack.push();
+      stack.pop();
+      stack.size().should.equal(0);
+    });
+
+    it('leave stack empty when pushed and popped', () => {
+      stack.push();
+      stack.pop();
+      stack.isEmpty().should.be.true();
+    });
+
+    it('leave stack size 1 when pushed', () => {
+      stack.push();
+      stack.size().should.equal(1);
     });
 
     it('start empty', () => {
@@ -46,64 +79,10 @@ describe('the stack spec', () => {
       stack.isEmpty().should.be.false();
     });
 
-    it('leave stack size 1 when pushed', () => {
-      stack.push();
-      stack.size().should.equal(1);
-    });
+    it('pop the same one pushed');
 
-    it('leave stack empty when pushed and popped', () => {
-      stack.push();
-      stack.pop();
-      stack.isEmpty().should.be.true();
-    });
+    it('pop the same two pushed');
 
-    it('leave stack size 0 when pushed and popped', () => {
-      stack.push();
-      stack.pop();
-      stack.size().should.equal(0);
-    });
-
-    it('overflow', () => {
-      stack.push();
-      stack.push();
-
-      (() => {
-        stack.push();
-      }).should.throw('Error: overflow.');
-    });
-
-    it('underflow', () => {
-      stack.push();
-      stack.push();
-      stack.pop();
-      stack.pop();
-
-      (() => {
-        stack.pop();
-      }).should.throw('Error: underflow.');
-    });
-
-    it('pop the same one pushed', () => {
-      const element = {};
-      stack.push(element);
-      stack.pop().should.equal(element);
-    });
-
-    it('pop the same two pushed', () => {
-      const element1 = {};
-      const element2 = {};
-      stack.push(element1);
-      stack.push(element2);
-
-      stack.pop().should.equal(element2);
-      stack.pop().should.equal(element1);
-    });
-
-    it('negative capacity', () => {
-      (() => {
-        stack = makeStack(-1);
-      }).should.throw('Error: negative capacity.');
-    });
+    it('not have negative capacity');
   });
-}
-);
+});
