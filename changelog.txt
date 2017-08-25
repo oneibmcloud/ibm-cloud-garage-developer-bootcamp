@@ -1,5 +1,20 @@
-commit 40d5db8509b532561ed3a065a85fdb4ca7afcdc8
-Author: WIL PANNELL <wgpannel@us.ibm.com>
-Date:   Sun Jul 16 07:05:07 2017 -0700
-
-    archive vendor dependencies
+stub unusual spending and commit stack green bar WIL PANNELL 07351b8 Fri Aug 25 13:00:26 2017 -0400
+:100644 100644 039e3b6... 68be5a5... M	server/02-palindrome/palindrome.spec.js
+:100644 000000 3fdc95b... 0000000... D	server/03-line-count-with-callback/line-count.js
+:100644 000000 d69348b... 0000000... D	server/03-line-count-with-callback/line-count.spec.js
+:100644 100644 a5c8cfa... 53e4a59... M	server/03-stack/stack.spec.js
+:100644 000000 e7d2889... 0000000... D	server/04-line-count-with-promise/line-count.js
+:100644 000000 c34a723... 0000000... D	server/04-line-count-with-promise/line-count.spec.js
+:100644 000000 316831f... 0000000... D	server/05-unusual-spending/api.js
+:100644 000000 4ed3cda... 0000000... D	server/05-unusual-spending/categorize.js
+:100644 000000 86853d5... 0000000... D	server/05-unusual-spending/categorize.spec.js
+:100644 000000 00fc889... 0000000... D	server/05-unusual-spending/email.js
+:100644 000000 2800166... 0000000... D	server/05-unusual-spending/fetch.js
+:100644 000000 463b9e9... 0000000... D	server/05-unusual-spending/fetch.spec.js
+:100644 000000 f0545ba... 0000000... D	server/05-unusual-spending/months.js
+:100644 000000 b77af39... 0000000... D	server/05-unusual-spending/months.spec.js
+:100644 000000 9e0a616... 0000000... D	server/05-unusual-spending/payments-fake-data.js
+:100644 000000 b27d70c... 0000000... D	server/05-unusual-spending/real-api.js
+:100644 000000 07934b4... 0000000... D	server/05-unusual-spending/real-email.js
+:100644 000000 25085ce... 0000000... D	server/05-unusual-spending/unusual-spending.js
+:100644 100644 761ecf3... 7d5d9b2... M	server/05-unusual-spending/unusual-spending.spec.js
