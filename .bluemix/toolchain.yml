@@ -36,7 +36,7 @@ services:
     service_id: slack
     $ref: slack.yml
   source-control:
-    service_id: hostedgit
+    service_id: githubpublic
     parameters:
       repo_name: '{{toolchain.name}}'
       repo_url: 'https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp'
