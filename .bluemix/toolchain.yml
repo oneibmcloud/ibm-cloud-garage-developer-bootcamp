@@ -21,9 +21,9 @@ template:
     - source-control
   info:
     git url: >-
-      [https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp)
+      [https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp](https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp)
     git branch: >-
-      [master](https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp/tree/master)
+      [master](https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp/tree/master)
 toolchain:
   name: 'ibm-cloud-garage-developer-bootcamp-{{timestamp}}'
   template:
@@ -39,7 +39,7 @@ services:
     service_id: hostedgit
     parameters:
       repo_name: '{{toolchain.name}}'
-      repo_url: 'https://github.com/wpannell/ibm-cloud-garage-developer-bootcamp'
+      repo_url: 'https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp'
       type: clone
       has_issues: true
       enable_traceability: true
