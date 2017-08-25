@@ -40,7 +40,7 @@ services:
     parameters:
       repo_name: '{{toolchain.name}}'
       repo_url: 'https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp'
-      type: clone
+      type: fork
       has_issues: true
       enable_traceability: true
   ci:
