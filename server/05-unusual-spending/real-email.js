@@ -1,3 +1,0 @@
-const realEmail = () => {};
-
-export {realEmail};

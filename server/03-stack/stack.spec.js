@@ -3,28 +3,86 @@ describe('the stack spec', () => {
     true.should.be.true();
   });
 
+  let stackFactory = () => {
+    let length = 0;
+    const capacity = 2;
+
+    const isEmpty = () => length === 0;
+    const size = () => length;
+
+    const pop = () => {
+      if (isEmpty()) throw new Error('cannot pop an empty stack');
+      length--;
+    };
+
+    const push = () => {
+      if (length === capacity) throw new Error('exceeded capacity');
+      length++;
+    };
+
+    return {
+      isEmpty,
+      pop,
+      push,
+      size
+    };
+  };
+
+  let stack;
+
   describe('a stack should', () => {
-    it('start empty');
+    beforeEach(() => {
+      stack = stackFactory();
+    });
 
-    it('start with stack size 0');
+    it('underflow', () => {
+      (() => {
+        stack.pop();
+      }).should.throw('cannot pop an empty stack');
+    });
 
-    it('not be empty when pushed');
+    it('overflow', () => {
+      stack.push();
+      stack.push();
+      (() => {
+        stack.push();
+      }).should.throw('exceeded capacity');
+    });
 
-    it('leave stack size 1 when pushed');
+    it('leave stack size 0 when pushed and popped', () => {
+      stack.push();
+      stack.pop();
+      stack.size().should.equal(0);
+    });
 
-    it('leave stack empty when pushed and popped');
+    it('leave stack empty when pushed and popped', () => {
+      stack.push();
+      stack.pop();
+      stack.isEmpty().should.be.true();
+    });
 
-    it('leave stack size 0 when pushed and popped');
+    it('leave stack size 1 when pushed', () => {
+      stack.push();
+      stack.size().should.equal(1);
+    });
 
-    it('overflow');
+    it('start empty', () => {
+      stack.isEmpty().should.be.true();
+    });
 
-    it('underflow');
+    it('start with stack size 0', () => {
+      stack.size().should.equal(0);
+    });
+
+    it('not be empty when pushed', () => {
+      stack.push();
+      stack.isEmpty().should.be.false();
+    });
 
     it('pop the same one pushed');
 
     it('pop the same two pushed');
 
-    it('negative capacity');
+    it('not have negative capacity');
   });
-}
-);
+});
