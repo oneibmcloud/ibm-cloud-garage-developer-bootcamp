@@ -1,0 +1,39 @@
+{
+  "name": "ibm-cloud-garage-method-developer-bootcamp",
+  "version": "1.0.0",
+  "description": "scaffold for the IBM Cloud Garage Method Developer Bootcamp",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "test": "npm-run-all --parallel *:lint",
+    "pagerduty:lint": "yamllint .bluemix/pagerduty.yml",
+    "pipeline:lint": "yamllint .bluemix/pipeline.yml",
+    "saucelabs:lint": "yamllint .bluemix/saucelabs.yml",
+    "slack:lint": "yamllint .bluemix/slack.yml",
+    "toolchain:lint": "yamllint .bluemix/toolchain.yml"
+  },
+  "homepage": "https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oneibmcloud/ibm-cloud-garage-developer-bootcamp/issues"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "IBM",
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": "7.10.1",
+    "npm": "4.2.0"
+  },
+  "devDependencies": {
+    "diff-so-fancy": "^0.11.4",
+    "husky": "0.13.3",
+    "npm-run-all": "4.0.1",
+    "yaml-lint": "0.0.4"
+  }
+}
