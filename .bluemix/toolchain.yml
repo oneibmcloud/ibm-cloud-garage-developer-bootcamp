@@ -53,8 +53,7 @@ services:
       ui-pipeline: true
       configuration:
         content:
-          $ref: pipeline.yml
-          $refType: text
+          $text: pipeline.yml
         env:
           SAUCE_LABS: test
           SOURCE_CONTROL_SERVICE: source-control
