@@ -55,6 +55,7 @@ stages:
           git push origin integration --no-verify
 
           git checkout --track origin/archive
+          git pull origin archive
           git merge dev1 --no-ff --log
           rm changelog.txt
           ls -al
@@ -66,6 +67,7 @@ stages:
           git push origin archive --no-verify
 
           git checkout --track origin/distribution
+          git pull origin distribution
           cp archive/* .
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
@@ -127,6 +129,7 @@ stages:
           git push origin integration --no-verify
 
           git checkout --track origin/archive
+          git pull origin archive
           git merge dev2 --no-ff --log
           rm changelog.txt
           ls -al
@@ -138,6 +141,7 @@ stages:
           git push origin archive --no-verify
 
           git checkout --track origin/distribution
+          git pull origin distribution
           cp archive/* .
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
@@ -199,6 +203,7 @@ stages:
           git push origin integration --no-verify
 
           git checkout --track origin/archive
+          git pull origin archive
           git merge dev3 --no-ff --log
           rm changelog.txt
           ls -al
@@ -210,6 +215,7 @@ stages:
           git push origin archive --no-verify
 
           git checkout --track origin/distribution
+          git pull origin distribution
           cp archive/* .
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
@@ -271,6 +277,7 @@ stages:
           git push origin integration --no-verify
 
           git checkout --track origin/archive
+          git pull origin archive
           git merge dev4 --no-ff --log
           rm changelog.txt
           ls -al
@@ -282,6 +289,7 @@ stages:
           git push origin archive --no-verify
 
           git checkout --track origin/distribution
+          git pull origin distribution
           cp archive/* .
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
@@ -343,6 +351,7 @@ stages:
           git push origin integration --no-verify
 
           git checkout --track origin/archive
+          git pull origin archive
           git merge dev5 --no-ff --log
           rm changelog.txt
           ls -al
@@ -354,6 +363,7 @@ stages:
           git push origin archive --no-verify
 
           git checkout --track origin/distribution
+          git pull origin distribution
           cp archive/* .
           git add .
           git commit -m "$(cat archive/changelog.txt)" --no-verify
