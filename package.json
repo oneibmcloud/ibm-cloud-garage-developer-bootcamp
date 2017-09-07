@@ -127,6 +127,7 @@
     "karma-testdouble": "1.0.2",
     "karma-webpack": "1.8.0",
     "mocha": "3.2.0",
+    "mocha-clean": "1.0.0",
     "ngMockHttp": "git://github.com/bbraithwaite/ngMockHttp.git#2ee3fa8aa373d04a449bd2f695b2f819ef34dbe4",
     "node-libs-browser": "2.0.0",
     "nodemon": "1.11.0",

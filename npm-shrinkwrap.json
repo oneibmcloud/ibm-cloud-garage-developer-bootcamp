@@ -1006,7 +1006,8 @@
     "cli-table": {
       "version": "0.3.1",
       "from": "git://github.com/automattic/cli-table.git#b44c0c335e396121a2a049b3d9fa9eaf9b3571f8",
-      "resolved": "git://github.com/automattic/cli-table.git#b44c0c335e396121a2a049b3d9fa9eaf9b3571f8"
+      "resolved": "git://github.com/automattic/cli-table.git#b44c0c335e396121a2a049b3d9fa9eaf9b3571f8",
+      "dev": true
     },
     "cli-width": {
       "version": "2.1.0",
@@ -5260,6 +5261,12 @@
         }
       }
     },
+    "mocha-clean": {
+      "version": "1.0.0",
+      "from": "mocha-clean@latest",
+      "resolved": "https://registry.npmjs.org/mocha-clean/-/mocha-clean-1.0.0.tgz",
+      "dev": true
+    },
     "moment": {
       "version": "2.17.1",
       "from": "moment@2.17.1",
@@ -7363,6 +7370,11 @@
       "from": "ramda-cli@1.2.2",
       "resolved": "https://registry.npmjs.org/ramda-cli/-/ramda-cli-1.2.2.tgz",
       "dependencies": {
+        "cli-table": {
+          "version": "0.3.1",
+          "from": "git://github.com/automattic/cli-table.git#b44c0c335e396121a2a049b3d9fa9eaf9b3571f8",
+          "resolved": "git://github.com/automattic/cli-table.git#b44c0c335e396121a2a049b3d9fa9eaf9b3571f8"
+        },
         "ramda": {
           "version": "0.19.1",
           "from": "ramda@0.19.1",
