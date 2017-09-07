@@ -4,6 +4,7 @@ launchConfigurations/
 .idea/
 .bluemix/
 .nyc_output
+archive/
 bower_components/
 coverage/
 dist/
