@@ -6,7 +6,7 @@ stages:
         branch: dev1
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: commit
+      - type:
     jobs:
       - name: distribution
         type: builder
@@ -79,6 +79,8 @@ stages:
       - type: git
         branch: dev2
         service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type:
     jobs:
       - name: distribution
         type: builder
@@ -151,6 +153,8 @@ stages:
       - type: git
         branch: dev3
         service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type:
     jobs:
       - name: distribution
         type: builder
@@ -223,6 +227,8 @@ stages:
       - type: git
         branch: dev4
         service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type:
     jobs:
       - name: distribution
         type: builder
@@ -295,6 +301,8 @@ stages:
       - type: git
         branch: dev5
         service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type:
     jobs:
       - name: distribution
         type: builder
