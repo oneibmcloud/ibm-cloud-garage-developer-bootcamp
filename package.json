@@ -17,7 +17,7 @@
     "precommit": "npm-run-all clear lint spec test:ci",
     "prepush": "npm run ci",
     "server:coverage": "nyc --reporter=lcov --reporter=text --require babel-register npm run spec",
-    "spec": "mocha --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
+    "spec": "mocha --register mocha-clean --compilers js:babel-register --reporter spec --growl --recursive ./test-helper.js  server/**/*.spec.js",
     "spec:ci": "npm run server:coverage",
     "spec:clear": "clear && npm run spec",
     "spec:watch": "nodemon -q --exec npm run spec:clear || true",
