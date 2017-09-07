@@ -80,7 +80,7 @@ stages:
         branch: dev2
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: null
+      - type: stage
     jobs:
       - name: distribution
         type: builder
@@ -154,7 +154,7 @@ stages:
         branch: dev3
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: null
+      - type: stage
     jobs:
       - name: distribution
         type: builder
@@ -228,7 +228,7 @@ stages:
         branch: dev4
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: null
+      - type: stage
     jobs:
       - name: distribution
         type: builder
@@ -302,7 +302,7 @@ stages:
         branch: dev5
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
-      - type: null
+      - type: stage
     jobs:
       - name: distribution
         type: builder
