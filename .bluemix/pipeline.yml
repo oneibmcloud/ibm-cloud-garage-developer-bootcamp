@@ -495,7 +495,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: '${APPLICATION}'
+        value: '${CF_APP}'
         type: text
     jobs:
       - name: package
@@ -533,7 +533,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: '${APPLICATION}'
+        value: '${CF_APP}'
         type: text
     jobs:
       - name: package
@@ -571,7 +571,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: '${APPLICATION}'
+        value: '${CF_APP}'
         type: text
     jobs:
       - name: package
@@ -609,7 +609,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: '${APPLICATION}'
+        value: '${CF_APP}'
         type: text
     jobs:
       - name: package
