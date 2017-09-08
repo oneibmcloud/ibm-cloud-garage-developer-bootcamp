@@ -419,7 +419,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: undefined
+        value: ${APPLICATION}
         type: text
     jobs:
       - name: package
@@ -457,7 +457,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: undefined
+        value: ${APPLICATION}
         type: text
     jobs:
       - name: package
@@ -495,7 +495,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: undefined
+        value: ${APPLICATION}
         type: text
     jobs:
       - name: package
@@ -533,7 +533,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: undefined
+        value: ${APPLICATION}
         type: text
     jobs:
       - name: package
@@ -571,7 +571,7 @@ stages:
       - type: commit
     properties:
       - name: APP_NAME
-        value: undefined
+        value: ${APPLICATION}
         type: text
     jobs:
       - name: package
