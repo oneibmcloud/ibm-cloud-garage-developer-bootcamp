@@ -57,7 +57,7 @@ services:
         env:
           SAUCE_LABS: test
           SOURCE_CONTROL_SERVICE: source-control
-          APPLICATION: '{{form.pipeline.parameters.application}}'
+          APPLICATION: '{{form.pipeline.parameters.app-name}}'
           DEVELOPMENT: '{{form.pipeline.parameters.dev-space}}'
           E2E: '{{form.pipeline.parameters.e2e-space}}'
           LOAD: '{{form.pipeline.parameters.load-space}}'
@@ -92,6 +92,6 @@ services:
 form:
   pipeline:
     parameters:
-      application: '{{services.source-control.parameters.repo_name}}'
+      app-name: '{{services.source-control.parameters.repo_name}}'
     schema:
       $ref: deploy.json
