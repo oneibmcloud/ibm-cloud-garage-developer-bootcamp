@@ -421,26 +421,3 @@ stages:
       - name: package
         type: builder
         build_type: simple
-      - name: 'blue-green'
-        type: deployer
-        target:
-          region_id: ${REGION}
-          organization: ${ORGANIZATION}
-          space: ${DEVELOPMENT}
-          application: ${APPLICATION}
-        script: |-
-          #!/bin/bash
-          ls -al
-          printenv
-
-          tar -zxvf dist.tar.gz
-          rm dist.tar.gz
-
-          ls -al
-
-          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
-          cf install-plugin blue-green-deploy -r CF-Community <<< y
-          cf bgd "${CF_APP}"-dev -f ./manifest.yml
-
-          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
-          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
