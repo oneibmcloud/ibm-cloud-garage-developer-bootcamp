@@ -418,7 +418,7 @@ stages:
     triggers:
       - type: commit
     properties:
-      - name: APPLICATION
+      - name: CF_APPLICATION
         value: undefined
         type: text
     jobs:
@@ -431,7 +431,7 @@ stages:
           region_id: ${REGION}
           organization: ${ORGANIZATION}
           space: ${DEVELOPMENT}
-          application: ${APPLICATION}
+          application: ${CF_APPLICATION}
         script: |-
           #!/bin/bash
           ls -al
