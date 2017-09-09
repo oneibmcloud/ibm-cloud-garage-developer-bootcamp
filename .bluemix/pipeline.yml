@@ -74,10 +74,306 @@ stages:
           git push origin distribution --no-verify
 
           ls -al
+  - name: dev2
+    inputs:
+      - type: git
+        branch: dev2
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - enabled: false
+    jobs:
+      - name: distribution
+        type: builder
+        artifact_dir: archive
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          git branch -a
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
+
+          npm install
+          npm run ci
+          npm run dist
+          npm prune
+
+          ls -al
+          mkdir -p archive
+          ls -al
+          mkdir -p generated
+          scripts/archive.sh
+          git whatchanged --pretty=format:'%s %cn %h %cd' -1 > archive/changelog.txt
+
+          git checkout integration
+          git pull origin integration
+          git merge dev2 --no-ff --log
+          git push origin integration --no-verify
+
+          git checkout --track origin/archive
+          git pull origin archive
+          git merge dev2 --no-ff --log
+          rm changelog.txt
+          ls -al
+          cp archive/changelog.txt .
+          echo "${BUILD_NUMBER}" >> changelog.txt
+          ls -al
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin archive --no-verify
+
+          git checkout --track origin/distribution
+          git pull origin distribution
+          cp archive/* .
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin distribution --no-verify
+
+          ls -al
+  - name: dev3
+    inputs:
+      - type: git
+        branch: dev3
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - enabled: false
+    jobs:
+      - name: distribution
+        type: builder
+        artifact_dir: archive
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          git branch -a
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
+
+          npm install
+          npm run ci
+          npm run dist
+          npm prune
+
+          ls -al
+          mkdir -p archive
+          ls -al
+          mkdir -p generated
+          scripts/archive.sh
+          git whatchanged --pretty=format:'%s %cn %h %cd' -1 > archive/changelog.txt
+
+          git checkout integration
+          git pull origin integration
+          git merge dev3 --no-ff --log
+          git push origin integration --no-verify
+
+          git checkout --track origin/archive
+          git pull origin archive
+          git merge dev3 --no-ff --log
+          rm changelog.txt
+          ls -al
+          cp archive/changelog.txt .
+          echo "${BUILD_NUMBER}" >> changelog.txt
+          ls -al
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin archive --no-verify
+
+          git checkout --track origin/distribution
+          git pull origin distribution
+          cp archive/* .
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin distribution --no-verify
+
+          ls -al
+  - name: dev4
+    inputs:
+      - type: git
+        branch: dev4
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - enabled: false
+    jobs:
+      - name: distribution
+        type: builder
+        artifact_dir: archive
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          git branch -a
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
+
+          npm install
+          npm run ci
+          npm run dist
+          npm prune
+
+          ls -al
+          mkdir -p archive
+          ls -al
+          mkdir -p generated
+          scripts/archive.sh
+          git whatchanged --pretty=format:'%s %cn %h %cd' -1 > archive/changelog.txt
+
+          git checkout integration
+          git pull origin integration
+          git merge dev4 --no-ff --log
+          git push origin integration --no-verify
+
+          git checkout --track origin/archive
+          git pull origin archive
+          git merge dev4 --no-ff --log
+          rm changelog.txt
+          ls -al
+          cp archive/changelog.txt .
+          echo "${BUILD_NUMBER}" >> changelog.txt
+          ls -al
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin archive --no-verify
+
+          git checkout --track origin/distribution
+          git pull origin distribution
+          cp archive/* .
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin distribution --no-verify
+
+          ls -al
+  - name: dev5
+    inputs:
+      - type: git
+        branch: dev5
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - enabled: false
+    jobs:
+      - name: distribution
+        type: builder
+        artifact_dir: archive
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          git branch -a
+          git branch integration
+          git fetch origin integration
+          git merge integration --ff-only
+
+          npm install
+          npm run ci
+          npm run dist
+          npm prune
+
+          ls -al
+          mkdir -p archive
+          ls -al
+          mkdir -p generated
+          scripts/archive.sh
+          git whatchanged --pretty=format:'%s %cn %h %cd' -1 > archive/changelog.txt
+
+          git checkout integration
+          git pull origin integration
+          git merge dev5 --no-ff --log
+          git push origin integration --no-verify
+
+          git checkout --track origin/archive
+          git pull origin archive
+          git merge dev5 --no-ff --log
+          rm changelog.txt
+          ls -al
+          cp archive/changelog.txt .
+          echo "${BUILD_NUMBER}" >> changelog.txt
+          ls -al
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin archive --no-verify
+
+          git checkout --track origin/distribution
+          git pull origin distribution
+          cp archive/* .
+          git add .
+          git commit -m "$(cat archive/changelog.txt)" --no-verify
+          git push origin distribution --no-verify
+
+          ls -al
   - name: integration
     inputs:
       - type: git
-        branch: distribution
+        branch: archive
         service: ${SOURCE_CONTROL_SERVICE}
     triggers:
       - type: commit
@@ -88,33 +384,40 @@ stages:
     - name: SAUCE_ACCESS_KEY
       value: {{services.test.parameters.key}}
       type: text
-    - name: APP
-      value: ${APPLICATION}
-      type: text
-    - name: DEV
-      value: ${DEVELOPMENT}
-      type: text
-    - name: END2END
-      value: ${E2E}
-      type: text
-    - name: LOADTEST
-      value: ${LOAD}
-      type: text
-    - name: QUALITYASSURANCE
-      value: ${QA}
-      type: text
-    - name: STAGING
-      value: ${STAGE}
-      type: text
-    - name: PROD
-      value: ${PRODUCTION}
-      type: text
-    - name: ORG
-      value: ${ORGANIZATION}
-      type: text
-    - name: REG
-      value: ${REGION}
-      type: text
+    jobs:
+      - name: 'saucelabs'
+        type: builder
+        enable_tests: true
+        test_file_pattern: '*.xml, generated/*.xml'
+        build_type: npm
+        script: |-
+          #!/bin/bash
+          git config --global user.email "wgpannel@us.ibm.com"
+          git config --global user.name "wil.pannell"
+
+          export NVM_DIR=/home/pipeline/nvm
+          export NODE_VERSION=v7.10.1
+          export NVM_VERSION=v0.33.2
+          npm config delete prefix \
+            && curl https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | sh \
+            && . $NVM_DIR/nvm.sh \
+            && nvm install $NODE_VERSION \
+            && nvm alias default $NODE_VERSION \
+            && nvm use default \
+            && node -v \
+            && npm -v \
+            && export PATH=${NVM_DIR}/versions/node/${NODE_VERSION}/bin:./node_modules/.bin:$PATH
+
+          npm install
+          mkdir -p generated
+          npm run test:sauce
+  - name: dev
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
     jobs:
       - name: 'promote to dev'
         type: deployer
@@ -138,3 +441,153 @@ stages:
 
           cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
           cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
+  - name: 'end-to-end'
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: 'promote to e2e'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${E2E}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          printenv
+
+          ls -al
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-e2e -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-e2e
+          cf map-route "${CF_APP}"-e2e mybluemix.net -n "${CF_APP}"-e2e
+  - name: load
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: 'promote to load test'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${LOAD}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          printenv
+
+          ls -al
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-load -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-load
+          cf map-route "${CF_APP}"-load mybluemix.net -n "${CF_APP}"-load
+  - name: qa
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: 'promote to qa'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${QA}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          printenv
+
+          ls -al
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-qa -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-qa
+          cf map-route "${CF_APP}"-qa mybluemix.net -n "${CF_APP}"-qa
+  - name: stage
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: 'promote to stage'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${STAGE}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          printenv
+
+          ls -al
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}"-stage -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-stage
+          cf map-route "${CF_APP}"-stage mybluemix.net -n "${CF_APP}"-stage
+  - name: prod
+    inputs:
+      - type: git
+        branch: distribution
+        service: ${SOURCE_CONTROL_SERVICE}
+    triggers:
+      - type: commit
+    jobs:
+      - name: 'promote to production'
+        type: deployer
+        target:
+          region_id: ${REGION}
+          organization: ${ORGANIZATION}
+          space: ${PRODUCTION}
+          application: ${APPLICATION}
+        script: |-
+          #!/bin/bash
+          printenv
+
+          ls -al
+          tar -zxvf dist.tar.gz
+          rm dist.tar.gz
+          ls -al
+
+          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
+          cf install-plugin blue-green-deploy -r CF-Community <<< y
+          cf bgd "${CF_APP}" -f ./manifest.yml
+
+          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"
+          cf map-route "${CF_APP}" mybluemix.net -n "${CF_APP}"
