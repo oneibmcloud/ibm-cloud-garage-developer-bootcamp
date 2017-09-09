@@ -91,6 +91,9 @@ stages:
     - name: APP
       value: ${APPLICATION}
       type: text
+    - name: DEV
+      value: ${DEVELOPMENT}
+      type: text
     - name: END2END
       value: ${E2E}
       type: text
@@ -128,13 +131,13 @@ stages:
           rm dist.tar.gz
 
           ls -al
-      - name: 'blue-green'
+      - name: 'blue-green-dev'
         type: deployer
         target:
-          region_id: ${REGION}
-          organization: ${ORGANIZATION}
-          space: ${DEVELOPMENT}
-          application: ${APPLICATION}
+          region_id: ${REG}
+          organization: ${ORG}
+          space: ${DEV}
+          application: ${APP}
         script: |-
           #!/bin/bash
           ls -al
