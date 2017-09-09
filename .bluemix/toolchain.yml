@@ -57,7 +57,7 @@ services:
         env:
           SAUCE_LABS: test
           SOURCE_CONTROL_SERVICE: source-control
-          CF_APPLICATION: '{{form.pipeline.parameters.application}}'
+          APPLICATION: '{{form.pipeline.parameters.application}}'
           DEVELOPMENT: '{{form.pipeline.parameters.dev-space}}'
           E2E: '{{form.pipeline.parameters.e2e-space}}'
           LOAD: '{{form.pipeline.parameters.load-space}}'
