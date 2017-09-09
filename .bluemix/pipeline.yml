@@ -131,26 +131,3 @@ stages:
           rm dist.tar.gz
 
           ls -al
-      - name: 'blue-green-dev'
-        type: deployer
-        target:
-          region_id: ${REG}
-          organization: ${ORG}
-          space: ${DEV}
-          application: ${APP}
-        script: |-
-          #!/bin/bash
-          ls -al
-          printenv
-
-          tar -zxvf dist.tar.gz
-          rm dist.tar.gz
-
-          ls -al
-
-          cf add-plugin-repo CF-Community http://plugins.cloudfoundry.org
-          cf install-plugin blue-green-deploy -r CF-Community <<< y
-          cf bgd "${CF_APP}"-dev -f ./manifest.yml
-
-          cf create-route "${CF_SPACE}" mybluemix.net -n "${CF_APP}"-dev
-          cf map-route "${CF_APP}"-dev mybluemix.net -n "${CF_APP}"-dev
