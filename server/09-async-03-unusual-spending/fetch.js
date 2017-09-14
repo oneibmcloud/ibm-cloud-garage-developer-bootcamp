@@ -1,3 +1,0 @@
-const fetch = () => {};
-
-export {fetch};

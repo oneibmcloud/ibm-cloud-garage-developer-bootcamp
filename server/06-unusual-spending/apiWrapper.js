@@ -1,3 +1,0 @@
-const apiWrapper = () => {};
-
-export {apiWrapper};
