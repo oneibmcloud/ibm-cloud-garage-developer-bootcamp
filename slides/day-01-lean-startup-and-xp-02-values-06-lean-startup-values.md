@@ -6,9 +6,23 @@
 ###_get out of the building_ <!-- .element: class="fragment"; style="color:maroon" -->
 ###_learn-build-measure_ <!-- .element: class="fragment"; style="color:maroon" -->
 
-
 <aside class="notes">
   <p>
      explain difference between discovery and delivery
   </p>
 </aside>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
