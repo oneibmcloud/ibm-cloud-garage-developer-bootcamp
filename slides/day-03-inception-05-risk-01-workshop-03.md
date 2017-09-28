@@ -2,15 +2,15 @@
 
 ##assumption mapping workshop
 
-<a href="" >
+<a href="resources/Assumptions-Mapping-Worksheet-PRECOIL-2.0.pdf" >
   cheat sheet
 </a>
 
-<a href="" >
+<a href="resources/assumption-mapping/business-model-canvas.png" >
   business model canvas
 </a>
 
-<a href="" >
+<a href="resources/assumption-mapping/business-model-canvas-feasible-viable-desireable.png" >
   feasible-viable-desireable
 </a>
 
