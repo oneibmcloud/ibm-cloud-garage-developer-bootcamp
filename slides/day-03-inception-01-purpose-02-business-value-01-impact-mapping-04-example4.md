@@ -1,11 +1,10 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##impact map concepts
+##impact map student registration
 
-<a href="resources/chartering/impact-map-gaming.png">
-  <img class="plain" height="90%" width="90%" src="resources/chartering/impact-map-example.png" />
+<a href="resources/impact-map-example.png">
+  <img class="plain" height="55%" width="55%" src="resources/impact-map-example.png" />
 </a>
-
 
 <br/>
 <br/>
