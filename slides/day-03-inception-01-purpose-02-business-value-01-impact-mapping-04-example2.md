@@ -1,10 +1,10 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##impact map financial transactions
+##impact map snippet
 
 <br/>
-<a href="resources/chartering/impact-map-financial-transactions.png">
-  <img class="plain" src="resources/chartering/impact-map-financial-transactions.png" />
+<a href="resources/impact-mapping-snippet.png">
+  <img class="plain" src="resources/impact-mapping-snippet.png" />
 </a>  
 
 <br/>
