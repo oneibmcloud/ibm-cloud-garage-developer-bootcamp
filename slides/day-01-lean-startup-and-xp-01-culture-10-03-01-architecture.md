@@ -2,7 +2,7 @@
 
 ##_architecture_
 
-<img class="plain" width="90%" height="90%" src="resources/architectural-outcomes.png" />
+<img class="plain" width="90%" height="90%" src="resources/architectural-outcomes-01.png" />
 
 
 <br/>

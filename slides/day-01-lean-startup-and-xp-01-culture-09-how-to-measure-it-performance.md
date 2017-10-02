@@ -2,7 +2,7 @@
 
 ##remember? we measure IT performance by
 
-### <hr/> <!-- .element: class="fragment"; style="color:maroon" -->
+<hr/>
 ### _deployment frequency_ <!-- .element: class="fragment"; style="color:maroon" -->
 ### _change lead time_ <!-- .element: class="fragment"; style="color:maroon" -->
 ### _mean time to recover_ <!-- .element: class="fragment"; style="color:maroon" -->

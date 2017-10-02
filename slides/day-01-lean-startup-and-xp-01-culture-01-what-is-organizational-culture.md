@@ -2,6 +2,8 @@
 
 ##what is organizational culture?
 
+**(white cards)**  <!-- .element: style="color:grey" -->
+
 <aside class="notes">
   <p>
     What is Organizational Culture?
