@@ -2,7 +2,7 @@
 
 ##Housekeeping
 - - -
-* **(cont'd)** <!-- .element: style="color:navy" -->
+* **(cont'd)** <!-- .element: style="color:maroon" -->
 * **Rest Rooms** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pantry** <!-- .element: class="fragment"; style="color:navy" -->
 * **Smoking** <!-- .element: class="fragment"; style="color:navy" -->
@@ -11,7 +11,8 @@
 * **Green/Red Cards** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pairing Stations** <!-- .element: class="fragment"; style="color:navy" -->
 * **Methodology** <!-- .element: class="fragment"; style="color:navy" -->
-* **http://ibm.biz/ibm-cloud-garage-developer-bootcamp** <!-- .element: class="fragment"; style="color:navy" -->
+* **[Slides](http://ibm.biz/ibm-cloud-garage-developer-bootcamp)** <!-- .element: class="fragment"; style="color:navy" -->
+* **(http://ibm.biz/ibm-cloud-garage-developer-bootcamp)** <!-- .element: class="fragment"; style="color:grey" -->
 <br/>
 <br/>
 <br/>
