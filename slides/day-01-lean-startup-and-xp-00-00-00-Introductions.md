@@ -9,7 +9,6 @@
 * _**Lunch**_ <!-- .element: style="color:#5cab3d" -->
 * **Product Development Simulation** <!-- .element: style="color:#e0dfe4" -->
 * **Culture and Values** <!-- .element: style="color:#e0dfe4" -->
-* **The Product Community:  Shared Ownership** <!-- .element: style="color:#e0dfe4" -->
 * **Evolutionary Design** <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
