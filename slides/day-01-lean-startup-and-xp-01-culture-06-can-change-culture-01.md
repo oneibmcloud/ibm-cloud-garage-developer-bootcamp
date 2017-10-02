@@ -6,4 +6,9 @@
 
 
 <aside class="notes">
+  <p>
+    if you pulled the andon cord at Toyota you were thanked and your shop manager would help you <br/>
+    <br/>
+    if you pulled the andon cord at GM you were fired <br/>
+  </p>
 </aside>

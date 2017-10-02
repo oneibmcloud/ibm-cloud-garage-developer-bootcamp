@@ -2,9 +2,38 @@
 
 ##how do **_we_** change culture?
 
-###_Improve IT Performance_ 
+###_Improve IT Performance_ <!-- .element: class="fragment"; style="color:maroon" -->
 
 
 <aside class="notes">
-  ask how
+  ask how?
 </aside>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>

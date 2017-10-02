@@ -11,6 +11,7 @@ _**[(How to Change a Culture: Lessons From NUMMI)](http://sloanreview.mit.edu/ar
 <aside class="notes">
   Edgar Schein
 </aside>
+
 <br/>
 <br/>
 <br/>
