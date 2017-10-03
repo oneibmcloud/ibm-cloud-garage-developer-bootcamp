@@ -14,6 +14,4 @@
 * **Day 10:&nbsp;&nbsp;&nbsp;Iteration 2 / Product Launch**  <!-- .element: style="color:#e0dfe4" -->
 
 <aside class="notes">
-  We'll discuss the relationship between lean startup and XP on Day 2,
-  and dive deep into what makes them work and how.
 </aside>
