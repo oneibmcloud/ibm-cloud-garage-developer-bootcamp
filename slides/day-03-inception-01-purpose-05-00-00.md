@@ -2,7 +2,9 @@
 
 ##Vision
 - - -
-## **Man's reach should exceed his grasp.**   <!-- .element: class="fragment"; style="color:maroon" -->
+## **...a man's rech should exceed his grasp...**  <!-- .element: style="color:maroon" -->
+
+_**([Robert Browning](https://www.poetryfoundation.org/poems/43745/andrea-del-sarto/))**_  <!-- .element: style="color:maroon; font-size: .5em" -->
 
 <aside class="notes">
 </aside>
