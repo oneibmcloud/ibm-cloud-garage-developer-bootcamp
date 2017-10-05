@@ -1,7 +1,16 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##story mapping workshop (cont'd)
+##road mapping
 
+<a href="resources/story-map-01.png" >
+  <img class="plain" height="100%" width="100%" src="resources/story-map-01.png" />
+</a>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>

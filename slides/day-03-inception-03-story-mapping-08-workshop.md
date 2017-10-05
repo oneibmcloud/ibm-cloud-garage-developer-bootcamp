@@ -2,18 +2,16 @@
 
 ##road mapping
 
+<a href="resources/story-map-01-02.jpg" >
+  <img class="plain" height="75%" width="75%" src="resources/story-map-01-02.jpg" />
+</a>
+
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
 <br/>
-<a href="https://www.safaribooksonline.com/library/view/oreilly-software-architecture/9781491976203/video302676.html?autoStart=True">Advanced Road Mapping</a>
-<br/>
-<br/>
-<br/>
-<br/>
-(right click the link and open in new tab)
 <br/>
 <br/>
 <br/>
