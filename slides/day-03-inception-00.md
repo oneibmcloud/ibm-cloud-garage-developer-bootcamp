@@ -15,5 +15,7 @@
 * **Architecture**  <!-- .element: class="fragment"; -->
 * **Release Plan**  <!-- .element: class="fragment"; -->
 
+_**([Retrieval Practice](http://bit.ly/predictors-of-organizational-performance))**_  <!-- .element: style="color:maroon; font-size: .5em" -->
+
 <aside class="notes">
 </aside>
