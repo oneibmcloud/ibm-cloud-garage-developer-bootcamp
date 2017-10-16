@@ -2,12 +2,15 @@
 
 ##Introductions
 - - -
-* **Vic Leung: Senior Developer, IBM Cloud Garage — Melbourne** <!-- .element: style="color:maroon" -->
+* **Wil Pannell: Lead, Agile Practice Adoption, IBM Cloud Garage** <!-- .element: style="color:maroon" -->
+* **Vic Leung: Senior Developer, IBM Cloud Garage** <!-- .element: class="fragment"; style="color:maroon" -->
+* **Vijay Peachimuthu: Senior Architect, IBM Cloud** <!-- .element: class="fragment"; style="color:maroon" -->
 * **Participant Introductions**  <!-- .element: class="fragment"; style="color:maroon" -->
 * **(white cards)**  <!-- .element: class="fragment"; style="color:grey" -->
 * **Who are you?**  <!-- .element: class="fragment"; style="color:navy" -->
-* **Where do you work at aa.com?**  <!-- .element: class="fragment"; style="color:navy" -->
-* **What do you know about the Garage?**  <!-- .element: class="fragment"; style="color:navy" -->
+* **What's your position at aa.com?**  <!-- .element: class="fragment"; style="color:navy" -->
+* **Where you going to work for aa.fly?**  <!-- .element: class="fragment"; style="color:navy" -->
+* **What do you know about the IBM Cloud Garage?**  <!-- .element: class="fragment"; style="color:navy" -->
 * **What is your background in agile (scrum, XP, et. al.)?**  <!-- .element: class="fragment"; style="color:navy" -->
 * **What do you hope to achieve in this Garage Developer Bootcamp?**  <!-- .element: class="fragment"; style="color:navy" -->
 <br/>

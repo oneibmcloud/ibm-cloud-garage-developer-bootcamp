@@ -13,6 +13,7 @@
 * **Snacks (~15:15)** <!-- .element: class="fragment"; style="color:maroon" -->
 * **Activities** <!-- .element: class="fragment"; style="color:maroon" -->
 * **End-of-Day (~17:00)** <!-- .element: class="fragment"; style="color:navy" -->
+* **Bangalore Traffic?** <!-- .element: class="fragment"; style="color:green" -->
 <br/>
 <br/>
 <br/>
