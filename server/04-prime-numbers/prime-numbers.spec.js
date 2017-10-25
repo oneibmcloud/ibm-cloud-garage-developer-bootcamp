@@ -5,8 +5,9 @@ describe.only('prime factors of', () => {
   });
 
   let primeFactorsOf = (number) => {
-    if (number > 1) return [2];
-    return [];
+    const factors = [];
+    if (number > 1) factors.push(number);
+    return factors;
   };
 
   it('1 is none', () => {
@@ -17,7 +18,10 @@ describe.only('prime factors of', () => {
     primeFactorsOf(2).should.deepEqual([2]);
   });
 
-  it('3 is 3');
+  it('3 is 3', () => {
+    primeFactorsOf(3).should.deepEqual([3]);
+
+  });
   it('4 is 2, 2');
   it('5 is 5');
   it('6 is 2, 3');
