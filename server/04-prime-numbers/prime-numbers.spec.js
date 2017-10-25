@@ -4,13 +4,19 @@ describe.only('prime factors of', () => {
     true.should.be.true();
   });
 
-  let primeFactorsOf = () => [];
+  let primeFactorsOf = (number) => {
+    if (number > 1) return [2];
+    return [];
+  };
 
   it('1 is none', () => {
     primeFactorsOf(1).should.deepEqual([]);
   });
 
-  it('2 is 2');
+  it('2 is 2', () => {
+    primeFactorsOf(2).should.deepEqual([2]);
+  });
+
   it('3 is 3');
   it('4 is 2, 2');
   it('5 is 5');
