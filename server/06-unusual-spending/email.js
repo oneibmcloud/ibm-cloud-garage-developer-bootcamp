@@ -1,0 +1,3 @@
+const email = () => {};
+
+export {email};
