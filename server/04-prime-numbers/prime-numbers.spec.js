@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-describe.only('prime factors of', () => {
+describe('prime factors of', () => {
   it('canary test shows the infrastructure works', () => {
     true.should.be.true();
   });
