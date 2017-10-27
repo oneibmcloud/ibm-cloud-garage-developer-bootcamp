@@ -1,6 +1,6 @@
 import {replace, when, verify} from '../../test-helper';
 
-describe.only('fetch', () => {
+describe('fetch', () => {
   it('canary spec passes', () => {
     true.should.be.true();
   });
