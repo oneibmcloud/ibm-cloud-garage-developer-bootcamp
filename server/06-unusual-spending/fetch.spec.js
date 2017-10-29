@@ -1,4 +1,4 @@
-import {replace, when, verify} from '../../test-helper';
+import {replace, when} from '../../test-helper';
 
 describe('fetch', () => {
   it('canary spec passes', () => {
