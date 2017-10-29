@@ -2,8 +2,7 @@
 
 ##Introductions
 - - -
-* **Wil Pannell: Lead, Agile Practice Adoption, IBM Cloud Garage** <!-- .element: style="color:maroon" -->
-* **Vic Leung: Senior Developer, IBM Cloud Garage** <!-- .element: class="fragment"; style="color:maroon" -->
+* **Larry Steck: Senior Developer, IBM Cloud Garage** <!-- .element: style="color:maroon" -->
 * **Vijay Peachimuthu: Senior Architect, IBM Cloud** <!-- .element: class="fragment"; style="color:maroon" -->
 * **Participant Introductions**  <!-- .element: class="fragment"; style="color:maroon" -->
 * **(white cards)**  <!-- .element: class="fragment"; style="color:grey" -->
