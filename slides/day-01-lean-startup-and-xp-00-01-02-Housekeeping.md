@@ -3,10 +3,12 @@
 ##Housekeeping
 - - -
 * **(cont'd)** <!-- .element: style="color:maroon" -->
+* **Badges** <!-- .element: class="fragment"; style="color:navy" -->
 * **Rest Rooms** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pantry** <!-- .element: class="fragment"; style="color:navy" -->
 * **Smoking** <!-- .element: class="fragment"; style="color:navy" -->
-* **Lunch Room** <!-- .element: class="fragment"; style="color:navy" -->
+* **Cafeteria** <!-- .element: class="fragment"; style="color:navy" -->
+* **Food Court** <!-- .element: class="fragment"; style="color:navy" -->
 * **Name Tags** <!-- .element: class="fragment"; style="color:navy" -->
 * **Green/Red Cards** <!-- .element: class="fragment"; style="color:navy" -->
 * **Pairing Stations** <!-- .element: class="fragment"; style="color:navy" -->
