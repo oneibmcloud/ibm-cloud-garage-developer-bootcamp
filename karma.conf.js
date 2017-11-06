@@ -1,5 +1,6 @@
 /*eslint no-unused-vars: "off"*/
 const webpack = require('webpack');
+const webpackConfig = require('./webpack.config');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = function(config) {
@@ -8,33 +9,7 @@ module.exports = function(config) {
       outputDir: 'generated'
     },
 
-    webpack: {
-      devtool: 'inline-source-map',
-
-      module: {
-        loaders: [
-          {test: /\.html$/, loader: 'raw'},
-          {test: /\.styl$/, loader: 'style!css!stylus'},
-          {test: /\.css/, loader: 'style!css'},
-          {test: /\.json$/, loader: 'json-loader' },
-          {
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: [/web\/lib/, /node_modules/, /server/]
-          },
-        ]
-      },
-
-      stylus: {
-        use: [require('jeet')(), require('rupture')()]
-      },
-
-      plugins: [
-        new CopyWebpackPlugin([
-          { from: './web/data/products.json' }
-        ])
-      ]
-    },
+    webpack: webpackConfig,
 
     files: [
       {pattern: 'spec.bundle.js', watched: false},
