@@ -1,7 +1,6 @@
 /*eslint no-unused-vars: "off"*/
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-process.env.CHROME_BIN = require('puppeteer').executablePath();
 
 module.exports = function(config) {
   config.set({
@@ -57,7 +56,7 @@ module.exports = function(config) {
     autoWatch: true,
     autoWatchBatchDelay: 100,
     basePath: '',
-    browsers: ['ChromeHeadless'],
+    browsers: ['jsdom'],
     colors: true,
     exclude: [],
     frameworks: ['mocha', 'should', 'testdouble'],
