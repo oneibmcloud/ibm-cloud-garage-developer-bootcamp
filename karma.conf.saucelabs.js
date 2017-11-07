@@ -79,9 +79,9 @@ module.exports = function(config) {
     concurrency: 1,
     customLaunchers,
     exclude: testConfig.exclude,
-    frameworks: testConfig.frameworks,
+    frameworks: ['mocha', 'should', 'testdouble'],
     port: testConfig.port,
-    reporters: testConfig.reporters,
+    reporters: ['mocha', 'saucelabs'],
     singleRun: true
   });
 };
