@@ -81,7 +81,7 @@ module.exports = function(config) {
     exclude: testConfig.exclude,
     frameworks: testConfig.frameworks,
     port: testConfig.port,
-    reporters: testConfig.frameworks,
+    reporters: testConfig.reporters,
     singleRun: true
   });
 };
