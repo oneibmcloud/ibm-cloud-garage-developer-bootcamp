@@ -1,4 +1,3 @@
-
  /*eslint no-undef: "off"*/
 
  import 'script!jquery/dist/jquery';

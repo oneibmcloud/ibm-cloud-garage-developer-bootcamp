@@ -1,4 +1,3 @@
-
 import 'script!jquery/dist/jquery';
 import angular from 'angular';
 
