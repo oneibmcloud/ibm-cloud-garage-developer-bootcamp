@@ -79,6 +79,7 @@ module.exports = function(config) {
     customLaunchers,
     exclude: testConfig.exclude,
     frameworks: ['mocha', 'should', 'testdouble'],
+    logLevel: config.LOG_ERROR,
     port: testConfig.port,
     reporters: ['mocha', 'saucelabs'],
     singleRun: true
