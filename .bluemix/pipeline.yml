@@ -37,10 +37,10 @@ stages:
           git fetch origin integration
           git merge integration --ff-only
 
-          npm install
-          npm run ci
-          npm run dist
-          npm prune
+          npm install -s
+          npm run ci -s
+          npm run dist -s
+          npm prune -s
 
           ls -al
           mkdir -p archive
@@ -111,10 +111,10 @@ stages:
           git fetch origin integration
           git merge integration --ff-only
 
-          npm install
-          npm run ci
-          npm run dist
-          npm prune
+          npm install -s
+          npm run ci -s
+          npm run dist -s
+          npm prune -s
 
           ls -al
           mkdir -p archive
@@ -188,7 +188,7 @@ stages:
 
           npm install
           mkdir -p generated
-          npm run test:sauce
+          npm run test:sauce -s
   - name: dev
     inputs:
       - type: git
