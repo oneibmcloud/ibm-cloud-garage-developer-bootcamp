@@ -11,7 +11,6 @@
 * **Start-of-Afternoon (~13:45)** <!-- .element: class="fragment"; style="color:maroon" -->
 * **Activities** <!-- .element: class="fragment"; style="color:maroon" -->
 * **End-of-Day (~16:00)** <!-- .element: class="fragment"; style="color:navy" -->
-* **Bangalore Traffic?** <!-- .element: class="fragment"; style="color:green" -->
 <br/>
 <br/>
 <br/>
