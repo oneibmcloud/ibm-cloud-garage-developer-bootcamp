@@ -1,16 +1,14 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##Inception Workshop
+##Product Team Charter
 - - -
 ###Outcomes
 - - -
-* **Impacts** <!-- .element: style="color:#e0dfe4"; -->
-* **Roadmap**  <!-- .element: style="color:#e0dfe4"; -->
+* **The Equation of Value**
+* **Vision**  <!-- .element: style="color:#e0dfe4"; -->
 * _**Lunch**_ <!-- .element: style="color:#e0dfe4"; -->
-* **Risks/Constraints** <!-- .element: style="color:#e0dfe4"; -->
-* **Architecture**
-* **Release Plan** <!-- .element: style="color:#e0dfe4"; -->
-
+* **Purpose**  <!-- .element: style="color:#e0dfe4"; -->
+* **Context**  <!-- .element: style="color:#e0dfe4"; -->
 
 <aside class="notes">
 </aside>

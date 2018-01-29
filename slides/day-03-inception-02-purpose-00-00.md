@@ -6,8 +6,8 @@
 - - -
 * **The Equation of Value** <!-- .element: style="color:#e0dfe4"; -->
 * **Vision**  <!-- .element: style="color:#e0dfe4"; -->
-* _**Lunch**_   <!-- .element: style="color:green"; -->
-* **Purpose**  <!-- .element: style="color:#e0dfe4"; -->
+* _**Lunch**_   <!-- .element: style="color:#e0dfe4"; -->
+* **Purpose**
 * **Context**  <!-- .element: style="color:#e0dfe4"; -->
 
 <aside class="notes">

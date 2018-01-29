@@ -1,15 +1,14 @@
 <!-- .slide: data-background="resources/footer.svg" data-background-size="contain" data-background-position="bottom"  -->
 
-##Inception Workshop
+##Product Team Charter
 - - -
 ###Outcomes
 - - -
-* **Impacts**
-* **Roadmap**  <!-- .element: class="fragment"; -->
-* _**Lunch**_ <!-- .element: class="fragment"; style="color:green" -->
-* **Risks/Constraints**  <!-- .element: class="fragment"; -->
-* **Architecture**  <!-- .element: class="fragment"; -->
-* **Release Plan**  <!-- .element: class="fragment"; -->
+* **The Equation of Value**
+* **Vision**  <!-- .element: class="fragment"; -->
+* _**Lunch**_ <!-- .element: class="fragment"; style="color:#5cab3d" -->
+* **Purpose**  <!-- .element: class="fragment"; -->
+* **Context **  <!-- .element: class="fragment"; -->
 
 _**([Retrieval Practice](http://bit.ly/predictors-of-organizational-performance))**_  <!-- .element: style="color:maroon; font-size: .5em" -->
 
