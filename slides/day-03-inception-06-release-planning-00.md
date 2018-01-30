@@ -2,23 +2,23 @@
 
 ##release planning
 
-_**(is based on value)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**is based on value**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
 _**prioritize**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**(highest value features first)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**highest value features first**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
 _**defer**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**(lowest value features)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**lowest value features last**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**customer invests**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**stories are considered**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**(in options)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**options**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**stories are**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**customer (or product owner) invests**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
-_**(options for customer to invest)**_  <!-- .element: class="fragment"; style="color:maroon" -->
+_**in options**_  <!-- .element: class="fragment"; style="color:maroon" -->
 
 
 <br/>

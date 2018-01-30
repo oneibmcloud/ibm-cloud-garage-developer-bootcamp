@@ -6,9 +6,9 @@
 - - -
 * **Impacts** <!-- .element: style="color:#e0dfe4"; -->
 * **Roadmap** <!-- .element: style="color:#e0dfe4"; -->
-* _**Lunch**_ <!-- .element: style="color:#green"; -->
-* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
+* _**Lunch**_ <!-- .element: style="color:green"; -->
 * **Architecture** <!-- .element: style="color:#e0dfe4"; -->
+* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
 * **Release Plan** <!-- .element: style="color:#e0dfe4"; -->
 
 

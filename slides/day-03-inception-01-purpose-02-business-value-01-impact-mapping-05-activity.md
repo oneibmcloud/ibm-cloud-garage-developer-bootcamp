@@ -4,7 +4,8 @@
 
 * **brainstorm SMART business goals**  <!-- .element: style="color:maroon" -->
 * **brainstorm actors**  <!-- .element: style="color:maroon" -->
-* **brainstorm impacts (behavior changes)**  <!-- .element: style="color:maroon" -->
+* **futurespective on impacts (behavior changes)**  <!-- .element: style="color:maroon" -->
+* **add impacts to map**  <!-- .element: style="color:maroon" -->
 * **brainstorm deliverables (features)**  <!-- .element: style="color:maroon" -->
 
 <br/>
