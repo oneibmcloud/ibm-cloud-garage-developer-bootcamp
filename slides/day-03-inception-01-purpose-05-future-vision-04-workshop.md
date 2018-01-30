@@ -7,7 +7,6 @@ _**(futurespective)**_  <!-- .element: class="fragment"; style="color:maroon; fo
 
 <img class="plain fragment" width="90%" height="90%" src="resources/future-spective-prime-directive.png" />
 
-_**([The Cementz Story](resources/Cementz-Mexico-CEMEX-On-Line-Store-MVP.pdf))**_  <!-- .element: class="fragment"; style="color:maroon; font-size: .5em" -->
 
 
 <br/>

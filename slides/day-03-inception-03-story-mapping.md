@@ -7,8 +7,8 @@
 * **Impacts** <!-- .element: style="color:#e0dfe4"; -->
 * **Roadmap**
 * _**Lunch**_ <!-- .element: style="color:#e0dfe4"; -->
-* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
 * **Architecture** <!-- .element: style="color:#e0dfe4"; -->
+* **Risks/Constraints**  <!-- .element: style="color:#e0dfe4"; -->
 * **Release Plan** <!-- .element: style="color:#e0dfe4"; -->
 
 

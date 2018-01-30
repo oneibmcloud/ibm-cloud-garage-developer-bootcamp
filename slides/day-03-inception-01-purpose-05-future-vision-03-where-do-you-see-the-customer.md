@@ -6,6 +6,18 @@
 ## **What about 10?**   <!-- .element: class="fragment"; style="color:maroon" -->
 ## **15?**   <!-- .element: class="fragment"; style="color:maroon" -->
 
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+_**([The Cementz Story](resources/Cementz-Mexico-CEMEX-On-Line-Store-MVP.pdf))**_  <!-- .element: class="fragment"; style="color:maroon; font-size: .5em" -->
+
+
 <aside class="notes">
 </aside>
 
